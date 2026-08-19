@@ -1,0 +1,38 @@
+name: Náhľad linku
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 3 * * *'   # denne, aby počet dní v náhľade nezostarol
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: og
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepísať meta tagy
+        env:
+          REPO: ${{ github.repository }}
+        run: node .github/og.mjs
+
+      - name: Commitnúť, ak sa niečo zmenilo
+        run: |
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "náhľad je aktuálny, netreba commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "og: aktualizácia náhľadu [skip ci]"
+          git push

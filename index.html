@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Za tento čas ti začína školský rok</title>
+<meta name="description" content="Odpočet do začiatku školského roka na dni, hodiny, minúty, sekundy a stotiny.">
+<meta name="theme-color" content="#2A5346">
+
+<!-- Absolútne URL prepisuje .github/workflows/og.yml pri každom pushi podľa mena repozitára.
+     Do prvého behu workflowu tu stojí placeholder a náhľad na FB/IG sa nezobrazí. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:site_name" content="Odchodová tabuľa">
+<meta property="og:title" content="Za tento čas ti začína školský rok">
+<meta property="og:description" content="Odpočet beží na stotiny. Pozri sa, koľko ti zostáva.">
+<meta property="og:url" content="https://REPLACE.github.io/REPLACE/">
+<meta property="og:image" content="https://REPLACE.github.io/REPLACE/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Klapková odchodová tabuľa s odpočtom do začiatku školského roka.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Za tento čas ti začína školský rok">
+<meta name="twitter:description" content="Odpočet beží na stotiny. Pozri sa, koľko ti zostáva.">
+<meta name="twitter:image" content="https://REPLACE.github.io/REPLACE/og.png">
+
+<link rel="preload" href="fonts/archivo-narrow-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+THESIS: Odpočet ako cestovný poriadok, nie ako hodiny. Leto je odchod, školský rok je príchod o 8:00, ktorý sa nedá zmeškať. Odmieta vycentrovaný neónový blok číslic na čiernej ploche.
+OWN-WORLD: Klapková tabuľa Pragotron na smaltovanej stene. Inštitucionálna zelená drží stenu, tmavé čelo tabule je do nej vsadené, kostné znaky na klapkách, signálna červená len pre odídený spoj. Archivo Narrow, verzálky, pevné znakové bunky.
+STORY: Príde ti link, dve sekundy pozeráš, ako stotinový bubon panikári, a pošleš to ďalej.
+FIRST VIEWPORT: Celá obrazovka je stena; tabuľa vsadená doprostred. Zhora lišta najbližšieho odchodu, pod ňou cieľ v dvoch riadkoch klapiek, potom pole času - dni obrovské, ostatné jednotky menšie v rade, stotiny ako roztočené bubny. Dole odídený spoj červeno a smaltové tlačidlo PREHODIŤ. Veta na stene pod tabuľou.
+FORM: Odchodová tabuľa; kandidát 1 môjho zoradeného zoznamu, karta MY PICK, vybraná používateľom proti pridelenej šestke; seed 76d990bb.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<main class="wall">
+  <div class="board" id="board">
+    <span class="screw screw--tl"></span>
+    <span class="screw screw--tr"></span>
+    <span class="screw screw--bl"></span>
+    <span class="screw screw--br"></span>
+
+    <div class="rail">
+      <span class="rail__k">Najbližší odchod</span>
+      <span class="rail__v" id="departAt">02.09.2026 · 08:00</span>
+    </div>
+
+    <div class="dest" aria-hidden="true">
+      <div class="flapline" id="dest0"></div>
+      <div class="flapline" id="dest1"></div>
+    </div>
+    <p class="sr" id="destSr"></p>
+
+    <div class="rule"></div>
+
+    <div class="clock" aria-hidden="true">
+      <div class="unit unit--lead">
+        <div class="cells" id="uDay"></div>
+        <span class="cap" id="capDay">dní</span>
+      </div>
+      <div class="unit">
+        <div class="cells" id="uHrs"></div>
+        <span class="cap">hod</span>
+      </div>
+      <div class="unit">
+        <div class="cells" id="uMin"></div>
+        <span class="cap">min</span>
+      </div>
+      <div class="unit">
+        <div class="cells" id="uSec"></div>
+        <span class="cap">sek</span>
+      </div>
+      <div class="unit">
+        <div class="cells" id="uFrc"></div>
+        <span class="cap">stotín</span>
+      </div>
+    </div>
+    <p class="sr" id="clockSr">Odpočet sa načítava.</p>
+
+    <div class="rule"></div>
+
+    <div class="foot">
+      <p class="gone" id="gone"><span class="gone__x"></span><span id="goneText">Prázdniny 2026 · odišlo 01.07.</span></p>
+      <button class="knob" id="knob" type="button" aria-label="Prehodiť tabuľu a zazvoniť">Prehodiť</button>
+    </div>
+  </div>
+
+  <p class="line" id="line">za tento čas ti začína školský rok</p>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
