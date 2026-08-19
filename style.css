@@ -14,8 +14,6 @@
 :root{
   /* smaltova stena */
   --enamel:#2A5346;
-  --enamel-dk:#173229;
-  --enamel-lt:#3F705D;
   /* celo tabule a klapky */
   --board:#0F1215;
   --gap:#050708;
@@ -31,9 +29,6 @@
   --hw-pin:#79838C;
   --hw-screw:#6E7A72;
   --hw-dk:#272D33;
-  /* smaltovy gombik - tmavsi stupen steny, aby popis presiel cez AA */
-  --knob:#2F5A4A;
-  --knob-dk:#22453A;
   /* jedna rampa svetla a tienu pre cely material */
   --shade-0:rgba(0,0,0,.022);
   --shade-1:rgba(0,0,0,.13);
@@ -194,27 +189,16 @@ body{
 .flap--spin i{filter:blur(calc(var(--c) * .026))}
 .flap--fast i{filter:blur(calc(var(--c) * .05))}
 
-/* --- odideny spoj a gombik ------------------------------------------- */
-.foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* --- odideny spoj ----------------------------------------------------- */
 .gone{
   margin:0;display:flex;align-items:center;gap:9px;
   font-size:clamp(11px,1.5vw,14px);letter-spacing:.14em;text-transform:uppercase;
   color:var(--signal);
 }
 .gone__x{width:26px;height:2px;background:var(--signal);flex:none}
-.knob{
-  font:inherit;font-size:clamp(10px,1.3vw,12px);font-weight:700;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--ink);
-  padding:9px 16px;border:0;border-radius:3px;cursor:pointer;
-  background:linear-gradient(180deg,var(--knob),var(--knob-dk));
-  box-shadow:0 2px 0 var(--enamel-dk),0 4px 8px -2px var(--shade-3);
-  transition:transform 90ms ease-out,box-shadow 90ms ease-out,color 90ms ease-out;
-}
-.knob:hover{background:linear-gradient(180deg,var(--enamel-lt),var(--knob))}
-.knob:active{transform:translateY(2px);box-shadow:0 0 0 var(--enamel-dk),0 2px 4px -1px var(--shade-3)}
-
-/* --- veta na stene --------------------------------------------------- */
+/* --- veta: len v nahlade linku, na stranke je redundantna ------------- */
 .line{
+  display:none;
   margin:0;text-align:center;text-wrap:balance;
   font-size:clamp(17px,4.6vw,26px);font-weight:700;
   letter-spacing:.17em;text-transform:uppercase;
@@ -227,7 +211,7 @@ body.og{padding:20px 30px 24px;--cell:56px;--lead:92px}
 body.og .board{width:min(100%,1080px)}
 body.og .flapline{--c:34px}
 body.og .wall{gap:16px}
-body.og .line{font-size:32px}
+body.og .line{display:block;font-size:32px}
 
 /* nizke displeje: odpocet musi zostat cely na obrazovke, stranka sa nesmie rolovat */
 @media (max-height:800px){
@@ -244,5 +228,4 @@ body.og .line{font-size:32px}
 @media (prefers-reduced-motion:reduce){
   .flap--spin i,.flap--fast i{filter:none}
   .unit:last-child .cap{opacity:.42}   /* stotiny bezia len s povolenym pohybom */
-  .knob{transition:none}
 }

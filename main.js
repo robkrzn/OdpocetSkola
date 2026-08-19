@@ -317,5 +317,12 @@ if (OG) {
     bell();
   }
   document.addEventListener('pointerdown', poke);
-  $('knob').addEventListener('click', poke);
+  // Tabula uz nema viditelny ovladac, tak kaskadu drzi dostupnou aspon klavesnica.
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    // medzernik zoberieme len vtedy, ked nie je co rolovat
+    var d = document.documentElement;
+    if (d.scrollHeight <= d.clientHeight) e.preventDefault();
+    poke();
+  });
 }

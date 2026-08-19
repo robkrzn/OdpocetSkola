@@ -26,8 +26,8 @@ aby odviedol prácu za neho.
 ## Product Purpose
 
 Jedna obrazovka s obrovským odpočtom do začiatku školského roka —
-**dni : hodiny : minúty : sekundy : stotiny** — a pod ním veta
-„za tento čas ti začína školský rok“.
+**dni : hodiny : minúty : sekundy : stotiny**. Na stránke samotnej nie je nič iné:
+žiadny sprievodný text, žiadne tlačidlo.
 
 Úspech = príjemca otvorí link, pochopí vtip do dvoch sekúnd a pošle ho ďalej.
 Nie je to nástroj ani služba; je to pointa v tvare webstránky.
@@ -72,7 +72,9 @@ ktorý v správe vyzerá ako prázdny odkaz.
 
 Žiadna značka, logo ani identita. Záväzné je len:
 
-- veta **„za tento čas ti začína školský rok“** (formulácia od používateľa),
+- veta **„za tento čas ti začína školský rok“** (formulácia od používateľa). Od 19. 8. 2026
+  žije **len v náhľade linku a v `og:title`**, nie na stránke — na obrazovke je redundantná
+  vedľa cieľa a obrovského čísla, ale v zozname správ nesie celú pointu, kým nikto neklikol,
 - **tón:** hravá škodoradosť medzi kamarátmi — trolljenie, nie urážka.
   Bez nadávok, bez šikany, bez mierenia na konkrétnu osobu alebo školu.
 

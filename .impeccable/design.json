@@ -8,201 +8,247 @@
         "role": "primary",
         "displayName": "Institutional Enamel",
         "canonical": "#2A5346",
-        "tonalRamp": ["oklch(17% 0.04 165)", "oklch(27% 0.045 165)", "oklch(37% 0.05 165)", "oklch(47% 0.055 165)", "oklch(57% 0.055 165)", "oklch(69% 0.05 165)", "oklch(82% 0.035 165)", "oklch(94% 0.018 165)"]
-      },
-      "enamel-dk": {
-        "role": "primary",
-        "displayName": "Enamel Shadow",
-        "canonical": "#173229",
-        "tonalRamp": ["oklch(15% 0.035 165)", "oklch(24% 0.04 165)", "oklch(33% 0.045 165)", "oklch(44% 0.05 165)", "oklch(55% 0.05 165)", "oklch(68% 0.045 165)", "oklch(81% 0.03 165)", "oklch(94% 0.015 165)"]
-      },
-      "enamel-lt": {
-        "role": "primary",
-        "displayName": "Enamel Light",
-        "canonical": "#3F705D",
-        "tonalRamp": ["oklch(18% 0.045 165)", "oklch(28% 0.05 165)", "oklch(38% 0.058 165)", "oklch(48% 0.062 165)", "oklch(59% 0.06 165)", "oklch(71% 0.052 165)", "oklch(83% 0.036 165)", "oklch(95% 0.018 165)"]
+        "tonalRamp": ["#0B1712", "#12241D", "#1B3529", "#234436", "#2A5346", "#3C7461", "#6BA592", "#B6D6C9"]
       },
       "signal": {
         "role": "secondary",
-        "displayName": "Signal Red",
+        "displayName": "Signal Red-Orange",
         "canonical": "#E8543B",
-        "tonalRamp": ["oklch(20% 0.09 35)", "oklch(30% 0.13 35)", "oklch(40% 0.16 35)", "oklch(50% 0.18 35)", "oklch(64% 0.17 35)", "oklch(75% 0.13 35)", "oklch(86% 0.08 35)", "oklch(95% 0.03 35)"]
+        "tonalRamp": ["#2E0E07", "#4C170C", "#6E2313", "#96331D", "#BE4128", "#E8543B", "#F08A78", "#F9CDC4"]
       },
       "board": {
         "role": "neutral",
-        "displayName": "Board Face",
+        "displayName": "Board Black",
         "canonical": "#0F1215",
-        "tonalRamp": ["oklch(15% 0.006 250)", "oklch(24% 0.007 250)", "oklch(34% 0.008 250)", "oklch(44% 0.008 250)", "oklch(55% 0.008 250)", "oklch(68% 0.007 250)", "oklch(82% 0.005 250)", "oklch(95% 0.003 250)"]
+        "tonalRamp": ["#050708", "#0F1215", "#171C21", "#22282E", "#2E353C", "#454D55", "#6E7780", "#AEB6BD"]
       },
       "gap": {
         "role": "neutral",
-        "displayName": "Cell Void",
+        "displayName": "Cell Gap",
         "canonical": "#050708",
-        "tonalRamp": ["oklch(12% 0.005 250)", "oklch(22% 0.006 250)", "oklch(32% 0.007 250)", "oklch(43% 0.007 250)", "oklch(54% 0.007 250)", "oklch(67% 0.006 250)", "oklch(81% 0.004 250)", "oklch(95% 0.002 250)"]
+        "tonalRamp": ["#020304", "#050708", "#0C1013", "#151A1F", "#232A31", "#3A434C", "#69737C", "#A9B2BA"]
       },
-      "flap-top": {
+      "flap-t1": {
         "role": "neutral",
-        "displayName": "Upper Leaf",
+        "displayName": "Leaf Upper Light",
         "canonical": "#3C434A",
-        "tonalRamp": ["oklch(16% 0.008 250)", "oklch(26% 0.01 250)", "oklch(36% 0.012 250)", "oklch(46% 0.012 250)", "oklch(57% 0.011 250)", "oklch(69% 0.009 250)", "oklch(82% 0.006 250)", "oklch(95% 0.003 250)"]
+        "tonalRamp": ["#0E1114", "#171C21", "#22282E", "#2B3138", "#3C434A", "#5A626A", "#8B939B", "#C6CCD2"]
       },
-      "flap-bottom": {
+      "flap-t2": {
         "role": "neutral",
-        "displayName": "Lower Leaf",
+        "displayName": "Leaf Upper Dark",
+        "canonical": "#2B3138",
+        "tonalRamp": ["#0B0E11", "#131820", "#1D2229", "#2B3138", "#3C434A", "#565E66", "#868E96", "#C2C8CE"]
+      },
+      "flap-b1": {
+        "role": "neutral",
+        "displayName": "Leaf Lower Light",
         "canonical": "#262C32",
-        "tonalRamp": ["oklch(15% 0.008 250)", "oklch(25% 0.01 250)", "oklch(35% 0.011 250)", "oklch(45% 0.011 250)", "oklch(56% 0.01 250)", "oklch(69% 0.008 250)", "oklch(82% 0.006 250)", "oklch(95% 0.003 250)"]
+        "tonalRamp": ["#090C0E", "#111519", "#1B2026", "#262C32", "#353C43", "#4E565E", "#7F878F", "#BEC4CA"]
+      },
+      "flap-b2": {
+        "role": "neutral",
+        "displayName": "Leaf Lower Dark",
+        "canonical": "#171C21",
+        "tonalRamp": ["#05070A", "#0D1115", "#171C21", "#20262C", "#2E353C", "#464E56", "#77808A", "#B8BFC6"]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Bone",
+        "displayName": "Bone Ink",
         "canonical": "#F0EBDD",
-        "tonalRamp": ["oklch(16% 0.012 90)", "oklch(27% 0.016 90)", "oklch(38% 0.019 90)", "oklch(49% 0.021 90)", "oklch(61% 0.022 90)", "oklch(73% 0.022 90)", "oklch(85% 0.021 90)", "oklch(94% 0.019 90)"]
+        "tonalRamp": ["#2A261C", "#433D2E", "#5F5744", "#7E755E", "#A0977F", "#C3BBA5", "#DCD5C3", "#F0EBDD"]
       },
       "ink-2": {
         "role": "neutral",
-        "displayName": "Weathered Bone",
+        "displayName": "Chalk Ink",
         "canonical": "#C3CFC7",
-        "tonalRamp": ["oklch(16% 0.008 165)", "oklch(27% 0.011 165)", "oklch(38% 0.013 165)", "oklch(49% 0.015 165)", "oklch(61% 0.016 165)", "oklch(73% 0.016 165)", "oklch(83% 0.015 165)", "oklch(94% 0.01 165)"]
+        "tonalRamp": ["#1D2622", "#2E3B35", "#42524A", "#5A6C63", "#78897F", "#9AA9A0", "#C3CFC7", "#E4EBE7"]
       },
       "ink-3": {
         "role": "neutral",
-        "displayName": "Faded Bone",
+        "displayName": "Faded Ink",
         "canonical": "#94A69B",
-        "tonalRamp": ["oklch(16% 0.01 160)", "oklch(26% 0.014 160)", "oklch(37% 0.018 160)", "oklch(48% 0.021 160)", "oklch(59% 0.022 160)", "oklch(70% 0.021 160)", "oklch(83% 0.015 160)", "oklch(94% 0.008 160)"]
+        "tonalRamp": ["#161E1A", "#243029", "#35443B", "#4A5C51", "#657A6E", "#94A69B", "#B6C4BC", "#DCE5E0"]
       },
       "wall-ink": {
         "role": "neutral",
-        "displayName": "Painted Wall Text",
+        "displayName": "Wall Ink",
         "canonical": "#DEE9E2",
-        "tonalRamp": ["oklch(17% 0.008 165)", "oklch(28% 0.011 165)", "oklch(39% 0.013 165)", "oklch(50% 0.014 165)", "oklch(62% 0.015 165)", "oklch(74% 0.014 165)", "oklch(86% 0.012 165)", "oklch(95% 0.008 165)"]
+        "tonalRamp": ["#1F2A25", "#31403A", "#465650", "#5F716A", "#7D8F88", "#A3B3AC", "#C4D2CB", "#DEE9E2"]
       },
-      "hardware": {
+      "hw-pin": {
         "role": "neutral",
-        "displayName": "Hardware Steel",
+        "displayName": "Axle Pin Steel",
+        "canonical": "#79838C",
+        "tonalRamp": ["#12161A", "#1E2429", "#2C343B", "#3E474F", "#565F68", "#79838C", "#A3ABB2", "#D2D7DB"]
+      },
+      "hw-screw": {
+        "role": "neutral",
+        "displayName": "Screw Brass-Grey",
         "canonical": "#6E7A72",
-        "tonalRamp": ["oklch(16% 0.006 165)", "oklch(26% 0.008 165)", "oklch(37% 0.01 165)", "oklch(48% 0.011 165)", "oklch(56% 0.011 165)", "oklch(70% 0.01 165)", "oklch(83% 0.007 165)", "oklch(94% 0.004 165)"]
-      }
+        "tonalRamp": ["#11150F", "#1C221D", "#2A322C", "#3C453E", "#535D55", "#6E7A72", "#9AA49D", "#CCD3CE"]
+      },
+      "hw-dk": {
+        "role": "neutral",
+        "displayName": "Hardware Shadow",
+        "canonical": "#272D33",
+        "tonalRamp": ["#090B0D", "#121619", "#1C2126", "#272D33", "#363E45", "#4E5860", "#818B94", "#BFC6CC"]
+      },
+      "shade-0": { "role": "neutral", "displayName": "Shade 0 (grain)", "canonical": "rgba(0,0,0,.022)" },
+      "shade-1": { "role": "neutral", "displayName": "Shade 1 (brush)", "canonical": "rgba(0,0,0,.13)" },
+      "shade-2": { "role": "neutral", "displayName": "Shade 2 (seat)", "canonical": "rgba(0,0,0,.4)" },
+      "shade-3": { "role": "neutral", "displayName": "Shade 3 (cast)", "canonical": "rgba(0,0,0,.55)" },
+      "shade-4": { "role": "neutral", "displayName": "Shade 4 (outline)", "canonical": "rgba(0,0,0,.7)" },
+      "shade-5": { "role": "neutral", "displayName": "Shade 5 (recess)", "canonical": "rgba(0,0,0,.85)" },
+      "sheen-0": { "role": "neutral", "displayName": "Sheen 0 (weave)", "canonical": "rgba(255,255,255,.02)" },
+      "sheen-1": { "role": "neutral", "displayName": "Sheen 1 (lip)", "canonical": "rgba(255,255,255,.05)" },
+      "sheen-2": { "role": "neutral", "displayName": "Sheen 2 (bevel)", "canonical": "rgba(255,255,255,.09)" },
+      "sheen-3": { "role": "neutral", "displayName": "Sheen 3 (highlight)", "canonical": "rgba(255,255,255,.14)" }
     },
     "typographyMeta": {
-      "display": { "displayName": "Flap Glyph", "purpose": "The character inside a flap cell. Sized as a ratio of --c (x1.44), not as a fixed step, so the lead unit runs past a conventional display cap. Always tabular-nums, weight 700." },
-      "headline": { "displayName": "Painted Sentence", "purpose": "The single line painted on the enamel wall below the board." },
-      "title": { "displayName": "Lead Caption", "purpose": "Caption under the lead (days) unit only; one step up from the other captions." },
-      "label": { "displayName": "Board Rail", "purpose": "Rail key/value across the top of the board, and the departed-service line." },
-      "caption": { "displayName": "Unit Caption", "purpose": "Captions under small cell groups and the knob label." }
+      "display": { "displayName": "Flap Character", "purpose": "The characters inside flap cells. Sized off --c, not rem; the only type in the build that exceeds the usual display ceiling." },
+      "headline": { "displayName": "Wall Sentence", "purpose": "The painted sentence at its fluid base size. Never rendered: the element is display:none on the page." },
+      "headline-preview": { "displayName": "Wall Sentence (preview frame)", "purpose": "The sentence at its fixed 32px size inside the 1200x630 link-preview frame, the only place it is visible." },
+      "title": { "displayName": "Lead Caption", "purpose": "The days caption under the lead unit, one step above the other captions." },
+      "label": { "displayName": "Rail / Note", "purpose": "Departure rail key and value, departed-service note." },
+      "label-strong": { "displayName": "Rail Value", "purpose": "The departure timestamp: bold, tabular, chalk ink." },
+      "caption": { "displayName": "Unit Caption", "purpose": "Small unit captions under hours, minutes, seconds, hundredths." }
     },
     "shadows": [
-      { "name": "board-recess", "value": "0 0 0 1px rgba(0,0,0,.7), inset 0 4px 14px rgba(0,0,0,.85), inset 0 14px 24px -14px rgba(0,0,0,.9), inset 0 -2px 0 rgba(255,255,255,.055), 0 1px 0 rgba(255,255,255,.13), 0 3px 7px -2px rgba(0,0,0,.35)", "purpose": "The board set into the wall. Containment ring, inset top falloff, bottom lip light, outside top edge light, short contact drop. Not a reusable card shadow." },
-      { "name": "leaf-upper-edge", "value": "inset 0 1px 0 rgba(255,255,255,.09)", "purpose": "Top highlight on the upper flap leaf." },
-      { "name": "leaf-lower-edge", "value": "inset 0 -1px 0 rgba(0,0,0,.55)", "purpose": "Bottom shade on the lower flap leaf." },
-      { "name": "leaf-cast", "value": "linear-gradient(180deg, rgba(0,0,0,.55), transparent) over the top 24% of the lower half", "purpose": "Shadow the descending leaf throws onto the half beneath, including onto its printed character." },
-      { "name": "hardware-seat", "value": "0 1px 1px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.5)", "purpose": "Screw heads and axle pins seated in their surface." }
+      { "name": "board-recess", "value": "0 0 0 1px rgba(0,0,0,.7), inset 0 4px 14px rgba(0,0,0,.85), inset 0 14px 24px -14px rgba(0,0,0,.85), inset 0 -2px 0 rgba(255,255,255,.05), 0 1px 0 rgba(255,255,255,.14), 0 3px 7px -2px rgba(0,0,0,.4)", "purpose": "The one panel treatment: board set into the enamel wall, not floating on it." },
+      { "name": "leaf-bevel-upper", "value": "inset 0 1px 0 rgba(255,255,255,.09)", "purpose": "Machined top edge of the upper leaf." },
+      { "name": "leaf-bevel-lower", "value": "inset 0 -1px 0 rgba(0,0,0,.55)", "purpose": "Machined bottom edge of the lower leaf." },
+      { "name": "leaf-cast", "value": "linear-gradient(180deg, rgba(0,0,0,.55), transparent) over the top 24% of the lower half", "purpose": "Shadow the upper leaf drops onto the lower half; applied to the printed half too, so the flip reads as lit." },
+      { "name": "hardware-seat-screw", "value": "0 1px 1px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.55)", "purpose": "Seats a 9px corner screw in its hole." },
+      { "name": "hardware-seat-pin", "value": "0 0 0 1px rgba(0,0,0,.7)", "purpose": "Seats an axle pin against the flap housing." },
+      { "name": "falling-leaf", "value": "0 1px 0 rgba(0,0,0,.85)", "purpose": "Hairline under the in-flight leaf only." }
     ],
     "motion": [
-      { "name": "flip-fall", "value": "108ms cubic-bezier(.5,0,.9,.4)", "purpose": "Descending leaf, rotateX 0 to -90deg, opacity cut at the last frame. Web Animations API, not CSS keyframes." },
-      { "name": "flip-land", "value": "230ms cubic-bezier(.18,.72,.3,1)", "purpose": "Ascending leaf, rotateX 90deg to 0. On finish it writes the new character into the static lower half." },
-      { "name": "roll-step", "value": "45ms", "purpose": "Random glyph swap interval while a cell is spinning; 4-8 steps before the final value lands with a real flip." },
-      { "name": "cascade-dest", "value": "18ms per cell", "purpose": "Left-to-right stagger across the two 13-cell destination rows." },
-      { "name": "cascade-clock", "value": "26ms per cell, offset by 468ms", "purpose": "Clock cells land after the destination rows finish." },
-      { "name": "knob-press", "value": "90ms ease-out", "purpose": "Transform, box-shadow and colour on the enamel knob; removed entirely under reduced motion." },
-      { "name": "blur-spin", "value": "blur(calc(var(--c) * .026))", "purpose": "Spinning cell. Applied to the inner glyph, never the housing." },
-      { "name": "blur-fast", "value": "blur(calc(var(--c) * .05))", "purpose": "The permanently spinning hundredths column." }
+      { "name": "leaf-fall", "value": "108ms cubic-bezier(.5,0,.9,.4)", "purpose": "Upper leaf rotating from 0 to -90deg, then cut to opacity 0 at the last frame." },
+      { "name": "leaf-land", "value": "230ms cubic-bezier(.18,.72,.3,1)", "purpose": "Lower leaf swinging up from 90deg with a settle; onfinish writes the new character into the static half." },
+      { "name": "roll-step", "value": "45ms per character, 4-8 steps, staggered 18ms per destination cell and 26ms per clock cell", "purpose": "Rolling cells swap glyphs without animating leaves; only the final character lands with a real flip." },
+      { "name": "spin-blur", "value": "blur(calc(var(--c) * .026)); fast column blur(calc(var(--c) * .05))", "purpose": "Applied to the inner character only. The housing is fixed hardware and stays sharp." },
+      { "name": "reduced-motion", "value": "blur removed; hundredths freeze blank; caption at 42% opacity", "purpose": "The panicking column is exactly what a reduced-motion user switched off. The countdown itself keeps running." }
     ],
     "breakpoints": [
-      { "name": "phone", "value": "max-width: 559px" },
-      { "name": "tablet", "value": "560px - 899px" },
+      { "name": "narrow-phone", "value": "max-width: 559px" },
+      { "name": "tablet", "value": "min-width: 560px and max-width: 899px" },
       { "name": "wide", "value": "min-width: 900px" },
-      { "name": "og-frame", "value": "1200x630 (body.og)" }
+      { "name": "short", "value": "max-height: 800px" },
+      { "name": "narrow-and-short", "value": "max-width: 559px and max-height: 800px" }
     ]
   },
   "components": [
     {
-      "name": "Enamel Knob",
-      "kind": "button",
-      "refersTo": "button-knob",
-      "description": "The only control on the surface. Painted metal fitting screwed to the wall; press feedback is physical displacement.",
-      "html": "<button class=\"ds-knob\" type=\"button\">Prehodiť</button>",
-      "css": ".ds-knob { font-family: 'Archivo Narrow', system-ui, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: #F0EBDD; padding: 9px 16px; border: 0; border-radius: 3px; cursor: pointer; background: linear-gradient(180deg,#2F5A4A,#22453A); box-shadow: 0 2px 0 #173229, 0 4px 8px -2px rgba(0,0,0,.6); transition: transform 90ms ease-out, box-shadow 90ms ease-out, color 90ms ease-out; } .ds-knob:hover { background: linear-gradient(180deg,#376654,#284F42); } .ds-knob:focus-visible { outline: 2px solid #F0EBDD; outline-offset: 4px; } .ds-knob:active { transform: translateY(2px); box-shadow: 0 0 0 #173229, 0 2px 4px -1px rgba(0,0,0,.6); }"
-    },
-    {
-      "name": "Split-Flap Cell",
-      "kind": "custom",
-      "refersTo": "flap-cell",
-      "description": "The signature unit. Fixed housing over a near-black void, two leaf faces meeting at a dead-straight split line, two axle pins on the flanks.",
-      "html": "<div class=\"ds-flap\"><div class=\"ds-flap-t\"><i>8</i></div><div class=\"ds-flap-b\"><i>8</i></div></div>",
-      "css": ".ds-flap { --c: 72px; position: relative; width: var(--c); height: calc(var(--c) * 1.55); font-family: 'Archivo Narrow', system-ui, sans-serif; font-size: calc(var(--c) * 1.44); background: #050708; border-radius: 3px; perspective: 420px; } .ds-flap i { display: block; height: calc(var(--c) * 1.55); line-height: calc(var(--c) * 1.55); text-align: center; font-weight: 700; font-style: normal; color: #F0EBDD; font-variant-numeric: tabular-nums; } .ds-flap-t, .ds-flap-b { position: absolute; left: 0; right: 0; height: calc(var(--c) * 1.55 / 2 - 1px); overflow: hidden; } .ds-flap-t { top: 0; border-radius: 3px 3px 0 0; background: linear-gradient(180deg,#3C434A,#2B3138); box-shadow: inset 0 1px 0 rgba(255,255,255,.09); } .ds-flap-b { bottom: 0; border-radius: 0 0 3px 3px; background: linear-gradient(180deg,#262C32,#171C21); box-shadow: inset 0 -1px 0 rgba(0,0,0,.55); } .ds-flap-b i { margin-top: calc(var(--c) * 1.55 / -2); } .ds-flap-b::after { content: ''; position: absolute; inset: 0 0 auto; height: 24%; background: linear-gradient(180deg,rgba(0,0,0,.55),transparent); } .ds-flap::before, .ds-flap::after { content: ''; position: absolute; z-index: 3; top: 50%; width: calc(var(--c) * .085); height: calc(var(--c) * .085); margin-top: calc(var(--c) * -.0425); border-radius: 50%; background: linear-gradient(180deg,#79838C,#232930); box-shadow: 0 0 0 1px rgba(0,0,0,.7); } .ds-flap::before { left: calc(var(--c) * .05); } .ds-flap::after { right: calc(var(--c) * .05); }"
-    },
-    {
-      "name": "Spinning Cell",
-      "kind": "custom",
-      "refersTo": "flap-cell",
-      "description": "A cell mid-roll: the glyph blurs, the housing stays sharp. The hundredths column lives permanently in this state.",
-      "html": "<div class=\"ds-flap ds-flap-spin\"><div class=\"ds-flap-t\"><i>5</i></div><div class=\"ds-flap-b\"><i>5</i></div></div>",
-      "css": ".ds-flap-spin i { filter: blur(calc(var(--c) * .05)); } @media (prefers-reduced-motion: reduce) { .ds-flap-spin i { filter: none; } }"
-    },
-    {
       "name": "Board Panel",
       "kind": "card",
       "refersTo": "board-panel",
-      "description": "The only container. A dark panel recessed into the enamel wall, screwed at four corners.",
-      "html": "<div class=\"ds-board\"><span class=\"ds-screw ds-screw-tl\"></span><span class=\"ds-screw ds-screw-tr\"></span><span class=\"ds-screw ds-screw-bl\"></span><span class=\"ds-screw ds-screw-br\"></span><div class=\"ds-rail\"><span class=\"ds-rail-k\">Najbližší odchod</span><span class=\"ds-rail-v\">02.09.2026 · 08:00</span></div><div class=\"ds-rule\"></div></div>",
-      "css": ".ds-board { position: relative; width: min(100%,1180px); padding: 30px 34px 24px; font-family: 'Archivo Narrow', system-ui, sans-serif; color: #F0EBDD; background-color: #0F1215; background-image: linear-gradient(180deg,rgba(255,255,255,.045),transparent 90px); border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.7), inset 0 4px 14px rgba(0,0,0,.85), inset 0 14px 24px -14px rgba(0,0,0,.9), inset 0 -2px 0 rgba(255,255,255,.055), 0 1px 0 rgba(255,255,255,.13), 0 3px 7px -2px rgba(0,0,0,.35); } .ds-screw { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: radial-gradient(circle at 35% 30%,#6E7A72,#2B3230 70%); box-shadow: 0 1px 1px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.5); } .ds-screw::after { content: ''; position: absolute; inset: 2px 1px; border-top: 1px solid rgba(0,0,0,.65); transform: rotate(28deg); } .ds-screw-tl { top: 7px; left: 7px; } .ds-screw-tr { top: 7px; right: 7px; } .ds-screw-bl { bottom: 7px; left: 7px; } .ds-screw-br { bottom: 7px; right: 7px; } .ds-rail { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 14px; letter-spacing: .19em; text-transform: uppercase; } .ds-rail-k { color: #94A69B; } .ds-rail-v { color: #C3CFC7; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-rule { height: 1px; background: linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent); margin: 20px 0; }"
+      "description": "The one container in the system: a dark departure board recessed into the enamel wall, screwed down at four corners.",
+      "html": "<div class=\"ds-board\"><span class=\"ds-screw ds-screw--tl\"></span><span class=\"ds-screw ds-screw--tr\"></span><span class=\"ds-screw ds-screw--bl\"></span><span class=\"ds-screw ds-screw--br\"></span><div class=\"ds-rail\"><span class=\"ds-rail-k\">Najbližší odchod</span><span class=\"ds-rail-v\">02.09.2026 · 08:00</span></div><div class=\"ds-hairline\"></div></div>",
+      "css": ".ds-board{position:relative;font-family:\"Archivo Narrow\",system-ui,sans-serif;color:#F0EBDD;background-color:#0F1215;background-image:linear-gradient(180deg,rgba(255,255,255,.05),transparent 90px);border-radius:4px;padding:clamp(18px,3vw,30px) clamp(14px,3vw,34px) clamp(14px,2.4vw,24px);width:min(100%,1180px);box-shadow:0 0 0 1px rgba(0,0,0,.7),inset 0 4px 14px rgba(0,0,0,.85),inset 0 14px 24px -14px rgba(0,0,0,.85),inset 0 -2px 0 rgba(255,255,255,.05),0 1px 0 rgba(255,255,255,.14),0 3px 7px -2px rgba(0,0,0,.4)}.ds-screw{position:absolute;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#6E7A72,#272D33 70%);box-shadow:0 1px 1px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.55)}.ds-screw--tl{top:7px;left:7px}.ds-screw--tr{top:7px;right:7px}.ds-screw--bl{bottom:7px;left:7px}.ds-screw--br{bottom:7px;right:7px}.ds-rail{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase}.ds-rail-k{color:#94A69B}.ds-rail-v{color:#C3CFC7;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-hairline{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);margin:clamp(12px,2.2vw,20px) 0}"
     },
     {
-      "name": "Departed Service Line",
+      "name": "Flap Cell",
+      "kind": "custom",
+      "refersTo": "flap-cell",
+      "description": "The signature component: a fixed 1:1.55 character housing on gap-black, split at the axle line, with two pins and a lit upper half.",
+      "html": "<div class=\"ds-flap\"><div class=\"ds-fh ds-fh--t\"><i>7</i></div><div class=\"ds-fh ds-fh--b\"><i>7</i></div></div>",
+      "css": ".ds-flap{--c:72px;position:relative;width:var(--c);height:calc(var(--c) * 1.55);font-size:calc(var(--c) * 1.44);font-family:\"Archivo Narrow\",system-ui,sans-serif;perspective:420px;background:#050708;border-radius:3px}.ds-flap i{display:block;height:calc(var(--c) * 1.55);line-height:calc(var(--c) * 1.55);text-align:center;font-weight:700;font-style:normal;color:#F0EBDD;font-variant-numeric:tabular-nums}.ds-flap::before,.ds-flap::after{content:\"\";position:absolute;z-index:3;top:50%;width:calc(var(--c) * .085);height:calc(var(--c) * .085);margin-top:calc(var(--c) * -.0425);border-radius:50%;background:linear-gradient(180deg,#79838C,#272D33);box-shadow:0 0 0 1px rgba(0,0,0,.7)}.ds-flap::before{left:calc(var(--c) * .05)}.ds-flap::after{right:calc(var(--c) * .05)}.ds-fh{position:absolute;left:0;right:0;height:calc(var(--c) * 1.55 / 2 - 1px);overflow:hidden}.ds-fh--t{top:0;border-radius:3px 3px 0 0;background:linear-gradient(180deg,#3C434A,#2B3138);box-shadow:inset 0 1px 0 rgba(255,255,255,.09)}.ds-fh--b{bottom:0;border-radius:0 0 3px 3px;background:linear-gradient(180deg,#262C32,#171C21);box-shadow:inset 0 -1px 0 rgba(0,0,0,.55)}.ds-fh--b i{margin-top:calc(var(--c) * 1.55 / -2)}.ds-fh--b::after{content:\"\";position:absolute;inset:0 0 auto;height:24%;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent)}"
+    },
+    {
+      "name": "Spinning Flap Cell",
+      "kind": "custom",
+      "refersTo": "flap-cell",
+      "description": "A rolling cell: characters swap every 45ms and the glyph blurs, while the housing stays sharp. The hundredths column lives permanently in this state.",
+      "html": "<div class=\"ds-flap ds-flap--spin ds-flap--fast\"><div class=\"ds-fh ds-fh--t\"><i>5</i></div><div class=\"ds-fh ds-fh--b\"><i>5</i></div></div>",
+      "css": ".ds-flap--spin i{filter:blur(calc(var(--c) * .026))}.ds-flap--fast i{filter:blur(calc(var(--c) * .05))}@media (prefers-reduced-motion:reduce){.ds-flap--spin i,.ds-flap--fast i{filter:none}}"
+    },
+    {
+      "name": "Time Unit",
+      "kind": "custom",
+      "refersTo": "unit-cap",
+      "description": "A column of flap cells over its uppercase caption. The lead (days) unit uses the larger cell size and the brighter caption.",
+      "html": "<div class=\"ds-unit ds-unit--lead\"><div class=\"ds-cells\"><div class=\"ds-cellbox\">0</div><div class=\"ds-cellbox\">1</div><div class=\"ds-cellbox\">3</div></div><span class=\"ds-cap\">dní</span></div>",
+      "css": ".ds-unit{--c:clamp(70px,24vw,124px);display:flex;flex-direction:column;align-items:center;gap:7px;font-family:\"Archivo Narrow\",system-ui,sans-serif}.ds-cells{display:flex;gap:3px}.ds-cellbox{width:var(--c);height:calc(var(--c) * 1.55);line-height:calc(var(--c) * 1.55);text-align:center;font-size:calc(var(--c) * 1.44);font-weight:700;color:#F0EBDD;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#3C434A,#2B3138) top/100% 50% no-repeat,linear-gradient(180deg,#262C32,#171C21) bottom/100% 50% no-repeat,#050708;border-radius:3px}.ds-cap{font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:#94A69B}.ds-unit--lead .ds-cap{color:#C3CFC7;font-size:clamp(12px,1.7vw,16px)}"
+    },
+    {
+      "name": "Departed-Service Note",
       "kind": "custom",
       "refersTo": "departed-note",
-      "description": "The one place signal red appears: a service that has already left, marked with a plain 26x2px bar.",
+      "description": "The only place the signal colour appears: a short bar and an uppercase line marking the service that has already left.",
       "html": "<p class=\"ds-gone\"><span class=\"ds-gone-x\"></span><span>Prázdniny 2026 · odišlo 01.07.</span></p>",
-      "css": ".ds-gone { margin: 0; display: flex; align-items: center; gap: 9px; font-family: 'Archivo Narrow', system-ui, sans-serif; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: #E8543B; } .ds-gone-x { width: 26px; height: 2px; background: #E8543B; flex: none; }"
+      "css": ".ds-gone{margin:0;display:flex;align-items:center;gap:9px;font-family:\"Archivo Narrow\",system-ui,sans-serif;font-size:clamp(11px,1.5vw,14px);letter-spacing:.14em;text-transform:uppercase;color:#E8543B}.ds-gone-x{width:26px;height:2px;background:#E8543B;flex:none}"
+    },
+    {
+      "name": "Preview Sentence",
+      "kind": "custom",
+      "refersTo": "preview-sentence",
+      "description": "The wall sentence, painted on the enamel. Hidden on the page; visible only inside the 1200x630 link-preview frame.",
+      "html": "<div class=\"ds-wallpatch\"><p class=\"ds-line\">za tento čas ti začína školský rok</p></div>",
+      "css": ".ds-wallpatch{background:#2A5346;padding:24px 16px}.ds-line{margin:0;text-align:center;text-wrap:balance;font-family:\"Archivo Narrow\",system-ui,sans-serif;font-size:32px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#DEE9E2;text-shadow:0 1px 0 rgba(0,0,0,.4)}"
     },
     {
       "name": "Enamel Wall",
       "kind": "custom",
-      "refersTo": null,
-      "description": "The page ground. Lacquer grain, a raking highlight, brush drag and a vignette; never a flat fill.",
-      "html": "<div class=\"ds-wall\"><p class=\"ds-line\">za tento čas ti začína školský rok</p></div>",
-      "css": ".ds-wall { padding: 48px; background-color: #2A5346; background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='e'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.62' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23e)' opacity='0.9'/%3E%3C/svg%3E\"), linear-gradient(101deg,transparent 16%,rgba(255,255,255,.05) 25%,rgba(255,255,255,.085) 30%,transparent 41%), radial-gradient(120% 80% at 50% -12%,rgba(255,255,255,.16),transparent 62%), radial-gradient(70% 55% at 22% 68%,rgba(0,0,0,.13),transparent 70%), repeating-linear-gradient(90deg,rgba(255,255,255,.019) 0 2px,transparent 2px 13px), repeating-linear-gradient(90deg,rgba(0,0,0,.022) 0 3px,transparent 3px 29px), radial-gradient(140% 115% at 50% 50%,transparent 38%,rgba(0,0,0,.5) 100%); background-size: 240px 240px,auto,auto,auto,auto,auto,auto; background-blend-mode: soft-light,normal,normal,normal,normal,normal,normal; } .ds-line { margin: 0; text-align: center; text-wrap: balance; font-family: 'Archivo Narrow', system-ui, sans-serif; font-size: 26px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; color: #DEE9E2; text-shadow: 0 1px 0 rgba(0,0,0,.4); }"
+      "refersTo": "enamel",
+      "description": "The page substrate: one flat institutional green given material by grain, a raking highlight, a brush band, a weave, and a vignette.",
+      "html": "<div class=\"ds-wall\"></div>",
+      "css": ".ds-wall{min-height:220px;background-color:#2A5346;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='e'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.62' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23e)' opacity='0.9'/%3E%3C/svg%3E\"),linear-gradient(101deg,transparent 16%,rgba(255,255,255,.05) 25%,rgba(255,255,255,.09) 30%,transparent 41%),radial-gradient(120% 80% at 50% -12%,rgba(255,255,255,.14),transparent 62%),radial-gradient(70% 55% at 22% 68%,rgba(0,0,0,.13),transparent 70%),repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 2px,transparent 2px 13px),repeating-linear-gradient(90deg,rgba(0,0,0,.022) 0 3px,transparent 3px 29px),radial-gradient(140% 115% at 50% 50%,transparent 38%,rgba(0,0,0,.55) 100%);background-size:240px 240px,auto,auto,auto,auto,auto,auto;background-blend-mode:soft-light,normal,normal,normal,normal,normal,normal}"
+    },
+    {
+      "name": "Focus Ring",
+      "kind": "custom",
+      "refersTo": "rounded.focus",
+      "description": "The global focus-visible treatment. The build currently ships no focusable control, so this is the standing rule for any future one, not a live state.",
+      "html": "<span class=\"ds-focusable\" tabindex=\"0\">focus me</span>",
+      "css": ".ds-focusable{display:inline-block;font-family:\"Archivo Narrow\",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.19em;color:#F0EBDD;background:#0F1215;padding:8px 14px;border-radius:2px}.ds-focusable:focus-visible{outline:2px solid #F0EBDD;outline-offset:4px;border-radius:2px}"
     }
   ],
   "narrative": {
-    "northStar": "The Station Wall",
-    "overview": "One piece of public hardware, photographed head-on. An institutional enamel wall fills the viewport and a dark split-flap board is recessed into it — not floating above it, set into it, with four screws at the corners and a lit top edge where the panel meets the paint. Every character on the board lives in a fixed cell with a visible housing and two axle pins; nothing on this surface is typeset, everything is mounted.\n\nThe system is committed to its palette rather than accented by it: the enamel green carries roughly half the visible surface, the board face carries the rest, bone is the only ink on the board, and a single signal red is reserved for one sentence. There is no third accent, no gradient brand mark, no soft neutral card. Density is tight and mechanical — 2–3px between cells, hairline rules of light rather than borders — while the countdown itself is deliberately enormous, past any usual display cap, because the number is the entire product.\n\nThe refusal is explicit and visible in the build: no centred neon digit block on a black field. Where a clock-face treatment would centre glowing numerals in void, this centres a timetable in a room.",
+    "northStar": "The Pragotron Wall",
+    "overview": "One room, two materials. A painted institutional wall fills the viewport; a dark split-flap departure board is bolted into it with four visible screws. Nothing floats and nothing is decorative for its own sake: every gradient in the build is either the sheen of enamel paint, the recess of a panel into a wall, the bevel of a flap leaf, or the shadow one leaf throws on the one below it. The system is a photograph of hardware, not a UI theme.\n\nDensity is extreme in one direction only. The countdown digits are enormous, far past the usual 6rem display ceiling, because the product is a single number and the reference device is a phone in a chat app's in-app browser. Everything else — the departure rail, the unit captions, the departed-service note — is small, wide-tracked uppercase running along the board's edges, the way real station signage labels its own hardware. Colour is withheld almost entirely: institutional green holds the wall, near-black holds the board, bone ink carries the characters, and one signal orange-red appears on exactly one line.\n\nThe build has no interactive control of any kind. There is no button, no link, no field, no navigation. Reflow of the board and the enormous number is the entire interface. A second surface exists: the 1200×630 link-preview frame, which is not a crop of the page but its own composition, with its own type sizes and its own visible sentence.",
     "keyCharacteristics": [
-      "Two surfaces only: enamel wall, recessed board face.",
-      "Fixed character cells; text is padded with blank cells, never reflowed.",
-      "One typeface, all caps, all tracked, weights 400 and 700 only.",
-      "Depth is entirely inset — recess, bevel, hardware — with no floating elevation.",
-      "Every dimension of the mechanism derives from one custom property, --c."
+      "Two materials only: enamel wall and recessed dark board.",
+      "One accent (signal red-orange), one line of it, ever.",
+      "Uppercase, wide-tracked, tabular Archivo Narrow throughout.",
+      "Every depth cue drawn from a single black/white alpha ramp.",
+      "All geometry calc()ed off one per-unit cell variable.",
+      "No interactive control; nothing hovers, nothing is clickable-looking."
     ],
     "rules": [
-      { "name": "The Signal-For-Departed Rule", "body": "Signal red states one thing only: a service that has already left. It is never a highlight, never a hover, never an error tint, never applied to a digit. If a new surface wants red for emphasis, it does not get red.", "section": "colors" },
-      { "name": "The Two-Surface Rule", "body": "There are exactly two backgrounds in this world: the enamel wall and the board face. New content either mounts onto the board or is painted on the wall. Inventing a third surface — a card, a panel, a tinted well — breaks the room.", "section": "colors" },
-      { "name": "The Fixed Cell Rule", "body": "Board text occupies a fixed number of character cells (destination lines are exactly 13). Shorter strings are centred by padding with blank cells; they never shrink the type, never recentre the row, never wrap.", "section": "typography" },
-      { "name": "The All-Caps Signage Rule", "body": "Every visible string is uppercase and tracked. Weight is 400 or 700 — nothing between, no italics, no third face.", "section": "typography" },
-      { "name": "The --c Rule", "body": "All cell geometry descends from a single per-unit custom property. --cell and --lead are the two source values; each unit assigns one of them to --c, and cell width, cell height, glyph size, axle-pin diameter and spin blur radius are all calc()ed from it. Changing a countdown's scale means changing one number, never a set of paired values.", "section": "layout" },
-      { "name": "The Recess Rule", "body": "New elements are inset or mounted. Outer box-shadow is limited to the board's containment ring and its short contact drop; no ambient card shadow, no glow, no lifted hover.", "section": "elevation" },
-      { "name": "The Fixed Housing Rule", "body": "Motion blur is applied to the inner glyph element only, never to the flap itself. The housing is hardware: it does not blur, scale, or move. Only the character moves.", "section": "elevation" }
+      { "name": "The One-Ramp Rule", "body": "Depth is drawn exclusively from shade-0…shade-5 and sheen-0…sheen-3. A new shadow, bevel, or hairline picks the nearest existing step and never introduces a fresh alpha. If nothing on the ramp fits, the effect is wrong, not the ramp.", "section": "colors" },
+      { "name": "The One Signal Rule", "body": "The signal colour marks the departed service and nothing else. It is never used for emphasis, never for a heading, never for a second element on the same screen. Its rarity is what makes it read as an alarm.", "section": "colors" },
+      { "name": "The Metal Is Not Ink Rule", "body": "Screws and axle pins draw from the hardware tokens, not from the ink tints. Anything that is supposed to be a physical fastener is grey-green metal with a two-stop gradient and a shade-4 seat shadow.", "section": "colors" },
+      { "name": "The Tabular Rule", "body": "Every numeral in the build sets font-variant-numeric: tabular-nums. At 100 updates per second, proportional figures make the layout twitch. This is correctness, not polish.", "section": "typography" },
+      { "name": "The All-Caps Signage Rule", "body": "Every string outside a flap cell is uppercase with tracking between 0.14em and 0.22em. Sentence case appears nowhere on the board; this is signage, and signage shouts quietly.", "section": "typography" },
+      { "name": "The Cell-Derived Type Rule", "body": "Flap type size, line height, pin diameter, and spin blur are all calc() expressions on --c. Never hard-code a font size inside a flap; change --c and the whole unit rescales correctly.", "section": "typography" },
+      { "name": "The No-Scroll Rule", "body": "The board must fit one viewport on the reference device without scrolling. Cell size is bounded by min(vw, vh), not by width alone. 375×667 overflowed by 111px before that bound existed; any change to cell sizing is re-checked at 375×667 first.", "section": "layout" },
+      { "name": "The Reflow-Not-Shrink Rule", "body": "When horizontal space runs out, units move to a new row. They do not scale down. The number is the product; it never gives up size to fit a layout.", "section": "layout" },
+      { "name": "The Recess Rule", "body": "Surfaces sit in the wall, not on it. New panels get an outline plus inset shadow; a drop shadow is only ever the few pixels that seat an object against its substrate. No lifted cards, no hover elevation.", "section": "elevation" },
+      { "name": "The Fixed-Cell Rule", "body": "Character cells never resize to their content. Text is padded into a fixed cell count; empty cells stay visible as blank housings. That is what a mechanical board does and it is the strongest single signal of the world.", "section": "shapes" },
+      { "name": "The Two-Surface Rule", "body": "The page and the 1200×630 link-preview frame are two different compositions from one document, switched by a body.og class: fixed 56/92/34px cells, a narrower board, a tighter column gap, and the sentence made visible. The preview frame is never treated as a crop of the page. Anything that only makes sense once a viewer has arrived belongs on the page; anything that has to work in a chat list, with the board tiny and the digits blurred, belongs in the frame.", "section": "components" },
+      { "name": "The Blurred-Digits Rule", "body": "The preview frame shows no readable time value. The time field is filled with blurred non-numeric glyphs, because a static image would lie about the number every day after it was generated. Remaining time appears in the preview only as whole days, in og:description, rewritten by the daily cron.", "section": "components" },
+      { "name": "The Housing-Is-Fixed Rule", "body": "Motion blur is applied to the inner character element, never to the cell. The housing is bolted hardware and is always sharp; only the character moves.", "section": "components" }
     ],
     "dos": [
-      "Do derive every new mechanism dimension from --c with calc(), and set --c from --cell or --lead — never hard-code a cell width, glyph size, pin size or blur radius.",
-      "Do keep board text in fixed character cells, padded with blanks to the row width.",
-      "Do convey depth by insetting: recess, bevel, 1px light edge, contact drop.",
-      "Do apply motion blur to the inner glyph only; the housing is fixed hardware.",
-      "Do use Web Animations API for the flip so re-triggering cancels and restarts cleanly.",
-      "Do honour prefers-reduced-motion by removing blur and stopping the hundredths entirely rather than slowing them down.",
-      "Do ship type as self-hosted woff2 in fonts/, preloaded, font-display: swap.",
-      "Do treat the phone under 560px as the reference device: reflow to two units per row and raise --cell so digits stay large.",
-      "Do keep every string uppercase and tracked, at weight 400 or 700."
+      "Do derive every flap dimension from --c with calc() — glyph size (1.44), cell height (1.55), pin diameter (.085), spin blur (.026 / .05).",
+      "Do pull every shadow, bevel, and hairline from the shade/sheen ramp; pick the nearest existing step.",
+      "Do set tabular-nums on anything numeric.",
+      "Do re-check 375×667 after any change to cell sizing, board padding, or column gaps.",
+      "Do keep uppercase and 0.14–0.22em tracking on every string outside a flap cell.",
+      "Do treat the preview frame as its own surface with its own type sizes.",
+      "Do keep the wall a single flat green with material supplied by grain, sheen, and vignette."
     ],
     "donts": [
-      "Don't introduce a build step, a package manager, or any dependency. index.html, style.css, main.js and fonts/ are the whole system; anything needing package.json is out of this world by construction.",
-      "Don't cap the countdown at a conventional display size. The lead digits are meant to exceed 6rem; the number is the product.",
-      "Don't spend signal red on anything but a departed service.",
-      "Don't add a third surface colour, a second accent, or a second typeface.",
-      "Don't float anything: no ambient card shadows, no glow, no hover lift.",
-      "Don't let a countdown digit reflow the layout — tabular-nums is mandatory here.",
-      "Don't flip the hundredths. They swap under permanent blur; a leaf cannot fall at 100Hz and faking it reads as a stutter.",
-      "Don't replace the flip with CSS keyframes; a restarted keyframe animation mid-flight leaves a leaf stranded."
+      "Don't introduce a new rgba value for a shadow. If no ramp step fits, the effect is wrong.",
+      "Don't use the signal colour for anything but the departed service.",
+      "Don't shrink units to keep them on one row; reflow instead.",
+      "Don't blur, transform, or animate .flap itself — the housing never moves.",
+      "Don't let a character cell size itself to its content; pad into the fixed cell count.",
+      "Don't add lifted cards or hover elevation; surfaces are recessed into the wall.",
+      "Don't put a readable time value in the preview frame at any granularity finer than days.",
+      "Don't give screws or pins an ink colour; hardware is metal.",
+      "Don't add a build step, a dependency, or a framework — three files, served as-is."
     ]
   }
 }
