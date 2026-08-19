@@ -206,6 +206,34 @@ body{
   text-shadow:0 1px 0 var(--shade-2);
 }
 
+/* --- vykrik zo steny (len na klik) ----------------------------------- */
+.shout{
+  position:fixed;left:var(--sx,50%);top:var(--sy,50%);
+  margin:0;max-width:min(64vw,600px);   /* spolu s rozsahom --sx drzi vykrik cely na obrazovke */
+  transform:translate(-50%,-50%) rotate(var(--sr,-3deg));
+  text-align:center;text-wrap:balance;
+  font-size:clamp(26px,6vw,52px);font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--wall-ink);text-shadow:0 2px 3px var(--shade-5),0 0 14px var(--shade-4);
+  opacity:0;pointer-events:none;
+}
+/* rozostrene zatmavenie pod textom - vykrik pada raz na svetly smalt, raz na
+   klapky, a bez neho sa na hranici tabule strati */
+.shout::before{
+  content:"";position:absolute;z-index:-1;inset:-.6em -1.1em;
+  background:radial-gradient(closest-side,var(--shade-5) 40%,transparent),radial-gradient(closest-side,var(--shade-4) 26%,transparent);
+  filter:blur(14px);
+}
+.shout--on{animation:shout 1.9s cubic-bezier(.2,.9,.3,1) forwards}
+@keyframes shout{
+  0%  {opacity:0;transform:translate(-50%,-50%) rotate(var(--sr,-3deg)) scale(.7)}
+  12% {opacity:1;transform:translate(-50%,-50%) rotate(var(--sr,-3deg)) scale(1.07)}
+  24% {transform:translate(-50%,-50%) rotate(var(--sr,-3deg)) scale(1)}
+  70% {opacity:1}
+  100%{opacity:0;transform:translate(-50%,-50%) rotate(var(--sr,-3deg)) scale(1.12)}
+}
+@keyframes shout-still{0%,100%{opacity:0}10%,72%{opacity:1}}
+
 /* --- ramovanie pre nahlad linku (1200x630) --------------------------- */
 body.og{padding:20px 30px 24px;--cell:56px;--lead:92px}
 body.og .board{width:min(100%,1080px)}
@@ -226,6 +254,7 @@ body.og .line{display:block;font-size:32px}
 }
 
 @media (prefers-reduced-motion:reduce){
+  .shout--on{animation:shout-still 2.2s forwards}   /* vykrik zostane, len neposkoci */
   .flap--spin i,.flap--fast i{filter:none}
   .unit:last-child .cap{opacity:.42}   /* stotiny bezia len s povolenym pohybom */
 }

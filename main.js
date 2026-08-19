@@ -187,6 +187,41 @@ function bell() {
   });
 }
 
+/* --- vykriky zo steny -------------------------------------------------- */
+
+var SHOUTS = [
+  'Sa ti nechce, čo?',
+  'Koniec prázdnin!',
+  'Už žiadny spánok do obeda',
+  'Budíček o pol siedmej',
+  'Kde máš prezúvky?',
+  'Domáca úloha už čaká',
+  'Matika hneď prvú hodinu',
+  'Telefón do skrinky',
+  'Čítanie na leto? Ktoré?',
+  'Ešte pár dní slobody',
+  'Aj tak ťa to nezachráni',
+  'Zvoní! ... ešte nie'
+];
+
+var shoutEl = $('shout');
+var lastShout = -1;
+
+function shout() {
+  var i = (Math.random() * SHOUTS.length) | 0;
+  if (i === lastShout) i = (i + 1) % SHOUTS.length;   // dvakrat po sebe to iste vyzera ako chyba
+  lastShout = i;
+
+  shoutEl.textContent = SHOUTS[i];
+  shoutEl.style.setProperty('--sx', (34 + Math.random() * 32).toFixed(1) + '%');
+  shoutEl.style.setProperty('--sy', (16 + Math.random() * 66).toFixed(1) + '%');
+  shoutEl.style.setProperty('--sr', (Math.random() * 12 - 6).toFixed(1) + 'deg');
+
+  shoutEl.classList.remove('shout--on');
+  void shoutEl.offsetWidth;                          // restart animacie pri rychlom tapkani
+  shoutEl.classList.add('shout--on');
+}
+
 /* --- faza ------------------------------------------------------------- */
 
 var phase = -1;
@@ -315,6 +350,7 @@ if (OG) {
     lastPoke = n;
     cascade();
     bell();
+    shout();
   }
   document.addEventListener('pointerdown', poke);
   // Tabula uz nema viditelny ovladac, tak kaskadu drzi dostupnou aspon klavesnica.
