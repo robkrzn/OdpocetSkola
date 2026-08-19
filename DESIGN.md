@@ -394,7 +394,7 @@ and the digits blurred, belongs in the frame.
 **The Blurred-Digits Rule.** The preview frame shows no readable time value. The time field
 is filled with blurred non-numeric glyphs, because a static image would lie about the number
 every day after it was generated. Remaining time appears in the preview only as whole days,
-in `og:description`, rewritten by the daily cron.
+in `og:title`, rewritten by the daily cron.
 
 **The Housing-Is-Fixed Rule.** Motion blur is applied to the inner character element, never
 to the cell. The housing is bolted hardware and is always sharp; only the character moves.

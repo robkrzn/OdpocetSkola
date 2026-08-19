@@ -58,7 +58,10 @@ agresívne cachujú. Preto:
 - **Veta „za tento čas ti začína školský rok“ žije len tu**, nie na stránke. `.line` je
   `display:none` a zapína sa až v `body.og`. V zozname správ je tabuľa malá, číslice
   rozmazané a nikto ešte neklikol — tam tú vetu treba.
-- **Absolútne URL a počet dní v `og:description` prepisuje `.github/workflows/og.yml`**
+- **Počet dní patrí do `og:title`, nie do `og:description`.** Messenger a Instagram
+  zobrazia v zozname správ z náhľadu len obrázok a titulok — popis zahodia. Vetu
+  „za tento čas ti začína školský rok“ nesie samotný `og.jpg`, titulok teda nesie číslo.
+- **Absolútne URL a počet dní v `og:title` prepisuje `.github/workflows/og.yml`**
   pri každom pushi a raz denne, podľa `github.repository`. Ručne ich needituj.
 - Granularita je v **dňoch**. Jemnejšia by bola klamstvo, náhľad sa nerefreshuje.
 

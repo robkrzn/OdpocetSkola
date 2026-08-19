@@ -59,7 +59,7 @@ ktorý v správe vyzerá ako prázdny odkaz.
 - **Po dosiahnutí nuly** sa odpočet zastaví na nulách a text sa prepne na oznámenie,
   že školský rok už začal. Žiadne záporné hodnoty.
 - **Statický hosting nevie vygenerovať náhľad s aktuálnym časom.** Zostávajúci čas
-  v `og:description` môže byť nanajvýš v **dňoch**, prepisovaný denným cron GitHub
+  v `og:title` môže byť nanajvýš v **dňoch**, prepisovaný denným cron GitHub
   Actionom. Jemnejšia granularita v náhľade by bola klamstvo. Živý čas v náhľade
   by znamenal serverless funkciu mimo GitHub Pages — mimo rozsahu.
 - `og:image` musí byť **absolútna URL** (1200×630); relatívna cesta scraperom nestačí.
@@ -73,7 +73,8 @@ ktorý v správe vyzerá ako prázdny odkaz.
 Žiadna značka, logo ani identita. Záväzné je len:
 
 - veta **„za tento čas ti začína školský rok“** (formulácia od používateľa). Od 19. 8. 2026
-  žije **len v náhľade linku a v `og:title`**, nie na stránke — na obrazovke je redundantná
+  žije **len v náhľade linku — v `og.jpg` a v `<title>`**, nie na stránke; `og:title` nesie
+  počet dní, lebo Messenger popis zahodí. Na obrazovke je veta redundantná
   vedľa cieľa a obrovského čísla, ale v zozname správ nesie celú pointu, kým nikto neklikol,
 - **tón:** hravá škodoradosť medzi kamarátmi — trolljenie, nie urážka.
   Bez nadávok, bez šikany, bez mierenia na konkrétnu osobu alebo školu.
