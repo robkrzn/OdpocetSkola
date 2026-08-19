@@ -64,10 +64,9 @@ ktorý v správe vyzerá ako prázdny odkaz.
   by znamenal serverless funkciu mimo GitHub Pages — mimo rozsahu.
 - `og:image` musí byť **absolútna URL** (1200×630); relatívna cesta scraperom nestačí.
 - **Jazyk: slovenčina**, tykanie. Vrátane skloňovania číseloviek („1 deň / 2 dni / 5 dní“).
-- **Otvorené rozhodnutie:** finálna URL. Zvolený je GitHub Pages default
-  (`https://<user>.github.io/<repo>/`), ale konkrétne meno účtu a repozitára ešte nie sú
-  určené. Musia byť doplnené do meta tagov **pred prvým zdieľaním** — inak sa náhľad
-  nezobrazí a cache uloží nefunkčnú verziu.
+- **URL:** `https://robkrzn.github.io/OdpocetSkola/` (repozitár `robkrzn/OdpocetSkola`,
+  vetva `main`). Absolútne URL v meta tagoch si prepisuje GitHub Action sám podľa
+  `github.repository`, takže sa nerozsypú ani pri premenovaní repozitára.
 
 ## Brand Commitments
 

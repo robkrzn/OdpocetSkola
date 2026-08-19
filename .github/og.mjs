@@ -38,9 +38,9 @@ function set(attr, name, value) {
 }
 
 set('property', 'og:url', base);
-set('property', 'og:image', base + 'og.png');
+set('property', 'og:image', base + 'og.jpg');
 set('property', 'og:description', desc);
-set('name', 'twitter:image', base + 'og.png');
+set('name', 'twitter:image', base + 'og.jpg');
 set('name', 'twitter:description', desc);
 
 writeFileSync('index.html', html);

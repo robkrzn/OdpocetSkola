@@ -43,7 +43,8 @@ a FB/IG si náhľad navyše agresívne cachujú. Preto:
   ktorý prepíše `content` v meta tagoch a commitne. Strop: náhľad je presný
   na jeden deň, nie na minútu — a už rozposlané správy si podržia starú cache.
 - `og:image` musí byť absolútna URL (`https://…`), relatívna cesta scraperom nestačí.
-  Rozmer 1200×630.
+  Rozmer 1200×630, `og.jpg`. JPEG, nie PNG — zrno smaltu sa v PNG nekomprimuje
+  a obrázok narástol na 627 kB, čo je desaťnásobok celej stránky.
 
 Ak by mal náhľad ukazovať naozaj živý čas, znamená to serverless funkciu mimo
 GitHub Pages (napr. Vercel OG). To je iný hosting — riešiť len ak si to používateľ vypýta.

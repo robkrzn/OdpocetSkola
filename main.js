@@ -225,7 +225,7 @@ function cascade() {
 /* --- slucka ----------------------------------------------------------- */
 
 var lastMin = -1;
-var lastTenth = -1;
+var fracFrozen = false;
 
 function write(list, chars) {
   for (var i = 0; i < list.length; i++) {
@@ -253,10 +253,11 @@ function frame() {
   write(minF, digits(m, 2));
   write(secF, digits(s, 2));
 
-  // pri obmedzenom pohybe vzorkujeme stotiny 10x za sekundu namiesto kazdeho snimku
-  var tenth = Math.floor(frac * 10);
-  if (!REDUCE || tenth !== lastTenth) {
-    lastTenth = tenth;
+  if (REDUCE) {
+    // Stlpec, ktory panikari, je presne to, co si pouzivatel s obmedzenym pohybom
+    // vypol. Aj 10 Hz je blikanie, takze bunky zostavaju prazdne a staticke.
+    if (!fracFrozen) { fracFrozen = true; frcF[0].put(' '); frcF[1].put(' '); }
+  } else {
     var hc = digits(Math.floor(frac * 100), 2);
     frcF[0].put(hc[0]);
     frcF[1].put(hc[1]);
@@ -280,20 +281,24 @@ function frame() {
 /* --- OG nahlad: tabula zamrznuta v kaskade ---------------------------- */
 
 if (OG) {
-  // Nahlad linku nesmie tvrdit ziadne konkretne cislo - bolo by od prvej minuty
-  // zastarane. Pole casu je preto v pohybe: tabula dosada zlava doprava a
-  // stotiny su este roztocene na doraz.
+  // Nahlad linku nesmie tvrdit ziadne konkretne cislo - staticky obrazok by ho
+  // klamal kazdy den. V poli casu preto nie je ani jedna cifra: tabula je este
+  // roztocena a dosada zlava doprava. Pocet dni nesie vylucne og:description,
+  // ktory prepisuje denny cron.
   document.body.classList.add('og');
   phase = 0; stop = STOPS[0];
   destFlaps.forEach(function (row, r) {
     var text = pad(stop.dest[r]);
     row.forEach(function (f, i) { f.put(text[i]); });
   });
-  [[dayF, '084', 2.6], [hrsF, '19', 3.8], [minF, '52', 5], [secF, '46', 6.6], [frcF, '73', 9]]
+  [[dayF, 'Ž/W', 9], [hrsF, 'XQ', 5.5], [minF, 'ŤM', 6], [secF, 'WŽ', 6.5], [frcF, 'QX', 7.5]]
     .forEach(function (g) {
       g[0].forEach(function (f, i) {
         f.put(g[1][i]);
-        f.el.style.filter = 'blur(' + g[2] + 'px)';
+        // rozmazany je len znak - puzdro bunky zostava ostre, ako na skutocnej tabuli
+        f.el.querySelectorAll('i').forEach(function (n) {
+          n.style.filter = 'blur(' + g[2] + 'px)';
+        });
       });
     });
   $('capDay').textContent = 'dní';
