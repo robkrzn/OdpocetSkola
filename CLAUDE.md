@@ -62,7 +62,7 @@ agresívne cachujú. Preto:
   zobrazia v zozname správ z náhľadu len obrázok a titulok — popis zahodia. Vetu
   „za tento čas ti začína školský rok“ nesie samotný `og.jpg`, titulok teda nesie číslo.
 - **Absolútne URL a počet dní v `og:title` prepisuje `.github/workflows/og.yml`**
-  pri každom pushi a raz denne, podľa `github.repository`. Ručne ich needituj.
+  pri každom pushi a každé 3 hodiny, podľa `github.repository`. Ručne ich needituj.
 - Granularita je v **dňoch**. Jemnejšia by bola klamstvo, náhľad sa nerefreshuje.
 
 ### Prekreslenie `og.jpg`

@@ -22,8 +22,9 @@ const now = Date.now();
 const next = STOPS.find(s => Date.parse(s.at) > now);
 
 // Nahlad si Facebook aj Instagram cachuju, takze jemnejsia granularita ako dni
-// by bola klamstvo - do minuty by uz nesedela.
-const days = next && Math.ceil((Date.parse(next.at) - now) / 86400000);
+// by bola klamstvo - do minuty by uz nesedela. Floor, nie ceil - tabula na stranke
+// pocita dni tiez floorom a nahlad musi hlasit to iste cislo.
+const days = next && Math.floor((Date.parse(next.at) - now) / 86400000);
 
 // Messenger a IG v zozname sprav zobrazia z nahladu len titulok, takze pocet dni
 // patri tam. Vetu "za tento čas ti začína školský rok" uz nesie samotny og.jpg.
