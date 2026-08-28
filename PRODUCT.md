@@ -51,8 +51,8 @@ ktorý v správe vyzerá ako prázdny odkaz.
 
 ## Capabilities and Constraints
 
-- **Cieľový okamih:** 2. 9. 2026, 08:00 Europe/Bratislava (`2026-09-02T08:00:00+02:00`).
-  1. 9. 2026 je Deň Ústavy SR — štátny sviatok, vyučovanie začína až v stredu.
+- **Cieľový okamih:** 1. 9. 2026, 07:50 Europe/Bratislava (`2026-09-01T07:50:00+02:00`).
+  Deň Ústavy SR už nie je dňom pracovného pokoja, vyučovanie začína priamo 1. 9.
   Zapísané ako **jedna konštanta**, nie ako počítaná logika: jednorazovka na rok 2026.
 - **Stotiny** znamenajú ~100 aktualizácií za sekundu → `requestAnimationFrame`,
   nie `setInterval`. Číslice v `tabular-nums`, inak layout poskakuje pri každom ticku.

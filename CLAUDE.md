@@ -20,7 +20,7 @@ pracovná príručka — neduplikuj sem ich obsah.
 
 **Cieľové okamihy sú pole `STOPS` na začiatku `main.js`** — dva, nie jeden:
 ```js
-{ at: '2026-09-02T08:00:00+02:00', ... }   // 1.9. je štátny sviatok, škola začína v stredu
+{ at: '2026-09-01T07:50:00+02:00', ... }   // Deň Ústavy SR už nie je dňom pracovného pokoja
 { at: '2027-03-17T08:00:00+01:00', ... }   // Testovanie 9; marec je ešte zimný čas
 ```
 Vždy s explicitným offsetom — bez neho ukazuje odpočet iný čas návštevníkovi v inom

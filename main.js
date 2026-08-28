@@ -4,10 +4,10 @@
 // iny cas navstevnikovi v inom casovom pasme.
 var STOPS = [
   {
-    at: '2026-09-02T08:00:00+02:00',      // 1.9. je Den Ustavy SR, vyucovanie zacina v stredu
+    at: '2026-09-01T07:50:00+02:00',      // Den Ustavy SR uz nie je den pracovneho pokoja, skola zacina 1.9.
     dest: ['ŠKOLSKÝ ROK', '2026/2027'],
     name: 'Školský rok 2026/2027',
-    rail: '02.09.2026 · 08:00',
+    rail: '01.09.2026 · 07:50',
     line: 'za tento čas ti začína školský rok'
   },
   {
@@ -21,7 +21,7 @@ var STOPS = [
 
 var DEPARTED = [
   'Prázdniny 2026 · odišlo 01.07.',
-  'Školský rok 2026/2027 · odišlo 02.09.',
+  'Školský rok 2026/2027 · odišlo 01.09.',
   'Testovanie 9 · odišlo 17.03.'
 ];
 

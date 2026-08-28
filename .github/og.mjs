@@ -12,7 +12,7 @@ const base = repo.toLowerCase() === owner.toLowerCase() + '.github.io'
 
 // Musi sedet s STOPS v main.js.
 const STOPS = [
-  { at: '2026-09-02T08:00:00+02:00', what: 'začiatku školského roka' },
+  { at: '2026-09-01T07:50:00+02:00', what: 'začiatku školského roka' },
   { at: '2027-03-17T08:00:00+01:00', what: 'Testovania 9' }
 ];
 
