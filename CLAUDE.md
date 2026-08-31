@@ -1,4 +1,7 @@
-# Odpočet do začiatku školského roka
+# Odpočet — tabuľa + WhatsApp pripomienka
+
+Dva výstupy z jedného odpočtu: statická tabuľa na GitHub Pages a denná WhatsApp
+pripomienka cez Actions. Prevádzkové príkazy, secrets a Meta sú v `README.md`.
 
 Jednostránkový statický odpočet v podobe klapkovej odchodovej tabule. Obrovské číslice
 **dni : hodiny : minúty : sekundy : stotiny** a nič iné — žiadny sprievodný text,
@@ -10,7 +13,8 @@ pracovná príručka — neduplikuj sem ich obsah.
 
 ## Stack
 
-- `index.html`, `style.css`, `main.js`, `fonts/`, `og.jpg` — nič viac.
+- Tabuľa: `index.html`, `style.css`, `stops.js`, `main.js`, `fonts/`, `og.jpg`.
+- Pripomienka: `send.js` + `.github/workflows/daily.yml`. Čistý Node, bez závislostí.
 - **Žiadny framework, žiadny build step.** GitHub Pages servíruje repo priamo.
 - **Plain CSS, nie SCSS.** Natívne CSS vie vnorenie aj premenné a nepotrebuje kompiláciu.
 - Bez závislostí. Bez npm. Ak niečo vyžaduje `package.json`, je to skoro isto zlá cesta.
@@ -18,7 +22,7 @@ pracovná príručka — neduplikuj sem ich obsah.
 
 ## Kľúčové rozhodnutia
 
-**Cieľové okamihy sú pole `STOPS` na začiatku `main.js`** — dva, nie jeden:
+**Cieľové okamihy sú pole `STOPS` v `stops.js`** — dva, nie jeden:
 ```js
 { at: '2026-09-01T07:50:00+02:00', ... }   // Deň Ústavy SR už nie je dňom pracovného pokoja
 { at: '2027-03-17T08:00:00+01:00', ... }   // Testovanie 9; marec je ešte zimný čas
@@ -26,7 +30,16 @@ pracovná príručka — neduplikuj sem ich obsah.
 Vždy s explicitným offsetom — bez neho ukazuje odpočet iný čas návštevníkovi v inom
 pásme. Keď prvý termín prejde, tabuľa prebehne kaskádou a prehodí sa na druhý; po
 druhom skončí na `ŽIADNE ĎALŠIE ODCHODY`. Žiadne záporné čísla.
-Ak meníš dátumy, **rovnaké termíny sú aj v `.github/og.mjs`** — musia sedieť.
+
+**`stops.js` je jediný zdroj — nikdy nekopíruj termín inam.** Číta ho tabuľa
+(`<script>` pred `main.js`), `.github/og.mjs` aj `send.js` (cez `module.exports`
+na konci súboru; `import`/`require` fungujú, lebo repo nemá `package.json`).
+Predtým boli tri kópie v dvoch repozitároch a už raz si začali protirečiť —
+tabuľa hlásila „Testovanie 9", správa „Monitora".
+
+**Texty viazané na zastávku patria k zastávke**, nie do `main.js`: `dest`, `name`,
+`rail`, `line`, `what` (2. pád do „Do … zostáva") a `shouts`. Výkriky sú per-zastávka
+zámerne — „Koniec prázdnin!" po 1. 9. už nedáva zmysel.
 
 **Stotiny → `requestAnimationFrame`, nie `setInterval`.** Interval driftuje a pri
 100 tickoch/s páli batériu. rAF sa navyše sám pozastaví na skrytom tabe.
@@ -34,6 +47,10 @@ Ak meníš dátumy, **rovnaké termíny sú aj v `.github/og.mjs`** — musia se
 **Stotiny sa nikdy nepreklopia.** Menia sa rýchlejšie, než stihne lístok spadnúť, tak
 sa znak len prehadzuje pod trvalým rozmazaním. Pri `prefers-reduced-motion` zamrznú
 prázdne — práve ten panikáriaci stĺpec si používateľ vypol.
+
+**`<title>`, `description` a `og:image:alt` nesmú byť statické.** Menia sa so
+zastávkou, prepisuje ich `og.mjs`. Živému návštevníkovi navyše nastaví titulok
+`paintTexts()` hneď, lebo cron beží až raz za 3 h.
 
 **Šírka číslic:** `font-variant-numeric: tabular-nums`. Povinné, nie kozmetika.
 
@@ -67,11 +84,24 @@ agresívne cachujú. Preto:
 
 ### Prekreslenie `og.jpg`
 
-`og.jpg` je screenshot `index.html?og=1` v 1200×630. **Po každej vizuálnej zmene ho
-treba prekresliť**, inak náhľad ukazuje starý dizajn. Potrebuješ headless prehliadač
-(Edge aj Chrome sú na tomto stroji) a **lokálny http server** — cez `file://` sa
+`og.jpg` je screenshot `index.html?og=1` v 1200×630. **Prekresľuje ho `og.yml` sám**
+pri každom behu (headless Chrome + `python3 -m http.server`). Render je deterministický,
+takže sa commitne len skutočná zmena — v praxi pri preklopení zastávky alebo po zmene
+dizajnu. Ručne do súboru nesiahaj, prepíše ťa cron.
+
+Lokálny kontrolný screenshot potrebuje **lokálny http server** — cez `file://` sa
 `fonts/archivo-narrow-latin-ext.woff2` neuloží kvôli CORS a Š/Č/Ž/Ľ/Ť vypadnú na
-náhradný font. To isté platí pre akýkoľvek kontrolný screenshot.
+náhradný font:
+
+```bash
+python3 -m http.server 8765 &
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+  --hide-scrollbars --window-size=1200,630 --screenshot=/tmp/og.png \
+  "http://localhost:8765/index.html?og=1"
+```
+
+**OG náhľad berie zastávku z hodín, nie natvrdo nultú.** Mal tam `phase = 0` a po
+1. 9. by obrázok tvrdil školský rok, kým `og:title` nad ním už hlási Testovanie 9.
 
 JPEG, nie PNG: zrno smaltu sa v PNG nekomprimuje a obrázok narástol na 627 kB, čo je
 desaťnásobok celej stránky.
@@ -79,11 +109,27 @@ desaťnásobok celej stránky.
 Živý čas v náhľade by znamenal serverless funkciu mimo GitHub Pages. Iný hosting —
 riešiť len ak si to používateľ vypýta.
 
+## WhatsApp pripomienka
+
+`send.js` posiela cez Meta Cloud API template `odpocet_pripomienka` s dvoma premennými
+(cieľ, odpočet); zvyšok textu aj URL tlačidlo sú v template, nie v kóde. Beží denne
+o 15:00 Europe/Bratislava.
+
+**Actions cron mešká, aj hodiny.** Preto sa `send.js` neriadi hodinou behu, ale
+`SCHEDULE` (`github.event.schedule`) — tá povie, ktorý z dvoch cronov beh spustil,
+a meškaním sa nemení. Meškajúci beh dobehne do 21:59, potom sa zahodí.
+
+Po každej zmene `send.js` alebo `stops.js`: `node send.js --test` (20+ assertov —
+skloňovanie, prepínanie zastávok, letný/zimný čas, okno odoslania, parsovanie chýb Mety).
+
+Secrets, Meta konzola a ručné odoslanie sú v `README.md`.
+
 ## Deploy
 
 GitHub Pages z koreňa vetvy `main`, repozitár `robkrzn/OdpocetSkola`, adresa
 `https://robkrzn.github.io/OdpocetSkola/`. Žiadny build → žiadny deploy workflow.
-Súbory v repe = súbory na webe.
+Súbory v repe = súbory na webe. `send.js` a `stops.js` sa tým pádom servírujú tiež —
+neobsahujú nič tajné, secrets sú v GitHube.
 
 ## Štýl práce
 

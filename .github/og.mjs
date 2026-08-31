@@ -1,6 +1,7 @@
 // Prepise absolutne URL v meta tagoch podla mena repozitara a doplni pocet dni
 // do og:title. Bezi len v GitHub Actions - lokalne netreba nic spustat.
 import { readFileSync, writeFileSync } from 'node:fs';
+import STOPS from '../stops.js';
 
 const [owner, repo] = (process.env.REPO || '').split('/');
 if (!owner || !repo) throw new Error('chyba premenna REPO (owner/repo)');
@@ -9,12 +10,6 @@ if (!owner || !repo) throw new Error('chyba premenna REPO (owner/repo)');
 const base = repo.toLowerCase() === owner.toLowerCase() + '.github.io'
   ? `https://${owner.toLowerCase()}.github.io/`
   : `https://${owner.toLowerCase()}.github.io/${repo}/`;
-
-// Musi sedet s STOPS v main.js.
-const STOPS = [
-  { at: '2026-09-01T07:50:00+02:00', what: 'začiatku školského roka' },
-  { at: '2027-03-17T08:00:00+01:00', what: 'Testovania 9' }
-];
 
 const pl = (n, one, few, many) => (n === 1 ? one : n >= 2 && n <= 4 ? few : many);
 
@@ -35,6 +30,17 @@ const desc = next
   ? 'Klapková odchodová tabuľa. Odpočet beží na stotiny.'
   : 'Tabuľa nemá ďalší odchod.';
 
+// <title>, description a og:image:alt boli natvrdo o skolskom roku. Po prvom
+// odchode by klamali, tak ich prepisuje ten isty beh ako og:title.
+const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+const pageTitle = next ? cap(next.line) : 'Odpočet skončil';
+const pageDesc = next
+  ? `Odpočet do ${next.what} na dni, hodiny, minúty, sekundy a stotiny.`
+  : 'Odpočet skončil. Tabuľa nemá ďalší odchod.';
+const imgAlt = next
+  ? `Klapková odchodová tabuľa s odpočtom do ${next.what}.`
+  : 'Klapková odchodová tabuľa po poslednom odchode.';
+
 let html = readFileSync('index.html', 'utf8');
 
 function set(attr, name, value) {
@@ -43,6 +49,12 @@ function set(attr, name, value) {
   html = html.replace(re, `$1${value}$2`);
 }
 
+const reTitle = /(<title>)[^<]*(<\/title>)/;
+if (!reTitle.test(html)) throw new Error('<title> sa nenasiel');
+html = html.replace(reTitle, `$1${pageTitle}$2`);
+
+set('name', 'description', pageDesc);
+set('property', 'og:image:alt', imgAlt);
 set('property', 'og:url', base);
 set('property', 'og:image', base + 'og.jpg');
 set('property', 'og:title', title);
@@ -52,4 +64,4 @@ set('name', 'twitter:title', title);
 set('name', 'twitter:description', desc);
 
 writeFileSync('index.html', html);
-console.log(`${base}\n${title}\n${desc}`);
+console.log(`${base}\n${pageTitle}\n${title}\n${desc}`);

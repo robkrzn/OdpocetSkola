@@ -25,9 +25,25 @@ jobs:
           REPO: ${{ github.repository }}
         run: node .github/og.mjs
 
+      # Klapky v og.jpg sa musia prehodiť spolu s meta tagmi. Bez toho obrázok
+      # tvrdí školský rok, kým titulok nad ním už hlási Testovanie 9.
+      # Render je deterministický, takže diff nižšie commitne len skutočnú zmenu.
+      - name: Prekresliť og.jpg
+        run: |
+          command -v convert >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick; }
+          # Cez file:// sa woff2 neuloží kvôli CORS a Š/Č/Ž/Ľ/Ť vypadnú na náhradný font.
+          python3 -m http.server 8765 &
+          sleep 2
+          google-chrome --headless --disable-gpu --no-sandbox --hide-scrollbars \
+            --virtual-time-budget=3000 --window-size=1200,630 \
+            --screenshot=og.png "http://127.0.0.1:8765/index.html?og=1"
+          # JPEG, nie PNG: zrno smaltu sa v PNG nekomprimuje a obrázok narastie na šesťnásobok.
+          convert og.png -quality 82 og.jpg
+          rm og.png
+
       - name: Commitnúť, ak sa niečo zmenilo
         run: |
-          git add index.html
+          git add index.html og.jpg
           if git diff --cached --quiet; then
             echo "náhľad je aktuálny, netreba commit"
             exit 0

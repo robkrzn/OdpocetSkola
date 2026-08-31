@@ -32,6 +32,17 @@ Jedna obrazovka s obrovským odpočtom do začiatku školského roka —
 Úspech = príjemca otvorí link, pochopí vtip do dvoch sekúnd a pošle ho ďalej.
 Nie je to nástroj ani služba; je to pointa v tvare webstránky.
 
+## Druhý výstup: denná WhatsApp pripomienka
+
+Ten istý odpočet chodí raz denne o 15:00 na WhatsApp ako správa s odkazom na tabuľu.
+Publikum je iné a užšie — **Paulinka a Robert**, nie náhodný príjemca linku. Tu nejde
+o vtip v zozname správ, ale o pripomenutie, že sa termín blíži. Tón zostáva rovnaký:
+škodoradosť medzi svojimi, nie strašenie.
+
+Beží na GitHub Actions cez Meta Cloud API. Text správy je v schválenom template,
+kód posiela len dve premenné (cieľ, odpočet) — meniť formuláciu znamená meniť template
+v Mete, nie kód.
+
 ## Positioning
 
 Payload nesie **náhľad linku, nie stránka**. Vtip musí zafungovať už v zozname správ,
@@ -46,18 +57,23 @@ ktorý v správe vyzerá ako prázdny odkaz.
   správy si podržia starú verziu náhľadu aj po zmene meta tagov.
 - Prevažne **mobil, na výšku, in-app prehliadač** (obmedzený viewport, žiadna adresná lišta,
   často aj tmavý režim systému). Toto je referenčné zariadenie, nie desktop.
-- **Sezónna relevancia:** posledné týždne prázdnin 2026. Po 2.9.2026 je stránka
-  už len archív vlastného vtipu.
+- **Sezónna relevancia:** tabuľa nekončí prvým septembrom. Po odchode školského roka
+  sa sama prehodí na **Testovanie 9 (17. 3. 2027)** a beží ďalej — vtip sa zo
+  škodoradosti nad koncom prázdnin mení na škodoradosť nad blížiacim sa testom.
+  Archívom sa stáva až po 17. 3. 2027.
 
 ## Capabilities and Constraints
 
-- **Cieľový okamih:** 1. 9. 2026, 07:50 Europe/Bratislava (`2026-09-01T07:50:00+02:00`).
-  Deň Ústavy SR už nie je dňom pracovného pokoja, vyučovanie začína priamo 1. 9.
-  Zapísané ako **jedna konštanta**, nie ako počítaná logika: jednorazovka na rok 2026.
+- **Cieľové okamihy sú dva**, zapísané ako konštanty v `stops.js`, nie ako počítaná logika:
+  1. 9. 2026, 07:50 (`2026-09-01T07:50:00+02:00`) — Deň Ústavy SR už nie je dňom
+  pracovného pokoja, vyučovanie začína priamo 1. 9.; a 17. 3. 2027, 08:00
+  (`2027-03-17T08:00:00+01:00`) — Testovanie 9, marec je ešte zimný čas.
+  `stops.js` je **jediný zdroj pre tabuľu, náhľad linku aj WhatsApp pripomienku**.
 - **Stotiny** znamenajú ~100 aktualizácií za sekundu → `requestAnimationFrame`,
   nie `setInterval`. Číslice v `tabular-nums`, inak layout poskakuje pri každom ticku.
-- **Po dosiahnutí nuly** sa odpočet zastaví na nulách a text sa prepne na oznámenie,
-  že školský rok už začal. Žiadne záporné hodnoty.
+- **Po dosiahnutí nuly** sa tabuľa prehodí na ďalšiu zastávku; po poslednej skončí na
+  `ŽIADNE ĎALŠIE ODCHODY`. Žiadne záporné hodnoty. Všetky texty viazané na zastávku
+  (`<title>`, description, `og:*`, veta, výkriky, aj obrázok `og.jpg`) sa prepínajú s ňou.
 - **Statický hosting nevie vygenerovať náhľad s aktuálnym časom.** Zostávajúci čas
   v `og:title` môže byť nanajvýš v **dňoch**, prepisovaný denným cron GitHub
   Actionom. Jemnejšia granularita v náhľade by bola klamstvo. Živý čas v náhľade
@@ -72,10 +88,12 @@ ktorý v správe vyzerá ako prázdny odkaz.
 
 Žiadna značka, logo ani identita. Záväzné je len:
 
-- veta **„za tento čas ti začína školský rok“** (formulácia od používateľa). Od 19. 8. 2026
+- **väzba „za tento čas ti začína …“** (formulácia od používateľa). Od 19. 8. 2026
   žije **len v náhľade linku — v `og.jpg` a v `<title>`**, nie na stránke; `og:title` nesie
   počet dní, lebo Messenger popis zahodí. Na obrazovke je veta redundantná
-  vedľa cieľa a obrovského čísla, ale v zozname správ nesie celú pointu, kým nikto neklikol,
+  vedľa cieľa a obrovského čísla, ale v zozname správ nesie celú pointu, kým nikto neklikol.
+  Doplnok sa mení so zastávkou (`line` v `stops.js`): „…školský rok“ → „…Testovanie 9“;
+  samotná väzba je záväzná, dopĺňaný cieľ nie,
 - **tón:** hravá škodoradosť medzi kamarátmi — trolljenie, nie urážka.
   Bez nadávok, bez šikany, bez mierenia na konkrétnu osobu alebo školu.
 

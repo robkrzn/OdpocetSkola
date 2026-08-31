@@ -7,8 +7,9 @@
 <meta name="description" content="Odpočet do začiatku školského roka na dni, hodiny, minúty, sekundy a stotiny.">
 <meta name="theme-color" content="#2A5346">
 
-<!-- Absolútne URL a počet dní v og:title prepisuje .github/workflows/og.yml
-     pri každom pushi a raz denne. Ručne tu netreba nič meniť. -->
+<!-- Absolútne URL, počet dní a názov najbližšej zastávky v <title>, description,
+     og:* a twitter:* prepisuje .github/workflows/og.yml pri každom pushi a každé
+     3 h. Ručne tu netreba nič meniť - termíny sú v stops.js. -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sk_SK">
 <meta property="og:site_name" content="Odchodová tabuľa">
@@ -94,6 +95,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </main>
 <!-- Výkrik zo steny - jeden element, text a pozíciu mu dá klik. -->
 <p class="shout" id="shout" aria-hidden="true"></p>
+<script src="stops.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

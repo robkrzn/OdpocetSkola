@@ -1,23 +1,6 @@
 /* Odchodova tabula. Jedna hodnota (zostavajuci cas) riadi cele pole. */
 
-// Cielove okamihy. Vzdy s explicitnym offsetom - bez neho by odpocet ukazoval
-// iny cas navstevnikovi v inom casovom pasme.
-var STOPS = [
-  {
-    at: '2026-09-01T07:50:00+02:00',      // Den Ustavy SR uz nie je den pracovneho pokoja, skola zacina 1.9.
-    dest: ['ŠKOLSKÝ ROK', '2026/2027'],
-    name: 'Školský rok 2026/2027',
-    rail: '01.09.2026 · 07:50',
-    line: 'za tento čas ti začína školský rok'
-  },
-  {
-    at: '2027-03-17T08:00:00+01:00',      // marec je este zimny cas, preto +01:00
-    dest: ['TESTOVANIE 9', '17.03.2027'],
-    name: 'Testovanie 9',
-    rail: '17.03.2027 · 08:00',
-    line: 'za tento čas ti začína Testovanie 9'
-  }
-];
+// STOPS prichadza zo stops.js - nacitaneho <script>-om pred tymto suborom.
 
 var DEPARTED = [
   'Prázdniny 2026 · odišlo 01.07.',
@@ -29,7 +12,13 @@ var CLOSED = {
   dest: ['ŽIADNE ĎALŠIE', 'ODCHODY'],
   name: 'žiadny ďalší odchod',
   rail: '—',
-  line: 'tabuľa končí prevádzku · viac odchodov nemám'
+  line: 'tabuľa končí prevádzku · viac odchodov nemám',
+  shouts: [
+    'Tabuľa má padla.',
+    'Choď sa učiť aj tak',
+    'Ďalší odchod? Žiadny.',
+    'Toto je koniec, naozaj'
+  ]
 };
 
 var LINE_W = 13;                       // pevny pocet znakovych buniek v cielovom riadku
@@ -189,30 +178,18 @@ function bell() {
 
 /* --- vykriky zo steny -------------------------------------------------- */
 
-var SHOUTS = [
-  'Sa ti nechce, čo?',
-  'Koniec prázdnin!',
-  'Už žiadny spánok do obeda',
-  'Budíček o pol siedmej',
-  'Kde máš prezúvky?',
-  'Domáca úloha už čaká',
-  'Matika hneď prvú hodinu',
-  'Telefón do skrinky',
-  'Čítanie na leto? Ktoré?',
-  'Ešte pár dní slobody',
-  'Aj tak ťa to nezachráni',
-  'Zvoní! ... ešte nie'
-];
+// Vykriky su v stops.js pri svojej zastavke - "Koniec prázdnin!" po 1.9. uz nedava zmysel.
 
 var shoutEl = $('shout');
 var lastShout = -1;
 
 function shout() {
-  var i = (Math.random() * SHOUTS.length) | 0;
-  if (i === lastShout) i = (i + 1) % SHOUTS.length;   // dvakrat po sebe to iste vyzera ako chyba
+  var list = (stop || CLOSED).shouts;
+  var i = (Math.random() * list.length) | 0;
+  if (i === lastShout) i = (i + 1) % list.length;    // dvakrat po sebe to iste vyzera ako chyba
   lastShout = i;
 
-  shoutEl.textContent = SHOUTS[i];
+  shoutEl.textContent = list[i];
   shoutEl.style.setProperty('--sx', (34 + Math.random() * 32).toFixed(1) + '%');
   shoutEl.style.setProperty('--sy', (16 + Math.random() * 66).toFixed(1) + '%');
   shoutEl.style.setProperty('--sr', (Math.random() * 12 - 6).toFixed(1) + 'deg');
@@ -227,17 +204,30 @@ function shout() {
 var phase = -1;
 var stop = null;
 
-function switchPhase(p) {
-  phase = p;
-  stop = STOPS[p] || null;
+/** Prva zastavka v buducnosti. Rovnaky vypocet potrebuje slucka aj OG nahlad. */
+function phaseAt(now) {
+  var p = 0;
+  while (p < STOPS.length && STOPS[p].ms <= now) p++;
+  return p;
+}
+
+/** Vsetky texty tabule okrem klapiek. Vola to slucka pri prepnuti aj OG nahlad. */
+function paintTexts() {
   var view = stop || CLOSED;
 
   $('departAt').textContent = view.rail;
   document.querySelector('.rail__k').textContent = stop ? 'Najbližší odchod' : 'Prevádzka ukončená';
-  $('goneText').textContent = DEPARTED[p] || DEPARTED[DEPARTED.length - 1];
+  $('goneText').textContent = DEPARTED[phase] || DEPARTED[DEPARTED.length - 1];
   $('line').textContent = view.line;
-  $('destSr').textContent = 'Cieľ: ' + (stop ? stop.name : view.name) + '.';
+  $('destSr').textContent = 'Cieľ: ' + view.name + '.';
+  // Meta tagy prepisuje og.mjs az raz za 3 h; ziviemu navstevnikovi musi titulok sediet hned.
+  document.title = view.line.charAt(0).toUpperCase() + view.line.slice(1);
+}
 
+function switchPhase(p) {
+  phase = p;
+  stop = STOPS[p] || null;
+  paintTexts();
   cascade();
 }
 
@@ -271,8 +261,7 @@ function write(list, chars) {
 
 function frame() {
   var now = Date.now();
-  var p = 0;
-  while (p < STOPS.length && STOPS[p].ms <= now) p++;
+  var p = phaseAt(now);
   if (p !== phase) switchPhase(p);
 
   var ms = stop ? Math.max(0, stop.ms - now) : 0;
@@ -318,12 +307,16 @@ function frame() {
 if (OG) {
   // Nahlad linku nesmie tvrdit ziadne konkretne cislo - staticky obrazok by ho
   // klamal kazdy den. V poli casu preto nie je ani jedna cifra: tabula je este
-  // roztocena a dosada zlava doprava. Pocet dni nesie vylucne og:description,
-  // ktory prepisuje denny cron.
+  // roztocena a dosada zlava doprava. Pocet dni nesie vylucne og:title,
+  // ktory prepisuje cron kazde 3 h.
   document.body.classList.add('og');
-  phase = 0; stop = STOPS[0];
+  // Zastavka sa berie z hodin, nie natvrdo z nuly - inak by obrazok po 1.9. stale
+  // ukazoval skolsky rok, kym titulok nad nim uz hlasi Testovanie 9.
+  phase = phaseAt(Date.now());
+  stop = STOPS[phase] || null;
+  paintTexts();
   destFlaps.forEach(function (row, r) {
-    var text = pad(stop.dest[r]);
+    var text = pad((stop || CLOSED).dest[r] || '');
     row.forEach(function (f, i) { f.put(text[i]); });
   });
   [[dayF, 'Ž/W', 9], [hrsF, 'XQ', 5.5], [minF, 'ŤM', 6], [secF, 'WŽ', 6.5], [frcF, 'QX', 7.5]]

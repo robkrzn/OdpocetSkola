@@ -1,0 +1,25 @@
+name: WhatsApp pripomienka
+
+on:
+  schedule:
+    # Cron je v UTC. 13:00 = 15:00 letný čas, 14:00 = 15:00 zimný čas.
+    # Bežíme oba a send.js zahodí ten nesprávny.
+    - cron: "0 13 * * *"
+    - cron: "0 14 * * *"
+  workflow_dispatch: # ručné spustenie tlačidlom v Actions
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node send.js ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+        env:
+          WA_TOKEN: ${{ secrets.WA_TOKEN }}
+          WA_PHONE_ID: ${{ secrets.WA_PHONE_ID }}
+          WA_TO: ${{ secrets.WA_TO }}
+          # Ktory cron beh spustil - preziva meskanie GitHubu, hodina behu nie.
+          SCHEDULE: ${{ github.event.schedule }}
