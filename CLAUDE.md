@@ -11,6 +11,31 @@ Jednostránkový statický odpočet v podobe klapkovej odchodovej tabule. Obrovs
 Produktová pravda je v `PRODUCT.md`, vizuálny systém v `DESIGN.md`. Tento súbor je len
 pracovná príručka — neduplikuj sem ich obsah.
 
+## v2 prebieha — najprv si prečítaj `.doc/`
+
+Z tabule sa stáva **tréner na Testovanie 9**: odpočet sa zmenší do rohu a hlavnou
+plochou je denná päťka otázok z MAT a SJL z historických testov. Kontext, architektúra
+a osemfázový plán sú v `.doc/00-KONTEXT.md` … `.doc/04-PLAN.md` a **pre v2 sú zdrojom
+pravdy**. `PRODUCT.md` a `DESIGN.md` platia pre v1 vrstvu; čo im v2 protirečí, je
+vymenované v `.doc/00-KONTEXT.md`, sekcia „Čo v2 láme na v1 pravdách".
+
+Pravidlá, ktoré platia v každom vlákne pracujúcom na v2:
+
+- **Mobile first, nie mobile-also.** Referenčné 375×667, CSS od telefóna nahor, žiadna
+  `max-width` media query, ktorá odoberá. Desktop sa kontroluje ako posledný.
+- **Bez frameworku.** Angular bol zamietnutý; záchranná cesta je Vue 3 z CDN ako ESM
+  bez buildu, a to až po merateľných spúšťačoch v `.doc/01-ARCHITEKTURA.md`.
+- **Banka otázok je vygenerovaný artefakt v repe**, nie runtime. `questions/raw/*.json`
+  je zdroj, `questions/mat.json` a `sjl.json` sa z neho zlievajú. Po každom zásahu do
+  banky beží `node questions/check.js`.
+- **Séria dní sa neukládá, počíta sa** z množiny dokončených dní. Počítadlo by driftovalo.
+- **`<meta name="robots" content="noindex">` na stránke zostáva.** Stránka sa šíri
+  v správach, nie cez vyhľadávanie.
+- **Jeden agent = jeden test = jeden výstupný súbor.** Dva agenti nikdy nepíšu do toho
+  istého súboru.
+- **Keď sa rozhodne inak, prepíše sa dokument v `.doc/`, nie len kód.** Inak sa ďalšie
+  vlákno riadi zastaranou pravdou. To platí aj pre tento súbor.
+
 ## Stack
 
 - Tabuľa: `index.html`, `style.css`, `stops.js`, `main.js`, `fonts/`, `og.jpg`.

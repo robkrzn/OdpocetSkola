@@ -7,6 +7,12 @@
 <meta name="description" content="Odpočet do začiatku školského roka na dni, hodiny, minúty, sekundy a stotiny.">
 <meta name="theme-color" content="#2A5346">
 
+<!-- Stránka sa šíri výhradne v osobných správach, nie cez vyhľadávanie - indexovanie
+     jej nič nepridá a pri banke úloh z testov NIVAM je nežiaduce. robots.txt tu nie je
+     riešenie: projektový repozitár ho servíruje na /OdpocetSkola/robots.txt a crawler
+     číta len ten v koreni domény. Meta tag je jediná cesta, ktorú GitHub Pages dáva. -->
+<meta name="robots" content="noindex">
+
 <!-- Absolútne URL, počet dní a názov najbližšej zastávky v <title>, description,
      og:* a twitter:* prepisuje .github/workflows/og.yml pri každom pushi a každé
      3 h. Ručne tu netreba nič meniť - termíny sú v stops.js. -->
