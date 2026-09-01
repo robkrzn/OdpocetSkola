@@ -58,14 +58,37 @@ Overené vzorky (zvyšok rokov nebol prechádzaný po jednom):
 | 2018 | MAT | `/dl/825/ZAK17019_S_CTZ-RT-Mat-SJ-fA_1405.pdf` | `/dl/804/kluc_MAT_RT_2018.pdf` |
 | 2018 | SJL | `/dl/827/ZAK17019_S_CTZ-RT-SJL-fA_2730.pdf` | `/dl/807/Kľúč_správnych_odpovedí_SJL-2018_RT.pdf` |
 
-Dve zistenia, ktoré určujú pipeline:
+Zistenia z F0, ktoré určujú pipeline (plný zoznam a merania v `.doc/zdroje.md`):
 
-- **PDF majú textovú vrstvu, nie sú to skeny.** Overené priamym čítaním testu MAT 2024:
-  čitateľné zadania všetkých 30 úloh vrátane tabuliek a popiskov grafov. (Automatické
-  fetchovanie webu tvrdilo opak — bol to artefakt toho nástroja.)
 - **URL sa nedá odvodiť.** Vzor je `/dl/<id>/<názov>.pdf`, kde `<id>` je databázové
-  číslo bez väzby na rok či predmet. Zoznam sa musí vyzbierať z ročných stránok, nie
-  vygenerovať. `tools/fetch.mjs` teda dostane **ručne doplnený zoznam URL**, nie vzor.
+  číslo bez väzby na rok či predmet. Zoznam je preto vyzbieraný ručne do
+  `.doc/zdroje.md` a je to jediný zdroj pravdy o zdrojoch.
+- **Textová vrstva je len v časti testov.** Overené `pdftotext` na všetkých 28 PDF:
+  **2017 a 2023–2025 text majú, 2018, 2019 a 2022 nie** (v Corel exporte bolo písmo
+  prevedené na obrysové krivky, pre `pdftotext` je to nula znakov). **Všetkých 14
+  kľúčov text má** — a to je súbor, kde na presnosti záleží najviac.
+- **Zverejnená je len forma A**, na žiadnej ročnej stránke nie je test formy B.
+  Kľúč však obsahuje **obidva** stĺpce, viď pasca nižšie.
+- **Počet úloh nie je konštantný.** 2024 MAT má 30 úloh (01–15 číselná odpoveď,
+  16–30 výber z A–D, 90 minút), 2017 MAT má 20 úloh a 60 minút. Nepredpokladaj počet,
+  prečítaj úvodnú stranu testu — je tam napísaný vetou.
+- **`pdftoppm` na stroji nie je** (v `/mingw64/bin` je iba `pdftotext`), takže nástroj
+  `Read` na PDF padá. Roky s textovou vrstvou sa ťažia cez `pdftotext -layout` a
+  poppler treba doinštalovať až pre 2018, 2019, 2022 a pre orezávanie obrázkov.
+
+### Pasca, ktorá by prešla celou bankou: KÓD TESTU
+
+Kľúč má **dva stĺpce, Forma A a Forma B**, a sú to tie isté úlohy v inom poradí.
+Príklad z `mat-2024-a-kluc`: hlavička `Forma A 1000/3122` a `Forma B 7677/7051`,
+pričom odpoveď na úlohu 8 vo forme A (`11,9`) je odpoveďou na úlohu 1 vo forme B.
+
+Titulná strana testu nesie **`TESTOVÁ FORMA`** a **`KÓD TESTU`** (2024 MAT: forma `A`,
+kód `1000` — ten istý kód je aj v názve súboru `…-fA_1000.pdf`).
+
+**Ťažiaci agent musí prečítať kód testu z titulnej strany a brať výhradne stĺpec, ktorý
+mu zodpovedá.** Zámena stĺpcov nevyrobí ani jednu viditeľnú chybu — vyrobí test,
+v ktorom je *každá* odpoveď posunutá, a validátor to nemá ako zistiť. Je to
+najpravdepodobnejší zdroj systematickej chyby v celej banke.
 
 **Neoficiálny mirror `monitor9.zones.sk/testy-testovanie9/`** má plynulejšie pokrytie
 (~2008–2026) vrátane kľúčov a sám sa označuje ako zverejnený so súhlasom NÚCEM — to
@@ -74,11 +97,21 @@ ročníka, ale zdrojom pravdy zostáva `www2.nucem.sk`.
 
 ### Ktoré roky brať a v akom poradí
 
-Najprv **2017–2025**, potom smerom dozadu. Nie preto, že staršie sa nedajú prečítať,
-ale preto, že staršie Monitory sedia na inom kurikule a inej formulačnej konvencii.
-Osem posledných rokov × 2 predmety × ~30 úloh ≈ **480 úloh**, čo je pri 4 úlohách
-denne **120 dní bez zopakovania na predmet**. To je viac než dosť do marca 2027;
-ďalšie roky sú rozšírenie, nie podmienka spustenia.
+**Sedem ročníkov: 2017, 2018, 2019, 2022, 2023, 2024, 2025.** T9 2020 a 2021 sa
+nekonali (COVID), zadania neexistujú — nie je to diera v zbere.
+
+Realistický výnos: 7 testov na predmet × 20–30 úloh ≈ **175 úloh**, po vyradení
+neoveriteľných **~150 použiteľných na predmet**. Pri 4 nových úlohách denne to je
+**priechod ~38 dní**, nie 120 — pôvodný odhad v tomto dokumente bol nadsadený a je
+opravený. Do marca 2027 to znamená ~5 priechodov.
+
+**Opakovanie po ~5 týždňoch je zámer, nie chyba.** Presne toľko trvá, kým človek
+úlohu zabudne, a algoritmus poradie pri každom priechode premieša (`01-ARCHITEKTURA.md`).
+
+Rozšírenie dozadu (2010–2016, ďalších ~7 ročníkov, priechod by narástol na ~75 dní)
+je **voliteľná fáza F3b** — rozhoduje sa až po F1, keď bude známy skutočný výnos
+z jedného testu. Staršie Monitory sedia na inom kurikule a inej formulačnej konvencii,
+takže to nie je zadarmo.
 
 ## Ťaženie: agent čítajúci PDF, nie parser
 

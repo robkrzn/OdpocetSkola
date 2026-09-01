@@ -53,7 +53,7 @@ vymyslí raz, než sonnet, ktorý to trikrát vymyslí zle.
 6. Každé zadanie agentovi obsahuje presne tri veci: **ktoré `.doc` súbory prečítať**,
    **ktoré súbory smie zapísať**, **ako sa jeho výstup overí**.
 
-Odhad spotreby: F1 ~150k · F3 ~1M (16 agentov × ~60k) · F5 ~300k · zvyšok pod 200k.
+Odhad spotreby: F1 ~150k · F3 ~750k (12 agentov × ~60k) · F5 ~300k · zvyšok pod 200k.
 
 ---
 
@@ -119,8 +119,13 @@ F3 vyrobí 16 súborov, ktoré treba zahodiť.
 **Prompt do vlákna F1 (na jeden test):**
 > Prečítaj `.doc/02-BANKA-OTAZOK.md` celý — hlavne Schéma banky, Uzavretý zoznam tém,
 > Čo do banky nevstúpi, Normalizácia odpovedí, Obrázky.
-> Vstupy: `source/<test>.pdf` a `source/<kluc>.pdf`. Čítaj ich priamo nástrojom Read
-> po stránkach.
+> Vstupy: `source/<test>.pdf` a `source/<kluc>.pdf`. Čítaj ich cez
+> `pdftotext -layout -enc UTF-8 <súbor>.pdf -` — nástroj `Read` na PDF v tomto
+> prostredí padá, `pdftoppm` nie je nainštalovaný (`.doc/zdroje.md`).
+> **Najprv prečítaj titulnú stranu testu a zisti `TESTOVÁ FORMA` a `KÓD TESTU`.**
+> Kľúč má dva stĺpce (Forma A a Forma B) s tými istými úlohami v inom poradí — ber
+> výhradne stĺpec svojho kódu. Zámena stĺpcov posunie každú odpoveď v teste a nič to
+> nenahlási.
 > Výstup: zapíš **iba** `questions/raw/<subject>-<rok>-<forma>.json` podľa schémy a
 > doplň riadky do `questions/rejected.md`.
 > Pravidlá: zadanie prepisuj **verne**, neskracuj a neprepisuj vlastnými slovami.
@@ -168,10 +173,17 @@ sa dá otestovať bez prehliadača.
 
 ## F3 · Hromadné ťaženie
 
-**Cieľ:** roky 2017–2025 (bez pilotu) v banke. ~16 testov.
+**Cieľ:** zvyšných šesť ročníkov v banke — 2017, 2018, 2019, 2022, 2023, 2025.
+**12 testov** (2020 a 2021 sa nekonali, 2024 je pilot).
 
-**Agenti:** 16 × sonnet, **paralelne, každý jeden test.** Prompt je
+**Agenti:** 12 × sonnet, **paralelne, každý jeden test.** Prompt je
 `.doc/prompt-tazenie.md` z F1, doplnený o cesty ku konkrétnym PDF.
+
+**Poradie má význam:** najprv 2017, 2023 a 2025 — tie majú textovú vrstvu a idú cez
+`pdftotext -layout` rovnako ako pilot. **2018, 2019 a 2022 sa dajú ťažiť až po
+doinštalovaní poppleru** (`pdftoppm`), inak nemá agent ako stránku prečítať
+(`.doc/zdroje.md`). Ak poppler nebude, banka má šesť ročníkov namiesto siedmich
+a **musí to byť napísané**, nie mlčky vynechané.
 
 Po každej dávke: `node tools/merge.mjs && node questions/check.js`.
 
@@ -184,8 +196,10 @@ Po každej dávke: `node tools/merge.mjs && node questions/check.js`.
 - vernosť zadania ≥ 9/10
 - vyradených nie viac než 25 % úloh testu; nad tým sa pozerá, či agent nevyradzoval
   z pohodlnosti
-- po zliatí: ≥ 300 úloh na predmet, `itemCount` súhlasí, banka ≤ 300 kB raw
-  (inak platí strop z `01-ARCHITEKTURA.md`)
+- po zliatí: **≥ 120 úloh na predmet** (realistický výnos je ~150, viď
+  `02-BANKA-OTAZOK.md`), `itemCount` súhlasí, banka ≤ 300 kB raw
+- **kód testu kontrolovaný pri každom teste:** vzorka odpovedí musí sedieť so stĺpcom
+  formy A, nie B. Toto je jediná chyba, ktorá prejde validátorom aj čítaním zadania
 
 **Pozor na tichý strop:** ak sa niektorý rok nedá vyťažiť, **musí to byť napísané**
 v `.doc/zdroje.md`, nie mlčky vynechané. Osem rokov, z ktorých šesť prešlo, je
@@ -298,11 +312,12 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 
 | Fáza | Stav | Vlákno |
 |---|---|---|
-| F0a zdroje | čaká | |
-| F0b stiahnutie PDF | čaká | |
-| F1 pilot | čaká | |
+| F0a zdroje | **hotové** — `.doc/zdroje.md`, 7 ročníkov | 1.9.2026 |
+| F0b stiahnutie PDF | **hotové** — 28 PDF v `source/`, gitignored | 1.9.2026 |
+| F1 pilot (2024) | čaká | |
 | F2 validátor | čaká | |
 | F3 hromadné ťaženie | čaká | |
+| F3b rozšírenie 2010–2016 | voliteľné, rozhoduje sa po F1 | |
 | F4 dizajn | čaká | |
 | F5 build v2.0 | čaká | |
 | F6 Firebase | čaká | |

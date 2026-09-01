@@ -194,7 +194,13 @@ moderáciu, osobné údaje a Firestore čítania a nedodal takmer nič.
 Piata je osobná: najviac po termíne z `review`. Ak nie je čo opakovať, doberie sa
 ďalšia zdieľaná jednotka.
 
-### 3. Bez opakovania, kým sa banka nevyčerpá
+### 3. Priechod bankou, opakovanie až po ňom
+
+Banka má po F0 sedem ročníkov, teda **~150 použiteľných úloh na predmet** →
+**priechod ~38 dní** (`02-BANKA-OTAZOK.md`). Do marca 2027 sa banka prejde ~5×.
+Opakovanie po piatich týždňoch je zámer: presne toľko trvá zabudnutie, a poradie sa
+pri každom priechode premieša iným seedom, takže sa nevracia ten istý deň, len tie
+isté úlohy.
 
 ```js
 // questions/*.json nesie predpočítané `units`; EPOCH je deň 0 hry

@@ -176,9 +176,10 @@ samotnú rohovú tabuľu — je to prvý konkrétny zásah do existujúceho kód
 | # | Otázka | Ako pokračujeme, kým nie je odpoveď |
 |---|---|---|
 | O1 | Máme PDF testov po ruke, alebo ich stahujeme z NIVAM? | Archív je overený a verejný (`www2.nucem.sk`), PDF majú textovú vrstvu; `04-PLAN.md` F0a vyzbiera URL |
-| O2 | Koľko rokov spätne? | Najprv 2017–2025 (~480 úloh = 120 dní bez opakovania na predmet), staršie ako rozšírenie |
+| O2 | ~~Koľko rokov spätne?~~ | Zavreté F0: **sedem ročníkov** 2017–2019 a 2022–2025 (2020 a 2021 sa nekonali, COVID). ~150 použiteľných úloh na predmet = priechod ~38 dní. Rozšírenie 2010–2016 je voliteľná F3b, rozhoduje sa po F1 |
 | O3 | Zdieľaná denná päťka pre všetkých, alebo osobná? | Ideme zdieľanou (4 zdieľané + 1 osobná), zdôvodnenie v `01-ARCHITEKTURA.md` |
 | O4 | Prezývka nech je jedinečná? | Nie. `uid` je identita, prezývka je nálepka. Jedinečnosť si vyžaduje ďalšiu kolekciu a rieši problém, ktorý nemáme |
 | O5 | ~~Dá NIVAM súhlas?~~ | Zavreté. Rozhodnuté ísť bez žiadosti, viď „Autorské právo". Ostáva `noindex` a uvedenie zdroja |
 | O6 | ~~Angular áno alebo nie?~~ | Zavreté ako R8: nie, záchranná cesta je Vue 3 z CDN bez buildu |
-| O7 | Koľko úloh denne pri malej banke? | 4 + 1 opakovanie na predmet; ak by pilotná banka mala pod 150 úloh na predmet, zníži sa na 3 + 1, aby priechod vydržal do marca 2027 |
+| O7 | Koľko úloh denne pri malej banke? | Zostáva **4 + 1 opakovanie** na predmet. Priechod ~38 dní znamená ~5 priechodov do marca — opakovanie po 5 týždňoch je zámer, nie dôvod znižovať dávku |
+| O8 | Doinštalovať poppler (`pdftoppm`)? | Potrebné pre roky 2018, 2019, 2022 (bez textovej vrstvy) a pre obrázky. F1 na roku 2024 ho **nepotrebuje** — `pdftotext -layout` stačí |
