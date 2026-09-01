@@ -1,0 +1,31 @@
+<!doctype html><meta charset="utf-8"><title>m</title>
+<!-- Merac. Ten isty iframe ako frame.html, ale namiesto screenshotu vypise
+     scrollHeight a getBoundingClientRect vybranych selektorov. Cita sa cez
+     chrome --headless=old --dump-dom ".../measure.html?p=uloha.html&s=.option-row|.thumb-bar" -->
+<body style="margin:0;background:#111;color:#0f0;font:12px monospace">
+<iframe id="f" style="width:375px;height:667px;border:0" src=""></iframe>
+<pre id="out">…</pre>
+<script>
+const q = new URLSearchParams(location.search);
+const page = q.get('p') || 'uloha.html';
+const sel  = (q.get('s') || '').split('|').filter(Boolean);
+const f = document.getElementById('f');
+f.src = page;
+f.onload = () => {
+  const d = f.contentDocument, w = f.contentWindow;
+  const L = [];
+  L.push('page=' + page);
+  L.push('scrollHeight=' + d.documentElement.scrollHeight + '  viewport=' + w.innerHeight);
+  L.push('overflow=' + (d.documentElement.scrollHeight - w.innerHeight));
+  for (const s of sel) {
+    d.querySelectorAll(s).forEach((el, i) => {
+      const r = el.getBoundingClientRect();
+      L.push(s + '[' + i + '] top=' + r.top.toFixed(1) + ' bottom=' + r.bottom.toFixed(1) +
+             ' h=' + r.height.toFixed(1) + ' w=' + r.width.toFixed(1) +
+             ' scrollW=' + el.scrollWidth + ' clientW=' + el.clientWidth);
+    });
+  }
+  document.getElementById('out').textContent = L.join('\n');
+  document.title = 'done';
+};
+</script>

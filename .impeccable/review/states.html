@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Komp — stavy komponentov</title>
+<link rel="preload" href="../../fonts/archivo-narrow-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="comp.css">
+</head>
+<body>
+<main class="screen" style="padding-top:24px">
+
+  <section class="demo-frame">
+    <h2>Riadok možnosti — stavy (pred / po vyhodnotení)</h2>
+    <ul class="options" style="max-width:420px">
+      <li><button class="option-row" type="button"><span class="flap"><div class="fh fh--t"><i>A</i></div><div class="fh fh--b"><i>A</i></div></span><span class="role-option">predvolený stav</span></button></li>
+      <li><button class="option-row option-row--selected" type="button"><span class="flap"><div class="fh fh--t"><i>B</i></div><div class="fh fh--b"><i>B</i></div></span><span class="role-option">vybraný, ešte nepotvrdený</span></button></li>
+      <li><button class="option-row option-row--correct" type="button"><span class="flap"><div class="fh fh--t"><i>C</i></div><div class="fh fh--b"><i>C</i></div></span><span class="role-option">potvrdený a správny — bunka sa rozsvieti do plného --ink, glyf ✓</span></button></li>
+      <li><button class="option-row option-row--wrong" type="button"><span class="flap"><div class="fh fh--t"><i>D</i></div><div class="fh fh--b"><i>D</i></div></span><span class="role-option">zvolený a nesprávny — glyf ✕ v --signal</span></button></li>
+      <li><button class="option-row option-row--reveal" type="button"><span class="flap"><div class="fh fh--t"><i>C</i></div><div class="fh fh--b"><i>C</i></div></span><span class="role-option">nevybraný pri nesprávnej odpovedi — tichá poznámka, žiadny flip</span></button></li>
+    </ul>
+  </section>
+
+  <section class="demo-frame">
+    <h2>Pole krátkej odpovede — num (inputmode decimal)</h2>
+    <p class="role-body" style="max-width:66ch">Zásoba uhlia na vykurovanie 15 domácností vystačí na 60 dní. Na koľko dní vystačí rovnaká zásoba uhlia, ak sa pripojí k vykurovaniu ešte päť domácností?</p>
+    <div class="answer-field" style="max-width:220px">
+      <input type="text" inputmode="decimal" placeholder="0" aria-label="Odpoveď v dňoch">
+      <span class="role-answer" aria-hidden="true">dní</span>
+    </div>
+  </section>
+
+  <section class="demo-frame">
+    <h2>Pole krátkej odpovede — word</h2>
+    <p class="role-body" style="max-width:66ch">Vypíš z prvého odseku ukážky (ZPH Vancouver) synonymum slova expedícia.</p>
+    <div class="answer-field" style="max-width:280px">
+      <input type="text" placeholder="napíš slovo" aria-label="Odpoveď — jedno slovo">
+    </div>
+  </section>
+
+  <section class="demo-frame">
+    <h2>Ukážka — rozbalená (prvá otázka skupiny) a zbalená (od druhej)</h2>
+    <article class="task-panel" style="margin-top:0">
+      <details class="stimulus stimulus--static" open>
+        <summary class="stimulus__label">Ukážka <span aria-hidden="true">·</span> <em>Spoločenské tance</em></summary>
+        <div class="stimulus__scroll">
+        <p class="role-body stimulus__heading">Spoločenské tance</p>
+        <div class="stimulus__body role-body">
+          <p>Istá výskumná agentúra robila prieskum, v ktorom 1 000 respondentom položila otázku: Ako dobre viete tancovať nasledujúce spoločenské tance? Vyhodnotenie prieskumu je znázornené v diagrame.</p>
+          <div class="stimulus__table-wrap">
+          <table>
+            <tr><th>Tanec</th><th>Viem výborne</th><th>Viem čiastočne</th><th>Neviem tancovať tento tanec</th><th>Neviem vôbec tancovať</th></tr>
+            <tr><td>Valčík</td><td>29 %</td><td>41 %</td><td>5 %</td><td>25 %</td></tr>
+            <tr><td>Polka</td><td>26 %</td><td>38 %</td><td>11 %</td><td>25 %</td></tr>
+            <tr><td>Tango</td><td>10 %</td><td>38 %</td><td>27 %</td><td>25 %</td></tr>
+            <tr><td>Čača</td><td>6 %</td><td>29 %</td><td>40 %</td><td>25 %</td></tr>
+            <tr><td>Džajv</td><td>5 %</td><td>23 %</td><td>47 %</td><td>25 %</td></tr>
+          </table>
+          </div>
+        </div>
+        </div>
+      </details>
+      <div class="task-panel__body">
+        <p class="role-body task-panel__prompt">Na základe údajov uvedených v tabuľke rozhodni, ktoré z uvedených tvrdení je nepravdivé.</p>
+        <p class="hint">Na 375 px šírka tabuľky presahuje panel — vodorovný scroll je vnútri vlastného kontajnera (.stimulus__table-wrap), stránka sa neposúva.</p>
+      </div>
+    </article>
+
+    <article class="task-panel">
+      <details class="stimulus stimulus--static">
+        <summary class="stimulus__label">Ukážka <span aria-hidden="true">·</span> <em>Spoločenské tance</em></summary>
+        <div class="stimulus__scroll">
+          <p class="role-body">Tá istá ukážka od druhej otázky skupiny: jeden riadok, tapnutím sa otvorí.</p>
+        </div>
+      </details>
+      <div class="task-panel__body">
+        <p class="role-body task-panel__prompt">Koľko respondentov odpovedalo, že vie výborne tancovať valčík?</p>
+        <p class="hint">Zbalená ukážka stojí 44 px namiesto 240 — o toľko sa posunú možnosti nad okraj obrazovky.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="demo-frame">
+    <h2>Panel prezývky</h2>
+    <form class="nick-panel">
+      <label for="nick">Prezývka, nie meno</label>
+      <div class="answer-field"><input id="nick" type="text" placeholder="napr. paulinka97"></div>
+      <button class="btn" type="button">Uložiť</button>
+    </form>
+  </section>
+
+</main>
+</body>
+</html>

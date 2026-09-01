@@ -225,6 +225,11 @@ contract, `DESIGN.md` a `.impeccable/design.json` ako existujúci systém.
 - tri prepísané pravidlá (One Signal, All-Caps Signage, No-Scroll) sú formulované,
   nie obídené
 - rozhodnuté: jednotky rohového odpočtu a jeho pozícia na úzkom telefóne
+- **na 375×667 sú na `#/uloha` zadanie a všetky možnosti viditeľné bez scrollovania**,
+  keď je ukážka zbalená alebo žiadna nie je (`03-DIZAJN.md`). Toto je kritérium,
+  na ktorom prvý komp F4 padol
+- **kontrast dopočítaný, nie odhadnutý:** žiadny text na smaltovanej stene nie je
+  `--ink-3` (3,38:1)
 - žiadna nová farba ani nová alfa mimo existujúcej rampy — skontrolovať grepom
 - **komp schvaľuje Robert.** Toto je jediný gate, ktorý neprechádza opus sám.
 
@@ -323,7 +328,7 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 | F2 validátor + nástroje | **hotové** — `pick.js`, `check.js`, `merge.mjs`, `crop.mjs` | 1.9.2026 |
 | F3 hromadné ťaženie | čaká | |
 | F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
-| F4 dizajn | čaká | |
+| F4 dizajn | **hotové a komp schválený** — 2. kolo, oba nálezy opravené | 1.9.2026 |
 | F5 build v2.0 | čaká | |
 | F6 Firebase | čaká | |
 | F7 OG + docs | čaká | |

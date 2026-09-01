@@ -72,6 +72,32 @@ typography:
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "0.22em"
+  body:
+    fontFamily: "Archivo Narrow, system-ui, sans-serif"
+    fontSize: "clamp(16px, 4.2vw, 18px)"
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: "0"
+  option:
+    fontFamily: "Archivo Narrow, system-ui, sans-serif"
+    fontSize: "clamp(15px, 3.8vw, 17px)"
+    fontWeight: 400
+    lineHeight: 1.4
+    letterSpacing: "0"
+  answer:
+    fontFamily: "Archivo Narrow, system-ui, sans-serif"
+    fontSize: "clamp(16px, 4.2vw, 18px)"
+    fontWeight: 700
+    lineHeight: 1.5
+    letterSpacing: "0"
+    fontFeature: "tabular-nums"
+  stat:
+    fontFamily: "Archivo Narrow, system-ui, sans-serif"
+    fontSize: "clamp(32px, 10vw, 52px)"
+    fontWeight: 700
+    lineHeight: 1
+    letterSpacing: "0"
+    fontFeature: "tabular-nums"
 rounded:
   cell: "3px"
   panel: "4px"
@@ -138,6 +164,53 @@ components:
     backgroundColor: "{colors.hw-pin}"
     rounded: "{rounded.pin}"
     size: "calc(var(--c) * .085)"
+  corner-board:
+    backgroundColor: "{colors.board}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+    padding: "8px clamp(12px,3vw,18px)"
+  countdown-line:
+    textColor: "{colors.ink-2}"
+    typography: "{typography.label}"
+    minHeight: "30px"
+  view-tab:
+    textColor: "{colors.ink-2}"
+    typography: "{typography.label}"
+  view-tab-current:
+    textColor: "{colors.ink}"
+    typography: "{typography.label}"
+  section-cap:
+    textColor: "{colors.ink-2}"
+    typography: "{typography.label}"
+  task-panel:
+    backgroundColor: "{colors.board}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+  stimulus-pin:
+    backgroundColor: "{colors.board}"
+    maxHeight: "36dvh"
+    collapsedHeight: "44px"
+  stimulus-summary:
+    textColor: "{colors.ink-3}"
+    typography: "{typography.label}"
+    minHeight: "44px"
+  option-row:
+    textColor: "{colors.ink-2}"
+    typography: "{typography.option}"
+    minHeight: "44px"
+  answer-field:
+    backgroundColor: "{colors.gap}"
+    rounded: "{rounded.cell}"
+    minHeight: "44px"
+  progress-pip:
+    refersTo: "flap-cell"
+    size: "clamp(20px,6.4vw,28px)"
+  day-pip:
+    refersTo: "flap-cell"
+    size: "clamp(14px,4vw,20px)"
+  stat-figure:
+    textColor: "{colors.ink}"
+    typography: "{typography.stat}"
 ---
 
 # Design System: Odchodová tabuľa
@@ -165,6 +238,12 @@ The build has no interactive control of any kind. There is no button, no link, n
 no navigation. Reflow of the board and the enormous number is the entire interface. A
 second surface exists: the 1200×630 link-preview frame, which is not a crop of the page
 but its own composition, with its own type sizes and its own visible sentence.
+
+**v2 adds a third surface: the game.** The countdown shrinks into a corner fixture and
+the rest of the screen becomes a daily set of exam questions — the first buttons,
+links, inputs, and navigation this system has ever had. They are built from the same
+two materials and the same Flap Cell, described in full under "Game Components (v2)"
+below; nothing above this note describes the game, only the countdown and its preview.
 
 **Key Characteristics:**
 - Two materials only: enamel wall and recessed dark board.
@@ -199,7 +278,8 @@ near-black metal, three tints of bone ink, and a single alarm colour.
 - **Bone Ink** (`{colors.ink}`): every character on a flap, and body colour.
 - **Chalk Ink** (`{colors.ink-2}`): the departure value and the lead unit's caption —
   secondary information that still has to be read from across a room.
-- **Faded Ink** (`{colors.ink-3}`): rail keys and small unit captions; the quietest legible step.
+- **Faded Ink** (`{colors.ink-3}`): rail keys and small unit captions; the quietest legible
+  step **on the board**. It is not available on the wall — see the Board-Ink Rule.
 - **Wall Ink** (`{colors.wall-ink}`): the preview sentence painted on the wall, brighter
   and cooler than board ink because it sits on green, not on black.
 - **Pin / Screw / Hardware Dark** (`{colors.hw-pin}`, `{colors.hw-screw}`, `{colors.hw-dk}`):
@@ -214,9 +294,29 @@ near-black metal, three tints of bone ink, and a single alarm colour.
 `sheen-0`…`sheen-3`. A new shadow, bevel, or hairline picks the nearest existing step and
 never introduces a fresh alpha. If nothing on the ramp fits, the effect is wrong, not the ramp.
 
-**The One Signal Rule.** The signal colour marks the departed service and nothing else.
-It is never used for emphasis, never for a heading, never for a second element on the
-same screen. Its rarity is what makes it read as an alarm.
+**The One Signal Rule (v2: signal marks what you missed).** The signal colour marks
+what is gone — the departed service, and now also the wrong answer. It is still never
+used for emphasis, a heading, or decoration; its rarity is what makes it read as an
+alarm, and it appears in only one place per screen. **The correct answer never gets
+green.** The wall is green; a second green on the same screen would read as a second
+material, not a second meaning, and would quietly break the One-Ramp Rule's promise
+that colour is scarce. Correctness is announced by **material**, not colour: a flap
+cell flips to a fully-lit `--ink` fill (dark glyph on bone, the inverse of every other
+cell in the build) the way a punched ticket looks different from an unpunched one.
+Every answer state — correct or wrong — also carries a **glyph** (`✓` / `✕`), never
+colour or brightness alone; this is accessibility as a side effect of using the
+system's own materials rather than an accommodation bolted on afterward.
+
+**The Board-Ink Rule (`--ink-3` is a colour on the board, not on the wall).** The three
+ink tints are calibrated against `--board`, not against `--enamel`. On the board
+`--ink-3` is ~7:1 and is the correct quietest step: rail keys, unit captions, the
+stimulus label, the source citation, a disabled button. On the wall the same tint is
+**3,38:1** — a fail for the small tracked uppercase it is always used for, and the
+whole of v2's chrome (view tabs, section captions, stat captions, hints, the countdown
+signage line) stands on the wall. There the quietest legible step is **`--ink-2`
+(5,39:1)**, and that is the floor. No new tint is introduced to bridge the gap: the
+ramp was never wrong, the surface was. The check is mechanical — if the element's
+painted background is `--enamel`, `--ink-3` is not available to it.
 
 **The Metal Is Not Ink Rule.** Screws and axle pins draw from the hardware tokens, not
 from the ink tints. Anything that is supposed to be a physical fastener is grey-green
@@ -246,6 +346,15 @@ day digits fit a 390px phone without shrinking.
 - **Label** (400/700, `clamp(11px, 1.5vw, 14px)`, 0.19em, uppercase): the departure rail
   key and value, and the departed-service note. Value is 700 and tabular.
 - **Caption** (400, `clamp(10px, 1.35vw, 13px)`, 0.22em, uppercase): the small unit captions.
+- **Body** (400, `clamp(16px, 4.2vw, 18px)`, sentence case, tracking 0, line-height 1.5):
+  the exam question and reading passage. New in v2 — the first prose on the board.
+- **Option** (400, `clamp(15px, 3.8vw, 17px)`, `--ink-2`, sentence case): answer-option
+  text, one step below `body` so the question itself stays the loudest line on the panel.
+- **Answer** (700, `clamp(16px, 4.2vw, 18px)`, tabular, sentence case): the answer as
+  given or revealed — a typed number, a struck-through word, a "Správne: C" line.
+- **Stat** (700, `clamp(32px, 10vw, 52px)`, tabular): success percentages on the report.
+  The only number in the build that is large and outside a flap cell; large enough to
+  read as a headline figure without being mistaken for the countdown's own digits.
 
 ### Named Rules
 
@@ -253,9 +362,24 @@ day digits fit a 390px phone without shrinking.
 At 100 updates per second, proportional figures make the layout twitch. This is
 correctness, not polish.
 
-**The All-Caps Signage Rule.** Every string outside a flap cell is uppercase with tracking
-between 0.14em and 0.22em. Sentence case appears nowhere on the board; this is signage, and
-signage shouts quietly.
+**The All-Caps Signage Rule (v2: signage governs chrome, not content).** Chrome — rails,
+tabs, unit captions, section headings, source citations, the departed-service note —
+stays uppercase with 0.14–0.22em tracking; this is signage, and signage shouts quietly.
+But v2 puts prose on the board for the first time: an exam question, a reading passage,
+an answer option. Verzálky on two to five lines of próza is not signage, it is
+unreadable — the game tested this on real Testovanie 9 items (a four-paragraph SJL
+passage in caps is a wall of noise) and the rule did not survive contact. **Content is
+a sentence:** lower case, tracking 0, line-height 1.5, in the four roles below. The
+line between the two is simple — if a real board would stencil it onto hardware
+(a label, a key), it is signage; if a person wrote it to be read (a question, an
+answer, a passage), it is content.
+
+| Role | Used for | Size | Weight | Case / tracking |
+|---|---|---|---|---|
+| `body` | question text, reading passages | `clamp(16px,4.2vw,18px)` | 400 | sentence, 0 |
+| `option` | answer-option text (A–D) | `clamp(15px,3.8vw,17px)`, one step below `body` | 400, `--ink-2` | sentence, 0 |
+| `answer` | the given/correct answer, inline or in an input | `clamp(16px,4.2vw,18px)` | 700, tabular | sentence, 0 |
+| `stat` | success percentages on the report — the one place a number appears outside a flap cell | `clamp(32px,10vw,52px)` | 700, tabular | — |
 
 **The Cell-Derived Type Rule.** Flap type size, line height, pin diameter, and spin blur are
 all `calc()` expressions on `--c`. Never hard-code a font size inside a flap; change `--c`
@@ -291,9 +415,50 @@ Sizing runs off two variables, `--cell` and `--lead`, which each unit copies int
 
 ### Named Rules
 
-**The No-Scroll Rule.** The board must fit one viewport on the reference device without
-scrolling. Cell size is bounded by `min(vw, vh)`, not by width alone. 375×667 overflowed by
-111px before that bound existed; any change to cell sizing is re-checked at 375×667 first.
+**The No-Scroll Rule (v2: chrome doesn't scroll, content does).** The original rule —
+the board fits one viewport, full stop — still governs the countdown itself: `#/tabula`
+and the `?og=1` preview never scroll, and cell size is still bounded by `min(vw, vh)`,
+not width alone (375×667 overflowed by 111px before that bound existed; any change to
+cell sizing is re-checked at 375×667 first). The game breaks this on the one screen
+where it cannot hold: a reading passage plus a table plus four options does not fit
+667px tall on a phone, and shrinking it to fit would make the text illegible, which is
+a worse failure than a scrollbar. The rule now has two tiers. **Chrome is pinned**: the
+corner countdown and the progress strip are `position:sticky` at the top and never
+leave the viewport. **Content scrolls**: the question body, the reading passage, and
+the answer options move under that chrome exactly like a normal document. A visitor
+never loses the countdown or their place in today's set, but a four-paragraph passage
+gets the space it needs instead of being crushed into `min(vw, vh)`.
+
+**The Sticky-Stimulus Rule (open once, then a pinned line).** A question that shares a
+reading passage with its siblings (`sjl-2024-a-s1` ties four questions to one text)
+keeps that passage `position:sticky` at the top of its panel. The goal is unchanged
+and non-negotiable — **the passage must be reachable at the fourth question of the
+group**, because an ungrounded question is worse than an unscrolled one — but the
+means are not "keep it open".
+
+**Open at the first question of the group, collapsed from the second on.** A person
+reads a passage once. After that they need it for *lookup*, not for reading, and a
+240px block of pinned prose is precisely what pushes the answer options off a 375×667
+screen. So the stimulus is a native `<details>`: `open` on the group's first question,
+and from the second question a single pinned summary row — `UKÁŽKA · ZIMNÉ
+PARALYMPIJSKÉ HRY ⌄`, 44px tall, one tap to open. Native `<details>` and not a
+scripted panel because the keyboard operation, the focus ring, and the screen-reader
+announcement all come free and none of them can then be got wrong.
+
+**Open, it is still capped** at `max-height: 36dvh` with its own internal scroll: an
+uncapped multi-section passage (ZPH's three subsections plus a medal table ran past
+900px in testing) would fill the viewport and push the question itself off-screen —
+pinning something that tall isn't "keeping it reachable," it's replacing the question
+with the reading. The capped box carries a one-line fade at its own bottom edge
+(`shade`-only gradient into `--board`) as the cue that it scrolls, because
+minimal-chrome mobile browsers hide the scrollbar itself.
+
+**The measurement that governs it.** At 375×667, with the stimulus collapsed or absent,
+the question and *every* option are visible without scrolling — measured, not assumed:
+the fourth option row ends 39px above the thumb bar and the document is 670px against a
+667px viewport. With the stimulus open the page scrolls, and that is allowed. Anything
+that reintroduces height above the options — a taller pinned countdown, a second
+heading, a bigger option cell — is re-checked against that number first.
 
 **The Reflow-Not-Shrink Rule.** When horizontal space runs out, units move to a new row.
 They do not scale down. The number is the product; it never gives up size to fit a layout.
@@ -399,6 +564,158 @@ in `og:title`, rewritten by the daily cron.
 **The Housing-Is-Fixed Rule.** Motion blur is applied to the inner character element, never
 to the cell. The housing is bolted hardware and is always sharp; only the character moves.
 
+## Game Components (v2)
+
+v2 turns the countdown into a corner fixture and gives the rest of the screen to a
+daily set of Testovanie 9 questions. Nothing below introduces a new material, colour,
+or shadow — every component is the Board Panel, the Flap Cell, or the four content
+roles above, recombined.
+
+### Corner Countdown
+
+The one element that changes rather than adds. Three decisions, each with a reason:
+
+**Units: `dni : hod : min`, not five units.** Seconds and hundredths stay on the full
+board (`#/tabula`) only. A permanently-blurred hundredths drum next to a sentence a
+student is trying to read is a battery drain and an attention thief for a number
+nobody needs mid-question; the panicking column is the countdown's signature move and
+it stays a destination, not a permanent fixture. `--cell`/`--lead` get a lower `clamp()`
+in this context — `--cell: clamp(16px,4vw,30px)`, `--lead: clamp(30px,9vw,54px)` — the
+same Cell-Derived Type Rule, a smaller instance.
+
+**Position: a pinned strip, never a floating badge.** A corner badge sitting *over* a
+reading passage is the worst place to put it — it either overlaps content or steals a
+fixed slice of an already-tight 375px column. The countdown is part of the document's
+sticky chrome instead: full-width on the phone, inset top-right on desktop, Recess Rule
+throughout, never a lifted card. On the phone the rail (target name + date) and the
+clock stack vertically inside the strip rather than sharing one row — at 375px there is
+only ~320px inside the strip once page and panel padding are subtracted, and a
+three-unit clock beside a two-line rail label is tight enough to invite exactly the
+shrink-to-fit the Reflow-Not-Shrink Rule forbids. From 900px up there is room for both
+in one row, so it reunites.
+
+**Form is per view, and the split is measured, not stylistic.** The flap strip costs
+117px of a 667px phone — 18% of the viewport. On `#/dnes`, `#/vysledok` and
+`#/vykaz` that is money well spent: the countdown is the emotional motor of the whole
+product, nothing on those screens is competing for reading space, and the flaps are the
+reason anyone opened the link in the first place. On `#/uloha` the same 117px is what
+pushed the answer options off the screen, in exchange for a number that does not change
+during a question. So on the task screen the countdown is not hardware, it is a
+**sign**: one signage line, `label` role, ~30px tall, `TESTOVANIE 9 · 196 DNÍ`, sharing
+the pinned band with the progress strip and linking to `#/tabula` like the tile does.
+Day granularity, because nobody reads minutes on a screen they stand on for ninety
+seconds. `#/tabula` keeps the full five-unit board, unchanged. The countdown is never
+absent — it changes register with the screen's job.
+
+**Interaction is scoped to the corner tile itself.** `main.js` today fires the cascade,
+the bell, and the shouts on `pointerdown` anywhere in the document; in the game that
+would mean tapping an answer rings the departure bell. The corner countdown becomes its
+own tap target (an `<a>` wrapping the whole tile, linking to `#/tabula`) and the
+cascade/bell/shout interaction narrows to that element alone. Elsewhere — `#/tabula`
+itself — the whole document is still the target, unchanged.
+
+### Task Panel
+
+A Board Panel variant that carries one question. Three parts, top to bottom:
+
+1. **Stimulus** (present only when the question shares a reading passage or table)
+   — a native `<details>`: sticky, capped and internally scrolling when open, one 44px
+   pinned summary row (`UKÁŽKA · ZIMNÉ PARALYMPIJSKÉ HRY ⌄`) when collapsed; open at
+   the group's first question, collapsed from the second. See the Sticky-Stimulus Rule
+   above. Tables
+   arrive as real `<table>` markup and get their own `overflow-x:auto` wrapper inside
+   the stimulus, so a five-column table (`mat-2024-a-s1`) scrolls sideways in its own
+   lane without taking the page with it.
+2. **Prompt** — the question itself, `body` role, `max-width: 66ch` so a paragraph
+   never runs edge-to-edge even on a wide desktop panel.
+3. **Source citation** — `caption` role, `--ink-3`, a real link to the original NUCEM
+   PDF (`00-KONTEXT.md`'s attribution requirement, satisfied on every single question,
+   not just as a footer).
+
+### Option Row (mc)
+
+The flap cell's third job. A tappable row, `min-height: 44px`, a real hairline between
+rows (never two adjacent tap targets touching bare edge-to-edge). Left: a small Flap
+Cell showing the option's letter, A–D — the cheapest, most on-system way to get a flip
+into the game, because the housing and the flip animation already exist and need
+nothing new. Right: the option's text in the `option` role.
+
+States, per the rewritten One Signal Rule: **default** (letter on the normal two-tone
+leaf, `--ink-2` text) → **selected, unconfirmed** (a `sheen-3` inset ring on the cell,
+text promoted to `--ink` — a selection is not yet an answer) → on confirm, a real
+leaf-fall/leaf-land flip lands on **correct** (cell inverts to a solid `--ink` fill,
+`✓` in `--board`) or **wrong** (cell stays on its normal material, glyph turns `✕` in
+`--signal`). When the pick was wrong, the option that *was* correct gets a quiet
+`✓ SPRÁVNE` caption instead of a flip — the flip is reserved for the row the visitor
+actually interacted with; the reveal is information, not a second animation.
+
+### Answer Field (num / word)
+
+A single inset control, not a form. Background is `--gap` — the same seam-black behind
+every flap cell, so a text input reads as another instance of the board's own material
+rather than a borrowed browser widget. Text is the `answer` role (bold, tabular).
+`type="num"` sets `inputmode="decimal"` for the numeric keypad; `type="word"` is plain
+text. No border, no visible focus chrome beyond the existing global `:focus-visible`
+ring.
+
+### Progress Strip
+
+3–7 small Flap Cells, one per question in today's set — the exact count set by
+`01-ARCHITEKTURA.md`'s `daily()` algorithm, never hard-coded to five. Each cell is
+**empty** (a dash, `--ink-3`), **current** (a `sheen-3` ring, blank), **correct**
+(inverted fill, `✓`) or **missed** (`✕` in `--signal`) — the same four states as the
+Option Row's flap, because it is tracking the same event. A `.sr`-only sentence
+("Úloha 4 z 5. Doteraz 2 správne, 1 zmeškaná.") carries the same information for a
+screen reader, per the direction contract's accessibility requirement that the strip
+never be seven silent cells. On `#/uloha` the strip lives *inside* the pinned band,
+on its own row under the countdown signage line — the two are one piece of chrome
+there, and the whole band measures 107px against the flap strip's 117px for the
+countdown alone.
+
+### Report (Výkaz)
+
+Three stacked pieces, no new chart type:
+
+- **Streak line** — one row of `label`/`label-strong` text: `SÉRIA 9 DNÍ · RÝCHLIK ·
+  REKORD 14 · REZERVA 1`. The record and the reserve count sit in the same line as the
+  live streak on purpose — `00-KONTEXT.md`'s R10 requires the record stay visible next
+  to zero the instant a streak breaks, and putting them in one line rather than three
+  separate stats means there's no state where the record can be shown without it. **The
+  line carries its own word `SÉRIA`, so it never gets a section caption above it** —
+  a `SÉRIA` heading over a line that starts `SÉRIA` is the same word twice.
+  Each caption and its number is **one non-breaking span**, not loose text: as bare
+  text nodes in a flex row they are separate items and `REZERVA` wraps away from its
+  `1`, which reads as a missing value rather than a wrapped line.
+- **14-day strip** — the exact same small-Flap-Cell component as the Progress Strip,
+  just fourteen cells instead of up to seven. This is deliberate reuse, not a
+  coincidence: `03-DIZAJN.md` bans a new chart type outright, and a row of punched/
+  unpunched tickets already *is* the system's native way to show a sequence of
+  pass/fail days.
+- **Success stats** — two `stat`-role percentages (`72 %` / `81 %`) side by side, MAT
+  and SJL, each with its fraction underneath in `label` size. This is the one place in
+  the whole build a number is large and lives outside a flap-cell housing; it is sized
+  well under the countdown's own lead digits so it never competes with the board's
+  actual signature number.
+- **Weak topics** — a plain list, worst-first, each row a topic name (`option` role)
+  and a fraction (`answer` role), tappable to start a set from that topic. Only topics
+  with 3+ attempts appear, per `01-ARCHITEKTURA.md` — two attempts at 50% is noise, not
+  a weak spot.
+
+### Nickname Panel
+
+One `answer-field` input, one `.btn`, inside a small Board Panel. No form fields beyond
+the nickname itself — `00-KONTEXT.md`'s R6 requires the UI ask for it explicitly as a
+nickname, never a name, so the label says exactly that.
+
+### View Switcher
+
+Chrome, uppercase, `label` role, `location.hash`-driven. It carries three destinations
+— **Dnes**, **Výkaz**, **Tabuľa** — not five. `#/uloha` and `#/vysledok` are reached
+only through the day's own flow (the start/continue button, then the finish screen's
+own continue button), never as tabs, because they are not places a visitor chooses to
+revisit out of context — arriving at "Úloha" cold, with no question loaded, is a dead
+end this switcher is designed not to offer.
+
 ## Do's and Don'ts
 
 ### Do:
@@ -408,9 +725,22 @@ to the cell. The housing is bolted hardware and is always sharp; only the charac
   existing step.
 - **Do** set `tabular-nums` on anything numeric.
 - **Do** re-check 375×667 after any change to cell sizing, board padding, or column gaps.
-- **Do** keep uppercase and 0.14–0.22em tracking on every string outside a flap cell.
+- **Do** keep uppercase and 0.14–0.22em tracking on every *chrome* string outside a flap
+  cell (rails, tabs, captions, headings) — content strings are the v2 exception below.
 - **Do** treat the preview frame as its own surface with its own type sizes.
 - **Do** keep the wall a single flat green with material supplied by grain, sheen, and vignette.
+- **Do** write question, passage, option, and answer text in sentence case — the
+  All-Caps Signage Rule governs chrome, not content, as of v2.
+- **Do** pin the corner countdown and progress strip; let everything else scroll.
+- **Do** cap a sticky stimulus's height and give it its own internal scroll — never let
+  it grow to fill the viewport, and collapse it to its summary row from the group's
+  second question on.
+- **Do** check any element that stands on `--enamel` against `--ink-2` as its darkest
+  ink; `--ink-3` is a board colour.
+- **Do** re-measure 375×667 on `#/uloha` after any change to the pinned band — the
+  question plus all options fitting one screen is a number, not a feeling.
+- **Do** carry the streak's record and reserve count on the same line as the live
+  streak, so the record is never one tap away from a broken streak.
 
 ### Don't:
 - **Don't** introduce a new rgba value for a shadow. If no ramp step fits, the effect is wrong.
@@ -422,3 +752,20 @@ to the cell. The housing is bolted hardware and is always sharp; only the charac
 - **Don't** put a readable time value in the preview frame at any granularity finer than days.
 - **Don't** give screws or pins an ink colour; hardware is metal.
 - **Don't** add a build step, a dependency, or a framework — three files, served as-is.
+- **Don't** give a correct answer a green fill — the wall is green; correctness is
+  material (an inverted flap) plus a glyph, never a second colour.
+- **Don't** set question, passage, or option text in uppercase — that rule is retired
+  for content as of v2, and applying it to a paragraph makes it unreadable.
+- **Don't** let `pointerdown` anywhere in the document trigger the cascade/bell/shout
+  once the game ships — that interaction narrows to the corner countdown tile alone.
+- **Don't** invent a new chart type for the report; the 14-day strip is small Flap
+  Cells, the same component the progress strip already uses.
+- **Don't** put `--ink-3` on the wall. Tabs, section captions, stat captions and hints
+  sit on `--enamel`, where that tint is 3,38:1 — use `--ink-2`, never a new tint.
+- **Don't** put the flap countdown on `#/uloha`; there it is one signage line. And
+  don't drop the countdown from a view to buy space — change its register instead.
+- **Don't** repeat a label that a line already contains (`SÉRIA` over `SÉRIA 9 DNÍ`),
+  and don't let a caption wrap away from its own number.
+- **Don't** say a subject was *odbavený* — a passenger is checked in at an airport, a
+  train is **vypravený**. The station vocabulary is the product; a wrong verb in it is
+  a wrong colour.

@@ -1,0 +1,333 @@
+/* F4 komp — nové komponenty hry nad existujucim systemom (Odchodova tabula).
+   Ziadna nova farba, ziadna nova alfa: vsetko nizsie pouziva len existujuce
+   premenne z style.css (--enamel/--board/--ink*/--signal/--hw-*, --shade-0..5,
+   --sheen-0..3). Tento subor je PRIDANIE (nove selektory), nie zasah do style.css. */
+
+:root{
+  --head-h:104px; /* vyska prisponendleneho chromu nad obsahom (mobil) */
+}
+@media (min-width:900px){
+  :root{ --head-h:84px; }
+}
+/* #/uloha ma iny chrom: namiesto klapkoveho pasu jeden signage riadok, zato
+   v tom istom pase aj pas postupu. Vysledok je o ~90px nizsi ako klapkovy pas
+   a presne ten rozdiel dostane vsetky moznosti na jednu obrazovku. */
+body.view-task{ --head-h:108px }
+@media (min-width:900px){
+  body.view-task{ --head-h:96px }
+}
+/* spodne odsadenie plochy nesie palcovy pas, nie .screen — inak sa stranka da
+   posunut o 24px aj ked je vsetko vidno */
+body.view-task .screen{padding-bottom:0}
+body.view-task .thumb-bar{margin-top:0}
+
+/* stranky komp beží ako plynuci dokument, nie centrovana mriezka countdownu */
+html,body{height:auto}
+body{
+  display:block;
+  place-items:unset;
+  padding:0;
+  min-height:100vh;
+  min-height:100dvh;
+}
+.wall{display:block;gap:0;width:auto}
+
+.screen{
+  max-width:920px;
+  margin:0 auto;
+  padding:0 clamp(14px,4vw,32px) clamp(24px,6vw,48px);
+}
+
+/* --- typograficke role z 03-DIZAJN.md: signage len na chrome, obsah je veta --- */
+.role-body{
+  font-size:clamp(16px,4.2vw,18px);font-weight:400;line-height:1.5;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+}
+.role-option{
+  font-size:clamp(15px,3.8vw,17px);font-weight:400;line-height:1.4;
+  letter-spacing:0;text-transform:none;color:var(--ink-2);
+}
+.role-answer{
+  font-size:clamp(16px,4.2vw,18px); /* rovnaka skala ako body — odpoved je sucastou vety */
+  font-variant-numeric:tabular-nums;font-weight:700;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+}
+.role-stat{
+  font-variant-numeric:tabular-nums;font-weight:700;
+  font-size:clamp(32px,10vw,52px);line-height:1;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+}
+
+/* --- chrom: prisponendlena hlavicka (rohovy odpocet + prepinac pohladov) --- */
+.app-head{
+  position:sticky;top:0;z-index:6;
+  background-color:var(--enamel);
+  padding:clamp(10px,3vw,18px) clamp(14px,4vw,32px) clamp(10px,2.4vw,14px);
+  display:flex;flex-direction:column;gap:10px;
+}
+.app-head::after{ /* ta ista hairline ako .rule, oddeluje chrom od obsahu natrvalo */
+  content:"";display:block;height:1px;margin-top:2px;
+  background:linear-gradient(90deg,transparent,var(--sheen-3),transparent);
+}
+@media (min-width:900px){
+  .app-head{flex-direction:row;align-items:center;justify-content:space-between;gap:20px}
+  /* rohova tabula vpravo hore, vsadena do steny (Recess Rule) — nikdy plavajuci roh */
+}
+/* Na #/uloha je v pase aj pas postupu, takze riadky zostavaju nad sebou aj na
+   desktope; odpocet a prepinac zdielaju prvy riadok, lebo oba su signage. */
+.app-head--task{gap:8px}
+.app-head--task .head-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.app-head--task .progress-strip{margin-top:0}
+@media (min-width:900px){
+  .app-head--task{flex-direction:column;align-items:stretch;gap:10px}
+}
+
+.tabs{
+  display:flex;gap:clamp(16px,4vw,26px);
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;
+  color:var(--ink-2); /* Board-Ink Rule: --ink-3 je 3,38:1 na smalte — na stene najtmavsi je --ink-2 */
+}
+.tabs a{color:inherit;text-decoration:none;padding-bottom:6px;border-bottom:2px solid transparent}
+.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--ink)}
+.tabs a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* --- odpocet ako jeden riadok signage (#/uloha) ----------------------------
+   Klapkovy pas stoji 117px z 667. Na obrazovke, kde sa cita zadanie a vybera
+   z 4 moznosti, je to 18 % viewportu za informaciu, ktora sa za jednu ulohu
+   nezmeni. Tu teda odpocet nie je hardver, ale napis: label, ~30px, v tom
+   istom prispendlenom pase ako pas postupu. Denna granularita staci — minuty
+   na obrazovke, kde clovek stoji 90 sekund, nikto necita. */
+.countline{
+  display:flex;align-items:center;gap:.55em;min-height:30px;
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;
+  font-variant-numeric:tabular-nums;color:var(--ink-2);text-decoration:none;
+  white-space:nowrap;
+} /* = typography.label; --ink-2 lebo stoji na stene */
+.countline b{color:var(--ink);font-weight:700}
+.countline:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+/* --- rohova tabula: zmensena varianta Board Panel, jednotky dni:hod:min --- */
+.corner{
+  position:relative;
+  --cell:clamp(16px,4vw,30px);
+  --lead:clamp(30px,9vw,54px);
+  background-color:var(--board);
+  background-image:linear-gradient(180deg,var(--sheen-1),transparent 60px);
+  border-radius:4px;
+  padding:8px clamp(12px,3vw,18px);
+  box-shadow:
+    0 0 0 1px var(--shade-4),
+    inset 0 4px 14px var(--shade-5),
+    inset 0 14px 24px -14px var(--shade-5),
+    inset 0 -2px 0 var(--sheen-1),
+    0 1px 0 var(--sheen-3),
+    0 3px 7px -2px var(--shade-2);
+  display:flex;flex-direction:column;gap:6px;
+}
+/* Rail (ciel + datum) a hodiny zdielaju uzky pas na telefone, tak radsej
+   stoja nad sebou nez aby sa 3-jednotkovy cas musel zmensit pod --cell/--lead
+   skalu (Reflow-Not-Shrink Rule). Az od 900px je vedla seba miesto na oboje. */
+.corner__rail{display:flex;align-items:baseline;gap:10px}
+.corner__k{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3)} /* = typography.label, ako .rail__k */
+.corner__v{font-size:clamp(11px,1.5vw,14px);font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap} /* = typography.label-strong */
+.corner .clock{gap:8px;flex-wrap:nowrap;justify-content:flex-start}
+.corner .unit{gap:3px}
+.corner .unit--lead{flex-basis:auto}
+.corner a.corner__link{position:absolute;inset:0;border-radius:inherit}
+.corner a.corner__link:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (min-width:900px){
+  .corner{flex-direction:row;align-items:center;gap:clamp(10px,2vw,18px)}
+  .corner__rail{flex-direction:column;align-items:flex-start;gap:2px}
+}
+
+/* --- panel ulohy: board-panel variant, nesie ukazku a zadanie --- */
+.task-panel{
+  position:relative;margin-top:clamp(14px,3vw,22px);
+  background-color:var(--board);
+  border-radius:4px;
+  box-shadow:
+    0 0 0 1px var(--shade-4),
+    inset 0 4px 14px var(--shade-5),
+    inset 0 14px 24px -14px var(--shade-5),
+    inset 0 -2px 0 var(--sheen-1),
+    0 1px 0 var(--sheen-3),
+    0 3px 7px -2px var(--shade-2);
+}
+
+/* Ukazka je pripenendlena hned pod chromom, aby zostala dosiahnutelna aj pri
+   4. otazke skupiny (sjl-2024-a-s1 ma 4 otazky). Vlastna vyska je orezana a
+   scrolluje sa VNUTRI seba - bez orezania by dlha viacodsekova ukazka (napr.
+   Zimne paralympijske hry, tri sekcie + tabulka) zabrala cely viewport a
+   zadanie by uz nebolo vidno vobec. */
+.stimulus{
+  position:sticky;top:var(--head-h);z-index:3;
+  background-color:var(--board);
+  border-radius:4px 4px 0 0;
+  box-shadow:0 8px 10px -8px var(--shade-3); /* leaf-cast tien, oddeluje pripevnenu ukazku od textu pod nou */
+}
+/* Zbalene/rozbalene je nativne <details>: ziadny JS, klavesnica aj citacka
+   fungujú zadarmo. Rozbalena je len pri PRVEJ otazke skupiny; od druhej je
+   z ukazky jeden prispendleny riadok, ktory sa tapnutim otvori. */
+.stimulus__label{
+  display:flex;align-items:center;gap:.6em;cursor:pointer;list-style:none;
+  padding:clamp(14px,3vw,22px) clamp(14px,3vw,22px) 12px;min-height:44px;
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3);
+} /* = typography.label; sedi na doske, tam je --ink-3 spravny */
+.stimulus__label::-webkit-details-marker{display:none}
+.stimulus__label::after{content:"\2304";margin-left:auto;font-size:1.4em;line-height:.2;letter-spacing:0}
+.stimulus[open] .stimulus__label{padding-bottom:8px}
+.stimulus[open] .stimulus__label::after{content:"\2303";line-height:1}
+.stimulus__label:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.stimulus__label em{font-style:normal;color:var(--ink-2)}
+.stimulus__scroll{
+  padding:0 clamp(14px,3vw,22px) 14px;
+  max-height:36dvh;overflow-y:auto;
+}
+.stimulus__scroll::after{ /* nazorna stopka, ze ukazka sa da rolovat vnutri seba — bez nej
+     na mobile (kde sa scrollbar zvycajne neukazuje) nikto netusi, ze text pokracuje */
+  content:"";position:sticky;display:block;left:0;right:0;bottom:0;height:28px;margin:-28px 0 0;
+  background:linear-gradient(180deg,transparent,var(--board));pointer-events:none;
+}
+/* varianta pre komp: cela ukazka bez orezania (napr. kratka tabulka, ktora sa
+   cela zmesti) — bez pripevnenia a bez stopky, lebo niet co rolovat */
+.stimulus--static{position:static}
+.stimulus--static .stimulus__scroll{max-height:none;overflow:visible}
+.stimulus--static .stimulus__scroll::after{content:none}
+.stimulus__heading{font-weight:700;margin:0 0 8px}
+.stimulus__body p{margin:0 0 .9em}
+.stimulus__body p:last-child{margin-bottom:0}
+.stimulus__body{max-width:66ch}
+.stimulus__table-wrap{overflow-x:auto;margin:.8em 0;-webkit-overflow-scrolling:touch}
+.stimulus__body table{border-collapse:collapse;font-size:clamp(15px,3.8vw,17px);white-space:nowrap} /* = role-option: tabulka je obsah, nie chrom */
+.stimulus__body th,.stimulus__body td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--sheen-1);color:var(--ink-2)}
+.stimulus__body th{color:var(--ink-3);font-weight:700;border-bottom:1px solid var(--sheen-2)}
+
+.task-panel__body{padding:16px clamp(14px,3vw,22px) clamp(18px,3vw,24px)}
+.task-panel__prompt{max-width:66ch}
+.task-panel__source{
+  display:block;margin-top:10px;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);text-decoration:none;
+} /* = typography.caption — najtichsi krok, citacia je najmenej dolezita informacia na paneli */
+.task-panel__source:hover,.task-panel__source:focus-visible{color:var(--ink-2)}
+
+/* --- riadok moznosti: tapovatelny, klapkova bunka A-D vlavo --- */
+.options{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-direction:column}
+.option-row{
+  display:flex;align-items:center;gap:14px;
+  width:100%;text-align:left;
+  background:none;border:0;border-top:1px solid var(--sheen-1);
+  padding:12px 2px;min-height:44px;
+  font:inherit;cursor:pointer;
+}
+.options li:first-child .option-row{border-top:0}
+.option-row .flap{--c:clamp(26px,7vw,34px);flex:none} /* litera A-D nepotrebuje skalu cisla; 4 riadky sa musia zmestit pod zadanie */
+.option-row .flap i{font-size:calc(var(--c) * 1.1)} /* pismeno A-D nepotrebuje plnu klapkovu skalu cisla */
+.option-row .role-option{flex:1}
+.option-row:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+
+.option-row--selected .flap .fh--t,.option-row--selected .flap .fh--b{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+.option-row--selected .role-option{color:var(--ink)}
+
+.option-row--correct .flap .fh--t{background:var(--ink);box-shadow:none}
+.option-row--correct .flap .fh--b{background:var(--ink);box-shadow:none}
+.option-row--correct .flap i{color:var(--board);font-weight:700}
+.option-row--correct .role-option{color:var(--ink)}
+
+.option-row--wrong .flap i{color:var(--signal)}
+.option-row--wrong .role-option{color:var(--ink-2)}
+
+.option-row--reveal{position:relative}
+.option-row--reveal .role-option::after{
+  content:"správne";margin-left:10px;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
+} /* = typography.caption */
+
+/* --- pole kratkej odpovede: vsadeny input, tabular, num aj word --- */
+.answer-field{
+  display:flex;align-items:center;gap:10px;margin-top:18px;
+  background:var(--gap);border-radius:3px;padding:12px 14px;min-height:44px;
+}
+.answer-field input{
+  width:100%;background:transparent;border:0;outline:0;font:inherit;
+  font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink);
+  font-size:clamp(16px,4.2vw,18px); /* = role-answer / role-body skala */
+}
+.answer-field input::placeholder{color:var(--ink-3);font-weight:400}
+.answer-field:focus-within{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+
+/* --- CTA + odpovedanie: v dosahu palca, prisponendlene dole --- */
+.thumb-bar{
+  position:sticky;bottom:0;left:0;right:0;margin-top:20px;
+  padding:14px clamp(14px,4vw,32px) max(14px,env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,transparent,var(--enamel) 30%);
+  display:flex;justify-content:center;
+}
+.btn{
+  appearance:none;border:0;border-radius:4px;cursor:pointer;
+  font-family:inherit;font-weight:700;font-size:clamp(12px,1.7vw,16px); /* = typography.title */
+  letter-spacing:.17em;text-transform:uppercase;
+  color:var(--ink);background-color:var(--board);
+  padding:14px 28px;min-height:44px;width:100%;max-width:420px;
+  box-shadow:0 0 0 1px var(--shade-4),inset 0 1px 0 var(--sheen-2),0 3px 7px -2px var(--shade-2);
+}
+.btn:disabled{color:var(--ink-3);opacity:.6;cursor:default}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.btn--ghost{background-color:transparent;box-shadow:0 0 0 1px var(--shade-4)}
+
+/* --- pas postupu: 3-7 klapkovych buniek, premenlivy pocet --- */
+.progress-strip{display:flex;list-style:none;margin:14px 0 0;padding:0;gap:4px}
+.progress-strip .flap{--c:clamp(20px,6.4vw,28px)}
+.progress-strip .flap i{font-size:calc(var(--c) * 1.05)}
+.pip--empty i{color:var(--ink-3)}
+.pip--current .fh--t,.pip--current .fh--b{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+.pip--ok .fh--t,.pip--ok .fh--b{background:var(--ink)}
+.pip--ok i{color:var(--board)}
+.pip--miss i{color:var(--signal)}
+
+/* --- vykaz: staty, seria, 14-dnovy pas, slabe linky --- */
+.report-head{margin-top:18px}
+.report-line{
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2); /* = typography.label */
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;
+}
+.report-line strong{color:var(--ink);font-weight:700}
+/* Popisok a jeho cislo su JEDEN flex item, inak sa "REZERVA 1" zlomi medzi
+   slovom a cislom — anonymne textove uzly su v flexe samostatne polozky. */
+.report-line > span{white-space:nowrap}
+.report-line > span + span::before{content:"\00B7";margin-right:.55em}
+
+.stat-row{display:flex;gap:clamp(20px,6vw,40px);margin-top:22px}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat__cap{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2)} /* = typography.label; --ink-2 lebo stoji na stene */
+
+.day-strip{display:flex;list-style:none;margin:20px 0 0;padding:0;gap:3px;flex-wrap:wrap}
+.day-strip .flap{--c:clamp(14px,4vw,20px)}
+.day-strip .flap i{font-size:calc(var(--c) * 1.1)}
+
+.topics{list-style:none;margin:20px 0 0;padding:0}
+.topic-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  width:100%;background:none;border:0;border-top:1px solid var(--sheen-1);
+  padding:13px 2px;min-height:44px;text-align:left;font:inherit;cursor:pointer;
+}
+.topics li:first-child .topic-row{border-top:0}
+.topic-row:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.topic-row__name{color:var(--ink-2);font-size:clamp(15px,3.8vw,17px)} /* = role-option — nazov temy je obsah, nie chrom */
+.topic-row__frac{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink)}
+
+.section-cap{
+  margin:26px 0 0;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2); /* = typography.label; sekcny popisok stoji na stene */
+}
+
+/* --- panel prezyvky --- */
+.nick-panel{
+  background-color:var(--board);border-radius:4px;padding:20px clamp(16px,4vw,24px);
+  box-shadow:0 0 0 1px var(--shade-4),inset 0 4px 14px var(--shade-5),0 3px 7px -2px var(--shade-2);
+  max-width:360px;
+}
+.nick-panel label{display:block;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px} /* = typography.label */
+.nick-panel .answer-field{margin-top:0}
+.nick-panel .btn{margin-top:14px}
+
+.hint{margin:10px 0 0;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)} /* = typography.caption; objavuje sa aj na stene, takze --ink-2 */
+.demo-frame{margin:0 0 40px}
+.demo-frame h2{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2);margin:0 0 12px} /* = typography.label */

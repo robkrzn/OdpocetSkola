@@ -110,8 +110,20 @@ potvrdiť alebo vyvrátiť s dôvodom:
   variante nižší `clamp()`, všetko ostatné škáluje samo (Cell-Derived Type Rule).
   Orientačne `--cell: clamp(16px,4vw,30px)`, `--lead: clamp(30px,9vw,54px)`.
 - **Umiestnenie:** desktop vpravo nahor, vsadené do steny (nie plávajúca karta —
-  Recess Rule). **Na úzkom telefóne pás na celú šírku hore, nie plávajúci roh** —
-  roh nad prózou je najhoršia možná pozícia pre čitateľnosť.
+  Recess Rule). Na telefóne **nie plávajúci roh** — roh nad prózou je najhoršia možná
+  pozícia pre čitateľnosť.
+
+- **Na telefóne je odpočet per-pohľad, nie jeden prvok. Toto ruší pôvodné odporúčanie
+  „pás na celú šírku hore" pre všetky pohľady** — bolo zmerané na hotovom kompe F4
+  a nesedí. Klapkový pás stojí 117 px z 667, čo je 18 % viewportu, a na obrazovke
+  úlohy to znamenalo, že **zadanie a možnosti sa nezmestili na jednu obrazovku**.
+  Preto:
+  - `#/dnes`, `#/vysledok`, `#/vykaz` — **klapkový pás** hore. Tu je odpočet emočný
+    motor, žiadna čítacia úloha s ním nesúťaží a tých 117 px je zaplatených.
+  - `#/uloha` — **jeden riadok signage textu** (`TESTOVANIE 9 · 196 DNÍ`, veľkosť
+    `label`, ~30 px) v tom istom prišpendlenom páse ako postup. Odpočet sa nestratí,
+    len prestane stáť 90 px na obrazovke, kde je najmenej potrebný.
+  - `#/tabula` — plná tabuľa, päť jednotiek, bez zmeny.
 - **Interakcia zostáva, ale zúžená.** `main.js` dnes spúšťa kaskádu, zvonec a výkrik
   na `pointerdown` **kdekoľvek na dokumente**. V hre by tapnutie na odpoveď zazvonilo.
   Nový rozsah: kaskáda, zvonec aj výkriky reagujú **len na samotnú rohovú tabuľu**
@@ -150,7 +162,15 @@ v `DESIGN.md`:
 1. **Rohová tabuľa** — zmenšená varianta existujúcej.
 2. **Panel úlohy** — vsadený board panel; nesie ukážku a zadanie. Pri skupinovej
    úlohe je ukážka **prišpendlená pri scrollovaní** (inak sa pri štvrtej otázke
-   k tabuľke nedá vrátiť).
+   k tabuľke nedá vrátiť), ale **rozbalená len pri prvej otázke skupiny**. Od druhej
+   je zbalená na jeden prišpendlený riadok (`UKÁŽKA · Zimné paralympijské hry ⌄`),
+   tapnutím sa otvorí. Ukážku človek **prečíta raz**; potom ju potrebuje na
+   dohľadanie, nie na čítanie, a 240 px prišpendlenej prózy je presne to, čo vytlačí
+   možnosti z obrazovky.
+
+   **Merateľné kritérium, ktoré to musí splniť:** na 375×667 sú **zadanie a všetky
+   možnosti viditeľné bez scrollovania**, keď je ukážka zbalená alebo žiadna nie je.
+   S rozbalenou ukážkou sa scrollovať smie.
 3. **Riadok možnosti** — tapovateľný, min. 44px, vľavo **klapková bunka s literou
    A–D**. Existujúce puzdro v novej funkcii; pri vyhodnotení sa bunka preklopí na
    `✓` alebo `✕`. Toto je najlacnejší a najpresnejší spôsob, ako dostať flip do hry.
@@ -214,6 +234,12 @@ existujúcich výkrikov na tabuli, nie v úlohe · ticho tam, kde nie je čo pov
 - Celý priebeh je ovládateľný klávesnicou; `1`–`4` / `A`–`D` vyberajú možnosť,
   `Enter` potvrdí. Focus ring z existujúceho `:focus-visible`.
 - Kontrast obsahu ≥ 4,5:1 — `--ink-3` je použiteľný pre chróm, **nie pre zadanie**.
+- **`--ink-3` je farba na tabuli, nie na stene.** Dopočítané na kompe F4:
+  `--ink-3` (#94A69B) na `--enamel` (#2A5346) je **3,38:1** — pre malé verzálky
+  nedostatočné. Na `--board` (#0F1215) je ~7:1 a tam je správne. Najslabší použiteľný
+  atrament na smaltovanej stene je **`--ink-2`** (5,39:1). Týka sa to prepínača
+  pohľadov, sekčných popiskov (`DNEŠNÝ SPOJ`, `SÉRIA`, `ÚSPEŠNOSŤ`, `SLABÉ LINKY`)
+  a popiskov čísel vo výkaze — všetko, čo stojí na zelenej.
 - Ukážka, zadanie a možnosti sú skutočný text, nie obrázok, všade kde to ide
   (preto sa tabuľky prepisujú do `<table>`, `02-BANKA-OTAZOK.md`).
 - Zmena pohľadu ohlásená pre čítačku; pás postupu má textovú alternatívu.

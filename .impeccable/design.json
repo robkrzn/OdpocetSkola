@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-19T00:00:00Z",
+  "generatedAt": "2026-09-01T00:00:00Z",
   "title": "Design System: Odchodová tabuľa",
   "extensions": {
     "colorMeta": {
@@ -8,134 +8,409 @@
         "role": "primary",
         "displayName": "Institutional Enamel",
         "canonical": "#2A5346",
-        "tonalRamp": ["#0B1712", "#12241D", "#1B3529", "#234436", "#2A5346", "#3C7461", "#6BA592", "#B6D6C9"]
+        "tonalRamp": [
+          "#0B1712",
+          "#12241D",
+          "#1B3529",
+          "#234436",
+          "#2A5346",
+          "#3C7461",
+          "#6BA592",
+          "#B6D6C9"
+        ]
       },
       "signal": {
         "role": "secondary",
         "displayName": "Signal Red-Orange",
         "canonical": "#E8543B",
-        "tonalRamp": ["#2E0E07", "#4C170C", "#6E2313", "#96331D", "#BE4128", "#E8543B", "#F08A78", "#F9CDC4"]
+        "tonalRamp": [
+          "#2E0E07",
+          "#4C170C",
+          "#6E2313",
+          "#96331D",
+          "#BE4128",
+          "#E8543B",
+          "#F08A78",
+          "#F9CDC4"
+        ]
       },
       "board": {
         "role": "neutral",
         "displayName": "Board Black",
         "canonical": "#0F1215",
-        "tonalRamp": ["#050708", "#0F1215", "#171C21", "#22282E", "#2E353C", "#454D55", "#6E7780", "#AEB6BD"]
+        "tonalRamp": [
+          "#050708",
+          "#0F1215",
+          "#171C21",
+          "#22282E",
+          "#2E353C",
+          "#454D55",
+          "#6E7780",
+          "#AEB6BD"
+        ]
       },
       "gap": {
         "role": "neutral",
         "displayName": "Cell Gap",
         "canonical": "#050708",
-        "tonalRamp": ["#020304", "#050708", "#0C1013", "#151A1F", "#232A31", "#3A434C", "#69737C", "#A9B2BA"]
+        "tonalRamp": [
+          "#020304",
+          "#050708",
+          "#0C1013",
+          "#151A1F",
+          "#232A31",
+          "#3A434C",
+          "#69737C",
+          "#A9B2BA"
+        ]
       },
       "flap-t1": {
         "role": "neutral",
         "displayName": "Leaf Upper Light",
         "canonical": "#3C434A",
-        "tonalRamp": ["#0E1114", "#171C21", "#22282E", "#2B3138", "#3C434A", "#5A626A", "#8B939B", "#C6CCD2"]
+        "tonalRamp": [
+          "#0E1114",
+          "#171C21",
+          "#22282E",
+          "#2B3138",
+          "#3C434A",
+          "#5A626A",
+          "#8B939B",
+          "#C6CCD2"
+        ]
       },
       "flap-t2": {
         "role": "neutral",
         "displayName": "Leaf Upper Dark",
         "canonical": "#2B3138",
-        "tonalRamp": ["#0B0E11", "#131820", "#1D2229", "#2B3138", "#3C434A", "#565E66", "#868E96", "#C2C8CE"]
+        "tonalRamp": [
+          "#0B0E11",
+          "#131820",
+          "#1D2229",
+          "#2B3138",
+          "#3C434A",
+          "#565E66",
+          "#868E96",
+          "#C2C8CE"
+        ]
       },
       "flap-b1": {
         "role": "neutral",
         "displayName": "Leaf Lower Light",
         "canonical": "#262C32",
-        "tonalRamp": ["#090C0E", "#111519", "#1B2026", "#262C32", "#353C43", "#4E565E", "#7F878F", "#BEC4CA"]
+        "tonalRamp": [
+          "#090C0E",
+          "#111519",
+          "#1B2026",
+          "#262C32",
+          "#353C43",
+          "#4E565E",
+          "#7F878F",
+          "#BEC4CA"
+        ]
       },
       "flap-b2": {
         "role": "neutral",
         "displayName": "Leaf Lower Dark",
         "canonical": "#171C21",
-        "tonalRamp": ["#05070A", "#0D1115", "#171C21", "#20262C", "#2E353C", "#464E56", "#77808A", "#B8BFC6"]
+        "tonalRamp": [
+          "#05070A",
+          "#0D1115",
+          "#171C21",
+          "#20262C",
+          "#2E353C",
+          "#464E56",
+          "#77808A",
+          "#B8BFC6"
+        ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Bone Ink",
         "canonical": "#F0EBDD",
-        "tonalRamp": ["#2A261C", "#433D2E", "#5F5744", "#7E755E", "#A0977F", "#C3BBA5", "#DCD5C3", "#F0EBDD"]
+        "tonalRamp": [
+          "#2A261C",
+          "#433D2E",
+          "#5F5744",
+          "#7E755E",
+          "#A0977F",
+          "#C3BBA5",
+          "#DCD5C3",
+          "#F0EBDD"
+        ]
       },
       "ink-2": {
         "role": "neutral",
         "displayName": "Chalk Ink",
         "canonical": "#C3CFC7",
-        "tonalRamp": ["#1D2622", "#2E3B35", "#42524A", "#5A6C63", "#78897F", "#9AA9A0", "#C3CFC7", "#E4EBE7"]
+        "tonalRamp": [
+          "#1D2622",
+          "#2E3B35",
+          "#42524A",
+          "#5A6C63",
+          "#78897F",
+          "#9AA9A0",
+          "#C3CFC7",
+          "#E4EBE7"
+        ]
       },
       "ink-3": {
         "role": "neutral",
         "displayName": "Faded Ink",
         "canonical": "#94A69B",
-        "tonalRamp": ["#161E1A", "#243029", "#35443B", "#4A5C51", "#657A6E", "#94A69B", "#B6C4BC", "#DCE5E0"]
+        "tonalRamp": [
+          "#161E1A",
+          "#243029",
+          "#35443B",
+          "#4A5C51",
+          "#657A6E",
+          "#94A69B",
+          "#B6C4BC",
+          "#DCE5E0"
+        ]
       },
       "wall-ink": {
         "role": "neutral",
         "displayName": "Wall Ink",
         "canonical": "#DEE9E2",
-        "tonalRamp": ["#1F2A25", "#31403A", "#465650", "#5F716A", "#7D8F88", "#A3B3AC", "#C4D2CB", "#DEE9E2"]
+        "tonalRamp": [
+          "#1F2A25",
+          "#31403A",
+          "#465650",
+          "#5F716A",
+          "#7D8F88",
+          "#A3B3AC",
+          "#C4D2CB",
+          "#DEE9E2"
+        ]
       },
       "hw-pin": {
         "role": "neutral",
         "displayName": "Axle Pin Steel",
         "canonical": "#79838C",
-        "tonalRamp": ["#12161A", "#1E2429", "#2C343B", "#3E474F", "#565F68", "#79838C", "#A3ABB2", "#D2D7DB"]
+        "tonalRamp": [
+          "#12161A",
+          "#1E2429",
+          "#2C343B",
+          "#3E474F",
+          "#565F68",
+          "#79838C",
+          "#A3ABB2",
+          "#D2D7DB"
+        ]
       },
       "hw-screw": {
         "role": "neutral",
         "displayName": "Screw Brass-Grey",
         "canonical": "#6E7A72",
-        "tonalRamp": ["#11150F", "#1C221D", "#2A322C", "#3C453E", "#535D55", "#6E7A72", "#9AA49D", "#CCD3CE"]
+        "tonalRamp": [
+          "#11150F",
+          "#1C221D",
+          "#2A322C",
+          "#3C453E",
+          "#535D55",
+          "#6E7A72",
+          "#9AA49D",
+          "#CCD3CE"
+        ]
       },
       "hw-dk": {
         "role": "neutral",
         "displayName": "Hardware Shadow",
         "canonical": "#272D33",
-        "tonalRamp": ["#090B0D", "#121619", "#1C2126", "#272D33", "#363E45", "#4E5860", "#818B94", "#BFC6CC"]
+        "tonalRamp": [
+          "#090B0D",
+          "#121619",
+          "#1C2126",
+          "#272D33",
+          "#363E45",
+          "#4E5860",
+          "#818B94",
+          "#BFC6CC"
+        ]
       },
-      "shade-0": { "role": "neutral", "displayName": "Shade 0 (grain)", "canonical": "rgba(0,0,0,.022)" },
-      "shade-1": { "role": "neutral", "displayName": "Shade 1 (brush)", "canonical": "rgba(0,0,0,.13)" },
-      "shade-2": { "role": "neutral", "displayName": "Shade 2 (seat)", "canonical": "rgba(0,0,0,.4)" },
-      "shade-3": { "role": "neutral", "displayName": "Shade 3 (cast)", "canonical": "rgba(0,0,0,.55)" },
-      "shade-4": { "role": "neutral", "displayName": "Shade 4 (outline)", "canonical": "rgba(0,0,0,.7)" },
-      "shade-5": { "role": "neutral", "displayName": "Shade 5 (recess)", "canonical": "rgba(0,0,0,.85)" },
-      "sheen-0": { "role": "neutral", "displayName": "Sheen 0 (weave)", "canonical": "rgba(255,255,255,.02)" },
-      "sheen-1": { "role": "neutral", "displayName": "Sheen 1 (lip)", "canonical": "rgba(255,255,255,.05)" },
-      "sheen-2": { "role": "neutral", "displayName": "Sheen 2 (bevel)", "canonical": "rgba(255,255,255,.09)" },
-      "sheen-3": { "role": "neutral", "displayName": "Sheen 3 (highlight)", "canonical": "rgba(255,255,255,.14)" }
+      "shade-0": {
+        "role": "neutral",
+        "displayName": "Shade 0 (grain)",
+        "canonical": "rgba(0,0,0,.022)"
+      },
+      "shade-1": {
+        "role": "neutral",
+        "displayName": "Shade 1 (brush)",
+        "canonical": "rgba(0,0,0,.13)"
+      },
+      "shade-2": {
+        "role": "neutral",
+        "displayName": "Shade 2 (seat)",
+        "canonical": "rgba(0,0,0,.4)"
+      },
+      "shade-3": {
+        "role": "neutral",
+        "displayName": "Shade 3 (cast)",
+        "canonical": "rgba(0,0,0,.55)"
+      },
+      "shade-4": {
+        "role": "neutral",
+        "displayName": "Shade 4 (outline)",
+        "canonical": "rgba(0,0,0,.7)"
+      },
+      "shade-5": {
+        "role": "neutral",
+        "displayName": "Shade 5 (recess)",
+        "canonical": "rgba(0,0,0,.85)"
+      },
+      "sheen-0": {
+        "role": "neutral",
+        "displayName": "Sheen 0 (weave)",
+        "canonical": "rgba(255,255,255,.02)"
+      },
+      "sheen-1": {
+        "role": "neutral",
+        "displayName": "Sheen 1 (lip)",
+        "canonical": "rgba(255,255,255,.05)"
+      },
+      "sheen-2": {
+        "role": "neutral",
+        "displayName": "Sheen 2 (bevel)",
+        "canonical": "rgba(255,255,255,.09)"
+      },
+      "sheen-3": {
+        "role": "neutral",
+        "displayName": "Sheen 3 (highlight)",
+        "canonical": "rgba(255,255,255,.14)"
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Flap Character", "purpose": "The characters inside flap cells. Sized off --c, not rem; the only type in the build that exceeds the usual display ceiling." },
-      "headline": { "displayName": "Wall Sentence", "purpose": "The painted sentence at its fluid base size. Never rendered: the element is display:none on the page." },
-      "headline-preview": { "displayName": "Wall Sentence (preview frame)", "purpose": "The sentence at its fixed 32px size inside the 1200x630 link-preview frame, the only place it is visible." },
-      "title": { "displayName": "Lead Caption", "purpose": "The days caption under the lead unit, one step above the other captions." },
-      "label": { "displayName": "Rail / Note", "purpose": "Departure rail key and value, departed-service note." },
-      "label-strong": { "displayName": "Rail Value", "purpose": "The departure timestamp: bold, tabular, chalk ink." },
-      "caption": { "displayName": "Unit Caption", "purpose": "Small unit captions under hours, minutes, seconds, hundredths." }
+      "display": {
+        "displayName": "Flap Character",
+        "purpose": "The characters inside flap cells. Sized off --c, not rem; the only type in the build that exceeds the usual display ceiling."
+      },
+      "headline": {
+        "displayName": "Wall Sentence",
+        "purpose": "The painted sentence at its fluid base size. Never rendered: the element is display:none on the page."
+      },
+      "headline-preview": {
+        "displayName": "Wall Sentence (preview frame)",
+        "purpose": "The sentence at its fixed 32px size inside the 1200x630 link-preview frame, the only place it is visible."
+      },
+      "title": {
+        "displayName": "Lead Caption",
+        "purpose": "The days caption under the lead unit, one step above the other captions."
+      },
+      "label": {
+        "displayName": "Rail / Note",
+        "purpose": "Departure rail key and value, departed-service note."
+      },
+      "label-strong": {
+        "displayName": "Rail Value",
+        "purpose": "The departure timestamp: bold, tabular, chalk ink."
+      },
+      "caption": {
+        "displayName": "Unit Caption",
+        "purpose": "Small unit captions under hours, minutes, seconds, hundredths."
+      },
+      "body": {
+        "displayName": "Question Body",
+        "purpose": "v2: exam question and reading passage text. Sentence case, tracking 0 — the All-Caps Signage Rule governs chrome, not this."
+      },
+      "option": {
+        "displayName": "Answer Option",
+        "purpose": "v2: option A-D text, one step below body so the question stays the loudest line."
+      },
+      "answer": {
+        "displayName": "Given/Correct Answer",
+        "purpose": "v2: the answer as typed, struck through, or revealed. Bold, tabular, sentence case."
+      },
+      "stat": {
+        "displayName": "Report Statistic",
+        "purpose": "v2: success percentages on Vykaz — the one number in the build that is large and outside a flap-cell housing."
+      }
     },
     "shadows": [
-      { "name": "board-recess", "value": "0 0 0 1px rgba(0,0,0,.7), inset 0 4px 14px rgba(0,0,0,.85), inset 0 14px 24px -14px rgba(0,0,0,.85), inset 0 -2px 0 rgba(255,255,255,.05), 0 1px 0 rgba(255,255,255,.14), 0 3px 7px -2px rgba(0,0,0,.4)", "purpose": "The one panel treatment: board set into the enamel wall, not floating on it." },
-      { "name": "leaf-bevel-upper", "value": "inset 0 1px 0 rgba(255,255,255,.09)", "purpose": "Machined top edge of the upper leaf." },
-      { "name": "leaf-bevel-lower", "value": "inset 0 -1px 0 rgba(0,0,0,.55)", "purpose": "Machined bottom edge of the lower leaf." },
-      { "name": "leaf-cast", "value": "linear-gradient(180deg, rgba(0,0,0,.55), transparent) over the top 24% of the lower half", "purpose": "Shadow the upper leaf drops onto the lower half; applied to the printed half too, so the flip reads as lit." },
-      { "name": "hardware-seat-screw", "value": "0 1px 1px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.55)", "purpose": "Seats a 9px corner screw in its hole." },
-      { "name": "hardware-seat-pin", "value": "0 0 0 1px rgba(0,0,0,.7)", "purpose": "Seats an axle pin against the flap housing." },
-      { "name": "falling-leaf", "value": "0 1px 0 rgba(0,0,0,.85)", "purpose": "Hairline under the in-flight leaf only." }
+      {
+        "name": "board-recess",
+        "value": "0 0 0 1px rgba(0,0,0,.7), inset 0 4px 14px rgba(0,0,0,.85), inset 0 14px 24px -14px rgba(0,0,0,.85), inset 0 -2px 0 rgba(255,255,255,.05), 0 1px 0 rgba(255,255,255,.14), 0 3px 7px -2px rgba(0,0,0,.4)",
+        "purpose": "The one panel treatment: board set into the enamel wall, not floating on it."
+      },
+      {
+        "name": "leaf-bevel-upper",
+        "value": "inset 0 1px 0 rgba(255,255,255,.09)",
+        "purpose": "Machined top edge of the upper leaf."
+      },
+      {
+        "name": "leaf-bevel-lower",
+        "value": "inset 0 -1px 0 rgba(0,0,0,.55)",
+        "purpose": "Machined bottom edge of the lower leaf."
+      },
+      {
+        "name": "leaf-cast",
+        "value": "linear-gradient(180deg, rgba(0,0,0,.55), transparent) over the top 24% of the lower half",
+        "purpose": "Shadow the upper leaf drops onto the lower half; applied to the printed half too, so the flip reads as lit."
+      },
+      {
+        "name": "hardware-seat-screw",
+        "value": "0 1px 1px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.55)",
+        "purpose": "Seats a 9px corner screw in its hole."
+      },
+      {
+        "name": "hardware-seat-pin",
+        "value": "0 0 0 1px rgba(0,0,0,.7)",
+        "purpose": "Seats an axle pin against the flap housing."
+      },
+      {
+        "name": "falling-leaf",
+        "value": "0 1px 0 rgba(0,0,0,.85)",
+        "purpose": "Hairline under the in-flight leaf only."
+      }
     ],
     "motion": [
-      { "name": "leaf-fall", "value": "108ms cubic-bezier(.5,0,.9,.4)", "purpose": "Upper leaf rotating from 0 to -90deg, then cut to opacity 0 at the last frame." },
-      { "name": "leaf-land", "value": "230ms cubic-bezier(.18,.72,.3,1)", "purpose": "Lower leaf swinging up from 90deg with a settle; onfinish writes the new character into the static half." },
-      { "name": "roll-step", "value": "45ms per character, 4-8 steps, staggered 18ms per destination cell and 26ms per clock cell", "purpose": "Rolling cells swap glyphs without animating leaves; only the final character lands with a real flip." },
-      { "name": "spin-blur", "value": "blur(calc(var(--c) * .026)); fast column blur(calc(var(--c) * .05))", "purpose": "Applied to the inner character only. The housing is fixed hardware and stays sharp." },
-      { "name": "reduced-motion", "value": "blur removed; hundredths freeze blank; caption at 42% opacity", "purpose": "The panicking column is exactly what a reduced-motion user switched off. The countdown itself keeps running." }
+      {
+        "name": "leaf-fall",
+        "value": "108ms cubic-bezier(.5,0,.9,.4)",
+        "purpose": "Upper leaf rotating from 0 to -90deg, then cut to opacity 0 at the last frame."
+      },
+      {
+        "name": "leaf-land",
+        "value": "230ms cubic-bezier(.18,.72,.3,1)",
+        "purpose": "Lower leaf swinging up from 90deg with a settle; onfinish writes the new character into the static half."
+      },
+      {
+        "name": "roll-step",
+        "value": "45ms per character, 4-8 steps, staggered 18ms per destination cell and 26ms per clock cell",
+        "purpose": "Rolling cells swap glyphs without animating leaves; only the final character lands with a real flip."
+      },
+      {
+        "name": "spin-blur",
+        "value": "blur(calc(var(--c) * .026)); fast column blur(calc(var(--c) * .05))",
+        "purpose": "Applied to the inner character only. The housing is fixed hardware and stays sharp."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "blur removed; hundredths freeze blank; caption at 42% opacity",
+        "purpose": "The panicking column is exactly what a reduced-motion user switched off. The countdown itself keeps running."
+      }
     ],
     "breakpoints": [
-      { "name": "narrow-phone", "value": "max-width: 559px" },
-      { "name": "tablet", "value": "min-width: 560px and max-width: 899px" },
-      { "name": "wide", "value": "min-width: 900px" },
-      { "name": "short", "value": "max-height: 800px" },
-      { "name": "narrow-and-short", "value": "max-width: 559px and max-height: 800px" }
+      {
+        "name": "narrow-phone",
+        "value": "max-width: 559px"
+      },
+      {
+        "name": "tablet",
+        "value": "min-width: 560px and max-width: 899px"
+      },
+      {
+        "name": "wide",
+        "value": "min-width: 900px"
+      },
+      {
+        "name": "short",
+        "value": "max-height: 800px"
+      },
+      {
+        "name": "narrow-and-short",
+        "value": "max-width: 559px and max-height: 800px"
+      }
     ]
   },
   "components": [
@@ -202,6 +477,62 @@
       "description": "The global focus-visible treatment. The build currently ships no focusable control, so this is the standing rule for any future one, not a live state.",
       "html": "<span class=\"ds-focusable\" tabindex=\"0\">focus me</span>",
       "css": ".ds-focusable{display:inline-block;font-family:\"Archivo Narrow\",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.19em;color:#F0EBDD;background:#0F1215;padding:8px 14px;border-radius:2px}.ds-focusable:focus-visible{outline:2px solid #F0EBDD;outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "Corner Countdown",
+      "kind": "custom",
+      "refersTo": "corner-board",
+      "description": "v2: the countdown as sticky chrome, per view. #/dnes, #/vysledok and #/vykaz get the shrunk Board Panel tile (dni:hod:min only; seconds/hundredths stay on the full board, rail stacked above the clock below 900px so a 3-unit clock never shrinks to share a row). #/uloha gets the signage-line variant instead — one ~30px label row, TESTOVANIE 9 · 196 DNÍ, in the same pinned band as the progress strip; see the Per-View Countdown Rule.",
+      "html": "<a class=\"ds-corner\" href=\"#/tabula\"><span class=\"ds-corner-rail\"><span class=\"ds-corner-k\">Testovanie 9</span><span class=\"ds-corner-v\">17.03.2027</span></span><div class=\"ds-corner-clock\"></div></a>\n<!-- #/uloha variant --> <a class=\"ds-countline\" href=\"#/tabula\"><span>Testovanie 9</span><span aria-hidden=\"true\">·</span><b>196 dní</b></a>",
+      "css": ".ds-corner{--c-cell:clamp(16px,4vw,30px);--c-lead:clamp(30px,9vw,54px);display:flex;flex-direction:column;gap:6px;background-color:#0F1215;border-radius:4px;padding:8px clamp(12px,3vw,18px)}.ds-corner-rail{display:flex;align-items:baseline;gap:10px}.ds-corner-k{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:#94A69B}.ds-corner-v{font-size:clamp(11px,1.5vw,14px);font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:#C3CFC7;font-variant-numeric:tabular-nums}@media (min-width:900px){.ds-corner{flex-direction:row;align-items:center}.ds-corner-rail{flex-direction:column;align-items:flex-start}}.ds-countline{display:flex;align-items:center;gap:.55em;min-height:30px;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:#C3CFC7;text-decoration:none;white-space:nowrap}.ds-countline b{color:#F0EBDD;font-weight:700}"
+    },
+    {
+      "name": "Task Panel",
+      "kind": "card",
+      "refersTo": "task-panel",
+      "description": "Board Panel variant carrying one question: an optional stimulus as a native <details> (sticky and capped when open, one 44px pinned summary row when collapsed — open at the group first question, collapsed from the second), the prompt (body role, max-width 66ch), and a source citation (caption role) linking the real NUCEM PDF.",
+      "html": "<article class=\"ds-task\"><details class=\"ds-stimulus\" open><summary class=\"ds-stimulus-label\">Ukážka · <em>Zimné paralympijské hry</em></summary><div class=\"ds-stimulus-scroll\">…</div></details><div class=\"ds-task-body\"><p class=\"ds-prompt\">Otázka…</p><a class=\"ds-source\" href=\"#\">SJL · 2024 · forma A · úloha 4 · nucem.sk</a></div></article>",
+      "css": ".ds-task{background-color:#0F1215;border-radius:4px}.ds-stimulus{position:sticky;top:var(--head-h,104px);background-color:#0F1215;box-shadow:0 8px 10px -8px rgba(0,0,0,.55)}.ds-stimulus-label{display:flex;align-items:center;gap:.6em;cursor:pointer;list-style:none;min-height:44px;padding:clamp(14px,3vw,22px) clamp(14px,3vw,22px) 12px;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:#94A69B}.ds-stimulus-label::after{content:\"\\2304\";margin-left:auto}.ds-stimulus[open] .ds-stimulus-label::after{content:\"\\2303\"}.ds-stimulus-scroll{max-height:36dvh;overflow-y:auto;padding:0 clamp(14px,3vw,22px) 14px}.ds-stimulus-scroll::after{content:\"\";position:sticky;display:block;left:0;right:0;bottom:0;height:28px;margin-top:-28px;background:linear-gradient(180deg,transparent,#0F1215)}.ds-prompt{font-size:clamp(16px,4.2vw,18px);line-height:1.5;max-width:66ch;color:#F0EBDD}.ds-source{font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:#94A69B}"
+    },
+    {
+      "name": "Option Row (mc)",
+      "kind": "custom",
+      "refersTo": "option-row",
+      "description": "The flap cell's third job: a tappable min-44px row, a small lettered Flap Cell (A-D) left, option text right. States per the rewritten One Signal Rule — default, selected-unconfirmed (sheen ring), correct (cell inverts to solid --ink fill, check glyph), wrong (glyph turns cross in --signal), and a quiet non-flipped reveal on the correct option when the pick was wrong.",
+      "html": "<button class=\"ds-option ds-option--correct\"><span class=\"ds-flap-sm\"><i>C</i></span><span class=\"ds-option-text\">Text možnosti</span></button>",
+      "css": ".ds-option{display:flex;align-items:center;gap:14px;min-height:44px;border-top:1px solid rgba(255,255,255,.05);background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}.ds-option-text{font-size:clamp(15px,3.8vw,17px);color:#C3CFC7}.ds-option--correct .ds-flap-sm{background:#F0EBDD}.ds-option--correct .ds-flap-sm i{color:#0F1215;font-weight:700}.ds-option--wrong .ds-flap-sm i{color:#E8543B}"
+    },
+    {
+      "name": "Answer Field (num / word)",
+      "kind": "custom",
+      "refersTo": "answer-field",
+      "description": "A single inset control on --gap (the same seam-black behind every flap cell), text in the bold tabular answer role. inputmode=decimal for type num, plain text for type word. No borrowed browser-widget chrome.",
+      "html": "<div class=\"ds-answer\"><input type=\"text\" inputmode=\"decimal\" placeholder=\"0\"></div>",
+      "css": ".ds-answer{display:flex;align-items:center;gap:10px;background:#050708;border-radius:3px;padding:12px 14px;min-height:44px}.ds-answer input{background:transparent;border:0;outline:0;font-weight:700;font-variant-numeric:tabular-nums;color:#F0EBDD;font-size:clamp(16px,4.2vw,18px)}"
+    },
+    {
+      "name": "Progress / Day Strip",
+      "kind": "custom",
+      "refersTo": "progress-pip",
+      "description": "3-7 small Flap Cells (progress strip, one per question in today's variable-length set) or 14 (report's day strip) — never a new chart type. Four states shared with the Option Row: empty (dash, --ink-3), current (sheen ring), correct (inverted fill + check), missed (cross in --signal). Carries a .sr text alternative summarizing the count for screen readers.",
+      "html": "<ol class=\"ds-strip\"><li class=\"ds-pip ds-pip--ok\"><i>✓</i></li><li class=\"ds-pip ds-pip--miss\"><i>✕</i></li><li class=\"ds-pip ds-pip--current\"></li><li class=\"ds-pip ds-pip--empty\"><i>–</i></li></ol>",
+      "css": ".ds-strip{display:flex;list-style:none;margin:0;padding:0;gap:4px}.ds-pip{--c:clamp(20px,6.4vw,28px);width:var(--c);height:calc(var(--c) * 1.55);background:#050708;border-radius:3px;text-align:center}.ds-pip--empty i{color:#94A69B}.ds-pip--ok{background:#F0EBDD}.ds-pip--ok i{color:#0F1215}.ds-pip--miss i{color:#E8543B}"
+    },
+    {
+      "name": "Report Stat",
+      "kind": "custom",
+      "refersTo": "stat-figure",
+      "description": "The one number in the build that is large and lives outside a flap-cell housing: MAT/SJL success percentages on Výkaz. Sized well under the countdown's own lead digits so it never competes with the board's signature number.",
+      "html": "<div class=\"ds-stat\"><span class=\"ds-stat-cap\">Mat</span><span class=\"ds-stat-fig\">72 %</span></div>",
+      "css": ".ds-stat-cap{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:#94A69B}.ds-stat-fig{font-variant-numeric:tabular-nums;font-weight:700;font-size:clamp(32px,10vw,52px);color:#F0EBDD}"
+    },
+    {
+      "name": "Nickname Panel",
+      "kind": "card",
+      "refersTo": "task-panel",
+      "description": "One answer-field input, one .btn, inside a small Board Panel. The label asks for a nickname explicitly, never a name, per 00-KONTEXT.md's no-personal-data rule (R6).",
+      "html": "<form class=\"ds-nick\"><label>Prezývka, nie meno</label><div class=\"ds-answer\"><input type=\"text\" placeholder=\"napr. paulinka97\"></div><button class=\"ds-btn\">Uložiť</button></form>",
+      "css": ".ds-nick{background-color:#0F1215;border-radius:4px;padding:20px clamp(16px,4vw,24px);max-width:360px}.ds-nick label{display:block;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:#94A69B;margin-bottom:8px}"
     }
   ],
   "narrative": {
@@ -216,19 +547,84 @@
       "No interactive control; nothing hovers, nothing is clickable-looking."
     ],
     "rules": [
-      { "name": "The One-Ramp Rule", "body": "Depth is drawn exclusively from shade-0…shade-5 and sheen-0…sheen-3. A new shadow, bevel, or hairline picks the nearest existing step and never introduces a fresh alpha. If nothing on the ramp fits, the effect is wrong, not the ramp.", "section": "colors" },
-      { "name": "The One Signal Rule", "body": "The signal colour marks the departed service and nothing else. It is never used for emphasis, never for a heading, never for a second element on the same screen. Its rarity is what makes it read as an alarm.", "section": "colors" },
-      { "name": "The Metal Is Not Ink Rule", "body": "Screws and axle pins draw from the hardware tokens, not from the ink tints. Anything that is supposed to be a physical fastener is grey-green metal with a two-stop gradient and a shade-4 seat shadow.", "section": "colors" },
-      { "name": "The Tabular Rule", "body": "Every numeral in the build sets font-variant-numeric: tabular-nums. At 100 updates per second, proportional figures make the layout twitch. This is correctness, not polish.", "section": "typography" },
-      { "name": "The All-Caps Signage Rule", "body": "Every string outside a flap cell is uppercase with tracking between 0.14em and 0.22em. Sentence case appears nowhere on the board; this is signage, and signage shouts quietly.", "section": "typography" },
-      { "name": "The Cell-Derived Type Rule", "body": "Flap type size, line height, pin diameter, and spin blur are all calc() expressions on --c. Never hard-code a font size inside a flap; change --c and the whole unit rescales correctly.", "section": "typography" },
-      { "name": "The No-Scroll Rule", "body": "The board must fit one viewport on the reference device without scrolling. Cell size is bounded by min(vw, vh), not by width alone. 375×667 overflowed by 111px before that bound existed; any change to cell sizing is re-checked at 375×667 first.", "section": "layout" },
-      { "name": "The Reflow-Not-Shrink Rule", "body": "When horizontal space runs out, units move to a new row. They do not scale down. The number is the product; it never gives up size to fit a layout.", "section": "layout" },
-      { "name": "The Recess Rule", "body": "Surfaces sit in the wall, not on it. New panels get an outline plus inset shadow; a drop shadow is only ever the few pixels that seat an object against its substrate. No lifted cards, no hover elevation.", "section": "elevation" },
-      { "name": "The Fixed-Cell Rule", "body": "Character cells never resize to their content. Text is padded into a fixed cell count; empty cells stay visible as blank housings. That is what a mechanical board does and it is the strongest single signal of the world.", "section": "shapes" },
-      { "name": "The Two-Surface Rule", "body": "The page and the 1200×630 link-preview frame are two different compositions from one document, switched by a body.og class: fixed 56/92/34px cells, a narrower board, a tighter column gap, and the sentence made visible. The preview frame is never treated as a crop of the page. Anything that only makes sense once a viewer has arrived belongs on the page; anything that has to work in a chat list, with the board tiny and the digits blurred, belongs in the frame.", "section": "components" },
-      { "name": "The Blurred-Digits Rule", "body": "The preview frame shows no readable time value. The time field is filled with blurred non-numeric glyphs, because a static image would lie about the number every day after it was generated. Remaining time appears in the preview only as whole days, in og:description, rewritten by the daily cron.", "section": "components" },
-      { "name": "The Housing-Is-Fixed Rule", "body": "Motion blur is applied to the inner character element, never to the cell. The housing is bolted hardware and is always sharp; only the character moves.", "section": "components" }
+      {
+        "name": "The One-Ramp Rule",
+        "body": "Depth is drawn exclusively from shade-0…shade-5 and sheen-0…sheen-3. A new shadow, bevel, or hairline picks the nearest existing step and never introduces a fresh alpha. If nothing on the ramp fits, the effect is wrong, not the ramp.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Signal Rule (v2: signal marks what you missed)",
+        "body": "The signal colour marks what is gone — the departed service, and now also the wrong answer. Never for emphasis or decoration, and it appears in only one place per screen. The correct answer never gets green; the wall already owns green, and a second instance would read as a second material, not a second meaning. Correctness is announced by material instead: a flap cell flips to a fully-lit --ink fill (dark glyph on bone), the inverse of every other cell. Every answer state also carries a glyph (check or cross), never colour or brightness alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board-Ink Rule (--ink-3 is a colour on the board, not on the wall)",
+        "body": "The three ink tints are calibrated against --board, not --enamel. On the board --ink-3 is ~7:1 and is the correct quietest step: rail keys, unit captions, the stimulus label, the source citation, a disabled button. On the wall the same tint is 3,38:1 — a fail for the small tracked uppercase it is always used for, and all of v2 chrome (view tabs, section captions, stat captions, hints, the countdown signage line) stands on the wall. There the quietest legible step is --ink-2 (5,39:1) and that is the floor. No new tint bridges the gap: the ramp was never wrong, the surface was. The check is mechanical — if the painted background is --enamel, --ink-3 is not available."
+      },
+      {
+        "name": "The Metal Is Not Ink Rule",
+        "body": "Screws and axle pins draw from the hardware tokens, not from the ink tints. Anything that is supposed to be a physical fastener is grey-green metal with a two-stop gradient and a shade-4 seat shadow.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every numeral in the build sets font-variant-numeric: tabular-nums. At 100 updates per second, proportional figures make the layout twitch. This is correctness, not polish.",
+        "section": "typography"
+      },
+      {
+        "name": "The All-Caps Signage Rule (v2: signage governs chrome, not content)",
+        "body": "Chrome — rails, tabs, unit captions, section headings, source citations, the departed-service note — stays uppercase with 0.14-0.22em tracking. v2 puts prose on the board for the first time (a question, a reading passage, an option) and verzalky on multi-line prose proved unreadable against real Testovanie 9 items, so content is now a sentence: lower case, tracking 0, line-height 1.5, in four new roles (body, option, answer, stat). If a real board would stencil it onto hardware, it is signage; if a person wrote it to be read, it is content.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cell-Derived Type Rule",
+        "body": "Flap type size, line height, pin diameter, and spin blur are all calc() expressions on --c. Never hard-code a font size inside a flap; change --c and the whole unit rescales correctly.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Scroll Rule (v2: chrome doesn't scroll, content does)",
+        "body": "The original rule still governs the countdown itself: #/tabula and ?og=1 never scroll, and cell size stays bounded by min(vw, vh). The game cannot hold to the stricter form — a reading passage plus a table plus four options does not fit 667px tall, and shrinking to fit would make the text illegible. Now two tiers: chrome is pinned (corner countdown and progress strip are position:sticky at the top, never leave the viewport); content scrolls (question body, passage, and options move under that chrome like a normal document).",
+        "section": "layout"
+      },
+      {
+        "name": "The Per-View Countdown Rule",
+        "body": "The countdown is never absent, but its register changes with the screen job. The flap strip costs 117px of a 667px phone — 18% of the viewport. On #/dnes, #/vysledok and #/vykaz that is money well spent: the countdown is the emotional motor and nothing there competes for reading space. On #/uloha the same 117px is what pushed the answer options off the screen, in exchange for a number that does not change during a question — so there the countdown is a sign, not hardware: one signage line, label role, ~30px, \"TESTOVANIE 9 · 196 DNÍ\", sharing the pinned band with the progress strip and linking to #/tabula. Day granularity; nobody reads minutes on a screen they stand on for ninety seconds. #/tabula keeps the full five-unit board unchanged."
+      },
+      {
+        "name": "The Sticky-Stimulus Rule (open once, then a pinned line)",
+        "body": "A question sharing a reading passage with its siblings keeps that passage position:sticky at the top of its panel. The goal is unchanged: the passage must be reachable at the fourth question of the group, because an ungrounded question is worse than an unscrolled one. The means are not \"keep it open\". The stimulus is a native <details>: open at the group first question, and from the second question a single pinned 44px summary row (UKÁŽKA · ZIMNÉ PARALYMPIJSKÉ HRY ⌄) that opens on tap. Native <details> and not a scripted panel, because keyboard operation, focus ring and screen-reader announcement all come free. Open, it is still capped at max-height:36dvh with its own internal scroll and a shade-only fade at its bottom edge — an uncapped multi-section passage (ZPH ran past 900px) would replace the question with the reading. Governing measurement: at 375×667 with the stimulus collapsed or absent, the question and every option are visible without scrolling (last option row ends 39px above the thumb bar, document 670px against a 667px viewport). With the stimulus open the page scrolls, and that is allowed.",
+        "section": "layout"
+      },
+      {
+        "name": "The Reflow-Not-Shrink Rule",
+        "body": "When horizontal space runs out, units move to a new row. They do not scale down. The number is the product; it never gives up size to fit a layout.",
+        "section": "layout"
+      },
+      {
+        "name": "The Recess Rule",
+        "body": "Surfaces sit in the wall, not on it. New panels get an outline plus inset shadow; a drop shadow is only ever the few pixels that seat an object against its substrate. No lifted cards, no hover elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Fixed-Cell Rule",
+        "body": "Character cells never resize to their content. Text is padded into a fixed cell count; empty cells stay visible as blank housings. That is what a mechanical board does and it is the strongest single signal of the world.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Two-Surface Rule",
+        "body": "The page and the 1200×630 link-preview frame are two different compositions from one document, switched by a body.og class: fixed 56/92/34px cells, a narrower board, a tighter column gap, and the sentence made visible. The preview frame is never treated as a crop of the page. Anything that only makes sense once a viewer has arrived belongs on the page; anything that has to work in a chat list, with the board tiny and the digits blurred, belongs in the frame.",
+        "section": "components"
+      },
+      {
+        "name": "The Blurred-Digits Rule",
+        "body": "The preview frame shows no readable time value. The time field is filled with blurred non-numeric glyphs, because a static image would lie about the number every day after it was generated. Remaining time appears in the preview only as whole days, in og:description, rewritten by the daily cron.",
+        "section": "components"
+      },
+      {
+        "name": "The Housing-Is-Fixed Rule",
+        "body": "Motion blur is applied to the inner character element, never to the cell. The housing is bolted hardware and is always sharp; only the character moves.",
+        "section": "components"
+      }
     ],
     "dos": [
       "Do derive every flap dimension from --c with calc() — glyph size (1.44), cell height (1.55), pin diameter (.085), spin blur (.026 / .05).",
@@ -237,7 +633,14 @@
       "Do re-check 375×667 after any change to cell sizing, board padding, or column gaps.",
       "Do keep uppercase and 0.14–0.22em tracking on every string outside a flap cell.",
       "Do treat the preview frame as its own surface with its own type sizes.",
-      "Do keep the wall a single flat green with material supplied by grain, sheen, and vignette."
+      "Do keep the wall a single flat green with material supplied by grain, sheen, and vignette.",
+      "Do write question, passage, option, and answer text in sentence case — signage governs chrome, not content, as of v2.",
+      "Do pin the corner countdown and progress strip; let everything else scroll.",
+      "Do cap a sticky stimulus's height with its own internal scroll — never let it grow to fill the viewport.",
+      "Do carry the streak's record and reserve on the same line as the live streak, so the record is never one tap from a broken streak.",
+      "Check anything standing on --enamel against --ink-2 as its darkest ink; --ink-3 is a board colour.",
+      "Collapse a sticky stimulus to its 44px summary row from the group second question on.",
+      "Re-measure 375×667 on #/uloha after any change to the pinned band — question plus all options on one screen is a number, not a feeling."
     ],
     "donts": [
       "Don't introduce a new rgba value for a shadow. If no ramp step fits, the effect is wrong.",
@@ -248,7 +651,15 @@
       "Don't add lifted cards or hover elevation; surfaces are recessed into the wall.",
       "Don't put a readable time value in the preview frame at any granularity finer than days.",
       "Don't give screws or pins an ink colour; hardware is metal.",
-      "Don't add a build step, a dependency, or a framework — three files, served as-is."
+      "Don't add a build step, a dependency, or a framework — three files, served as-is.",
+      "Don't give a correct answer a green fill — correctness is material plus a glyph, never a second colour.",
+      "Don't set question, passage, or option text in uppercase — retired for content as of v2.",
+      "Don't let pointerdown anywhere in the document trigger the cascade/bell/shout once the game ships — scoped to the corner countdown tile alone.",
+      "Don't invent a new chart type for the report; the 14-day strip reuses the small Flap Cell the progress strip already uses.",
+      "Put --ink-3 on the wall. Tabs, section captions, stat captions and hints sit on --enamel, where that tint is 3,38:1 — use --ink-2, never a new tint.",
+      "Put the flap countdown on #/uloha; there it is one signage line. And never drop the countdown from a view to buy space — change its register instead.",
+      "Repeat a label a line already contains (SÉRIA over SÉRIA 9 DNÍ), or let a caption wrap away from its own number.",
+      "Say a subject was odbavený — a passenger is checked in at an airport, a train is vypravený."
     ]
   }
 }

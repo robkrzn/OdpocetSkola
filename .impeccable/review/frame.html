@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><title>frame</title>
+<!-- Screenshot harness. Chrome na Windows nevie okno uzsie ako 500px, takze
+     --window-size=375,667 renderuje na 500 a vysledok len OREZE — mobilny
+     screenshot je potom lozny. Iframe ma vlastny viewport, takze vw/dvh/sticky
+     vnutri neho su naozaj 375x667. Screenshot ramu pri --window-size=375,667
+     je presne ten iframe.
+     chrome --headless=old --hide-scrollbars --window-size=375,667
+       --screenshot=out.png ".../review/frame.html?p=uloha.html&w=375&h=667" -->
+<style>html,body{margin:0;padding:0;background:#000;overflow:hidden}iframe{display:block;border:0}</style>
+<iframe id="f"></iframe>
+<script>
+const q=new URLSearchParams(location.search);
+const f=document.getElementById('f');
+f.style.width=(q.get('w')||375)+'px';
+f.style.height=(q.get('h')||667)+'px';
+f.src=q.get('p')||'uloha.html';
+</script>
