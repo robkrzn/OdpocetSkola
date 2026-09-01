@@ -131,6 +131,55 @@ mesačne, vtedy má zmysel písať parser — pri 40 testoch raz je agent lacnej
 
 Jediná mechanická časť sú obrázky, viď „Obrázky" nižšie.
 
+### Štyri pravidlá z pilotu F1
+
+Overené na ročníku 2024, platia pre všetkých 12 zvyšných testov.
+
+**1. `pdftotext -layout` posúva telo tabuľky oproti menovkám riadkov.** V 2024 MAT sú
+tak pokazené obe tabuľky: stĺpec „Voda" a „Minerálne látky" sedia na svojich riadkoch,
+prostredné tri stĺpce vypadnú ako samostatné trojice pod tabuľkou. Tabuľku treba
+**zrekonštruovať, nie vyradiť** — ale:
+
+**2. Rekonštrukciu potvrdzuje zadanie úlohy a kľúč, nikdy číselný invariant.**
+Pilot sa oprel o „zloženie na 100 g musí dať 100 g" — ten invariant **neplatí**
+(riadky dali 99,8 / 100,0 / 100,5 / 100,5; tabuľky zloženia potravín sa na 100 g
+nesčítavajú kvôli zaokrúhľovaniu). Priradenie bolo napriek tomu správne, lebo ho
+nezávisle určujú tvrdenia v úlohe: T1 („500 g kozieho mlieka obsahuje 21 g tuku")
+fixuje kozí tuk na 4,2, T2 fixuje ovčiu a kravskú bielkovinu, a kľúč potvrdí, ktoré
+tvrdenie je pravdivé. Rovnako pri tancoch: úloha 15 (380 = 38 % z 1 000) fixuje tango,
+štyri tvrdenia úlohy 16 sa dotknú každého riadka.
+
+**Postup je teda:** zrekonštruuj priradenie, potom over, že **každé tvrdenie a každá
+možnosť v úlohách nad tou ukážkou vychádza** a že kľúč sedí. Ak sa priradenie nedá
+takto potvrdiť, úloha ide do `rejected.md` — nie do banky s odôvodnením „inak to
+nemôže byť".
+
+**3. Odkaz na médium musí sedieť s tým, čo banka naozaj zobrazuje.** Toto je jediná
+výnimka z pravidla „zadanie prepisuj verne": ak dáta z obrázka skončili v texte
+ukážky, veta „Pomocou rozmerov **uvedených na obrázku**" ukazuje na niečo, čo tam nie
+je, a „na základe informácií **z diagramu**" nad HTML tabuľkou tiež. Prepíš **len ten
+ukazovací zvrat** („pomocou uvedených rozmerov", „z tabuľky") a nič iné. Zvyšok
+zadania zostáva slovo za slovom.
+
+**4. Poznámka pod kľúčom sa musí prečítať.** Kľúč SJL 2024 má pod tabuľkou:
+*„Odpovede na otvorené úlohy podľa formy 2020 č. 6, 7, 13, 20 môžu byť zapísané
+v akomkoľvek gramatickom tvare."* Čísla úloh sú **per forma** — ďalšia inštancia pasce
+KÓD TESTU. Pri úlohách typu „Vypíš z ukážky…" to nie je problém: prirodzená odpoveď je
+tvar, ktorý v ukážke stojí, a ten patrí do `answer`. Pri dopĺňaní do vety patria do
+`accept` všetky tvary, ktoré kľúč vypisuje za lomkou.
+
+`ponytail: žiadne fuzzy porovnávanie a žiadne domýšľanie pádov. Ak sa pri hraní ukáže,
+že to vadí, riešenie je doplniť accept u konkrétnej úlohy.`
+
+### Prijatá strata vernosti: graf → tabuľka
+
+Skladaný stĺpcový graf prepísaný do HTML tabuľky mení testovanú zručnosť: „prečítaj
+hodnotu z grafu" sa stane „prečítaj hodnotu z tabuľky". Odpoveď zostáva tá istá,
+náročnosť trochu klesne. Prijaté zámerne — alternatíva je obrázok, ktorý je na
+telefóne nečitateľný a neprístupný. Neplatí to pre úlohy, kde je **grafom samotná
+odpoveď** („ktorý zo štyroch diagramov zobrazuje správne rozdelenie") — tie idú
+do `rejected.md`.
+
 ## Schéma banky
 
 Jeden súbor na predmet: `questions/mat.json`, `questions/sjl.json`.
@@ -196,11 +245,11 @@ Pravidlá schémy:
 Zafixovaný **pred** hromadným ťažením. Bez neho vznikne 200 rôznych nálepiek a
 štatistika slabých miest bude nečitateľná.
 
-**Matematika (13)**
+**Matematika (14)**
 `zlomky-desatinne` · `percenta-pomer` · `mocniny-odmocniny` · `vyrazy-rovnice` ·
 `slovne-ulohy` · `umernost-trojclenka` · `rovinne-obrazce` · `telesa` ·
 `uhly-konstrukcie` · `pytagorova-veta` · `funkcie-grafy` ·
-`statistika-pravdepodobnost` · `kombinatorika-logika`
+`statistika-pravdepodobnost` · `kombinatorika-logika` · `jednotky-premeny`
 
 **Slovenský jazyk a literatúra (11)**
 `pravopis` · `hlaskoslovie` · `tvaroslovie` · `slovna-zasoba` · `skladba` ·
@@ -209,6 +258,11 @@ Zafixovaný **pred** hromadným ťažením. Bez neho vznikne 200 rôznych nálep
 
 Ak úloha sedí na dve témy, berie sa tá, ktorú testuje **rozhodnutie o správnej
 odpovedi**, nie tá, ktorá je v texte spomenutá.
+
+`jednotky-premeny` pribudlo po pilote F1: premena jednotiek obsahu a objemu je v T9
+samostatná úloha (2024 MAT má dve) a žiadna z pôvodných trinástich tém ju nepokrýva.
+Bez nej padala pod `zlomky-desatinne` a `telesa`, kde by v štatistike slabých miest
+klamala.
 
 ## Čo do banky nevstúpi
 
@@ -278,8 +332,19 @@ Beží v čistom Node, bez závislostí, spúšťa sa ručne aj v CI. Padne (exi
 - jednotku s viac než 7 úlohami
 - `itemCount` nesúhlasiaci s počtom položiek
 
+Padne aj na týchto troch, ktoré vyplynuli z pilotu F1:
+
+- **úloha typu „Vypíš z ukážky…"**, ktorej `answer` ani žiadny tvar z `accept`
+  **nie je podreťazcom `stimulus.body`**. Odpoveď na opisovaciu úlohu musí byť
+  v ukážke prítomná — inak je buď zlá, alebo je ukážka nekompletná. Toto je
+  najlacnejší existujúci test vernosti ťaženia.
+- **`type: "num"` s odpoveďou, ktorá po normalizácii nie je číslo**
+- **jednotka so `stimulus`, ktorého `body` je prázdne**
+
 Varuje (exit 0, ale nahlási): chýbajúci súbor obrázka, úloha kratšia než 15 znakov,
-možnosti s duplicitným textom, `subject` bez aspoň 40 úloh.
+možnosti s duplicitným textom, `subject` bez aspoň 40 úloh, a **zadanie spomínajúce
+„obrázok / obrázku / diagram", ktoré nemá `asset`** — buď chýba obrázok, alebo sa
+zabudlo prepísať ukazovací zvrat (pravidlo 3 vyššie).
 
 Súčasťou `check.js` je aj **self-check výberu dennej päťky** (`--daily`): pre 400 dní
 dopredu overí, že žiadna jednotka nevypadne dvakrát v tom istom priechode a že každý

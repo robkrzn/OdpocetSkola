@@ -182,4 +182,4 @@ samotnú rohovú tabuľu — je to prvý konkrétny zásah do existujúceho kód
 | O5 | ~~Dá NIVAM súhlas?~~ | Zavreté. Rozhodnuté ísť bez žiadosti, viď „Autorské právo". Ostáva `noindex` a uvedenie zdroja |
 | O6 | ~~Angular áno alebo nie?~~ | Zavreté ako R8: nie, záchranná cesta je Vue 3 z CDN bez buildu |
 | O7 | Koľko úloh denne pri malej banke? | Zostáva **4 + 1 opakovanie** na predmet. Priechod ~38 dní znamená ~5 priechodov do marca — opakovanie po 5 týždňoch je zámer, nie dôvod znižovať dávku |
-| O8 | Doinštalovať poppler (`pdftoppm`)? | Potrebné pre roky 2018, 2019, 2022 (bez textovej vrstvy) a pre obrázky. F1 na roku 2024 ho **nepotrebuje** — `pdftotext -layout` stačí |
+| O8 | Doinštalovať poppler (`pdftoppm`)? | **Áno, a je to jediná otvorená vec, ktorá mení rozsah.** Bez neho skončí MAT banka na ~84 úloh proti gate ≥ 120 a musí sa robiť F3b (2010–2016). S ním nie. Tabuľka výnosov je v `04-PLAN.md`, sekcia F3b |

@@ -152,6 +152,11 @@ sa dá otestovať bez prehliadača.
   (`if (typeof module !== 'undefined') module.exports = ...`).
 - `questions/check.js` — validátor; `--daily` self-check na 400 dní.
 - `tools/merge.mjs` — `questions/raw/*.json` → `questions/mat.json` + `questions/sjl.json`.
+- `tools/crop.mjs` — stránka PDF → orezaný PNG do `questions/assets/`. Orezáva
+  headless Chromom, ktorý už v repe beží na `og.jpg`; súradnice dostane ako argumenty.
+  **Bez tohto nástroja je MAT banka o ~23 % menšia** — sedem úloh na test je vyradených
+  len pre chýbajúci obrázok (`questions/rejected.md`), a všetky sú označené ako
+  vrátiteľné. Predpokladá nainštalovaný `pdftoppm`.
 
 **Gate F2:**
 - `node questions/check.js` prejde na pilotnej banke
@@ -314,14 +319,30 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 |---|---|---|
 | F0a zdroje | **hotové** — `.doc/zdroje.md`, 7 ročníkov | 1.9.2026 |
 | F0b stiahnutie PDF | **hotové** — 28 PDF v `source/`, gitignored | 1.9.2026 |
-| F1 pilot (2024) | čaká | |
-| F2 validátor | čaká | |
+| F1 pilot (2024) | **hotové** — MAT 23/30, SJL 30/30, 53 odpovedí bez nezhody | 1.9.2026 |
+| F2 validátor + nástroje | čaká | |
 | F3 hromadné ťaženie | čaká | |
-| F3b rozšírenie 2010–2016 | voliteľné, rozhoduje sa po F1 | |
+| F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
 | F4 dizajn | čaká | |
 | F5 build v2.0 | čaká | |
 | F6 Firebase | čaká | |
 | F7 OG + docs | čaká | |
+
+### F3b nie je rozhodnutie o rokoch, je to rozhodnutie o binárke
+
+Výnos z pilotu: MAT **77 %** použiteľných úloh (7 z 30 vyradených len pre obrázok),
+SJL **100 %**. Z toho vychádza:
+
+| stav | MAT | SJL | priechod |
+|---|---|---|---|
+| bez poppleru — 4 ročníky s textovou vrstvou | ~84 | ~120 | 21 dní |
+| **s popplerom** — 7 ročníkov | ~153 | ~210 | 38 dní |
+| s popplerom + `crop.mjs` — obrázkové úlohy vrátené | ~190 | ~210 | 45 dní |
+
+Gate F3 žiada ≥ 120 úloh na predmet a **MAT bez poppleru skončí na ~84.** Poppler
+prináša tri ročníky navyše a k tomu sedem vrátiteľných úloh na každý MAT test.
+Ak sa doinštaluje, **F3b (2010–2016) netreba.** Ak nie, F3b je jediná cesta k číslu
+120 a naráža na iné kurikulum starších Monitorov.
 
 Tabuľku aktualizuje vlákno, ktoré fázu dokončí. Ak sa niečo rozhodne inak než je
 v `.doc/`, prepíše sa **dokument, nie len kód** — inak sa ďalšie vlákno riadi

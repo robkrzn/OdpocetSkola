@@ -1,0 +1,557 @@
+{
+  "subject": "mat",
+  "year": 2024,
+  "form": "A",
+  "code": "1000",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/5874/ZAK23008_S_TZ-RT-Mat-SJ-fA_1000.pdf",
+    "key": "https://www2.nucem.sk/dl/5887/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20-%20matematika.pdf"
+  },
+  "stimuli": {
+    "mat-2024-a-s1": {
+      "kind": "table",
+      "title": "Spoločenské tance",
+      "body": "Istá výskumná agentúra robila prieskum, v ktorom 1 000 respondentom položila otázku: Ako dobre viete tancovať nasledujúce spoločenské tance? Vyhodnotenie prieskumu je znázornené v diagrame.<table><tr><th>Tanec</th><th>Viem výborne</th><th>Viem čiastočne</th><th>Neviem tancovať tento tanec</th><th>Neviem vôbec tancovať</th></tr><tr><td>Valčík</td><td>29 %</td><td>41 %</td><td>5 %</td><td>25 %</td></tr><tr><td>Polka</td><td>26 %</td><td>38 %</td><td>11 %</td><td>25 %</td></tr><tr><td>Tango</td><td>10 %</td><td>38 %</td><td>27 %</td><td>25 %</td></tr><tr><td>Čača</td><td>6 %</td><td>29 %</td><td>40 %</td><td>25 %</td></tr><tr><td>Džajv</td><td>5 %</td><td>23 %</td><td>47 %</td><td>25 %</td></tr></table>",
+      "asset": null
+    },
+    "mat-2024-a-s2": {
+      "kind": "text",
+      "title": "Polievanie stromov",
+      "body": "Pracovníci mestskej údržby polievajú mladé stromy na pešej zóne. Vodu privážajú na aute vo veľkoobjemových nádobách v tvare kvádra s podstavou 120 cm × 100 cm a výškou 100 cm.",
+      "asset": null
+    },
+    "mat-2024-a-s3": {
+      "kind": "table",
+      "title": "Ceny bytov na Slovensku",
+      "body": "Stĺpcový diagram znázorňuje priemerné ceny bytov v eurách za jeden m2 podľa jednotlivých krajov Slovenska v rokoch 2020 a 2021.<table><tr><th>Rok</th><th>BA</th><th>TT</th><th>NR</th><th>TN</th><th>ZA</th><th>BB</th><th>KE</th><th>PO</th></tr><tr><td>2020</td><td>2 333</td><td>1 196</td><td>951</td><td>1 054</td><td>1 312</td><td>989</td><td>1 325</td><td>1 148</td></tr><tr><td>2021</td><td>2 826</td><td>1 460</td><td>1 172</td><td>1 297</td><td>1 657</td><td>1 379</td><td>1 798</td><td>1 574</td></tr></table>",
+      "asset": null
+    },
+    "mat-2024-a-s4": {
+      "kind": "table",
+      "title": "Zloženie mlieka",
+      "body": "Tabuľka uvádza vybrané druhy mlieka a ich zloženie.<table><tr><th rowspan=\"2\">Druh mlieka</th><th colspan=\"5\">Zastúpenie v 100 g mlieka</th></tr><tr><th>Voda (g)</th><th>Bielkovina (g)</th><th>Tuk (g)</th><th>Mliečny cukor (g)</th><th>Minerálne látky (g)</th></tr><tr><td>Kravské</td><td>87,4</td><td>3,2</td><td>3,7</td><td>4,7</td><td>0,8</td></tr><tr><td>Kozie</td><td>86,6</td><td>3,6</td><td>4,2</td><td>4,8</td><td>0,8</td></tr><tr><td>Ovčie</td><td>83,9</td><td>5,2</td><td>6,3</td><td>4,2</td><td>0,9</td></tr><tr><td>Kobylie</td><td>90,0</td><td>2,0</td><td>1,1</td><td>7,0</td><td>0,4</td></tr></table>",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-05"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-10"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-14"
+      ]
+    },
+    {
+      "stimulus": "mat-2024-a-s1",
+      "ids": [
+        "mat-2024-a-15",
+        "mat-2024-a-16"
+      ]
+    },
+    {
+      "stimulus": "mat-2024-a-s2",
+      "ids": [
+        "mat-2024-a-17",
+        "mat-2024-a-18"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-19"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2024-a-26"
+      ]
+    },
+    {
+      "stimulus": "mat-2024-a-s4",
+      "ids": [
+        "mat-2024-a-27"
+      ]
+    },
+    {
+      "stimulus": "mat-2024-a-s3",
+      "ids": [
+        "mat-2024-a-29",
+        "mat-2024-a-30"
+      ]
+    }
+  ],
+  "items": {
+    "mat-2024-a-01": {
+      "n": 1,
+      "topic": "umernost-trojclenka",
+      "text": "Zásoba uhlia na vykurovanie 15 domácností vystačí na 60 dní. Na koľko dní vystačí rovnaká zásoba uhlia, ak sa pripojí k vykurovaniu ešte päť domácností? Predpokladáme, že všetky domácnosti majú rovnakú spotrebu.",
+      "asset": null,
+      "type": "num",
+      "answer": "45",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2024-a-02": {
+      "n": 2,
+      "topic": "percenta-pomer",
+      "text": "Peter si kúpil akcie zahraničnej firmy v celkovej sume 3 000 €. Dnes je ich hodnota o 50 % nižšia. O koľko percent musí od dnes stúpnuť cena týchto akcií, aby sa ich celková hodnota dostala opäť na pôvodných 3 000 €?",
+      "asset": null,
+      "type": "num",
+      "answer": "100",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2024-a-04": {
+      "n": 4,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na tanieri je 12 buchtičiek, z toho 5 makových a 7 lekvárových. Koľko tvarohových buchtičiek k nim treba pridať, aby pravdepodobnosť, že náhodne vybraná buchtička bude maková, bola 20 %?",
+      "asset": null,
+      "type": "num",
+      "answer": "13",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2024-a-05": {
+      "n": 5,
+      "topic": "pytagorova-veta",
+      "text": "Ak z obdĺžnika so stranami dlhými 8 cm a 6 cm odstrihneme štyri zhodné trojuholníky tak, ako je znázornené na obrázku, dostaneme kosoštvorec. Koľko centimetrov meria obvod tohto kosoštvorca?",
+      "asset": null,
+      "type": "num",
+      "answer": "20",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2024-a-08": {
+      "n": 8,
+      "topic": "slovne-ulohy",
+      "text": "Pavlína išla s rodičmi na zber jahôd. Hmotnosť debničky, do ktorej zbierali jahody, bola 550 g. Po ukončení zberu mala debnička spolu s jahodami hmotnosť 4,8 kg. Kilogram nazbieraných jahôd stál 2,80 €. Koľko eur zaplatili za nazbierané jahody bez debničky? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "11,9",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2024-a-09": {
+      "n": 9,
+      "topic": "umernost-trojclenka",
+      "text": "Mierka mapy je 1 : 50 000. Koľko kilometrov v skutočnosti meria trasa, ktorá má na tejto mape dĺžku 8 cm?",
+      "asset": null,
+      "type": "num",
+      "answer": "4",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2024-a-10": {
+      "n": 10,
+      "topic": "percenta-pomer",
+      "text": "Hracia plocha šachovnice má 8 x 8 hracích polí. Koľko percent hracích polí je obsadených figúrkami na začiatku šachovej partie, ak obaja šachisti obsadia svojimi figúrkami dva rady?",
+      "asset": null,
+      "type": "num",
+      "answer": "50",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2024-a-11": {
+      "n": 11,
+      "topic": "kombinatorika-logika",
+      "text": "Žiaci istej školy nosia rovnošatu: čierne nohavice a farebné tričko. Farba trička môže byť modrá, zelená, fialová, oranžová alebo tyrkysová. Tričko môže byť buď farebné bez pásikov, alebo farebné s tromi bielymi alebo s tromi čiernymi pásikmi. Koľko tried najviac môže byť v škole, ak žiaci jednej triedy majú rovnaké tričká a žiaci rôznych tried majú rôzne tričká?",
+      "asset": null,
+      "type": "num",
+      "answer": "15",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2024-a-12": {
+      "n": 12,
+      "topic": "jednotky-premeny",
+      "text": "Igor premieňal jednotky obsahu a objemu.\n14 000 m² = __ ha        140 cm³ = __ dm³\n1 400 l = __ m³\n140 ml = __ dl\nSprávne doplnil všetky chýbajúce čísla a zistil, že okrem jedného príkladu doplnil vždy to isté číslo. Uveď číslo, ktoré sa líšilo od ostatných.",
+      "asset": null,
+      "type": "num",
+      "answer": "0,14",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2024-a-14": {
+      "n": 14,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V istom meste ukončilo športové gymnázium spolu 120 hokejistov, ktorí sa po ukončení štúdia profesionálne venovali hokeju. Aritmetický priemer ich mesačných platov vo veku 21 rokov bol 2 700 eur. Najvyšší príjem 200 000 eur mesačne mal hokejista, ktorý uspel v zahraničí. Vypočítaj priemerný mesačný plat ostatných hokejistov. Výsledok zaokrúhli na celé eurá.",
+      "asset": null,
+      "type": "num",
+      "answer": "1042",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2024-a-15": {
+      "n": 15,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na základe informácií z diagramu zisti počet respondentov, ktorí uviedli, že tango vedia tancovať čiastočne.",
+      "asset": null,
+      "type": "num",
+      "answer": "380",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2024-a-16": {
+      "n": 16,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na základe údajov uvedených v diagrame rozhodni, ktoré z uvedených tvrdení je nepravdivé.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Čaču vie tancovať čiastočne 29 % opýtaných.",
+        "Štvrtina opýtaných uviedla, že nevie vôbec tancovať.",
+        "Viac ako 75 % opýtaných vie tancovať valčík čiastočne alebo výborne.",
+        "Džajv vie tancovať výborne alebo čiastočne viac ako štvrtina opýtaných."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2024-a-17": {
+      "n": 17,
+      "topic": "jednotky-premeny",
+      "text": "Koľko stromov môžu poliať z nádoby, v ktorej je 1 m³ vody, ak na poliatie jedného stromu potrebujú 10 litrov vody? O strate vody pri polievaní neuvažujeme.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "10 000",
+        "1 000",
+        "100",
+        "10"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2024-a-18": {
+      "n": 18,
+      "topic": "telesa",
+      "text": "Keďže slnečné žiarenie poškodzuje plasty, nádoby sa zakrývajú plachtami, ktoré chránia bočné steny a hornú podstavu nádoby. Pomocou rozmerov uvedených na obrázku vypočítaj plochu plachty, ktorá zakrýva nádobu.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "4,4 m²",
+        "5,6 m²",
+        "5,8 m²",
+        "6,8 m²"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2024-a-19": {
+      "n": 19,
+      "topic": "rovinne-obrazce",
+      "text": "Dopravná značka Chodník pre chodcov má tvar kruhu s priemerom 7 dm. Približne koľko decimetrov štvorcových plechu je potrebných na jej zhotovenie? Počítaj s hodnotou π = 3,14.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "22,0 dm²",
+        "38,5 dm²",
+        "44,0 dm²",
+        "154 dm²"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2024-a-21": {
+      "n": 21,
+      "topic": "mocniny-odmocniny",
+      "text": "Ktoré z uvedených čísel je väčšie ako 1 milión a zároveň menšie ako 10 miliónov?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2 · 10⁷",
+        "4 · 10⁶",
+        "6 · 10⁵",
+        "8 · 10⁴"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2024-a-22": {
+      "n": 22,
+      "topic": "vyrazy-rovnice",
+      "text": "Ktorý z výrazov M = 3x + 7, N = –x + 4, O = 2x – 8, P = –6x + 5 sa rovná súčtu ostatných troch výrazov?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "M = 3x + 7",
+        "N = –x + 4",
+        "O = 2x – 8",
+        "P = –6x + 5"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2024-a-23": {
+      "n": 23,
+      "topic": "kombinatorika-logika",
+      "text": "Ktorou číslicou treba nahradiť *, aby bolo číslo 76*0 deliteľné dvomi, tromi, štyrmi a piatimi bezo zvyšku?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2024-a-25": {
+      "n": 25,
+      "topic": "slovne-ulohy",
+      "text": "Súrodenci Lea a Tomáš sa rozprávajú o svojich úsporách:\nLea: Ak by som mala o štvrtinu eur viac ako teraz, mala by som toľko ako ty.\nTomáš: Ak by som ja mal o pätinu eur menej ako teraz, mal by som toľko ako ty.\nKtorá z nasledujúcich možností je na základe ich tvrdení pravdivá?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Lea má teraz 400 eur a Tomáš 500 eur.",
+        "Lea má teraz 400 eur a Tomáš 480 eur.",
+        "Lea má teraz 480 eur a Tomáš 400 eur.",
+        "Lea má teraz 500 eur a Tomáš 400 eur."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2024-a-26": {
+      "n": 26,
+      "topic": "percenta-pomer",
+      "text": "Stará mama pečie palacinky podľa tohto receptu:\nSuroviny na prípravu 8 palaciniek\n· 0,5 dl oleja\n· 2 dl vody\n· 3 dl mlieka\n· 200 g hladkej múky\n· 2 vajcia\n· štipka soli\nVšetky prísady spolu premiešame. Pečieme na rozohriatej panvici, ktorú stačí natrieť olejom len prvýkrát. Palacinky sú jemné a nelepia sa.\nV akom pomere sú olej, voda a mlieko v recepte starej mamy?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "1:4:6",
+        "1:2:6",
+        "1:3:6",
+        "1:2:3"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2024-a-27": {
+      "n": 27,
+      "topic": "percenta-pomer",
+      "text": "Ktoré z nasledujúcich tvrdení T1 a T2 je pravdivé?\nT1: 500 gramov kozieho mlieka obsahuje 21 gramov tuku.\nT2: Ovčie mlieko má dvojnásobné množstvo bielkovín oproti kravskému.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ani jedno tvrdenie nie je pravdivé.",
+        "Pravdivé je len tvrdenie T1.",
+        "Pravdivé je len tvrdenie T2.",
+        "Obidve tvrdenia sú pravdivé."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "mat-2024-a-29": {
+      "n": 29,
+      "topic": "statistika-pravdepodobnost",
+      "text": "O koľko eur stúpla priemerná cena bytu s rozlohou 55 m² v roku 2021 oproti roku 2020 v kraji s najnižšou priemernou cenou bytov za jeden meter štvorcový?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "12 155",
+        "13 365",
+        "14 585",
+        "15 735"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2024-a-30": {
+      "n": 30,
+      "topic": "percenta-pomer",
+      "text": "V ktorom z uvedených štyroch krajov stúpla priemerná cena bytov za 1 m² v roku 2021 oproti roku 2020 o viac ako 39 %?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "v Bratislavskom (BA)",
+        "v Trenčianskom (TN)",
+        "v Žilinskom (ZA)",
+        "v Banskobystrickom (BB)"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 30
+      }
+    }
+  }
+}
