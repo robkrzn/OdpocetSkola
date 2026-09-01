@@ -1,12 +1,16 @@
 {
   "subject": "mat",
-  "year": 2024,
-  "form": "A",
-  "code": "1000",
-  "source": {
-    "test": "https://www2.nucem.sk/dl/5874/ZAK23008_S_TZ-RT-Mat-SJ-fA_1000.pdf",
-    "key": "https://www2.nucem.sk/dl/5887/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20-%20matematika.pdf"
-  },
+  "version": 1,
+  "generated": "2026-09-01",
+  "itemCount": 23,
+  "sources": [
+    {
+      "year": 2024,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5874/ZAK23008_S_TZ-RT-Mat-SJ-fA_1000.pdf",
+      "key": "https://www2.nucem.sk/dl/5887/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20-%20matematika.pdf"
+    }
+  ],
   "stimuli": {
     "mat-2024-a-s1": {
       "kind": "table",

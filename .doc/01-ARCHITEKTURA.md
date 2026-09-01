@@ -180,9 +180,19 @@ Vybrať jednu otázku zo skupiny znamená prečítať ukážku kvôli jednej odp
 **Jednotka výberu je preto `unit`** — buď samostatná úloha, alebo celá skupina
 s jednou ukážkou. Skupina sa nikdy netrhá.
 
-Dôsledok: denná dávka je **5 úloh ±2**. Skupina štyroch + samostatná = 5; skupina
-šiestich = 6. Presná päťka by znamenala trhať skupiny, čo je horšie ako nerovná dávka.
-Skupiny nad 7 úloh sa delia už pri ťažení z PDF (`02-BANKA-OTAZOK.md`).
+Dôsledok: denná dávka je **5 úloh ±2**. Presná päťka by znamenala trhať skupiny počas
+výberu, čo je horšie ako nerovná dávka.
+
+Dve veci to držia v rozsahu 3–7, obe overené self-checkom na 400 dní:
+
+- **Skupina nad 5 úloh sa reže pri zlievaní banky, nie pri výbere.** `tools/merge.mjs`
+  rozdelí jednotku na najrovnomernejšie časti s tou istou ukážkou (7 → 4+3). V
+  `questions/raw/` zostáva celá — tam je verná kópia testu, kde čítacia ukážka má
+  naozaj sedem otázok. Bez tohto rezu dávalo SJL sedem otázok na **60 % dní**, čo už
+  nie je „zriedkavé prekročenie", ale iný produkt.
+- **Zvyšok priechodu sa pohltí do posledného dňa**, ak sa tým nepresiahne 7. Deň
+  s dvoma otázkami je horší než deň so šiestimi. Na pilotnej banke to je 9 % dní nad
+  päť, pri plnej banke ~2 %.
 
 ### 2. Štyri zdieľané, jedna osobná
 
@@ -209,16 +219,31 @@ const today = () => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Bratisl
 const dayIndex = iso => Math.round((Date.parse(iso + 'T12:00:00Z') - EPOCH) / 864e5);
 
 function daily(bank, di, want = 4) {
+  const min = 3, max = 7;
   const nominal = Math.max(1, Math.floor(bank.itemCount / want)); // koľko dní vydrží priechod
   const pass = Math.floor(di / nominal);
   const order = shuffle(bank.units.map((_, i) => i), hash(bank.subject + ':' + pass));
-  const days = [];                       // priechod nakrájaný na dni, dopredu
+
+  // Jednotka, ktorá sama spadá do rozsahu, dostane vlastný deň. Zlievať ju s ďalšou
+  // by dalo 8-10 úloh; naopak zliatie len malých jednotiek nedá nikdy 1-2.
+  const bigDays = [], smallOrder = [];
+  for (const u of order) (bank.units[u].ids.length >= min ? bigDays : smallOrder).push(u);
+  if (bigDays.length) bigDays.forEach((u, i) => bigDays[i] = [u]);
+
+  const smallDays = [];
   let bucket = [], n = 0;
-  for (const u of order) {
+  for (const u of smallOrder) {
     bucket.push(u); n += bank.units[u].ids.length;
-    if (n >= want) { days.push(bucket); bucket = []; n = 0; }
+    if (n >= want) { smallDays.push(bucket); bucket = []; n = 0; }
   }
-  if (bucket.length) days.push(bucket);
+  if (bucket.length) {                    // zvyšok priechodu
+    const last = smallDays[smallDays.length - 1];
+    const lastSize = last ? last.reduce((s, u) => s + bank.units[u].ids.length, 0) : 0;
+    if (n < min && last && lastSize + n <= max) last.push(...bucket);
+    else smallDays.push(bucket);
+  }
+
+  const days = shuffle([...bigDays, ...smallDays], hash(bank.subject + ':' + pass + ':days'));
   return days[di % days.length];
 }
 ```

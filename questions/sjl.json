@@ -1,0 +1,712 @@
+{
+  "subject": "sjl",
+  "version": 1,
+  "generated": "2026-09-01",
+  "itemCount": 30,
+  "sources": [
+    {
+      "year": 2024,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5875/ZAK23008_S_TZ-RT-SJL-fA_2020.pdf",
+      "key": "https://www2.nucem.sk/dl/5885/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
+    }
+  ],
+  "stimuli": {
+    "sjl-2024-a-s1": {
+      "kind": "text",
+      "title": "Zimné paralympijské hry (ZPH)",
+      "body": "Vancouver\n\nNaši športovci dosiahli na zimných paralympijských hrách vo Vancouvri kolosálny úspech. Dvaja mladí zrakovo znevýhodnení lyžiari Henrieta Farkašová a Jakub Krako spolu so svojimi navádzačmi vybojovali v alpskom lyžovaní po tri zlaté medaily. Naša výprava získala celkom 11 medailí a skončili sme na famóznom štvrtom mieste v celosvetovej súťaži zimných športov!\n\nSoči\n\nSlovensko nadviazalo na fantastický Vancouver a vybojovalo sedem cenných kovov. Za zmienku stojí aj rovnaký menoslov medailistov, o zlato sa opäť postarali zrakovo znevýhodnení športovci Henrieta Farkašová a Jakub Krako. Striebornou medailou prispel Miroslav Haraus, z telesne znevýhodnených zjazdárok získala bronz aj Petra Smaržová. Po prvý raz sme mali na zimných hrách zastúpenie v kolektívnom športe – curlingu na vozíku. Vďaka individuálnemu výkonu Mareka Hlavinu sme nechýbali ani pri premiére parasnoubordingu. V celkovej bilancii krajín sme skončili na šiestom mieste.\n\nPjongčang\n\nKórejské svahy boli svedkom najlepšieho športového vystúpenia našich brilantných reprezentantov. Opäť boli medailovými ťahúňmi Henrieta Farkašová a Jakub Krako, svoj prvý zlatý kov si pripísal na konto aj ďalší zrakovo znevýhodnený zjazdár Miroslav Haraus. Získali sme 11 medailí, z toho 6 zlatých, ale práve 4 strieborné urobili z Pjongčangu najúspešnejšie ZPH. V paraalpskom lyžovaní sme v hodnotení krajín obsadili 1. miesto a Henrieta Farkašová sa stala celosvetovo najúspešnejšou účastníčkou zimných hier.\n\nMedailová bilancia ZPH Pjongčang v disciplínach alpského lyžovania: 11 (6 – 4 – 1)\n\n<table><tr><th>Umiestnenie</th><th>Športovec a disciplíny</th></tr><tr><td>Zlato</td><td>Henrieta Farkašová s navádzačkou Natáliou Šubrtovou: zjazd, superkombinácia, obrovský slalom, super-G</td></tr><tr><td>Zlato</td><td>Jakub Krako s navádzačom Branislavom Brozmanom: super-G</td></tr><tr><td>Zlato</td><td>Miroslav Haraus s navádzačom Marošom Hudíkom: superkombinácia</td></tr><tr><td>Striebro</td><td>Jakub Krako s navádzačom Branislavom Brozmanom: zjazd, obrovský slalom, slalom</td></tr><tr><td>Striebro</td><td>Henrieta Farkašová s navádzačkou Natáliou Šubrtovou: slalom</td></tr><tr><td>Bronz</td><td>Miroslav Haraus s navádzačom Marošom Hudíkom: super-G</td></tr></table>",
+      "asset": null
+    },
+    "sjl-2024-a-s2": {
+      "kind": "text",
+      "title": "Stephen Hawking – Stručné odpovede na veľké otázky",
+      "body": "Ľudská myseľ je niečo neuveriteľné. Dokáže si predstaviť veľkoleposť neba i zložitosti základných zložiek hmoty. Každá myseľ však na to, aby dosiahla plný potenciál, potrebuje iskru. Iskru skúmania a údivu.\n\nTáto iskra často pochádza od učiteľa. Dovoľte, aby som to vysvetlil. Nebolo práve najľahšie niečo ma naučiť. Ale keď som mal štrnásť rokov, môj učiteľ mi ukázal, ako zapriahnuť svoju energiu, a priviedol ma k tvorivému premýšľaniu o matematike. Naučil ma vidieť matematiku ako plán samotného vesmíru. Za každým výnimočným človekom uvidíte výnimočného učiteľa. Keď premýšľame o tom, čo vieme v živote robiť, je pravdepodobné, že to vieme vďaka nejakému učiteľovi.\n\nVýchova, vzdelávanie a vedecko-technický výskum sú však v súčasnosti ohrozené viac ako kedykoľvek predtým. Sme svedkami globálnej vzbury proti odborníkom, ktorá zahŕňa aj vedcov. Čo teda urobíme, aby sme zabezpečili budúcnosť vedeckého a technického vzdelania?\n\nZáklad budúcnosti výchovy a vzdelávania musí spočívať v školách a inšpiratívnych učiteľoch.\n\nKeď som začal pracovať vo svojom odbore, kozmológia bola málo známym a čudáckym odvetvím. Dnes nám kozmológia prostredníctvom teoretických prác a vedeckých triumfov sprístupňuje vesmír. Existujú veľké otázky, ktoré stále čakajú na svoju odpoveď. Ale dnes vieme viac...\n\nČo však leží pred jednotlivcami, ktorí sú dnes mladí? Môžem s istotou vyhlásiť, že ich budúcnosť bude závisieť od vedy a techniky. O vede musia vedieť viac ako predchádzajúce generácie, pretože sa neopakovateľným spôsobom stala súčasťou ich každodenného života.",
+      "asset": null
+    },
+    "sjl-2024-a-s3": {
+      "kind": "text",
+      "title": "Kareta obyčajná – unikátny živočíšny druh",
+      "body": "Aj keď väčšinu času pláva v mori, patrí medzi plazy, čo potvrdzuje to, že jej telesná teplota je závislá od teploty prostredia a že má pľúca, čo ju núti pravidelne vyplávať nad hladinu, aby sa nadýchla.\n\n<table><tr><th>Zaradenie</th><td>morský plaz</td></tr><tr><th>Dĺžka</th><td>zhruba 1 m</td></tr><tr><th>Hmotnosť</th><td>cez 80 kg (najťažšie aj viac ako 400 kg)</td></tr><tr><th>Končatiny</th><td>plutvy</td></tr><tr><th>Dýchanie</th><td>pľúcami</td></tr><tr><th>Plodný vek</th><td>od 25 rokov</td></tr><tr><th>Doba liahnutia</th><td>40 až 60 dní</td></tr></table>\n\nKareta znáša vajcia na piesočnatých plážach, ktoré sú ľahko prístupné a súčasne dobre chránené pred nepriazňou počasia. Karety v okolí pobrežia ostrova ostávajú asi pol roka, počas tohto obdobia sa korytnačky pária a do konca leta samičky znesú vajcia v priemere 3- až 4-krát. Kareta po zotmení vystúpi na pevninu a po mäkkom piesku sa doplazí až na pláž, kde plutvami vyhĺbi zhruba 40-centimetrovú jamku a uloží do nej okolo 120 vajec s mäkkou škrupinou. Hniezdo potom opatrne zahrabe pieskom a vyčerpaná svojím úsilím sa vráti späť do mora. Zo 60 – 70 % vajíčok sa neskôr za úsvitu vyliahnu maličké korytnačky, z ktorých žiadna nemeria viac ako 5 cm. Zaujímavosťou je, že pohlavie mláďat je závislé od vonkajšej teploty, v ktorej vajíčka dozrievajú – na teplých plážach sa liahnu prevažne samičky a na chladných samčeky. Vykuknú z piesočnatého hniezda a bez otáľania vyrazia na cestu smerom k moru. Inštinktívne pritom hľadajú svetlý bod na obzore, ktorý má byť podľa ich genetickej informácie morom. Tie metre, ktoré mláďatá delia od morskej hladiny, sú veľmi náročné a plné nebezpečenstva. Je to najvýznamnejšia a súčasne najťažšia cesta ich života.\n\nKarety, ktorým sa podarí dostať sa do mora, sa vracajú späť až v reprodukčnom veku, aby sa spárili a zniesli svoje vajíčka na rovnakej pláži, kde sa narodili. Predpokladá sa, že len 1 – 2 mláďatá z tisícky sa dožijú dospelosti a privedú na svet potomstvo, preto ochranári roky pracujú na tom, aby ich populáciu zachránili.",
+      "asset": null
+    },
+    "sjl-2024-a-s4": {
+      "kind": "text",
+      "title": "Bájka o starej lasici a myši",
+      "body": "Keď lasica zostarla, s mladosťou ju opustila aj jej niekdajšia šikovnosť a obratnosť. Dokonca ani myši sa jej nebáli a stále sa jej vysmievali, keďže už nebola dosť rýchla, aby ich chytila. Stará lasica toho už mala dosť, a tak sa schytila a zaliezla do vreca múky. Dôkladne sa ňou prikryla, netrčala jej z nej ani špička nosa. Len čo myši objavili vrece, už aj sa hnali, aby sa dobre pohostili. To boli hody! Avšak neboli to myši, čo si napchali bruchá, ale prefíkaná lasica! Pochytala všetky myši, ktoré sa čo len obtreli o vrece s múkou.",
+      "asset": null
+    },
+    "sjl-2024-a-s5": {
+      "kind": "text",
+      "title": "Zažni",
+      "body": "Zažni aspoň kúsok sviece,\nnemaj, prosím, z toho strach,\nnech sa svetlo zatrbliece\nv nočných kalužiach.\n\nKeď sa v tvojom okne zažne,\nláska vstúpi do dverí,\nže to so mnou myslíš vážne,\naj dážď uverí.\n\nAutor textu: Ján Štrasser\nInterpret: Miroslav Žbirka",
+      "asset": null
+    },
+    "sjl-2024-a-s6": {
+      "kind": "text",
+      "title": "Triedna populácia",
+      "body": "Naša triedna populácia je veľmi variabilná. Niektoré indivíduá čítajú pod lavicou komiksy s tematikou sci-fi, iní magazíny o kurze eura. Jano Cviker, triedny spíker, propaguje anekdoty o škole. Olina hovorí čosi o diskvalifikácii a diskriminácii. Triedna nám navrhuje konsenzus a hrozí klasifikáciou. Má na to kvalifikáciu. Prišiel k nám inkognito inšpektor. Všetci sme happy, doteraz sme poznali len inšpektora Columba.",
+      "asset": null
+    },
+    "sjl-2024-a-s7": {
+      "kind": "text",
+      "title": "Sporiť a šetriť",
+      "body": "Popri výraze sporiť pozná slovenčina aj výraz šetriť. Obidva majú niečo spoločné, je však medzi nimi jemný rozdiel. Sporiť, to je „zbierať, zhromažďovať, odkladať“; šetriť, to je „chrániť, starať sa, aby sa vec nezničila“. Sporiť, čiže ukladať, sa môžu peniaze, materiál; šetriť sa majú oči, topánky, šetriť sa má kultúrny majetok, prírodné zdroje, zdravie, sily človeka.",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": "sjl-2024-a-s1",
+      "ids": [
+        "sjl-2024-a-01",
+        "sjl-2024-a-02",
+        "sjl-2024-a-03",
+        "sjl-2024-a-04"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s1",
+      "ids": [
+        "sjl-2024-a-05",
+        "sjl-2024-a-06",
+        "sjl-2024-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s2",
+      "ids": [
+        "sjl-2024-a-08",
+        "sjl-2024-a-09",
+        "sjl-2024-a-10",
+        "sjl-2024-a-11"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s2",
+      "ids": [
+        "sjl-2024-a-12",
+        "sjl-2024-a-13",
+        "sjl-2024-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s3",
+      "ids": [
+        "sjl-2024-a-15",
+        "sjl-2024-a-16",
+        "sjl-2024-a-17",
+        "sjl-2024-a-18"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s3",
+      "ids": [
+        "sjl-2024-a-19",
+        "sjl-2024-a-20",
+        "sjl-2024-a-21"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s4",
+      "ids": [
+        "sjl-2024-a-22",
+        "sjl-2024-a-23"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s5",
+      "ids": [
+        "sjl-2024-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2024-a-25"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s6",
+      "ids": [
+        "sjl-2024-a-26"
+      ]
+    },
+    {
+      "stimulus": "sjl-2024-a-s7",
+      "ids": [
+        "sjl-2024-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2024-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2024-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2024-a-30"
+      ]
+    }
+  ],
+  "items": {
+    "sjl-2024-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o disciplínach ZPH je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "V parasnoubordingu sme prvýkrát súťažili vo Vancouvri.",
+        "Sú určené iba pre zrakovo znevýhodnených športovcov.",
+        "Najväčší úspech v paraalpskom lyžovaní sme dosiahli v Soči.",
+        "Curling na vozíku je kolektívnym zimným športom."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2024-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o medailistke Henriete Farkašovej nevyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Na ZPH v Soči sa umiestnila na šiestom mieste.",
+        "Vo Vancouvri a Pjongčangu získala celkovo osem medailí.",
+        "Je výbornou paraalpskou zjazdovou lyžiarkou.",
+        "Minimálne jedenkrát bola najúspešnejšou účastníčkou hier."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2024-a-03": {
+      "n": 3,
+      "topic": "komunikacia",
+      "text": "V ktorej možnosti je správne zapísané vykanie?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pani Smaržová, bola ste spokojná so svojím zjazdom?",
+        "Pán Krako, boli by ste taký ochotný a poskytol nám interview?",
+        "Pani Farkašová, stratili ste niekedy chuť súťažiť o medaily?",
+        "Pán Hlavina, cítite spokojnosť a ste šťastní za svoj dnešný výkon?"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2024-a-04": {
+      "n": 4,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sa nachádzajú iba združené pomenovania?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "cenných kovov, v celosvetovej súťaži",
+        "obrovský slalom, paralympijských hrách",
+        "zlaté medaily, brilantných športovcov",
+        "fantastický Vancouver, kolosálny úspech"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2024-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa obe slová skloňujú podľa rovnakého vzoru?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "hier, v disciplínach",
+        "reprezentantov, športov",
+        "v súťaži, medailí",
+        "medailistov, navádzačmi"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2024-a-06": {
+      "n": 6,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z prvého odseku ukážky (ZPH Vancouver) synonymum slova expedícia.",
+      "asset": null,
+      "type": "word",
+      "answer": "výprava",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2024-a-07": {
+      "n": 7,
+      "topic": "slovna-zasoba",
+      "text": "Z druhého odseku ukážky (ZPH Soči) vypíš zložené slovo, ktoré nie je cudzieho pôvodu.",
+      "asset": null,
+      "type": "word",
+      "answer": "menoslov",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2024-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Čo podľa ukážky v súčasnosti ohrozuje vzdelávanie a vedecko-technický výskum?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Máme nedostatok inšpiratívnych učiteľov v školách.",
+        "Mladí ľudia, lebo sa málo zaujímajú o vedu a techniku.",
+        "Široká verejnosť nedôveruje vedcom a odborníkom.",
+        "Nemožno zodpovedať všetky existujúce vedecké otázky."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2024-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie nie je na základe ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Myseľ potrebuje na dosiahnutie maximálneho výkonu nejaký podnet.",
+        "Podnet pobádajúci k zamysleniu zvykne pochádzať od učiteľa.",
+        "Ľudská myseľ je schopná predviesť kreatívne i detailné myslenie.",
+        "Autor bez námahy prijímal rôzne nové podnety a učil sa."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2024-a-10": {
+      "n": 10,
+      "topic": "sloh-postupy",
+      "text": "Uvedená ukážka",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "je vedecko-populárna.",
+        "je denník.",
+        "je vedecko-fantastická.",
+        "je encyklopédia."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2024-a-11": {
+      "n": 11,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti je uvedené slovné spojenie, ktoré nahrádza význam podčiarknutej časti nasledujúcej vety?\n\nDnes nám kozmológia prostredníctvom teoretických prác a vedeckých triumfov sprístupňuje vesmír.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "pokusných typov",
+        "bádateľských úspechov",
+        "veľkolepých faktov",
+        "výskumných predpokladov"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2024-a-12": {
+      "n": 12,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sú všetky podstatné mená v rovnakom páde?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "zapriahnuť energiu, čudáckym odvetvím",
+        "každá myseľ, dosiahla potenciál",
+        "za výnimočným človekom, existujú otázky",
+        "globálnej vzbury, závisieť od vedy"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2024-a-13": {
+      "n": 13,
+      "topic": "slovna-zasoba",
+      "text": "Do nasledujúceho textu doplň správne slovo cudzieho pôvodu, ktoré je zároveň vyučovacím predmetom aj v základnej škole.\n\nStephen Hawking bol excelentným vedcom. Dokázal teóriu Veľkého tresku, ktorá vysvetľuje vznik vesmíru. Venoval sa zákonom pohybu telies a vlastnostiam hmoty. Napísal veľké množstvo popularizačných kníh pre verejnosť, v ktorých sa snažil prístupným spôsobom priblížiť veľké objavy teoretickej __ a kozmológie.",
+      "asset": null,
+      "type": "word",
+      "answer": "fyziky",
+      "accept": [
+        "fyzika"
+      ],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2024-a-14": {
+      "n": 14,
+      "topic": "tvaroslovie",
+      "text": "Doplň správne do nasledujúcej časti vety slovné spojenie dnešní školáci.\n\nMusíme veľa diskutovať o vede a technike s __, ktorí sú súčasťou dynamickej éry.",
+      "asset": null,
+      "type": "word",
+      "answer": "dnešnými školákmi",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2024-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o karete je na základe ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Počas kladenia vajec ich znesie do konca leta okolo stodvadsať.",
+        "Počas dýchania vo vode je závislá od jej teploty ako všetky plazy.",
+        "Počas svitania sa z viac ako polovice vajíčok vyliahnu mláďatá.",
+        "Počas čakania na liahnutie stráži hniezdo pred nebezpečenstvom."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2024-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "Podľa ukážky kareta po vyliahnutí",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "môže silný svetelný zdroj na obzore považovať za more.",
+        "chvíľu odpočíva, až potom sa vydáva na náročnú cestu.",
+        "zdolá prvú prekážku v živote a vydáva sa za tými náročnejšími.",
+        "sa odoberá do mora, aby sa o rok znova vrátila na rovnakú pláž."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2024-a-17": {
+      "n": 17,
+      "topic": "porozumenie-textu",
+      "text": "Na znášanie vajec je pre karety vhodná pláž",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "s mäkkým kamenistým podkladom.",
+        "chránená pred vplyvmi počasia.",
+        "s častým striedaním teploty.",
+        "v okolí jazera alebo ostrova."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2024-a-18": {
+      "n": 18,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti sú na základe ukážky údaje o korytnačke karete zoradené od najmenšieho po najväčší?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "dĺžka karety, veľkosť vyliahnutej korytnačky, hĺbka jamky na vajcia, vzdialenosť hniezda od mora",
+        "veľkosť vyliahnutej korytnačky, dĺžka karety, vzdialenosť hniezda od mora, hĺbka jamky na vajcia",
+        "hĺbka jamky na vajcia, veľkosť vyliahnutej korytnačky, vzdialenosť hniezda od mora, dĺžka karety",
+        "veľkosť vyliahnutej korytnačky, hĺbka jamky na vajcia, dĺžka karety, vzdialenosť hniezda od mora"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2024-a-19": {
+      "n": 19,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádzajú zámená rovnakého druhu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "núti ju vyplávať, cesta ich života",
+        "núti ju vyplávať, jej telesná teplota",
+        "väčšina z nich, uloží do nej vajíčka",
+        "väčšina z nich, podľa ich informácie"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2024-a-20": {
+      "n": 20,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z tabuľkovej časti ukážky pomnožné podstatné meno.",
+      "asset": null,
+      "type": "word",
+      "answer": "pľúcami",
+      "accept": [
+        "pľúca"
+      ],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2024-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "Doplň správne druhové privlastňovacie prídavné meno od slova kareta.\n\n__ ostrov",
+      "asset": null,
+      "type": "word",
+      "answer": "karetí",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2024-a-22": {
+      "n": 22,
+      "topic": "literarna-teoria",
+      "text": "Ktoré tvrdenie najvhodnejšie vystihuje poučenie z bájky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Sýty hladnému neverí.",
+        "Lepšie rozumom ako kolom.",
+        "Na hrubé vrece hrubá záplata.",
+        "Dobre myšiam, keď mačky doma nieto."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2024-a-23": {
+      "n": 23,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádza príslovka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "zaliezla do vreca",
+        "ani myši sa jej nebáli",
+        "dôkladne sa ňou prikryla",
+        "niekdajšia šikovnosť a obratnosť"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2024-a-24": {
+      "n": 24,
+      "topic": "pravopis",
+      "text": "Uveď vybrané slovo, ktorého význam charakterizuje počasie v texte piesne Zažni.\n\nText piesne Zažni opisuje __ počasie.",
+      "asset": null,
+      "type": "word",
+      "answer": "sychravé",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2024-a-25": {
+      "n": 25,
+      "topic": "tvaroslovie",
+      "text": "Nájdi v nasledujúcej vete chybné slovo a napíš ho správne.\n\nVybrali sme si výborný zákusok a zaplatili sme zaň päť euro a 10 centov.",
+      "asset": null,
+      "type": "word",
+      "answer": "eur",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2024-a-26": {
+      "n": 26,
+      "topic": "porozumenie-textu",
+      "text": "Z textu vyplýva, že",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "žiaci v danej triede majú podobné záujmy.",
+        "hovorca triedy rád rozširuje vtipy o škole.",
+        "inšpektor príde do školy vopred ohlásený.",
+        "väčšina žiakov obľubuje kreslené seriály."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2024-a-27": {
+      "n": 27,
+      "topic": "slovna-zasoba",
+      "text": "Ktoré sloveso má podľa textu opačný význam ako sloveso šetriť?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "plytvať",
+        "nemíňať",
+        "obmedziť",
+        "neuložiť"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2024-a-28": {
+      "n": 28,
+      "topic": "skladba",
+      "text": "Vypíš z nasledujúcej vety prisudzovací sklad.\n\nKórejské svahy boli svedkom najlepšieho športového vystúpenia.",
+      "asset": null,
+      "type": "word",
+      "answer": "svahy boli svedkom",
+      "accept": [
+        "svahy svedkom boli",
+        "boli svahy svedkom",
+        "boli svedkom svahy",
+        "svedkom svahy boli",
+        "svedkom boli svahy"
+      ],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2024-a-29": {
+      "n": 29,
+      "topic": "pravopis",
+      "text": "Na základe nasledujúceho tvrdenia doplň pravopisne správne v náležitom tvare aj s predložkou názov krajiny, z ktorej pochádza modrý syr.\n\nGurmánsky modrý francúzsky syr chutí najlepšie s krehkým chlebom a čerstvým ovocím.\n\nTento syr pochádza __.",
+      "asset": null,
+      "type": "word",
+      "answer": "z Francúzska",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2024-a-30": {
+      "n": 30,
+      "topic": "pravopis",
+      "text": "V ktorej vete je číslovka napísaná pravopisne správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Do umeleckej súťaže sa môžeš prihlásiť do šestnástych rokov.",
+        "Úspešných bolo štyridsať jedna žiačok nášho okresu.",
+        "Na technicky zameranú vedeckú súťaž sa prihlásili osem krát.",
+        "Naši zástupcovia skončili v krajskom kole súťaže štvrtí."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2024,
+        "form": "A",
+        "n": 30
+      }
+    }
+  }
+}

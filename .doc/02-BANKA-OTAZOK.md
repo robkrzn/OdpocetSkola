@@ -228,8 +228,10 @@ Pravidlá schémy:
   na ne odkazuje. **Id sa nikdy nemení a nerecykluje.**
 - `units` je **jediný vstup pre výber dennej päťky.** Každé `id` z `items` musí byť
   v presne jednej jednotke. Samostatná úloha = jednotka s jedným id a `stimulus: null`.
-- Skupina nad 7 úloh sa rozdelí na dve jednotky s tým istým `stimulus` — inak by
-  jeden deň zjedol celú kapitolu.
+- **V `questions/raw/` zostáva skupina celá** — je to verná kópia testu, kde čítacia
+  ukážka má naozaj sedem otázok. Rezanie na časti do 5 úloh robí `tools/merge.mjs`
+  pri zlievaní servírovanej banky (7 → 4+3, tá istá ukážka). Validátor preto na
+  `questions/*.json` padne pri jednotke nad **5** úloh, nie nad 7.
 - `type`:
   - `mc` — výber z možností, `answer` je `"A"`–`"E"`, `options` má rovnaký počet.
   - `num` — číselná odpoveď, `answer` je kanonický zápis, `accept` ďalšie prijímané.

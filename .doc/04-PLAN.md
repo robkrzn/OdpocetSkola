@@ -320,7 +320,7 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 | F0a zdroje | **hotové** — `.doc/zdroje.md`, 7 ročníkov | 1.9.2026 |
 | F0b stiahnutie PDF | **hotové** — 28 PDF v `source/`, gitignored | 1.9.2026 |
 | F1 pilot (2024) | **hotové** — MAT 23/30, SJL 30/30, 53 odpovedí bez nezhody | 1.9.2026 |
-| F2 validátor + nástroje | čaká | |
+| F2 validátor + nástroje | **hotové** — `pick.js`, `check.js`, `merge.mjs`, `crop.mjs` | 1.9.2026 |
 | F3 hromadné ťaženie | čaká | |
 | F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
 | F4 dizajn | čaká | |
