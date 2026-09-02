@@ -1,0 +1,62 @@
+<!doctype html><meta charset="utf-8"><title>m</title>
+<!-- Merac nad ZIVOU index.html. Ten isty iframe a ten isty seed ako live.html,
+     len namiesto snimky vypise scrollHeight a rect vybranych selektorov.
+     chrome --headless=old --dump-dom "...measure-live.html?v=dnes&s=fresh&sel=.corner|.btn" -->
+<body style="margin:0;background:#111;color:#0f0;font:11px monospace">
+<iframe id="f" style="border:0"></iframe>
+<pre id="out">…</pre>
+<script>
+const q = new URLSearchParams(location.search);
+const W = +(q.get('w') || 375), H = +(q.get('h') || 667);
+const view = q.get('v') || 'dnes', preset = q.get('s') || 'fresh';
+const KEY = 'odpocet.v1';
+const iso = (n) => { const d = new Date(); d.setUTCHours(12,0,0,0); d.setUTCDate(d.getUTCDate() - n); return d.toISOString().slice(0,10); };
+function seed() {
+  if (preset === 'fresh') { localStorage.removeItem(KEY); return; }
+  const days = {};
+  for (let n = 1; n <= 11; n++) days[iso(n)] = { mat:{ids:['a','b','c','d','e'],ok:4}, sjl:{ids:['a','b','c','d','e'],ok:3} };
+  localStorage.setItem(KEY, JSON.stringify({ v:1, nick:'', created:Date.now(),
+    totals:{mat:{seen:55,ok:40},sjl:{seen:55,ok:44}},
+    topics:{'mat:pytagorova-veta':{seen:6,ok:2},'mat:percenta-pomer':{seen:5,ok:2},'sjl:skladba':{seen:7,ok:4},'mat:telesa':{seen:4,ok:3},'sjl:pravopis':{seen:9,ok:7}},
+    review:{}, days:days, current:null }));
+}
+const until = (fn, ms=8000) => new Promise((res,rej)=>{const t0=Date.now();(function t(){let v;try{v=fn()}catch(e){v=null}
+  if(v) return res(v); if(Date.now()-t0>ms) return rej(new Error('timeout')); requestAnimationFrame(t)})()});
+async function answerAll(doc){
+  for(let n=0;n<12;n++){
+    await until(()=>doc.querySelector('.option-row')||doc.getElementById('ans'));
+    const rows=doc.querySelectorAll('.option-row');
+    if(rows.length) rows[0].click(); else doc.getElementById('ans').value='12';
+    doc.getElementById('cta').click();
+    await until(()=>doc.getElementById('cta').textContent!=='Potvrdiť');
+    const last=doc.getElementById('cta').textContent==='Výsledok';
+    doc.getElementById('cta').click();
+    if(last) return;
+    await until(()=>doc.querySelector('.option-row')||doc.getElementById('ans'));
+  }
+}
+seed();
+const f = document.getElementById('f');
+f.style.width = W+'px'; f.style.height = H+'px';
+f.src = '../../index.html#/' + (q.get('d')==='answer-all' ? 'uloha' : view);
+f.onload = async () => {
+  const d = f.contentDocument, w = f.contentWindow, L = [];
+  try {
+    if (q.get('d')==='answer-all') { await answerAll(d); await until(()=>w.location.hash==='#/vysledok'); }
+    await until(()=>d.querySelector('.screen').children.length>0 || view==='tabula');
+  } catch(e){ L.push('DRIVE '+e.message); }
+  await new Promise(r=>setTimeout(r,400));
+  L.push('view='+view+' preset='+preset+' '+W+'x'+H);
+  L.push('scrollHeight='+d.documentElement.scrollHeight+' viewport='+w.innerHeight+
+         ' overflow='+(d.documentElement.scrollHeight-w.innerHeight));
+  for (const s of (q.get('sel')||'').split('|').filter(Boolean)) {
+    const els = d.querySelectorAll(s);
+    if (!els.length) { L.push(s+' — ziadny'); continue; }
+    els.forEach((el,i)=>{ const r=el.getBoundingClientRect(); const cs=w.getComputedStyle(el);
+      L.push(s+'['+i+'] top='+r.top.toFixed(1)+' bottom='+r.bottom.toFixed(1)+' h='+r.height.toFixed(1)+
+             ' w='+r.width.toFixed(1)+' bg='+cs.backgroundColor); });
+  }
+  document.getElementById('out').textContent = L.join('\n');
+  document.title = 'done';
+};
+</script>

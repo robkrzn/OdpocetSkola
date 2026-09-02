@@ -115,8 +115,17 @@ takže sa commitne len skutočná zmena — v praxi pri preklopení zastávky al
 dizajnu. Ručne do súboru nesiahaj, prepíše ťa cron.
 
 Lokálny kontrolný screenshot potrebuje **lokálny http server** — cez `file://` sa
-`fonts/archivo-narrow-latin-ext.woff2` neuloží kvôli CORS a Š/Č/Ž/Ľ/Ť vypadnú na
-náhradný font:
+`fonts/archivo-narrow-latin-ext.woff2` neuloží kvôli CORS, Š/Č/Ž/Ľ/Ť vypadnú na
+náhradný font a `fetch('questions/*.json')` sa zablokuje celý. Na tomto stroji je
+Python 2.7: `python -m SimpleHTTPServer 8765`.
+
+**Na Windows nevie Chrome okno užšie ako 500 px**, takže `--window-size=375,667`
+mlčky vyrobí 500 px snímku a mobil sa takto otestovať nedá. Preto je v repe
+`.impeccable/review/live.html` — iframe s vlastným viewportom, ktorý načíta
+**skutočnú** `index.html` so všetkým CSS a JS. Sadu snímok všetkých pohľadov robí
+`sh .impeccable/review/shoot.sh <pred|po>`, merania `measure.sh`. Statické komppy
+v tom istom priečinku sú z dizajnovej fázy a vyzerajú utiahnutejšie než realita —
+na kontrolu layoutu ber živú stránku.
 
 ```bash
 python3 -m http.server 8765 &

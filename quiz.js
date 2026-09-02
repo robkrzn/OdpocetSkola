@@ -394,15 +394,21 @@
     if (!day || !resultSub) { go('#/dnes'); return; }
     var ids = day.sets[resultSub], ok = okCount(ids);
 
+    // Sekcny popisok je namalovana signage na stene; hodnoty a zoznamy sedia
+    // v puzdre, delene tou istou hairlinou ako pasy tabule (Recess Rule).
     var h = '<p class="section-cap">' + GEN[resultSub] + '</p>' +
-      '<ol class="progress-strip" aria-hidden="true" style="margin-top:12px">' +
-        stripHtml(ids, day.answers, -1) + '</ol>' +
-      '<p class="report-line" style="margin-top:10px">' + ok + ' z ' + ids.length + ' správne</p>' +
-      '<p class="sr">' + NAME[resultSub] + ': ' + stripSr(ids, day.answers) + '</p>';
+      '<section class="panel"><div class="panel__band">' +
+        '<div class="rail"><span class="rail__key">Vypravené</span>' +
+          '<span class="rail__val">' + ok + ' / ' + ids.length + '</span></div>' +
+        '<ol class="progress-strip" aria-hidden="true">' +
+          stripHtml(ids, day.answers, -1) + '</ol>' +
+        '<p class="sr">' + NAME[resultSub] + ': ' + stripSr(ids, day.answers) + '</p>' +
+      '</div>';
 
     var missed = ids.filter(function (id) { return !day.answers[id].ok; });
     if (missed.length) {
-      h += '<p class="section-cap">Zmeškané spoje</p><ul class="topics">';
+      h += '<div class="rule"></div><div class="panel__band">' +
+        '<p class="panel__cap">Zmeškané spoje</p><ul class="topics">';
       missed.forEach(function (id) {
         var it = byId[id].item;
         h += '<li><div class="topic-row" style="cursor:default"><div>' +
@@ -410,9 +416,9 @@
           '<p class="role-answer" style="margin:0">Správne: ' + esc(it.answer) + '</p>' +
           '</div></div></li>';
       });
-      h += '</ul>';
+      h += '</ul></div>';
     }
-    screen.innerHTML = h;
+    screen.innerHTML = h + '</section>';
 
     var pending = nextPending();
     if (pending) setCta('Pokračovať · ' + SHORT[pending.sub].toUpperCase(), function () {
@@ -425,32 +431,38 @@
 
   function renderToday() {
     var st = Store.stats();
-    var h = '<p class="section-cap">Dnešný spoj</p>';
+    // Dva predmety su dva spoje, takze nesu ten isty rail ako lista tabule:
+    // ciel vlavo, pocet vpravo. Pod nim vlastny pas postupu.
+    var h = '<p class="section-cap">Dnešný spoj</p><section class="panel">' +
+      '<div class="panel__band">';
 
     if (!day) {
       // Po dokonceni uz `day` nezije - store.js drzi len ids a pocty. Konkretne
       // odpovede uz clovek videl na vysledku, tu staci, ze je vypraveny.
+      // Ktore konkretne boli spravne, uz store.js nedrzi - len ids a pocty.
+      // Pas postupu by teda musel klamat, takze tu nie je: dva raily stacia.
       var rec = state.days[today()];
-      h += '<p class="role-body" style="margin:14px 0 0">Dnešok je vypravený.</p>';
       SUBJECTS.forEach(function (sub) {
-        h += '<div class="report-head"><div class="report-line">' + NAME[sub] +
-          ' <span aria-hidden="true">·</span> <strong>' + rec[sub].ok + ' / ' +
-          rec[sub].ids.length + '</strong> správne</div></div>';
+        h += '<div class="rail"' + (sub === 'sjl' ? ' style="margin-top:12px"' : '') + '>' +
+          '<span class="rail__key">' + NAME[sub] + '</span>' +
+          '<span class="rail__val">' + rec[sub].ok + ' / ' + rec[sub].ids.length + '</span></div>';
       });
+      h += '<p class="role-body" style="margin:18px 0 0">Dnešok je vypravený.</p>';
     } else {
       SUBJECTS.forEach(function (sub) {
         var ids = day.sets[sub], at = -1;
         for (var i = 0; i < ids.length; i++) if (!(ids[i] in day.answers)) { at = i; break; }
-        h += '<div class="report-head"><div class="report-line" style="margin-bottom:4px">' +
-          NAME[sub] + ' <span aria-hidden="true">·</span> <strong>' +
+        h += '<div class="rail"><span class="rail__key">' + NAME[sub] + '</span>' +
+          '<span class="rail__val">' +
           ids.filter(function (id) { return id in day.answers; }).length + ' / ' + ids.length +
-          '</strong></div><ol class="progress-strip" aria-hidden="true">' +
+          '</span></div><ol class="progress-strip" aria-hidden="true">' +
           stripHtml(ids, day.answers, at) + '</ol>' +
-          '<p class="sr">' + NAME[sub] + ': ' + stripSr(ids, day.answers) + '</p></div>';
+          '<p class="sr">' + NAME[sub] + ': ' + stripSr(ids, day.answers) + '</p>';
       });
     }
 
-    h += streakLine(st, 'margin-top:26px');
+    h += '</div><div class="rule"></div><div class="panel__band">' +
+      streakLine(st) + '</div></section>';
     screen.innerHTML = h;
 
     var pending = nextPending();
@@ -467,8 +479,16 @@
   /* --- pohlad: vykaz ------------------------------------------------------- */
 
   function streakLine(st, style) {
-    var s = st.streak;
-    return '<p class="report-line"' + (style ? ' style="' + style + '"' : '') + '>' +
+    var s = st.streak, at = style ? ' style="' + style + '"' : '';
+    // Prve otvorenie: SERIA 0 DNI · OSOBNY · REKORD 0 · REZERVA 0 vyzera ako
+    // pokazeny vykaz, nie ako cisty start - styri nuly su styri chybajuce
+    // hodnoty. Kym nie je vypraveny ani jeden den, seria nema co ukazat a
+    // hovori to jednou vetou.
+    if (!st.doneDates.length) {
+      return '<p class="report-line"' + at + '>' +
+        '<span>Séria začína prvým vypraveným dňom</span></p>';
+    }
+    return '<p class="report-line"' + at + '>' +
       '<span>Séria <strong>' + s.days + ' ' + pl(s.days, 'deň', 'dni', 'dní') + '</strong></span>' +
       '<span><strong>' + s.rank + '</strong></span>' +
       '<span>Rekord <strong>' + s.best + '</strong></span>' +
@@ -477,7 +497,8 @@
 
   function renderReport() {
     var st = Store.stats();
-    var h = streakLine(st, 'margin-top:8px');
+    // Jedno puzdro, tri pasy, dve hairliny - ta ista gramatika ako tabula.
+    var h = '<section class="panel"><div class="panel__band">' + streakLine(st);
 
     h += '<ol class="day-strip" aria-hidden="true">' + st.days14.map(function (d) {
       if (d.state === 'ok') return pip('pip--ok', '✓');
@@ -489,16 +510,21 @@
       st.days14.filter(function (d) { return d.state === 'ok'; }).length + ' dokončených, ' +
       st.days14.filter(function (d) { return d.state === 'miss'; }).length + ' zmeškaných.</p>';
 
-    h += '<p class="section-cap">Úspešnosť</p><div class="stat-row">';
+    h += '</div><div class="rule"></div><div class="panel__band">' +
+      '<p class="panel__cap">Úspešnosť</p><div class="stat-row">';
     SUBJECTS.forEach(function (sub) {
+      // Bez jedinej odpovede je "0 %" nad "0 / 0" tvrdenie o niecom, co sa
+      // nestalo. Pomlcka je chybajuca hodnota, nula je zla hodnota.
+      var t = st.totals[sub];
       h += '<div class="stat"><span class="stat__cap">' + SHORT[sub] + '</span>' +
-        '<span class="role-stat">' + st.pct[sub] + ' %</span>' +
-        '<span class="report-line" style="font-weight:400">' + st.totals[sub].ok + ' / ' +
-        st.totals[sub].seen + '</span></div>';
+        '<span class="role-stat">' + (t.seen ? st.pct[sub] + ' %' : '–') + '</span>' +
+        (t.seen ? '<span class="report-line" style="font-weight:400">' + t.ok + ' / ' +
+          t.seen + '</span>' : '') + '</div>';
     });
-    h += '</div>';
+    h += '</div></div>';
 
-    h += '<p class="section-cap">Slabé linky</p>';
+    h += '<div class="rule"></div><div class="panel__band">' +
+      '<p class="panel__cap">Slabé linky</p>';
     if (!st.topics.length) {
       h += '<p class="hint">Zatiaľ málo údajov · linka sa objaví po troch úlohách z tej istej témy</p>';
     } else {
@@ -512,7 +538,7 @@
       h += '</ul><p class="hint">Klik na linku spustí sadu z tejto témy.</p>';
     }
 
-    screen.innerHTML = h;
+    screen.innerHTML = h + '</div></section>';
     var list = screen.querySelector('.topics');
     if (list) list.addEventListener('click', function (ev) {
       var b = ev.target.closest('.topic-row');

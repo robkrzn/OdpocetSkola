@@ -306,6 +306,10 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 - druhá veta do `og:description` o dennej päťke — `.github/og.mjs`
 - `.answer-verdict` (stav vsadeného poľa krátkej odpovede) nie je v `DESIGN.md`
   ani v `design.json` — komp preň nemal stav, vznikol až v builde
+- **puzdro herného obsahu** z F5b (vsadený panel, do ktorého sa presunul obsah
+  `#/dnes`, `#/vysledok` a `#/vykaz`) tiež nie je v `DESIGN.md` ani `design.json`.
+  Systém má po F5b kontejner, ktorý dokument neopisuje — `impeccable-documenter`
+  ho má odvodiť z hotového artefaktu, nie z komppu
 - `Store.saveDrill` — drill zo slabej linky sa neráta do štatistiky ani série
   (`ponytail:` v `quiz.js`, cesta je F6)
 
@@ -337,6 +341,7 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 | F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
 | F4 dizajn | **hotové a komp schválený** — 2. kolo, oba nálezy opravené | 1.9.2026 |
 | F5 build v2.0 | **hotové** — 5 pohľadov, 131 kB, gate zelený | 2.9.2026 |
+| F5b revízia dizajnu | **hotové** — herný obsah do vsadeného panelu, šev steny odstránený | 2.9.2026 |
 | F6 Firebase | čaká | |
 | F7 OG + docs | čaká | |
 

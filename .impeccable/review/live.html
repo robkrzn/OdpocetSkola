@@ -1,0 +1,94 @@
+<!doctype html><meta charset="utf-8"><title>live</title>
+<!-- Zivy screenshot harness pre F5b. Nie staticky komp: iframe ukazuje SKUTOCNU
+     index.html so vsetkym CSS a JS. Chrome na Windows nevie okno uzsie ako
+     500px, iframe ma vlastny viewport, takze vw/dvh/sticky vnutri su naozaj
+     375x667 (rovnaky trik ako frame.html).
+
+     chrome --headless=old --hide-scrollbars --window-size=375,667
+       --virtual-time-budget=9000 --screenshot=out.png
+       "http://localhost:8765/.impeccable/review/live.html?v=dnes&s=fresh&w=375&h=667"
+
+     v = dnes|uloha|vysledok|vykaz|tabula   s = fresh|played   d = answer-all -->
+<style>html,body{margin:0;padding:0;background:#000;overflow:hidden}iframe{display:block;border:0}</style>
+<iframe id="f"></iframe>
+<script>
+const q = new URLSearchParams(location.search);
+const W = +(q.get('w') || 375), H = +(q.get('h') || 667);
+const view = q.get('v') || 'dnes';
+const preset = q.get('s') || 'fresh';
+const KEY = 'odpocet.v1';
+
+const iso = (n) => { const d = new Date(); d.setUTCHours(12,0,0,0); d.setUTCDate(d.getUTCDate() - n); return d.toISOString().slice(0,10); };
+
+// Stav sa seeduje PRED nacitanim iframu - je to ta ista origin, takze
+// localStorage je zdielany.
+function seed() {
+  if (preset === 'fresh') { localStorage.removeItem(KEY); return; }
+  const days = {};
+  // devatdnova seria (vikendy prazdne su v poriadku - streakState ich nepocita)
+  for (let n = 1; n <= 11; n++) {
+    const d = iso(n);
+    days[d] = { mat: { ids: ['a','b','c','d','e'], ok: 4 }, sjl: { ids: ['a','b','c','d','e'], ok: 3 } };
+  }
+  localStorage.setItem(KEY, JSON.stringify({
+    v: 1, nick: '', created: Date.now(),
+    totals: { mat: { seen: 55, ok: 40 }, sjl: { seen: 55, ok: 44 } },
+    topics: {
+      'mat:pytagorova-veta': { seen: 6, ok: 2 },
+      'mat:percenta-pomer': { seen: 5, ok: 2 },
+      'sjl:skladba': { seen: 7, ok: 4 },
+      'mat:telesa': { seen: 4, ok: 3 },
+      'sjl:pravopis': { seen: 9, ok: 7 }
+    },
+    review: {}, days: days, current: null
+  }));
+}
+
+const until = (fn, ms = 8000) => new Promise((res, rej) => {
+  const t0 = Date.now();
+  (function tick() {
+    let v; try { v = fn(); } catch (e) { v = null; }
+    if (v) return res(v);
+    if (Date.now() - t0 > ms) return rej(new Error('timeout'));
+    requestAnimationFrame(tick);
+  })();
+});
+
+async function answerAll(doc) {
+  for (let n = 0; n < 12; n++) {
+    await until(() => doc.querySelector('.option-row') || doc.getElementById('ans'));
+    const rows = doc.querySelectorAll('.option-row');
+    if (rows.length) rows[0].click();
+    else doc.getElementById('ans').value = '12';
+    const cta = doc.getElementById('cta');
+    cta.click();                                   // potvrdit
+    await until(() => doc.getElementById('cta').textContent !== 'Potvrdiť');
+    const last = doc.getElementById('cta').textContent === 'Výsledok';
+    doc.getElementById('cta').click();             // dalej / vysledok
+    if (last) return;
+    await until(() => doc.querySelector('.option-row') || doc.getElementById('ans'));
+  }
+}
+
+seed();
+const f = document.getElementById('f');
+f.style.width = W + 'px';
+f.style.height = H + 'px';
+// #/vysledok sa neda otvorit hashom (resultSub je len v pamati) - dojde sa tam
+// odohranim sady.
+f.src = '../../index.html#/' + (q.get('d') === 'answer-all' ? 'uloha' : view);
+f.onload = async () => {
+  const doc = f.contentDocument;
+  try {
+    if (q.get('d') === 'answer-all') {
+      await answerAll(doc);
+      await until(() => f.contentWindow.location.hash === '#/vysledok');
+    }
+    await until(() => doc.querySelector('.screen').children.length > 0 || view === 'tabula');
+  } catch (e) { document.title = 'err ' + e.message; }
+  // dve snimky navyse, aby dobehli klapkove animacie a syncHead()
+  requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(() => {
+    if (!document.title.startsWith('err')) document.title = 'done';
+  }, 400)));
+};
+</script>
