@@ -366,10 +366,41 @@ Mechanika `og.yml` sa nemení. Menia sa dve veci:
 
 ## WhatsApp pripomienka v v2
 
-**Nemení sa nič.** Text je v schválenom Meta template a URL tlačidlo už vedie na
-stránku, na ktorej po novom je hra. Prepísať template znamená nové schvaľovanie v Mete
-za nulový prínos. Zmena textu na „dnešná päťka ťa čaká" je kandidát na neskôr,
-nie na v2.
+**Kód sa nemení, text template áno.** Pôvodné rozhodnutie („nemení sa nič") padlo
+po F5b: keď už na tej stránke hra je, pripomienka má na ňu pozvať, nie len hlásiť
+odpočet.
+
+`send.js` zostáva nedotknutý, pretože nová veta používa **tie isté dve premenné** —
+`{{1}}` je `what` (2. pád zastávky) a `{{2}}` je `left` (odpočet slovami). Zmena je
+výhradne v [WhatsApp Manager](https://business.facebook.com/wa/manage/message-templates/),
+template `odpocet_pripomienka`, jazyk `sk`:
+
+```
+Do {{1}} zostáva {{2}}.
+
+Poď si niečo zopakovať — dnešná päťka z matiky a sloviny je pripravená.
+
+[tlačidlo] Otvoriť test
+```
+
+Dve veci, ktoré s tým prichádzajú:
+
+- **Editácia schváleného template ho posiela znova do review** a Meta počet editácií
+  za mesiac obmedzuje. Nie je to zmena, ktorú sa dá skúšať iteratívne.
+- **Meta môže template preklasifikovať z Utility na Marketing.** Utility je aktualizácia,
+  ktorú si príjemca vyžiadal; „poď si zopakovať" znie promo. Marketingové šablóny sa
+  účtujú za správu, takže pri jednej správe denne to sú centy, ale prestáva to byť
+  nula. Kategóriu, ktorú Meta priradí, si over pri schvaľovaní — to je jediné miesto,
+  kde tento projekt môže začať niečo stáť.
+
+**Pozor, v kóde JE kópia toho textu.** `send.js` má `preview()` — reťazec, ktorý sa
+neposiela, len vypisuje do logu a do `--test`, aby bolo vidieť, čo pôjde von. Je to
+zrkadlo template a **mení sa v tom istom kroku ako template**, inak log tvrdí niečo
+iné, než príjemca dostane. Žiadny assert ho nekontroluje, takže test to nezachytí —
+je to jediné miesto v projekte, kde sa text môže rozdvojiť.
+
+Testovacia povinnosť z `CLAUDE.md` platí ďalej: po každej zmene `stops.js` alebo
+`send.js` beží `node send.js --test`.
 
 Testovacia povinnosť z `CLAUDE.md` platí ďalej: po každej zmene `stops.js` alebo
 `send.js` beží `node send.js --test`.

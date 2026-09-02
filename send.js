@@ -100,7 +100,14 @@ async function send({ what, left }) {
   if (errors.length) throw new Error(errors.join("\n"));
 }
 
-const preview = (m) => `Do ${m.what} ti ostáva ${m.left}. Už sa pripravuješ?`;
+/* Zrkadlo textu z Meta template `odpocet_pripomienka`. Kod tento retazec NEPOSIELA -
+   odoslane znenie drzi template a kod mu dava len dve premenne. Vypisuje sa do logu
+   a do `--test`, aby bolo vidiet, co pojde von.
+   Ked sa meni template, meni sa aj tento riadok. Inak log tvrdi nieco ine, nez
+   prijemca dostane. Zavazne znenie je v .doc/01-ARCHITEKTURA.md, sekcia
+   "WhatsApp pripomienka v v2". */
+const preview = (m) =>
+  `Do ${m.what} zostáva ${m.left}. Poď si niečo zopakovať - dnešná päťka z matiky a sloviny je pripravená. [Otvoriť test]`;
 
 if (process.argv[2] === "--test") {
   const assert = require("node:assert");

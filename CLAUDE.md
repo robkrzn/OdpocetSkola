@@ -149,6 +149,10 @@ riešiť len ak si to používateľ vypýta.
 (cieľ, odpočet); zvyšok textu aj URL tlačidlo sú v template, nie v kóde. Beží denne
 o 15:00 Europe/Bratislava.
 
+**Text správy sa preto nemení v repe, ale vo WhatsApp Manageri.** Znenie pre v2 aj
+s upozornením na preklasifikovanie template na Marketing je v `.doc/01-ARCHITEKTURA.md`,
+sekcia „WhatsApp pripomienka v v2". Premenné zostávajú dve, takže `send.js` sa nemení.
+
 **Actions cron mešká, aj hodiny.** Preto sa `send.js` neriadi hodinou behu, ale
 `SCHEDULE` (`github.event.schedule`) — tá povie, ktorý z dvoch cronov beh spustil,
 a meškaním sa nemení. Meškajúci beh dobehne do 21:59, potom sa zahodí.
