@@ -302,6 +302,13 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 
 **Cieľ:** náhľad predáva aj hru, koreňové dokumenty nie sú v rozpore s `.doc/`.
 
+**Nesplatené z F5** (F5 do týchto súborov nesmelo písať):
+- druhá veta do `og:description` o dennej päťke — `.github/og.mjs`
+- `.answer-verdict` (stav vsadeného poľa krátkej odpovede) nie je v `DESIGN.md`
+  ani v `design.json` — komp preň nemal stav, vznikol až v builde
+- `Store.saveDrill` — drill zo slabej linky sa neráta do štatistiky ani série
+  (`ponytail:` v `quiz.js`, cesta je F6)
+
 **Práce:** druhá veta do `og:description` v `.github/og.mjs`; prekreslenie `og.jpg`
 (urobí `og.yml` sám); prepis `PRODUCT.md` (Product Purpose, Positioning), `CLAUDE.md`
 (stack, nové súbory, nové rozhodnutia), `DESIGN.md` (už z F4); `README.md` o
@@ -329,7 +336,7 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 | F3 hromadné ťaženie | čaká | |
 | F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
 | F4 dizajn | **hotové a komp schválený** — 2. kolo, oba nálezy opravené | 1.9.2026 |
-| F5 build v2.0 | čaká | |
+| F5 build v2.0 | **hotové** — 5 pohľadov, 131 kB, gate zelený | 2.9.2026 |
 | F6 Firebase | čaká | |
 | F7 OG + docs | čaká | |
 

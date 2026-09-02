@@ -232,6 +232,13 @@ Pravidlá schémy:
   ukážka má naozaj sedem otázok. Rezanie na časti do 5 úloh robí `tools/merge.mjs`
   pri zlievaní servírovanej banky (7 → 4+3, tá istá ukážka). Validátor preto na
   `questions/*.json` padne pri jednotke nad **5** úloh, nie nad 7.
+- **Dlhé zadanie ide do `stimuli`, ale len keď je to kontext.** Zistené v F5:
+  `mat-2024-a-26` mal 367 znakov (recept na palacinky plus otázka na pomer) a na
+  telefóne sa nezmestil. Recept je kontext, otázka je posledná veta — patrí to do
+  `stimuli` + krátky `text`. **Neplatí to pre slovnú úlohu**, kde sú čísla v zadaní
+  samotnou otázkou (`mat-2024-a-11`, dialóg o úsporách má 365 znakov a je to jedna
+  nedeliteľná úloha) — tam by zbalená ukážka skryla to, čo treba počítať.
+  Rozhodovacia otázka: **odkazuje otázka na ten text, alebo ten text JE otázka?**
 - `type`:
   - `mc` — výber z možností, `answer` je `"A"`–`"E"`, `options` má rovnaký počet.
   - `num` — číselná odpoveď, `answer` je kanonický zápis, `accept` ďalšie prijímané.

@@ -201,8 +201,11 @@ isté. Tým vzniká „dnešná päťka" ako spoločná téma bez jedinej riadky
 spolužiaci si porovnajú výsledok vo vlastnom chate. Rebríček by k tomu pridal
 moderáciu, osobné údaje a Firestore čítania a nedodal takmer nič.
 
-Piata je osobná: najviac po termíne z `review`. Ak nie je čo opakovať, doberie sa
-ďalšia zdieľaná jednotka.
+Piata je osobná: najviac po termíne z `review`. **Ak nie je čo opakovať, deň zostane
+na štyroch** — dobrať celú ďalšiu zdieľanú jednotku by ho mohlo vyhnať nad sedem, a
+polovicu jednotky brať nesmieme. Prvé dni teda majú štyri úlohy na predmet a piata
+pribudne, len čo je čo opakovať; to je správne poradie, lebo opakovať sa dá až to,
+čo už padlo.
 
 ### 3. Priechod bankou, opakovanie až po ňom
 

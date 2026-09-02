@@ -126,11 +126,18 @@ potvrdiť alebo vyvrátiť s dôvodom:
   - `#/tabula` — plná tabuľa, päť jednotiek, bez zmeny.
 - **Interakcia zostáva, ale zúžená.** `main.js` dnes spúšťa kaskádu, zvonec a výkrik
   na `pointerdown` **kdekoľvek na dokumente**. V hre by tapnutie na odpoveď zazvonilo.
-  Nový rozsah: kaskáda, zvonec aj výkriky reagujú **len na samotnú rohovú tabuľu**
-  (a na celú plochu tam, kde je tabuľa hlavným prvkom). Výkriky zostávajú aj v tóne
-  aj v obsahu — sú to najlepšie tri riadky celého produktu.
-- Rohová tabuľa je zároveň **odkaz na plnú tabuľovú plochu** — tam žije v1 zážitok
-  v plnej veľkosti.
+  Nový rozsah: kaskáda, zvonec aj výkriky reagujú **len na `#/tabula`**, a tam na celú
+  plochu. Výkriky zostávajú aj v tóne aj v obsahu — sú to najlepšie tri riadky celého
+  produktu, len sa presťahovali o jedno tapnutie ďalej.
+- **Rohová tabuľa nezvoní, len naviguje.** Jedno tapnutie nevie spraviť oboje a odkaz
+  na plnú tabuľu je dôležitejší než zvonec na obrazovke, kde sa učí. Je to `<a>` na
+  celom kachlíku s `aria-label`. Toto ruší pôvodné „kaskáda aj na rohovej tabuli".
+- **Prepínač pohľadov zostáva aj na `#/tabula`** (~34 px, neprišpendlený). Bez neho
+  sa z tabule nedá vrátiť inak než tlačidlom späť. Zvyšok plochy je v1 nedotknutá:
+  päť jednotiek, stotiny, kaskáda, zvonec.
+- **rAF beží len na `#/tabula`.** Na herných pohľadoch je najjemnejšia jednotka minúta,
+  takže stačí sekundový `setTimeout` — 100 tickov/s počas riešenia úlohy je čistá
+  strata batérie.
 
 ## Odporúčaná téza (dizajnová fáza ju môže prebiť lepšou)
 

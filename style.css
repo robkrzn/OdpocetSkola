@@ -11,6 +11,9 @@
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
+/* Mobile first (R9): zaklad je telefon 375x667, desktop je vylucne min-width.
+   Ziadna max-width query, ktora nieco odobera - to je desktop-first prezleceny
+   za responzivny. Na vysku sa este pytame, leziaci telefon je vyskovy pripad. */
 :root{
   /* smaltova stena */
   --enamel:#2A5346;
@@ -41,9 +44,14 @@
   --sheen-2:rgba(255,255,255,.09);
   --sheen-3:rgba(255,255,255,.14);
 
-  --cell:clamp(34px,8.2vw,72px);
-  --lead:clamp(70px,24vw,124px);
+  /* Bunky reaguju aj na vysku displeja - bez min(vw,vh) stranka na 375x667
+     pretekala o 111 px. */
+  --cell:clamp(36px,min(18.5vw,8.4vh),74px);
+  --lead:clamp(56px,min(26vw,11.9vh),112px);
   --ch:1.55;
+
+  /* vyska prisponendleneho chromu nad obsahom - pod nou sa lepi ukazka */
+  --head-h:104px;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -51,12 +59,9 @@ html{-webkit-text-size-adjust:100%;touch-action:manipulation;overflow-x:clip;ove
 
 body{
   margin:0;
+  padding:0;
   min-height:100vh;
   min-height:100dvh;
-  display:grid;
-  place-items:center;
-  padding:clamp(14px,4vw,48px);
-  padding-bottom:max(clamp(14px,4vw,48px),env(safe-area-inset-bottom));
   font-family:"Archivo Narrow",system-ui,sans-serif;
   color:var(--ink);
   background-color:var(--enamel);
@@ -71,6 +76,9 @@ body{
     radial-gradient(140% 115% at 50% 50%,transparent 38%,var(--shade-3) 100%);
   background-size:240px 240px,auto,auto,auto,auto,auto,auto;
   background-blend-mode:soft-light,normal,normal,normal,normal,normal,normal;
+  /* hra scrolluje; bez fixed by sa vinetacia posuvala s obsahom a stena by
+     na dlhej ukazke skoncila v druhom odtieni */
+  background-attachment:fixed;
   overflow-x:clip;
 }
 
@@ -79,7 +87,26 @@ body{
 
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 
-.wall{display:flex;flex-direction:column;align-items:center;gap:clamp(18px,3.4vw,34px);width:100%}
+/* === tabulova plocha (v1) - #/tabula a ?og=1 =========================== */
+/* Tabula nie je pohlad hry, je to cela obrazovka steny. Preto ma vlastne
+   centrovanie a hra sa na nej neukazuje vobec (Two-Surface Rule). */
+body.view-tabula,body.og{display:flex;flex-direction:column}
+
+.wall{
+  display:none;
+  flex:1 1 auto;min-height:0;
+  flex-direction:column;align-items:center;justify-content:center;
+  gap:clamp(18px,3.4vw,34px);width:100%;
+  padding:10px;
+  padding-bottom:max(10px,env(safe-area-inset-bottom));
+}
+body.view-tabula .wall,body.og .wall{display:flex}
+@media (min-width:560px){
+  .wall{
+    padding:clamp(14px,4vw,48px);
+    padding-bottom:max(clamp(14px,4vw,48px),env(safe-area-inset-bottom));
+  }
+}
 
 /* --- tabula ---------------------------------------------------------- */
 .board{
@@ -120,11 +147,15 @@ body{
 
 /* --- ciel v klapkach ------------------------------------------------- */
 .dest{margin-top:clamp(12px,2.2vw,18px);display:flex;flex-direction:column;align-items:center;gap:3px}
-.flapline{--c:clamp(16px,5.6vw,44px);display:flex;gap:2px}
+.flapline{--c:clamp(14px,4.6vw,44px);display:flex;gap:2px}
+/* Capy osi su na cielovom riadku na telefone pod pixel - az od 560px maju co
+   ukazat, tak sa tam pridavaju, nie tu odoberaju. */
+.flapline .flap::before,.flapline .flap::after{display:none}
 
 /* --- pole casu ------------------------------------------------------- */
-.clock{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:clamp(10px,1.8vw,22px)}
-.unit{--c:var(--cell);display:flex;flex-direction:column;align-items:center;gap:7px}
+.clock{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:10px}
+/* uzky telefon: dve jednotky na riadok, aby cislice zostali obrovske */
+.unit{--c:var(--cell);display:flex;flex-direction:column;align-items:center;gap:7px;flex-basis:calc(50% - 5px)}
 .unit--lead{--c:var(--lead);flex-basis:100%}
 .cells{display:flex;gap:3px}
 .cap{
@@ -133,18 +164,17 @@ body{
 }
 .unit--lead .cap{color:var(--ink-2);font-size:clamp(12px,1.7vw,16px)}
 
-/* uzky telefon: dve jednotky na riadok, aby cislice zostali obrovske */
-@media (max-width:559px){
-  :root{--cell:clamp(36px,min(18.5vw,8.4vh),74px);--lead:clamp(56px,min(26vw,11.9vh),112px)}
-  .clock{gap:10px}
-  .unit{flex-basis:calc(50% - 5px)}
-  .flapline .flap::before,.flapline .flap::after{display:none}
+/* siroky telefon a tablet: jednotky sa uz zmestia do jedneho radu */
+@media (min-width:560px){
+  :root{--cell:clamp(44px,7.4vw,60px);--lead:clamp(70px,24vw,124px)}
+  .clock{gap:clamp(10px,1.8vw,22px)}
+  .unit{flex-basis:auto}
   .unit--lead{flex-basis:100%}
-}
-@media (min-width:560px) and (max-width:899px){
-  :root{--cell:clamp(44px,7.4vw,60px)}
+  .flapline{--c:clamp(16px,5.6vw,44px)}
+  .flapline .flap::before,.flapline .flap::after{display:block}
 }
 @media (min-width:900px){
+  :root{--cell:clamp(34px,8.2vw,72px)}
   .unit--lead{flex-basis:auto;margin-right:clamp(6px,1.4vw,16px)}
 }
 
@@ -235,10 +265,10 @@ body{
 @keyframes shout-still{0%,100%{opacity:0}10%,72%{opacity:1}}
 
 /* --- ramovanie pre nahlad linku (1200x630) --------------------------- */
-body.og{padding:20px 30px 24px;--cell:56px;--lead:92px}
+body.og{--cell:56px;--lead:92px}
+body.og .wall{padding:20px 30px 24px;gap:16px}
 body.og .board{width:min(100%,1080px)}
 body.og .flapline{--c:34px}
-body.og .wall{gap:16px}
 body.og .line{display:block;font-size:32px}
 
 /* nizke displeje: odpocet musi zostat cely na obrazovke, stranka sa nesmie rolovat */
@@ -248,27 +278,371 @@ body.og .line{display:block;font-size:32px}
   .wall{gap:clamp(12px,2vw,24px)}
   .board{padding-top:14px;padding-bottom:12px}
 }
-@media (max-width:559px) and (max-height:800px){
-  body{padding:10px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
-  .flapline{--c:clamp(14px,4.6vw,44px)}
-}
 
 /* leziaci telefon: nizka vyska, sirka nad 560px - bez tohto tabula pretekala o 270px */
 @media (max-height:540px) and (min-width:560px){
   :root{--cell:clamp(26px,min(6.4vw,8.2vh),60px);--lead:clamp(40px,min(11vw,13.4vh),124px)}
   .flapline{--c:clamp(12px,min(3vw,4vh),44px)}
-  .wall{gap:8px}
+  /* uzka vyska + zarez displeja po stranach pri viewport-fit=cover */
+  .wall{gap:8px;
+        padding-block:10px max(10px,env(safe-area-inset-bottom));
+        padding-inline:max(14px,env(safe-area-inset-left)) max(14px,env(safe-area-inset-right))}
   .board{padding-top:10px;padding-bottom:8px}
   .rule{margin:6px 0}
   .dest{margin-top:6px}
   .unit{gap:4px}
-  /* uzka vyska + zarez displeja po stranach pri viewport-fit=cover */
-  body{padding-block:10px max(10px,env(safe-area-inset-bottom));
-       padding-inline:max(14px,env(safe-area-inset-left)) max(14px,env(safe-area-inset-right))}
 }
+
+/* ====================================================================== */
+/* === v2: hra ========================================================== */
+/* Ziadna nova farba, ziadna nova alfa - vsetko nizsie stoji na tokenoch a
+   rampe vyssie. Typograficke role z .doc/03-DIZAJN.md: signage plati na
+   chrom, obsah je veta s malymi pismenami. */
+
+/* --- typograficke role ----------------------------------------------- */
+.role-body{
+  font-size:clamp(16px,4.2vw,18px);font-weight:400;line-height:1.5;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+  /* Zadania z testov nesu vlastne zalomenie - doplnovacky a premeny jednotiek
+     su viacriadkove a bez neho sa zlejú do jednej vety. */
+  white-space:pre-wrap;
+}
+.role-option{
+  font-size:clamp(15px,3.8vw,17px);font-weight:400;line-height:1.4;
+  letter-spacing:0;text-transform:none;color:var(--ink-2);
+}
+.role-answer{
+  font-size:clamp(16px,4.2vw,18px); /* rovnaka skala ako body - odpoved je sucastou vety */
+  font-variant-numeric:tabular-nums;font-weight:700;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+}
+.role-stat{
+  font-variant-numeric:tabular-nums;font-weight:700;
+  font-size:clamp(32px,10vw,52px);line-height:1;
+  letter-spacing:0;text-transform:none;color:var(--ink);
+}
+
+/* --- chrom: prisponendlena hlavicka ---------------------------------- */
+.app-head{
+  position:sticky;top:0;z-index:6;
+  background-color:var(--enamel);
+  padding:8px clamp(14px,4vw,32px) 8px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.app-head::after{ /* ta ista hairline ako .rule, oddeluje chrom od obsahu natrvalo */
+  content:"";display:block;height:1px;margin-top:2px;
+  background:linear-gradient(90deg,transparent,var(--sheen-3),transparent);
+}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media (min-width:900px){
+  :root{--head-h:84px}
+  /* rohova tabula vpravo hore, vsadena do steny (Recess Rule) - nikdy plavajuci roh */
+  .app-head{flex-direction:row;align-items:center;justify-content:space-between;gap:20px}
+}
+
+/* #/uloha ma iny chrom: namiesto klapkoveho pasu jeden signage riadok, zato
+   v tom istom pase aj pas postupu. Vysledok je o ~90px nizsi ako klapkovy pas
+   a presne ten rozdiel dostane vsetky moznosti na jednu obrazovku. */
+body.view-uloha{--head-h:108px}
+body.view-uloha .app-head{gap:8px}
+body.view-uloha #strip{margin-top:0}
+/* spodne odsadenie plochy nesie palcovy pas, nie .screen - inak sa stranka da
+   posunut o 24px aj ked je vsetko vidno */
+body.view-uloha .screen{padding-bottom:0}
+body.view-uloha .thumb-bar{margin-top:0}
+@media (min-width:900px){
+  body.view-uloha{--head-h:96px}
+  /* Na #/uloha je v pase aj pas postupu, takze riadky zostavaju nad sebou aj na
+     desktope; odpocet a prepinac zdielaju prvy riadok, lebo oba su signage. */
+  body.view-uloha .app-head{flex-direction:column;align-items:stretch;gap:10px}
+}
+
+.tabs{
+  display:flex;gap:clamp(16px,4vw,26px);
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;
+  color:var(--ink-2); /* Board-Ink Rule: --ink-3 je 3,38:1 na smalte - na stene najtmavsi je --ink-2 */
+}
+.tabs a{color:inherit;text-decoration:none;padding-bottom:6px;border-bottom:2px solid transparent}
+.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--ink)}
+.tabs a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* --- odpocet ako jeden riadok signage (#/uloha) ----------------------------
+   Klapkovy pas stoji 117px z 667. Na obrazovke, kde sa cita zadanie a vybera
+   z 4 moznosti, je to 18 % viewportu za informaciu, ktora sa za jednu ulohu
+   nezmeni. Tu teda odpocet nie je hardver, ale napis: label, ~30px, v tom
+   istom prispendlenom pase ako pas postupu. Denna granularita staci - minuty
+   na obrazovke, kde clovek stoji 90 sekund, nikto necita. */
+.countline{
+  display:none;align-items:center;gap:.55em;min-height:30px;
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;
+  font-variant-numeric:tabular-nums;color:var(--ink-2);text-decoration:none;
+  white-space:nowrap;
+} /* = typography.label; --ink-2 lebo stoji na stene */
+.countline b{color:var(--ink);font-weight:700}
+.countline:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+body.view-uloha .countline{display:flex}
+
+/* --- rohova tabula: zmensena varianta Board Panel, jednotky dni:hod:min --- */
+.corner{
+  position:relative;
+  --cell:clamp(16px,4vw,30px);
+  --lead:clamp(30px,9vw,54px);
+  background-color:var(--board);
+  background-image:linear-gradient(180deg,var(--sheen-1),transparent 60px);
+  border-radius:4px;
+  padding:8px clamp(12px,3vw,18px);
+  box-shadow:
+    0 0 0 1px var(--shade-4),
+    inset 0 4px 14px var(--shade-5),
+    inset 0 14px 24px -14px var(--shade-5),
+    inset 0 -2px 0 var(--sheen-1),
+    0 1px 0 var(--sheen-3),
+    0 3px 7px -2px var(--shade-2);
+  display:none;flex-direction:column;gap:6px;
+  text-decoration:none;
+}
+body.view-dnes .corner,body.view-vysledok .corner,body.view-vykaz .corner{display:flex}
+/* Rail (ciel + datum) a hodiny zdielaju uzky pas na telefone, tak radsej
+   stoja nad sebou nez aby sa 3-jednotkovy cas musel zmensit pod --cell/--lead
+   skalu (Reflow-Not-Shrink Rule). Az od 900px je vedla seba miesto na oboje. */
+.corner__rail{display:flex;align-items:baseline;gap:10px}
+.corner__k{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3)} /* = typography.label, ako .rail__k */
+.corner__v{font-size:clamp(11px,1.5vw,14px);font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap} /* = typography.label-strong */
+.corner .clock{gap:8px;flex-wrap:nowrap;justify-content:flex-start}
+.corner .unit{gap:3px;flex-basis:auto}
+.corner .unit--lead{flex-basis:auto;margin-right:0}
+.corner:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (min-width:900px){
+  .corner{flex-direction:row;align-items:center;gap:clamp(10px,2vw,18px)}
+  .corner__rail{flex-direction:column;align-items:flex-start;gap:2px}
+}
+
+/* --- plocha pohladov -------------------------------------------------- */
+.screen{
+  max-width:920px;
+  margin:0 auto;
+  padding:0 clamp(14px,4vw,32px) clamp(24px,6vw,48px);
+}
+
+/* --- panel ulohy: board-panel variant, nesie ukazku a zadanie --- */
+.task-panel{
+  position:relative;margin-top:8px;
+  background-color:var(--board);
+  border-radius:4px;
+  box-shadow:
+    0 0 0 1px var(--shade-4),
+    inset 0 4px 14px var(--shade-5),
+    inset 0 14px 24px -14px var(--shade-5),
+    inset 0 -2px 0 var(--sheen-1),
+    0 1px 0 var(--sheen-3),
+    0 3px 7px -2px var(--shade-2);
+}
+
+/* Ukazka je pripenendlena hned pod chromom, aby zostala dosiahnutelna aj pri
+   4. otazke skupiny. Vlastna vyska je orezana a scrolluje sa VNUTRI seba -
+   bez orezania by dlha viacodsekova ukazka zabrala cely viewport a zadanie
+   by uz nebolo vidno vobec. */
+.stimulus{
+  position:sticky;top:var(--head-h);z-index:3;
+  background-color:var(--board);
+  border-radius:4px 4px 0 0;
+  box-shadow:0 8px 10px -8px var(--shade-3); /* leaf-cast tien, oddeluje pripevnenu ukazku od textu pod nou */
+}
+/* Zbalene/rozbalene je nativne <details>: ziadny JS, klavesnica aj citacka
+   funguju zadarmo. Rozbalena je len pri PRVEJ otazke skupiny; od druhej je
+   z ukazky jeden prispendleny riadok, ktory sa tapnutim otvori. */
+.stimulus__label{
+  display:flex;align-items:center;gap:.6em;cursor:pointer;list-style:none;
+  padding:11px clamp(14px,3vw,22px) 9px;min-height:44px;
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3);
+} /* = typography.label; sedi na doske, tam je --ink-3 spravny */
+.stimulus__label::-webkit-details-marker{display:none}
+.stimulus__label::after{content:"\2304";margin-left:auto;font-size:1.4em;line-height:.2;letter-spacing:0}
+.stimulus[open] .stimulus__label{padding-bottom:8px}
+.stimulus[open] .stimulus__label::after{content:"\2303";line-height:1}
+.stimulus__label:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.stimulus__label em{font-style:normal;color:var(--ink-2)}
+.stimulus__scroll{
+  padding:0 clamp(14px,3vw,22px) 14px;
+  max-height:36dvh;overflow-y:auto;
+}
+.stimulus__scroll::after{ /* nazorna stopka, ze ukazka sa da rolovat vnutri seba - bez nej
+     na mobile (kde sa scrollbar zvycajne neukazuje) nikto netusi, ze text pokracuje */
+  content:"";position:sticky;display:block;left:0;right:0;bottom:0;height:28px;margin:-28px 0 0;
+  background:linear-gradient(180deg,transparent,var(--board));pointer-events:none;
+}
+/* kratka ukazka, ktora sa cela zmesti: bez pripevnenia a bez stopky */
+.stimulus--static{position:static}
+.stimulus--static .stimulus__scroll{max-height:none;overflow:visible}
+.stimulus--static .stimulus__scroll::after{content:none}
+.stimulus__heading{font-weight:700;margin:0 0 8px}
+.stimulus__body p{margin:0 0 .9em}
+.stimulus__body p:last-child{margin-bottom:0}
+.stimulus__body{max-width:66ch}
+.stimulus__table-wrap{overflow-x:auto;margin:.8em 0;-webkit-overflow-scrolling:touch}
+.stimulus__body table{border-collapse:collapse;font-size:clamp(15px,3.8vw,17px);white-space:nowrap} /* = role-option: tabulka je obsah, nie chrom */
+.stimulus__body th,.stimulus__body td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--sheen-1);color:var(--ink-2)}
+.stimulus__body th{color:var(--ink-3);font-weight:700;border-bottom:1px solid var(--sheen-2)}
+
+.task-panel__body{padding:12px clamp(14px,3vw,22px) 18px}
+.task-panel__prompt{max-width:66ch}
+/* Odchylka od kompu (schvalena): riadok zdroja stoji POD moznostami. V kompe
+   bol medzi zadanim a moznostami a preruboval cestu od otazky k odpovedi. */
+.task-panel__source{
+  display:block;margin-top:16px;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);text-decoration:none;
+} /* = typography.caption - najtichsi krok, citacia je najmenej dolezita informacia na paneli */
+.task-panel__source:hover,.task-panel__source:focus-visible{color:var(--ink-2)}
+
+/* --- riadok moznosti: tapovatelny, klapkova bunka A-D vlavo --- */
+.options{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column}
+.option-row{
+  display:flex;align-items:center;gap:14px;
+  width:100%;text-align:left;
+  background:none;border:0;border-top:1px solid var(--sheen-1);
+  padding:9px 2px;min-height:44px;
+  font:inherit;cursor:pointer;
+}
+.options li:first-child .option-row{border-top:0}
+.option-row .flap{--c:clamp(26px,7vw,34px);flex:none} /* litera A-D nepotrebuje skalu cisla; 4 riadky sa musia zmestit pod zadanie */
+.option-row .flap i{font-size:calc(var(--c) * 1.1)} /* pismeno A-D nepotrebuje plnu klapkovu skalu cisla */
+.option-row .role-option{flex:1}
+.option-row:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.option-row:disabled{cursor:default}
+
+.option-row--selected .flap .fh--t,.option-row--selected .flap .fh--b{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+.option-row--selected .role-option{color:var(--ink)}
+
+.option-row--correct .flap .fh--t{background:var(--ink);box-shadow:none}
+.option-row--correct .flap .fh--b{background:var(--ink);box-shadow:none}
+.option-row--correct .flap i{color:var(--board);font-weight:700}
+.option-row--correct .role-option{color:var(--ink)}
+
+.option-row--wrong .flap i{color:var(--signal)}
+.option-row--wrong .role-option{color:var(--ink-2)}
+
+.option-row--reveal{position:relative}
+.option-row--reveal .role-option::after{
+  content:"správne";margin-left:10px;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
+} /* = typography.caption */
+
+/* --- pole kratkej odpovede: vsadeny input, tabular, num aj word --- */
+.answer-field{
+  display:flex;align-items:center;gap:10px;margin-top:18px;
+  background:var(--gap);border-radius:3px;padding:12px 14px;min-height:44px;
+}
+.answer-field input{
+  width:100%;background:transparent;border:0;outline:0;font:inherit;
+  font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink);
+  font-size:clamp(16px,4.2vw,18px); /* = role-answer / role-body skala */
+}
+.answer-field input::placeholder{color:var(--ink-3);font-weight:400}
+.answer-field:focus-within{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+
+/* Verdikt kratkej odpovede. Komp ho nemal - riadok moznosti si stav nesie
+   klapkou, vsadene pole nie. Stav preto nikdy nie je len farba: glyf najprv,
+   spravna odpoved hned za nim. */
+.answer-verdict{display:flex;align-items:baseline;gap:.5em;margin:14px 0 0}
+.answer-verdict__g{font-weight:700}
+.answer-verdict--miss .answer-verdict__g{color:var(--signal)}
+
+/* --- CTA: v dosahu palca, prisponendlene dole ------------------------- */
+.thumb-bar{
+  position:sticky;bottom:0;left:0;right:0;margin-top:20px;z-index:4;
+  padding:10px clamp(14px,4vw,32px) max(10px,env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,transparent,var(--enamel) 30%);
+  display:flex;justify-content:center;
+}
+.thumb-bar[hidden]{display:none}
+.btn{
+  appearance:none;border:0;border-radius:4px;cursor:pointer;
+  font-family:inherit;font-weight:700;font-size:clamp(12px,1.7vw,16px); /* = typography.title */
+  letter-spacing:.17em;text-transform:uppercase;
+  color:var(--ink);background-color:var(--board);
+  padding:14px 28px;min-height:44px;width:100%;max-width:420px;
+  box-shadow:0 0 0 1px var(--shade-4),inset 0 1px 0 var(--sheen-2),0 3px 7px -2px var(--shade-2);
+}
+.btn:disabled{color:var(--ink-3);opacity:.6;cursor:default}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.btn--ghost{background-color:transparent;box-shadow:0 0 0 1px var(--shade-4)}
+
+/* --- pas postupu: 3-7 klapkovych buniek, premenlivy pocet --- */
+.progress-strip{display:flex;list-style:none;margin:14px 0 0;padding:0;gap:4px}
+.progress-strip .flap{--c:clamp(20px,6.4vw,28px)}
+.progress-strip .flap i{font-size:calc(var(--c) * 1.05)}
+.pip--empty i{color:var(--ink-3)}
+.pip--current .fh--t,.pip--current .fh--b{box-shadow:inset 0 0 0 1px var(--sheen-3)}
+.pip--ok .fh--t,.pip--ok .fh--b{background:var(--ink)}
+.pip--ok i{color:var(--board)}
+.pip--miss i{color:var(--signal)}
+#strip{display:none}
+body.view-uloha #strip{display:flex}
+
+/* --- vykaz: staty, seria, 14-dnovy pas, slabe linky --- */
+.report-head{margin-top:18px}
+.report-line{
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2); /* = typography.label */
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;
+}
+.report-line strong{color:var(--ink);font-weight:700}
+/* Popisok a jeho cislo su JEDEN flex item, inak sa "REZERVA 1" zlomi medzi
+   slovom a cislom - anonymne textove uzly su v flexe samostatne polozky. */
+.report-line > span{white-space:nowrap}
+.report-line > span + span::before{content:"\00B7";margin-right:.55em}
+
+.stat-row{display:flex;gap:clamp(20px,6vw,40px);margin-top:22px}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat__cap{font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2)} /* = typography.label; --ink-2 lebo stoji na stene */
+
+.day-strip{display:flex;list-style:none;margin:20px 0 0;padding:0;gap:3px;flex-wrap:wrap}
+.day-strip .flap{--c:clamp(14px,4vw,20px)}
+.day-strip .flap i{font-size:calc(var(--c) * 1.1)}
+
+.topics{list-style:none;margin:20px 0 0;padding:0}
+.topic-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  width:100%;background:none;border:0;border-top:1px solid var(--sheen-1);
+  padding:13px 2px;min-height:44px;text-align:left;font:inherit;cursor:pointer;
+}
+.topics li:first-child .topic-row{border-top:0}
+.topic-row:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.topic-row__name{color:var(--ink-2);font-size:clamp(15px,3.8vw,17px)} /* = role-option - nazov temy je obsah, nie chrom */
+.topic-row__frac{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink)}
+
+.section-cap{
+  margin:26px 0 0;font-size:clamp(11px,1.5vw,14px);letter-spacing:.19em;text-transform:uppercase;color:var(--ink-2); /* = typography.label; sekcny popisok stoji na stene */
+}
+
+.hint{margin:10px 0 0;font-size:clamp(10px,1.35vw,13px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)} /* = typography.caption; objavuje sa aj na stene, takze --ink-2 */
+
+
+/* Od 560px sa vracia vzduch z kompu. Zaklad vyssie je stiesneny telefon:
+   na 375x667 musia byt zadanie a vsetky moznosti nad palcovym pasom aj pri
+   osemriadkovom zadani (mat-2024-a-25), inak padne merateľné kritérium
+   z .doc/03-DIZAJN.md. */
+@media (min-width:560px){
+  .app-head{padding:clamp(10px,3vw,18px) clamp(14px,4vw,32px) clamp(10px,2.4vw,14px)}
+  .task-panel{margin-top:clamp(14px,3vw,22px)}
+  .task-panel__body{padding:16px clamp(14px,3vw,22px) clamp(18px,3vw,24px)}
+  .options{margin-top:18px}
+  .option-row{padding:12px 2px}
+  .thumb-bar{padding:14px clamp(14px,4vw,32px) max(14px,env(safe-area-inset-bottom))}
+  .stimulus__label{padding:clamp(14px,3vw,22px) clamp(14px,3vw,22px) 12px}
+}
+
+/* --- prepinanie ploch ------------------------------------------------- */
+/* Tabula a nahlad linku hru neukazuju vobec (Two-Surface Rule). */
+body.view-tabula .screen,body.view-tabula .thumb-bar,
+body.og .app-head,body.og .screen,body.og .thumb-bar{display:none}
+/* Na tabuli zostava len prepinac - inak sa z nej neda vratit bez tlacidla
+   spat prehliadaca. Nie je prisponendleny a stoji ~34px, takze tabula si drzi
+   celu zvysnu vysku a v1 kaskada aj stotiny bezia nezmenene. */
+body.view-tabula .app-head{position:static;padding-bottom:0;flex-direction:row}
+body.view-tabula .app-head::after{display:none}
 
 @media (prefers-reduced-motion:reduce){
   .shout--on{animation:shout-still 2.2s forwards}   /* vykrik zostane, len neposkoci */
   .flap--spin i,.flap--fast i{filter:none}
   .unit:last-child .cap{opacity:.42}   /* stotiny bezia len s povolenym pohybom */
+  .corner .unit:last-child .cap{opacity:1}   /* v rohu je posledna jednotka minuta a tá bezi vzdy */
 }

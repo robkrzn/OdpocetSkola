@@ -145,6 +145,16 @@ frcF[1].el.classList.add('flap--spin', 'flap--fast');
 
 var clockFlaps = dayF.concat(hrsF, minF, secF);
 
+// Rohova tabula: dni:hod:min. Sekundy a stotiny zostavaju zazitkom tabulovej
+// plochy - trvalo rozmazany stotinovy bubon vedla slovnej ulohy je kradez
+// pozornosti aj baterie (.doc/03-DIZAJN.md).
+var cDayF = fill($('cDay'), 3);
+var cHrsF = fill($('cHrs'), 2);
+var cMinF = fill($('cMin'), 2);
+
+/** Tabulova plocha je jediny pohlad, kde je tabula hlavnym prvkom. */
+function onBoard() { return document.body.classList.contains('view-tabula'); }
+
 /* --- zvonec ----------------------------------------------------------- */
 
 var ac = null;
@@ -220,6 +230,15 @@ function paintTexts() {
   $('goneText').textContent = DEPARTED[phase] || DEPARTED[DEPARTED.length - 1];
   $('line').textContent = view.line;
   $('destSr').textContent = 'Cieľ: ' + view.name + '.';
+
+  // Rohova tabula a signage riadok nesu ten isty ciel ako lista tabule; datum
+  // bez hodiny, na 375px sa "17.03.2027 · 08:00" nezmesti vedla nazvu.
+  $('cornerK').textContent = stop ? view.name : 'Prevádzka ukončená';
+  $('cornerV').textContent = view.rail.split(' · ')[0];
+  $('countlineK').textContent = stop ? view.name : 'Prevádzka ukončená';
+  $('corner').setAttribute('aria-label',
+    (stop ? 'Odpočet do udalosti ' + view.name : 'Odpočet skončil') + ' — prejsť na celú tabuľu');
+
   // Meta tagy prepisuje og.mjs az raz za 3 h; ziviemu navstevnikovi musi titulok sediet hned.
   document.title = view.line.charAt(0).toUpperCase() + view.line.slice(1);
 }
@@ -277,29 +296,50 @@ function frame() {
   write(minF, digits(m, 2));
   write(secF, digits(s, 2));
 
+  write(cDayF, digits(Math.min(d, 999), 3));
+  write(cHrsF, digits(h, 2));
+  write(cMinF, digits(m, 2));
+
   if (REDUCE) {
     // Stlpec, ktory panikari, je presne to, co si pouzivatel s obmedzenym pohybom
     // vypol. Aj 10 Hz je blikanie, takze bunky zostavaju prazdne a staticke.
     if (!fracFrozen) { fracFrozen = true; frcF[0].put(' '); frcF[1].put(' '); }
-  } else {
+  } else if (onBoard()) {
     var hc = digits(Math.floor(frac * 100), 2);
     frcF[0].put(hc[0]);
     frcF[1].put(hc[1]);
   }
 
   $('capDay').textContent = pl(d, 'deň', 'dni', 'dní');
+  $('cCapDay').textContent = pl(d, 'deň', 'dni', 'dní');
+  // Signage riadok na #/uloha: denna granularita staci, minuty tam nikto necita.
+  $('countlineV').textContent = stop ? d + ' ' + pl(d, 'deň', 'dni', 'dní') : '—';
 
   if (m !== lastMin) {
     lastMin = m;
-    $('clockSr').textContent = stop
+    var sr = stop
       ? 'Zostáva ' + d + ' ' + pl(d, 'deň', 'dni', 'dní') +
         ', ' + h + ' ' + pl(h, 'hodina', 'hodiny', 'hodín') +
         ' a ' + m + ' ' + pl(m, 'minúta', 'minúty', 'minút') +
         ' do udalosti ' + stop.name + '.'
       : 'Odpočet skončil. Tabuľa nemá ďalší odchod.';
+    $('clockSr').textContent = sr;
+    $('cornerSr').textContent = sr;
   }
 
-  requestAnimationFrame(frame);
+  schedule();
+}
+
+/* Stotinovy bubon je zazitok tabulovej plochy, nie hry. Na hernych pohladoch
+   je najjemnejsia jednotka minuta, takze rAF (100 tickov/s a bezici prepocet
+   pocas riesenia ulohy) je zbytocny - staci sekundovy tik. */
+var raf = 0, tmr = 0;
+
+function schedule() {
+  cancelAnimationFrame(raf);
+  clearTimeout(tmr);
+  if (onBoard()) raf = requestAnimationFrame(frame);
+  else tmr = setTimeout(frame, 1000);
 }
 
 /* --- OG nahlad: tabula zamrznuta v kaskade ---------------------------- */
@@ -332,7 +372,7 @@ if (OG) {
   $('capDay').textContent = 'dní';
   $('clockSr').textContent = '';
 } else {
-  requestAnimationFrame(frame);
+  schedule();
 
   // Tap je pouzivatelske gesto, takze prehliadac zvuk povoli. Na iPhone v tichom
   // rezime aj tak nezaznie - preto je zvonec bonus, nie pointa.
@@ -345,13 +385,24 @@ if (OG) {
     bell();
     shout();
   }
-  document.addEventListener('pointerdown', poke);
+  // Kaskada, zvonec a vykriky patria tabulovej ploche, nie hre. Na celom
+  // dokumente by tapnutie na odpoved zazvonilo; prepinac pohladov je chrom,
+  // ten len naviguje.
+  document.addEventListener('pointerdown', function (e) {
+    if (!onBoard()) return;
+    if (e.target.closest('.app-head')) return;
+    poke();
+  });
   // Tabula uz nema viditelny ovladac, tak kaskadu drzi dostupnou aspon klavesnica.
+  // Enter a medzernik patria na #/uloha hre (potvrdenie odpovede), preto sem nie.
   document.addEventListener('keydown', function (e) {
+    if (!onBoard()) return;
     if (e.key !== 'Enter' && e.key !== ' ') return;
     // medzernik zoberieme len vtedy, ked nie je co rolovat
     var d = document.documentElement;
     if (d.scrollHeight <= d.clientHeight) e.preventDefault();
     poke();
   });
+  // Prechod na tabulu a z nej meni takt slucky, nech necaka na dobehnuty tik.
+  addEventListener('hashchange', schedule);
 }

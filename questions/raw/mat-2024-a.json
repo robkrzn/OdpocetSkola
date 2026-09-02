@@ -31,6 +31,12 @@
       "title": "Zloženie mlieka",
       "body": "Tabuľka uvádza vybrané druhy mlieka a ich zloženie.<table><tr><th rowspan=\"2\">Druh mlieka</th><th colspan=\"5\">Zastúpenie v 100 g mlieka</th></tr><tr><th>Voda (g)</th><th>Bielkovina (g)</th><th>Tuk (g)</th><th>Mliečny cukor (g)</th><th>Minerálne látky (g)</th></tr><tr><td>Kravské</td><td>87,4</td><td>3,2</td><td>3,7</td><td>4,7</td><td>0,8</td></tr><tr><td>Kozie</td><td>86,6</td><td>3,6</td><td>4,2</td><td>4,8</td><td>0,8</td></tr><tr><td>Ovčie</td><td>83,9</td><td>5,2</td><td>6,3</td><td>4,2</td><td>0,9</td></tr><tr><td>Kobylie</td><td>90,0</td><td>2,0</td><td>1,1</td><td>7,0</td><td>0,4</td></tr></table>",
       "asset": null
+    },
+    "mat-2024-a-s5": {
+      "kind": "text",
+      "title": "Recept na palacinky",
+      "body": "Stará mama pečie palacinky podľa tohto receptu:\nSuroviny na prípravu 8 palaciniek\n· 0,5 dl oleja\n· 2 dl vody\n· 3 dl mlieka\n· 200 g hladkej múky\n· 2 vajcia\n· štipka soli\nVšetky prísady spolu premiešame. Pečieme na rozohriatej panvici, ktorú stačí natrieť olejom len prvýkrát. Palacinky sú jemné a nelepia sa.",
+      "asset": null
     }
   },
   "units": [
@@ -139,7 +145,7 @@
       ]
     },
     {
-      "stimulus": null,
+      "stimulus": "mat-2024-a-s5",
       "ids": [
         "mat-2024-a-26"
       ]
@@ -476,7 +482,7 @@
     "mat-2024-a-26": {
       "n": 26,
       "topic": "percenta-pomer",
-      "text": "Stará mama pečie palacinky podľa tohto receptu:\nSuroviny na prípravu 8 palaciniek\n· 0,5 dl oleja\n· 2 dl vody\n· 3 dl mlieka\n· 200 g hladkej múky\n· 2 vajcia\n· štipka soli\nVšetky prísady spolu premiešame. Pečieme na rozohriatej panvici, ktorú stačí natrieť olejom len prvýkrát. Palacinky sú jemné a nelepia sa.\nV akom pomere sú olej, voda a mlieko v recepte starej mamy?",
+      "text": "V akom pomere sú olej, voda a mlieko v recepte starej mamy?",
       "asset": null,
       "type": "mc",
       "options": [

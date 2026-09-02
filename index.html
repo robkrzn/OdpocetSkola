@@ -36,16 +36,55 @@
 <link rel="preload" href="fonts/archivo-narrow-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="view-dnes">
 <!--
 THESIS: Odpočet ako cestovný poriadok, nie ako hodiny. Leto je odchod, školský rok je príchod o 8:00, ktorý sa nedá zmeškať. Odmieta vycentrovaný neónový blok číslic na čiernej ploche.
 OWN-WORLD: Klapková tabuľa Pragotron na smaltovanej stene. Inštitucionálna zelená drží stenu, tmavé čelo tabule je do nej vsadené, kostné znaky na klapkách, signálna červená len pre odídený spoj. Archivo Narrow, verzálky, pevné znakové bunky.
-STORY: Príde ti link, dve sekundy pozeráš, ako stotinový bubon panikári, a pošleš to ďalej.
-FIRST VIEWPORT: Celá obrazovka je stena; tabuľa vsadená doprostred. Zhora lišta najbližšieho odchodu, pod ňou cieľ v dvoch riadkoch klapiek, potom pole času - dni obrovské, ostatné jednotky menšie v rade, stotiny ako roztočené bubny. Dole odídený spoj červeno a smaltové tlačidlo PREHODIŤ. Veta na stene pod tabuľou.
+STORY: Príde ti link, dve sekundy pozeráš, ako stotinový bubon panikári, a pošleš to ďalej. Zajtra sa vrátiš, lebo ťa čaká dnešná päťka.
+FIRST VIEWPORT: v1 tabuľová plocha (#/tabula) je celá obrazovka steny s tabuľou vsadenou doprostred. Hra zmenší odpočet do prišpendleného pásu a hlavnou plochou je jedna otázka.
 FORM: Odchodová tabuľa; kandidát 1 môjho zoradeného zoznamu, karta MY PICK, vybraná používateľom proti pridelenej šestke; seed 76d990bb.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
 -->
-<main class="wall">
+
+<!-- === chróm hry: prišpendlený pás. Na #/uloha nesie jeden signage riadok
+     odpočtu a pás postupu, inde rohovú tabuľu. === -->
+<header class="app-head" id="appHead">
+  <div class="head-row">
+    <nav class="tabs" aria-label="Pohľady">
+      <a href="#/dnes" data-view="dnes">Dnes</a>
+      <a href="#/vykaz" data-view="vykaz">Výkaz</a>
+      <a href="#/tabula" data-view="tabula">Tabuľa</a>
+    </nav>
+    <a class="countline" href="#/tabula" id="countline">
+      <span id="countlineK">Testovanie 9</span><span aria-hidden="true">·</span><b id="countlineV">—</b>
+    </a>
+  </div>
+
+  <a class="corner" href="#/tabula" id="corner" aria-label="Odpočet — prejsť na celú tabuľu">
+    <span class="corner__rail">
+      <span class="corner__k" id="cornerK">Testovanie 9</span>
+      <span class="corner__v" id="cornerV">—</span>
+    </span>
+    <div class="clock" aria-hidden="true">
+      <div class="unit unit--lead"><div class="cells" id="cDay"></div><span class="cap" id="cCapDay">dní</span></div>
+      <div class="unit"><div class="cells" id="cHrs"></div><span class="cap">hod</span></div>
+      <div class="unit"><div class="cells" id="cMin"></div><span class="cap">min</span></div>
+    </div>
+    <span class="sr" id="cornerSr"></span>
+  </a>
+
+  <ol class="progress-strip" id="strip" aria-hidden="true"></ol>
+  <p class="sr" id="stripSr"></p>
+</header>
+
+<main class="screen" id="screen" aria-live="polite"></main>
+
+<div class="thumb-bar" id="thumbBar" hidden>
+  <button class="btn" type="button" id="cta"></button>
+</div>
+
+<!-- === tabuľová plocha: v1 zážitok, #/tabula a ?og=1. Bez zmeny. === -->
+<div class="wall">
   <div class="board" id="board">
     <span class="screw screw--tl"></span>
     <span class="screw screw--tr"></span>
@@ -98,10 +137,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
        Zostava len v ramci nahladu linku (?og=1), kde je tabula mala,
        cislice rozmazane a nikto este neklikol. -->
   <p class="line" id="line">za tento čas ti začína školský rok</p>
-</main>
+</div>
 <!-- Výkrik zo steny - jeden element, text a pozíciu mu dá klik. -->
 <p class="shout" id="shout" aria-hidden="true"></p>
 <script src="stops.js"></script>
+<script src="pick.js"></script>
+<script src="store.js"></script>
 <script src="main.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>
