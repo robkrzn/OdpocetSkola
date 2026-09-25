@@ -1,0 +1,389 @@
+{
+  "subject": "mat",
+  "year": 2023,
+  "form": "A",
+  "code": "1022",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/5554/RT-Mat-SJ-fA_1022.pdf",
+    "key": "https://www2.nucem.sk/dl/5572/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202023%20-%20matematika.pdf"
+  },
+  "stimuli": {
+    "mat-2023-a-s1": {
+      "kind": "text",
+      "title": "Knižnica",
+      "body": "Pán Martin má v knižnici spolu 150 kníh. Roztriedil ich do piatich kategórií. Románov je 75, encyklopédií je 5-krát menej ako románov. Detských kníh má o 4 viac ako cestopisov. V kategórii „hobby“ si nechal 20 kníh.",
+      "asset": null
+    },
+    "mat-2023-a-s2": {
+      "kind": "text",
+      "title": "Pracovný stôl",
+      "body": "Pracovná doska stola má byť umiestnená v rohu kancelárie. Jej podstava má tvar štvrťkruhu, pričom polomer kruhu je 90 cm. Hrúbka dosky je 2 cm.",
+      "asset": null
+    },
+    "mat-2023-a-s3": {
+      "kind": "text",
+      "title": "Heslo",
+      "body": "Otec nechal synovi nasledujúci odkaz: „Ak chceš vedieť heslo na wifi, usporiadaj čísla od najmenšieho po najväčšie.“ 4/3 = M, 5/4 = S, 1,4 = P, 1,5 = L.",
+      "asset": null
+    },
+    "mat-2023-a-s4": {
+      "kind": "table",
+      "title": "Slovenské jaskyne",
+      "body": "Správa slovenských jaskýň má na starosti ochranu a prevádzku trinástich sprístupnených jaskýň. Päť z nich je zároveň zapísaných do Zoznamu svetového kultúrneho a prírodného dedičstva UNESCO. V grafe je znázornený prehľad návštevnosti piatich vybraných jaskýň v rokoch 2016 – 2018 (približné hodnoty odčítané z grafu): <table><tr><th>Názov jaskyne</th><th>rok 2016</th><th>rok 2017</th><th>rok 2018</th></tr><tr><td>Dobšinská ľadová jaskyňa</td><td>80 000</td><td>87 000</td><td>82 000</td></tr><tr><td>Jaskyňa Domica</td><td>38 000</td><td>30 000</td><td>29 000</td></tr><tr><td>Gombasecká jaskyňa</td><td>11 000</td><td>14 000</td><td>13 000</td></tr><tr><td>Jasovská jaskyňa</td><td>16 500</td><td>20 500</td><td>18 500</td></tr><tr><td>Ochtinská aragonitová jaskyňa</td><td>28 500</td><td>35 000</td><td>31 000</td></tr></table> V tabuľke sú uvedené základné údaje z roku 2018 týkajúce sa týchto jaskýň: <table><tr><th>Názov jaskyne</th><th>Pohorie</th><th>Dĺžka jaskyne</th><th>Dĺžka prehliadkovej trasy</th><th>Trvanie prehliadky</th><th>Vstupné dospelí</th></tr><tr><td>Dobšinská ľadová jaskyňa</td><td>Slovenský raj</td><td>1 491 m</td><td>515 m</td><td>30 minút</td><td>8 €</td></tr><tr><td>Jaskyňa Domica</td><td>Slovenský kras</td><td>5 368 m</td><td>780 m</td><td>45 minút</td><td>6 €</td></tr><tr><td>Gombasecká jaskyňa</td><td>Slovenský kras</td><td>1 525 m</td><td>530 m</td><td>30 minút</td><td>5 €</td></tr><tr><td>Jasovská jaskyňa</td><td>Slovenský kras</td><td>2 811 m</td><td>720 m</td><td>45 minút</td><td>5 €</td></tr><tr><td>Ochtinská aragonitová jaskyňa</td><td>Slovenské rudohorie</td><td>585 m</td><td>300 m</td><td>30 minút</td><td>6 €</td></tr></table>",
+      "asset": null
+    },
+    "mat-2023-a-s5": {
+      "kind": "text",
+      "title": "Vyvýšený záhon",
+      "body": "Vyvýšený záhon má tvar kvádra. Jeho dno má rozmery 1,5 m a 90 cm. Výplň záhona tvoria 4 vrstvy, zhora nadol: substrát a kompost (výška neuvedená — je predmetom úlohy 28), lístie a tráva (20 cm), štiepka (15 cm), konáre (40 cm).",
+      "asset": null
+    }
+  },
+  "units": [
+    { "stimulus": null, "ids": ["mat-2023-a-01"] },
+    { "stimulus": null, "ids": ["mat-2023-a-02"] },
+    { "stimulus": null, "ids": ["mat-2023-a-03"] },
+    { "stimulus": null, "ids": ["mat-2023-a-04"] },
+    { "stimulus": null, "ids": ["mat-2023-a-05"] },
+    { "stimulus": null, "ids": ["mat-2023-a-06"] },
+    { "stimulus": null, "ids": ["mat-2023-a-07"] },
+    { "stimulus": "mat-2023-a-s1", "ids": ["mat-2023-a-08", "mat-2023-a-09"] },
+    { "stimulus": null, "ids": ["mat-2023-a-10"] },
+    { "stimulus": null, "ids": ["mat-2023-a-11"] },
+    { "stimulus": null, "ids": ["mat-2023-a-12"] },
+    { "stimulus": null, "ids": ["mat-2023-a-13"] },
+    { "stimulus": "mat-2023-a-s2", "ids": ["mat-2023-a-14", "mat-2023-a-15"] },
+    { "stimulus": null, "ids": ["mat-2023-a-16"] },
+    { "stimulus": null, "ids": ["mat-2023-a-17"] },
+    { "stimulus": "mat-2023-a-s3", "ids": ["mat-2023-a-19", "mat-2023-a-20"] },
+    { "stimulus": null, "ids": ["mat-2023-a-21"] },
+    { "stimulus": null, "ids": ["mat-2023-a-22"] },
+    { "stimulus": null, "ids": ["mat-2023-a-23"] },
+    { "stimulus": null, "ids": ["mat-2023-a-24"] },
+    { "stimulus": null, "ids": ["mat-2023-a-25"] },
+    { "stimulus": "mat-2023-a-s4", "ids": ["mat-2023-a-26", "mat-2023-a-27"] },
+    { "stimulus": "mat-2023-a-s5", "ids": ["mat-2023-a-28", "mat-2023-a-29"] },
+    { "stimulus": null, "ids": ["mat-2023-a-30"] }
+  ],
+  "items": {
+    "mat-2023-a-01": {
+      "n": 1,
+      "topic": "vyrazy-rovnice",
+      "text": "V sčítacej pyramíde sa súčet čísel v susedných políčkach nachádza v políčku nad nimi. V pyramíde je v hornom riadku číslo –30, v prostrednom riadku čísla –40 (vľavo) a 10 (vpravo). Spodný riadok má tri políčka: prvé (vľavo) je otáznik, prostredné je prázdne, tretie (vpravo) je –10. Ktoré číslo patrí na miesto otáznika?",
+      "asset": null,
+      "type": "num",
+      "answer": "-60",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 1 }
+    },
+    "mat-2023-a-02": {
+      "n": 2,
+      "topic": "umernost-trojclenka",
+      "text": "Priemerná spotreba automobilu je 5,6 litra paliva na 100 kilometrov. Koľko litrov paliva sa pri priemernej spotrebe minulo, ak automobil prešiel 800 km? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "44,8",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 2 }
+    },
+    "mat-2023-a-03": {
+      "n": 3,
+      "topic": "telesa",
+      "text": "Na obrázku je znázornený úložný box v tvare kvádra s rozmermi 42 cm, 24 cm a 24 cm vyplnený zhodnými kockami. Koľko kociek je spolu v úložnom boxe, ak v hornej vrstve vidíme 28 kociek?",
+      "asset": null,
+      "type": "num",
+      "answer": "112",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 3 }
+    },
+    "mat-2023-a-04": {
+      "n": 4,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Lenka ušetrila v januári 22 eur, vo februári 16 eur a v marci 21 eur. Koľko eur ušetrila v apríli, ak za tieto štyri mesiace ušetrila priemerne 20 eur mesačne?",
+      "asset": null,
+      "type": "num",
+      "answer": "21",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 4 }
+    },
+    "mat-2023-a-05": {
+      "n": 5,
+      "topic": "umernost-trojclenka",
+      "text": "Pozemok má pôdorys v tvare kosodĺžnika. Na pláne s mierkou 1 : 5 000 má jedna zo strán kosodĺžnika dĺžku 9 cm a priľahlá výška má 7 cm. Koľko hektárov zaberá pozemok v skutočnosti? Výsledok uveď s presnosťou na stotiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "15,75",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 5 }
+    },
+    "mat-2023-a-06": {
+      "n": 6,
+      "topic": "kombinatorika-logika",
+      "text": "Marta sa oblieka do školy. Chce si obliecť sukňu, tričko a obuť tenisky. V skrini má 3 sukne rôznej dĺžky, 5 tričiek rôznej farby a 4 páry tenisiek z rôzneho materiálu. Koľkými rôznymi spôsobmi sa Marta môže obliecť a obuť?",
+      "asset": null,
+      "type": "num",
+      "answer": "60",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 6 }
+    },
+    "mat-2023-a-07": {
+      "n": 7,
+      "topic": "uhly-konstrukcie",
+      "text": "Vypočítaj v stupňoch veľkosť ostrého uhla, ktorý zvierajú ručičky hodín o pol šiestej.",
+      "asset": null,
+      "type": "num",
+      "answer": "15",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 7 }
+    },
+    "mat-2023-a-08": {
+      "n": 8,
+      "topic": "vyrazy-rovnice",
+      "text": "Koľko cestopisov má pán Martin vo svojej knižnici?",
+      "asset": null,
+      "type": "num",
+      "answer": "18",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 8 }
+    },
+    "mat-2023-a-09": {
+      "n": 9,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Do jednej z kníh v kategórii „hobby“ si pán Martin odložil úspory. Jeho suseda zaujali práve knihy z tejto kategórie a chcel si nejakú z nich požičať. Aká je pravdepodobnosť, že si náhodou vyberie tú knihu, v ktorej mal pán Martin odložené úspory? Výsledok uveď zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/20",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 9 }
+    },
+    "mat-2023-a-10": {
+      "n": 10,
+      "topic": "zlomky-desatinne",
+      "text": "Číselná os od 0 do 2 je rozdelená na 8 zhodných úsekov. Bod A leží na 7. deliacom bode od začiatku (medzi hodnotami 1,5 a 2, bližšie k 2). Uveď toto číslo zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "7/4",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 10 }
+    },
+    "mat-2023-a-11": {
+      "n": 11,
+      "topic": "mocniny-odmocniny",
+      "text": "Vypočítaj 1,5² + 1,6² + 1,7² =",
+      "asset": null,
+      "type": "num",
+      "answer": "7,7",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 11 }
+    },
+    "mat-2023-a-12": {
+      "n": 12,
+      "topic": "slovne-ulohy",
+      "text": "Mesačník o zdravej výžive bežne stojí 2,90 €. Pán Milan si objednal ročné predplatné, zaplatil zaň 29,50 €. Koľko eur ušetril kúpou predplatného?",
+      "asset": null,
+      "type": "num",
+      "answer": "5,30",
+      "accept": ["5,3"],
+      "source": { "year": 2023, "form": "A", "n": 12 }
+    },
+    "mat-2023-a-13": {
+      "n": 13,
+      "topic": "rovinne-obrazce",
+      "text": "Osemuholník ABCDEFGH sa skladá z ôsmich zhodných trojuholníkov so spoločným vrcholom v strede osemuholníka. Obsah tohto osemuholníka je 33,6 cm². Tmavou farbou sú vyfarbené tri susedné trojuholníky: medzi vrcholmi H a G, medzi G a F a medzi F a E. Vypočítaj obsah časti vyfarbenej tmavou farbou. Výsledok uveď v cm².",
+      "asset": null,
+      "type": "num",
+      "answer": "12,6",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 13 }
+    },
+    "mat-2023-a-14": {
+      "n": 14,
+      "topic": "rovinne-obrazce",
+      "text": "Hrany pracovnej dosky sa upravia tak, že sa po celom obvode dosky nažehlí hranovacia páska. Koľko centimetrov hranovacej pásky sa spotrebuje na olemovanie jednej pracovnej dosky? Počítaj s hodnotou π = 3,14. Výsledok zaokrúhli na celé centimetre nahor.",
+      "asset": null,
+      "type": "num",
+      "answer": "322",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 14 }
+    },
+    "mat-2023-a-15": {
+      "n": 15,
+      "topic": "percenta-pomer",
+      "text": "Pracovné dosky sa vyrezávajú z dosiek s podstavou v tvare štvorca so stranou dĺžky 180 cm. Koľko percent tvorí odpad pri vyrezaní štyroch takýchto pracovných dosiek? Počítaj s hodnotou π = 3,14.",
+      "asset": null,
+      "type": "num",
+      "answer": "21,5",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 15 }
+    },
+    "mat-2023-a-16": {
+      "n": 16,
+      "topic": "vyrazy-rovnice",
+      "text": "Pani Klára má vo svojej banke povolené prečerpanie účtu. Aktuálne je na jej účte mínusový zostatok –125,80 €. Po pripísaní výplaty sa suma na jej účte zmenila na 721,50 €. Vypočítaj výšku výplaty pani Kláry v eurách.",
+      "asset": null,
+      "type": "mc",
+      "options": ["595,70", "606,70", "846,30", "847,30"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 16 }
+    },
+    "mat-2023-a-17": {
+      "n": 17,
+      "topic": "rovinne-obrazce",
+      "text": "Priamka k je rovnobežná s priamkou l. Priamka m je kolmá na priamku k. Priesečník priamok k a m označme A. Priesečník priamok l a m označme B. Priamka n je rôznobežná so všetkými predchádzajúcimi priamkami a priesečník priamok m a n neleží na úsečke AB. Priesečník priamok l a n označme C. Priesečník priamok k a n označme D. Na základe toho, čo vieme o vzájomnej polohe uvedených priamok, je štvoruholník ABCD určite",
+      "asset": null,
+      "type": "mc",
+      "options": ["obdĺžnik.", "lichobežník.", "kosodĺžnik.", "štvorec."],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 17 }
+    },
+    "mat-2023-a-19": {
+      "n": 19,
+      "topic": "zlomky-desatinne",
+      "text": "Ktoré heslo na wifi je správne?",
+      "asset": null,
+      "type": "mc",
+      "options": ["LPMS", "MSPL", "PSLM", "SMPL"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 19 }
+    },
+    "mat-2023-a-20": {
+      "n": 20,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Predpokladajme, že sa synovi nechcelo zoraďovať čísla do správneho poradia. Aká je pravdepodobnosť, že náhodne zadá správne heslo na prvý pokus? Výsledok zaokrúhli na desatiny.",
+      "asset": null,
+      "type": "mc",
+      "options": ["4,2 %", "5,6 %", "8,3 %", "16,7 %"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 20 }
+    },
+    "mat-2023-a-21": {
+      "n": 21,
+      "topic": "slovne-ulohy",
+      "text": "Jolana číta detektívku. Prečítala už 270 strán. Koľko strán má celá detektívka, ak Jolane do konca ostáva prečítať ešte dve pätiny knihy?",
+      "asset": null,
+      "type": "mc",
+      "options": ["162", "180", "450", "675"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 21 }
+    },
+    "mat-2023-a-22": {
+      "n": 22,
+      "topic": "funkcie-grafy",
+      "text": "Vypočítaj hodnotu y pre x = –2 podľa nasledujúceho pravidla: ak x < –5, tak y = 5 – 2x; ak x ≥ –5, tak y = –3 + 5x.",
+      "asset": null,
+      "type": "mc",
+      "options": ["9", "–4", "–6", "–13"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 22 }
+    },
+    "mat-2023-a-23": {
+      "n": 23,
+      "topic": "slovne-ulohy",
+      "text": "Štyria súrodenci si sporia na spoločnú elektrickú kolobežku. Tomáš nasporil o 30 € viac než Eva, Roman 2-krát viac ako Eva a Soňa o 20 % viac ako Eva. Spolu už nasporili 290 €. Ktoré z nasledujúcich tvrdení je nesprávne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Sestry nasporili menej ako ich bratia.",
+        "Bratia spolu nasporili 3-krát viac ako Soňa.",
+        "Tomáš nasporil o 20 € viac ako Roman.",
+        "Eva nasporila o 10 € menej ako Soňa."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 23 }
+    },
+    "mat-2023-a-24": {
+      "n": 24,
+      "topic": "vyrazy-rovnice",
+      "text": "Na číselnej osi je vyznačený obraz čísla a; číslo a leží medzi hodnotami 3 a 4, bližšie k 4. Ktoré z uvedených piatich vzťahov platia pre číslo a? 1. a – 6 > 0  2. 4 – a > 0  3. 5 – a < 0  4. a – 16/3 < 0  5. –1 – a < 0",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ani jeden vzťah neplatí.",
+        "Platí 2., 4. a 5. vzťah.",
+        "Platí iba 1. a 3. vzťah.",
+        "Platí iba 2. a 4. vzťah."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 24 }
+    },
+    "mat-2023-a-25": {
+      "n": 25,
+      "topic": "rovinne-obrazce",
+      "text": "V štvorcovej sieti so stranou štvorca dlhou 1 cm je nakreslený pravouhlý lichobežník s dvomi rovnobežnými zvislými stranami dĺžky 5 cm a 2 cm, ktoré sú od seba vzdialené 5 cm (v sieti sú spolu s ním nakreslené aj tri ďalšie štvoruholníky, ktoré pravouhlým lichobežníkom nie sú). V ktorej možnosti je správne uvedený jeho obsah?",
+      "asset": null,
+      "type": "mc",
+      "options": ["18 cm²", "17,5 cm²", "15 cm²", "13,5 cm²"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 25 }
+    },
+    "mat-2023-a-26": {
+      "n": 26,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Rozhodni o pravdivosti nasledujúcich dvoch tvrdení: 1. Len v jednej z vybraných jaskýň bola návštevnosť v roku 2018 nižšia ako v roku 2016. 2. Ochtinskú aragonitovú jaskyňu navštívilo počas sledovaného obdobia viac ako 120-tisíc návštevníkov.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Iba prvé tvrdenie je pravdivé.",
+        "Iba druhé tvrdenie je pravdivé.",
+        "Pravdivé sú obe tvrdenia.",
+        "Pravdivé nie je ani jedno tvrdenie."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 26 }
+    },
+    "mat-2023-a-27": {
+      "n": 27,
+      "topic": "kombinatorika-logika",
+      "text": "V ktorej z vybraných jaskýň návštevník nebol, ak počas prehliadok ostatných štyroch jaskýň nachodil spolu 2 315 m a na vstupnom zaplatil spolu 25 €?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Dobšinská ľadová jaskyňa", "Jaskyňa Domica", "Gombasecká jaskyňa", "Jasovská jaskyňa"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 27 }
+    },
+    "mat-2023-a-28": {
+      "n": 28,
+      "topic": "percenta-pomer",
+      "text": "Koľko centimetrov má výška vrstvy tvorenej substrátom a kompostom, ak pomer výšky tejto vrstvy a výšky vrstvy konárov je 5 : 8?",
+      "asset": null,
+      "type": "mc",
+      "options": ["40", "25", "46", "29"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 28 }
+    },
+    "mat-2023-a-29": {
+      "n": 29,
+      "topic": "jednotky-premeny",
+      "text": "V ktorej možnosti je správne uvedený objem vrstvy konárov vo vyvýšenom záhone?",
+      "asset": null,
+      "type": "mc",
+      "options": ["54 dm³", "5,4 m³", "540 l", "0,54 hl"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 29 }
+    },
+    "mat-2023-a-30": {
+      "n": 30,
+      "topic": "pytagorova-veta",
+      "text": "Vypočítaj obsah pravouhlého trojuholníka ABC, ak vieš, že vnútorný uhol pri vrchole A je pravý, obsah štvorca nad preponou BC je 225 cm² a obsah štvorca nad odvesnou AC je 81 cm².",
+      "asset": null,
+      "type": "mc",
+      "options": ["54 cm²", "36 cm²", "108 cm²", "135 cm²"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 30 }
+    }
+  }
+}

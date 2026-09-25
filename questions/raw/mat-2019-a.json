@@ -1,0 +1,605 @@
+{
+  "subject": "mat",
+  "year": 2019,
+  "form": "A",
+  "code": 1100,
+  "source": {
+    "test": "https://www2.nucem.sk/dl/4348/TEST_T9_2019_MAT_sj_1100.pdf",
+    "key": "https://www2.nucem.sk/dl/4363/T9-2019_K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20z%20MAT_AB.pdf"
+  },
+  "stimuli": {
+    "mat-2019-a-s1": {
+      "kind": "table",
+      "title": "Suroviny na raňajky",
+      "body": "<table><tr><th>Kaša</th><th>Ovocie</th><th>Na dochutenie</th></tr><tr><td>ovsená, pohánková, pšenová</td><td>jablká, hrušky, slivky</td><td>med, kakao</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s2": {
+      "kind": "table",
+      "title": "Cenník tlače fotografií",
+      "body": "<table><tr><th>Rozmery v cm</th><th>Počet fotografií</th><th>Cena za 1 ks v € do 40 ks</th><th>Cena za 1 ks v € nad 40 ks</th></tr><tr><td>09 x 13</td><td>800</td><td>0,20</td><td>0,18</td></tr><tr><td>10 x 15</td><td>225</td><td>0,28</td><td>0,24</td></tr><tr><td>15 x 21</td><td>60</td><td>1,00</td><td>0,85</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s3": {
+      "kind": "table",
+      "title": "Váženie súrodencov a psov",
+      "body": "<table><tr><th>Váženie</th><th>Kto sa vážil</th><th>Spolu</th></tr><tr><td>1</td><td>pes Asta a dievča</td><td>91 kg</td></tr><tr><td>2</td><td>dievča a pes Bim</td><td>76 kg</td></tr><tr><td>3</td><td>chlapec a druhý pes</td><td>111 kg</td></tr><tr><td>4</td><td>chlapec, pes Bim a druhý pes</td><td>127 kg</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s4": {
+      "kind": "table",
+      "title": "Predaj elektromobilov",
+      "body": "<p>V tabuľke je znázornený približný vývoj predaja elektromobilov v Nórsku, vo Francúzsku, v Nemecku a vo Veľkej Británii od roku 2013 do roku 2015.</p><table><tr><th>Krajina</th><th>2013</th><th>2014</th><th>2015</th></tr><tr><td>Nórsko</td><td>5 400</td><td>15 400</td><td>22 500</td></tr><tr><td>Francúzsko</td><td>11 900</td><td>11 700</td><td>17 100</td></tr><tr><td>Nemecko</td><td>5 000</td><td>7 500</td><td>9 600</td></tr><tr><td>Veľká Británia</td><td>2 300</td><td>5 600</td><td>8 500</td></tr></table>",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-05"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-06"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-10"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s1",
+      "ids": [
+        "mat-2019-a-11"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s2",
+      "ids": [
+        "mat-2019-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-13"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-14"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s3",
+      "ids": [
+        "mat-2019-a-15"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-18"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-26"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s4",
+      "ids": [
+        "mat-2019-a-28",
+        "mat-2019-a-29"
+      ]
+    }
+  ],
+  "items": {
+    "mat-2019-a-01": {
+      "n": 1,
+      "topic": "percenta-pomer",
+      "text": "Alica si kúpila zmes orechov obsahujúcu kešu orechy, lieskové orechy a arašidy zastúpené v pomere 1 : 2 : 3. Vypočítajte v gramoch hmotnosť celej zmesi, ak arašidy majú hmotnosť 90 g.",
+      "asset": null,
+      "type": "num",
+      "answer": "180",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2019-a-03": {
+      "n": 3,
+      "topic": "slovne-ulohy",
+      "text": "Na farme spolu chovajú 110 kusov hydiny (sliepky, morky, kačky a husi). Sliepky predstavujú polovicu, moriek je 10 a kačiek je o 7 viac ako husí. Koľko husí chovajú na farme?",
+      "asset": null,
+      "type": "num",
+      "answer": "19",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2019-a-04": {
+      "n": 4,
+      "topic": "mocniny-odmocniny",
+      "text": "Koľkokrát je číslo 5 · 10⁵ väčšie ako číslo 125 · 10³?",
+      "asset": null,
+      "type": "num",
+      "answer": "4",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2019-a-05": {
+      "n": 5,
+      "topic": "vyrazy-rovnice",
+      "text": "Riešte nerovnicu 2x – 77 > 93 a určte, koľko dvojciferných čísel je riešením tejto nerovnice.",
+      "asset": null,
+      "type": "num",
+      "answer": "14",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2019-a-06": {
+      "n": 6,
+      "topic": "rovinne-obrazce",
+      "text": "Zo štvorca ABCD (vrcholy D a C na hornej strane, A a B na spodnej strane) so stranou dĺžky 12,7 cm sme z jeho hornej strany DC vystrihli obdĺžnikový zárez v tvare štvorca KLMN so stranou dĺžky 5,8 cm (vrcholy N a M ležia na strane DC, K a L sú vnútorné vrcholy zárezu). Vypočítajte v cm obvod takto vzniknutého osemuholníka ABCMLKND.",
+      "asset": null,
+      "type": "num",
+      "answer": "62,4",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2019-a-07": {
+      "n": 7,
+      "topic": "percenta-pomer",
+      "text": "Jano, Alena a Karol spolu nazbierali 40 % hmotnosti papiera z celej triedy. Jano nazbieral 93 kg, Alena nazbierala 81 kg a Karol nazbieral 96 kg. Koľko kg papiera nazbierali všetci žiaci tejto triedy?",
+      "asset": null,
+      "type": "num",
+      "answer": "675",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2019-a-08": {
+      "n": 8,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Počas automatického ladenia TV prijímač vyhľadal 25 kanálov, z toho boli štyri hudobné. Kanály sa do pamäte TV prijímača ukladajú v náhodnom poradí. Vyjadrite v percentách pravdepodobnosť udalosti, že ako prvý bude uložený hudobný kanál.",
+      "asset": null,
+      "type": "num",
+      "answer": "16",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2019-a-09": {
+      "n": 9,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte dve tretiny z troch štvrtín. Výsledok zapíšte zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/2",
+      "accept": [
+        "½"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2019-a-10": {
+      "n": 10,
+      "topic": "zlomky-desatinne",
+      "text": "Traja súrodenci si objednali jednu pizzu veľkosti XL. Miška zjedla štvrtinu z celej pizze. Lenka zjedla tretinu zvyšku. Patrik zjedol polovicu z toho, čo nechala Lenka. Zvyšok si dali zabaliť domov. Akú časť pizze im zabalili? Výsledok zapíšte zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/4",
+      "accept": [
+        "¼"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2019-a-11": {
+      "n": 11,
+      "topic": "kombinatorika-logika",
+      "text": "Anna si pripravuje na raňajky ovsenú, pohánkovú alebo pšenovú kašu s jedným z troch druhov ovocia, ochutenú medom alebo kakaom. Koľko rôznych druhov raňajok si môže pripraviť z uvedených surovín?",
+      "asset": null,
+      "type": "num",
+      "answer": "18",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2019-a-12": {
+      "n": 12,
+      "topic": "slovne-ulohy",
+      "text": "Paulína má stovky svojich fotografií z dovolenky uložené na pamäťových kartách. Všetky fotografie dala vytlačiť. V tabuľke sú uvedené počty fotografií a ceny za ich vytlačenie. Koľko eur zaplatila Paulína za vytlačenie všetkých fotografií s rozmermi 10 cm x 15 cm?",
+      "asset": null,
+      "type": "num",
+      "answer": "54",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2019-a-13": {
+      "n": 13,
+      "topic": "telesa",
+      "text": "Škatuľka v tvare kvádra má rozmery 12 cm, 8 cm a 5 cm. Vypočítajte jej objem v litroch. Výsledok uveďte s presnosťou na dve desatinné miesta.",
+      "asset": null,
+      "type": "num",
+      "answer": "0,48",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2019-a-14": {
+      "n": 14,
+      "topic": "jednotky-premeny",
+      "text": "Za domom stojí sud, v ktorom je 0,25 m³ dažďovej vody. Starý otec z neho postupne vyberá 12-litrovou krhlou vodu na polievanie, až kým pri dne neostane posledných 10 litrov vody. Najviac koľko plných krhieľ mohol z tohto suda starý otec naplniť?",
+      "asset": null,
+      "type": "num",
+      "answer": "20",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2019-a-15": {
+      "n": 15,
+      "topic": "slovne-ulohy",
+      "text": "Súrodenci Novákovci potrebovali odvážiť psov Bima a Astu. Psy odmietali pokojne sedieť na váhe, preto sa odvážili spolu s nimi tak, ako je uvedené v tabuľke. Koľko kilogramov vážila Asta?",
+      "asset": null,
+      "type": "num",
+      "answer": "31",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2019-a-16": {
+      "n": 16,
+      "topic": "rovinne-obrazce",
+      "text": "Pán Novák cvičil na lúke psov Bima a Astu. V istom momente bol od neho Bim vzdialený 24 metrov a Asta 17 metrov. Ktorá z nasledujúcich možností nemohla nastať? Psy boli od seba vzdialené",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6 m.",
+        "7 m.",
+        "30 m.",
+        "41 m."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2019-a-17": {
+      "n": 17,
+      "topic": "vyrazy-rovnice",
+      "text": "Vypočítajte hodnotu výrazu 2x + 3 · (2 – y) pre x = 3 a y = –1.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "9",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2019-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "V prepravke sa nachádza niekoľko melónov. Počet melónov v prepravke označme p a hmotnosť všetkých melónov v prepravke vyjadrenú v kilogramoch označme m. Pomocou ktorého výpočtu zistíme priemernú hmotnosť melónov v prepravke v kilogramoch?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "m : p",
+        "m – p",
+        "p · m",
+        "p : m"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2019-a-20": {
+      "n": 20,
+      "topic": "kombinatorika-logika",
+      "text": "V nepriehľadnom vrecúšku sú dve guľôčky biele, dve červené a dve modré. Najmenej koľko guľôčok musíme vytiahnuť z vrecúška, aby sme mali istotu, že medzi vytiahnutými guľôčkami bude aspoň jedna guľôčka biela?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2019-a-21": {
+      "n": 21,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Je daná trojica čísel: 53; 56,9 a 55,4. Určte číslo, ktoré musíme odčítať od najväčšieho z nich, aby aritmetický priemer novej trojice čísel bol 54.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2,9",
+        "1,1",
+        "4,3",
+        "3,3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2019-a-22": {
+      "n": 22,
+      "topic": "percenta-pomer",
+      "text": "V predajni mobilného operátora mali týždeň zliav. Mobilný telefón LF 34 zlacnel zo 769 € na 544 €. Približne o koľko percent klesla cena tohto mobilného telefónu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "70,7",
+        "58,6",
+        "41,3",
+        "29,3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2019-a-23": {
+      "n": 23,
+      "topic": "kombinatorika-logika",
+      "text": "Rodičia a ich dve deti Anna a Boris sa rozhodli stráviť nedeľné popoludnie pri šachu, pričom mali v pláne hrať každý s každým jednu šachovú partiu. Rozhodnite, ktorí dvaja z nich neodohrali spoločnú partiu, ak viete, že: Anna vyhrala nad Borisom. Otec trikrát remizoval. Boris má na konte aj výhru, aj remízu, aj prehru. Spoločnú partiu neodohrali",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "otec a mama.",
+        "Anna a otec.",
+        "mama a Anna.",
+        "Boris a mama."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2019-a-24": {
+      "n": 24,
+      "topic": "umernost-trojclenka",
+      "text": "Osobný automobil prešiel trasu z Trenčína do Ružomberka za 1 hodinu a 48 minút. Tieto dve mestá sú od seba vzdialené 144 km. O koľko minút by si vodič skrátil spiatočnú cestu, ak by na nej prešiel za hodinu priemerne 90 km?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "o 14 minút",
+        "o 12 minút",
+        "o 10 minút",
+        "o 8 minút"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2019-a-26": {
+      "n": 26,
+      "topic": "pytagorova-veta",
+      "text": "Pravouhlému trojuholníku ABC s odvesnami 5 cm a 12 cm je opísaná kružnica k. Vypočítajte dĺžku kružnice k v centimetroch. Pri výpočte použite π = 3,14 a výsledok zaokrúhlite na desatiny.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "81,6",
+        "75,4",
+        "40,8",
+        "37,7"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2019-a-28": {
+      "n": 28,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Približne koľko elektromobilov sa predalo podľa tabuľky vo Francúzsku v roku 2014?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "10 500",
+        "11 500",
+        "12 500",
+        "13 500"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2019-a-29": {
+      "n": 29,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V ktorej krajine sa predalo iba v jednom z rokov 2013, 2014, 2015 viac elektromobilov, ako sa predalo v tom istom roku v Nórsku?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vo Veľkej Británii",
+        "vo Francúzsku",
+        "v Nemecku",
+        "v žiadnej krajine"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 29
+      }
+    }
+  }
+}

@@ -67,10 +67,8 @@ const dayIndex = iso => Math.round((Date.parse(iso + 'T12:00:00Z') - EPOCH) / 86
 // vlastneho dna rovno; len jednotky pod min sa zlievaju medzi sebou pravidlom
 // z pseudokodu. Poradie dni v priechode sa este raz premiesa, nech sa citi
 // rovnako nahodne ako predtym.
-function daily(bank, di, want = 4) {
+function partition(bank, pass, want) {
   const min = 3, max = 7;
-  const nominal = Math.max(1, Math.floor(bank.itemCount / want)); // kolko dni vydrzi priechod
-  const pass = Math.floor(di / nominal);
   const order = shuffle(bank.units.map((_, i) => i), hash(bank.subject + ':' + pass));
 
   const bigDays = [];
@@ -93,8 +91,32 @@ function daily(bank, di, want = 4) {
     else smallDays.push(bucket);
   }
 
-  const days = shuffle([...bigDays, ...smallDays], hash(bank.subject + ':' + pass + ':days'));
-  return days[di % days.length];
+  return shuffle([...bigDays, ...smallDays], hash(bank.subject + ':' + pass + ':days'));
+}
+
+// Priechod sa uzatvara az na svojej vlastnej dlzke. Predtym tu bolo
+// `days[di % days.length]` nad hranicou `nominal = itemCount / want` - tolko dni
+// priechod nema, a pri tom nesulade vedel ten isty den prist dva dni po sebe,
+// kym iny den z toho priechodu nepadol vobec. Priechody su kratke (~40 dni) a
+// pocitaju sa len zo seedu, takze prejst ich od nuly je lacnejsie nez si ich
+// niekde ukladat.
+const daySig = day => [...day].sort((a, b) => a - b).join(',');
+
+function daily(bank, di, want = 4) {
+  let pass = 0, start = 0, prev = null;
+  for (;;) {
+    const days = partition(bank, pass, want);
+    // Priechody sa miesaju nezavisle, tak sa prvy den noveho vie zhodnut
+    // s poslednym dnom predchadzajuceho. Vtedy ho vymenime s druhym dnom -
+    // pokrytie priechodu to nemeni, len nedovoli ten isty den dva dni po sebe.
+    if (prev && days.length > 1 && daySig(days[0]) === prev) {
+      [days[0], days[1]] = [days[1], days[0]];
+    }
+    if (di - start < days.length) return days[di - start];
+    start += days.length;
+    prev = daySig(days[days.length - 1]);
+    pass++;
+  }
 }
 
 // -- seria dni ----------------------------------------------------------
@@ -136,5 +158,5 @@ function streakState(doneDates, todayISO) {
 
 // send.js a og.mjs bezia v Node, kde global var nestaci. V prehliadaci sa preskoci.
 if (typeof module !== 'undefined') {
-  module.exports = { daily, shuffle, hash, streakState, normalize, today, dayIndex, EPOCH };
+  module.exports = { daily, partition, shuffle, hash, streakState, normalize, today, dayIndex, EPOCH };
 }

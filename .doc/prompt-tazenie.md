@@ -11,8 +11,8 @@ chybe, nie preventívne.
 
 ## Šablóna promptu
 
-> Pracuješ vo `d:/Projekty/OdpočetRoka`. Ťažíš JEDEN test Testovania 9 do JSON banky
-> otázok.
+> Pracuješ v koreni repa (`/Users/robkrzn/Documents/Projekty/OdpocetSkola`, macOS).
+> Ťažíš JEDEN test Testovania 9 do JSON banky otázok.
 >
 > ### Najprv prečítaj
 > `.doc/02-BANKA-OTAZOK.md` — CELÝ. Hlavne sekcie „Pasca, ktorá by prešla celou
@@ -23,11 +23,23 @@ chybe, nie preventívne.
 > - test: `source/<SUBOR>-test.pdf`
 > - kľúč: `source/<SUBOR>-kluc.pdf`
 >
-> Čítaj ich cez `pdftotext -layout -enc UTF-8 <súbor>.pdf -` v Bash tooli. Nástroj
-> `Read` na PDF v tomto prostredí padá — `pdftoppm` nie je nainštalovaný.
-> **Ročníky 2018, 2019 a 2022 nemajú textovú vrstvu** (`.doc/zdroje.md`): ak ti
-> `pdftotext` na teste vráti prázdno, zastav sa a nahlás to. Neťaž taký test naslepo
-> z kľúča — kľúč text má vždy, ale bez zadaní nemáš čo zapísať.
+> Primárne ich čítaj cez `pdftotext -layout -enc UTF-8 <súbor>.pdf -` v Bash tooli.
+>
+> **Poppler je nainštalovaný** (od 21. 9. 2026), takže stranu vieš aj vidieť:
+>
+> ```bash
+> pdftoppm -r 150 -png -f <strana> -l <strana> source/<SUBOR>-test.pdf /tmp/<SUBOR>-s
+> ```
+>
+> a výsledný PNG otvor nástrojom `Read`. Na PDF `Read` stále nepúšťaj, len na PNG.
+>
+> - **Ročníky 2018, 2019 a 2022 nemajú textovú vrstvu vôbec** (`.doc/zdroje.md`):
+>   `pdftotext` na teste vráti prázdno. Taký test ťažíš **celý z vyrenderovaných
+>   strán** — stranu po strane, `Read` na každú. Kľúč textovú vrstvu má vždy, ten
+>   čítaj naďalej cez `pdftotext`. Neťaž test naslepo z kľúča.
+> - Pri ročníkoch s textovou vrstvou je render **druhý názor, nie hlavný zdroj**:
+>   vyrenderuj stranu vždy, keď si pri tabuľke, grafe alebo zalomenej vete nie si
+>   istý, čo `-layout` vlastne vypísal. Je to lacnejšie než úlohu vyradiť.
 >
 > ### Tvoje výstupy — a nič iné
 > 1. `questions/raw/<SUBJECT>-<ROK>-<FORMA>.json`
@@ -89,7 +101,9 @@ chybe, nie preventívne.
 >   spomenutá v texte. Ak nesedí ani na jednu, **nahlás to** — zoznam sa mení
 >   centrálne, ty ho nemeníš.
 > - `source` je povinný: `{ "year": …, "form": "A", "n": <číslo úlohy> }`.
-> - `asset` je vždy `null` — obrázky sa nerendrujú, kým nie je `pdftoppm`.
+> - `asset` je vždy `null`. Poppler už na stroji je, ale orezávať a ukladať obrázok
+>   ku každej úlohe je vlastná fáza (F3b, `tools/crop.mjs`) — teraz nie. Render
+>   používaš na **čítanie**, nie na to, aby si vyrábal `asset`.
 >
 > ### Ukážky a jednotky
 > - Test píše hranice **explicitne**: „Na ukážku 2 sa vzťahujú úlohy 08 – 14",
@@ -111,8 +125,10 @@ chybe, nie preventívne.
 >   100 g; súčty a medzisúčty musia sedieť. Ak invariant nesedí, priradenie je zlé —
 >   posuň blok o riadok a skús znova.
 > - **Nikdy nedopočítavaj hodnoty spätne z kľúča.** Kľúč smie prípadné priradenie
->   *potvrdiť*, nikdy ho nesmie *určiť*. Ak invariant priradenie neurčí, úloha ide
->   do rejectu s dôvodom `obrázok`.
+>   *potvrdiť*, nikdy ho nesmie *určiť*. Ak invariant priradenie neurčí, **najprv
+>   vyrenderuj tú stranu a pozri sa na ňu** — posun riadkov je artefakt `-layout`,
+>   nie vlastnosť tabuľky. Do rejectu s dôvodom `obrázok` ide až to, čo nesedí ani
+>   po pohľade na stranu.
 > - **Neprepisuj graf výberom.** Ak z piatich riadkov diagramu vieš spoľahlivo len
 >   jeden, nezapíš do `stimulus` iba ten jeden — je to nepravdivý prepis ukážky.
 >   Buď dorob celú tabuľku cez invariant, alebo vyraď.

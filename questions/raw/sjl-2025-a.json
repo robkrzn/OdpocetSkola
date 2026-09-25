@@ -1,0 +1,679 @@
+{
+  "subject": "sjl",
+  "year": 2025,
+  "form": "A",
+  "code": "1005",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/6181/ZAK24004_S_TZ-RT-SJL-fA_1005.pdf",
+    "key": "https://www2.nucem.sk/dl/6196/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202025%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
+  },
+  "stimuli": {
+    "sjl-2025-a-s1": {
+      "kind": "text",
+      "title": "Zaujímavé míľniky Európy",
+      "body": "1838: Matematička Ada Lovelace (1815 – 1852) vo svojom článku pre britský vedecký časopis opisuje nielen fungovanie prvého analytického stroja, ale aj možnosti jeho využitia pomocou kódov v budúcnosti. Je považovaná za prvú programátorku na svete. Na zostrojenie prvého počítača sa využili práve jej poznámky.\n\n1901: Rakúsky lekár Karl Landsteiner (1868 – 1943) objavuje základné krvné skupiny, čo predstavuje kľúčový krok k veľkému medicínskemu pokroku.\n\n1905: „Zázračný rok“ nemeckého vedca Alberta Einsteina (1879 – 1955), ktorý svojou sériou prác z rôznych vedných disciplín, napr. o aspektoch svetla, hmoty, času a priestoru, spôsobuje prevrat vo vede. Jeho prevratná práca obsahuje jednu z najslávnejších matematických rovníc všetkých čias: E = mc². O jedenásť rokov neskôr publikoval svoju všeobecnú teóriu relativity.\n\n1913: Odhaľujú sochu Malej morskej víly, predstavujúcu ikonický prvok Kodane. Jej predlohou je postava z rozprávky dánskeho autora Hansa Christiana Andersena (1805 – 1875).\n\n1928: Škótsky lekár a bakteriológ Alexander Fleming (1881 – 1955) náhodou objavuje antibiotikum penicilín.\n\n1946: Vo francúzskom prímorskom letovisku sa prvýkrát koná filmový festival v Cannes. Filmy na ňom predstavuje 21 štátov.\n\n1974: Maďarský architekt Ernő Rubik (1944) konštruuje trojrozmernú skladačku, ktorá vyvoláva celosvetové šialenstvo a stáva sa jednou z najpredávanejších hračiek všetkých čias, Rubikovu kocku.\n\n1989: Britský inžinier a počítačový vedec Tim Berners-Lee (1955) vynachádza World Wide Web (WWW). Prvé webové sídlo na svete je spustené 6. augusta 1991.\n\n2011: Profesor Pavel Alexy (1961), slovenský vedec, podáva prvý patent na špeciálny bioplast, ktorý sa dá v prírode rozložiť bez akéhokoľvek odpadu.\n\n2018: Španiel Rafael Nadal (1986) opätovne vyhráva tenisový turnaj French Open a dokazuje, že je „kráľom antuky“.\n\n2019: Euro, spoločná európska mena, oslavuje 20 rokov. V roku 2019 ho využíva viac ako 340 miliónov občanov v 19 krajinách EÚ a je druhou najdôležitejšou menou na svete.",
+      "asset": null
+    },
+    "sjl-2025-a-s2": {
+      "kind": "text",
+      "title": "Dračí dub z Lozorna – finalista súťaže Európsky strom roka",
+      "body": "Ukrytý v lese na malom vŕšku Kopanička po stáročia chránil a i dnes chráni obyvateľov – od prvých osadníkov, ktorí pomáhali pri stavbe neďalekého hradu Pajštún, cez obchodníkov a prisťahovalcov z Chorvátska. Dohliadal aj na vytvorenie na tú dobu ohromnej zvernice, ktorá siahala od Stupavy po Lozorno (okres Malacky), ale aj na vybudovanie úzkokoľajnej parnej lesnej železnice, ktorú však už dávno prežil. Dnes je jeho majestátna koruna domovom množstva druhov vtákov, veveričiek a hmyzu. V jej tieni sa často pohybuje vysoká zver i veľmi zriedkavý daniel biely. V blízkom Suchom potoku sa zas po dlhých rokoch objavili bobry.\n\nZ diaľky svojou mohutnosťou a výzorom pripomína sediaceho draka. Mýtickosť cítiť ešte viac pri dotyku s jeho kôrou, ktorá je silne drsná a zjazvená ako po súbojoch drakov. Obvod jeho kmeňa je úctyhodných 677 cm, čo znamená, že na jeho obchytenie treba 4 až 5 chlapov. Má okolo 700 rokov a výšku asi 18 metrov.\n\nDračí dub bol nominovaný do ankety Strom roka, ktorú pod záštitou známeho speváka a hudobníka Petra Lipu organizuje Nadácia Ekopolis. Získal najviac hlasov aj financie na svoje odborné ošetrenie a zaradil sa do finále ankety s názvom Európsky strom roka. Do ankety sa zapojilo 16 krajín Európy. Do finále sa dostalo 12 jedinečných stromov zo zapojených európskych krajín a náš dub získal 2. miesto. Ocenenie si osobne v Bruseli prevzal fotograf Tibor Végh, ktorý „Dračí dub“ nominoval do slovenskej súťaže Strom roka.",
+      "asset": null
+    },
+    "sjl-2025-a-s3": {
+      "kind": "text",
+      "title": "Douglas Adams – Reštaurácia na konci vesmíru",
+      "body": "Krátko predtým sa Arthur Dent vybral zohnať si šálku teplého čaju. Na túto výpravu sa už vopred nepozeral s veľkým optimizmom, lebo vedel, že jediným zdrojom teplých nápojov na celej kozmickej lodi je zaostalý kus zariadenia – stravomatický syntetizátor nápojov. Tento prístroj tvrdil, že dokáže vyrobiť neuveriteľnú škálu nápojov presne podľa chuti a metabolizmu osoby, ktorá ho používa. Ale keď to s ním Arthur skúšal, zakaždým mu vydal plastový pohár plný tekutiny, ktorá sa takmer – no nie úplne – vôbec nepodobala na čaj.\n\n„Čaj!“ prikázal.\n\n„Ochutnajte a podeľte sa,“ povedal stroj firemný slogan ako vždy a vydal ďalší pohár.\n\nArthur zahodil šiesty pohár hnedej tekutiny. „Počúvaj, stroj,“ zavrčal, „ty tvrdíš, že vieš syntetizovať akýkoľvek existujúci nápoj. Tak prečo mi stále podstrkuješ túto nepitnú brečku?“\n\n„Používam nasnímané dáta o výživovej hodnote a pocitoch uspokojenia,“ odpovedal stravomat. „Ochutnajte a podeľte sa!“\n\n„Robíš si zo mňa asi žarty. Chcem od teba iba... obyčajnú šálku čaju a ty mi ho urobíš. Buď ticho a počúvaj.“\n\nPosadil sa a začal oduševnene rozprávať stravomatu o Indii, Číne, Cejlóne. Hovoril mu o širokých lístkoch sušiacich sa na slnku, strieborných kanviciach a letných popoludniach na trávniku. Hovoril o tom, ako sa mlieko nalieva skôr než čaj, aby sa nezavarilo. Dokonca mu porozprával aj o histórii Východoindickej spoločnosti.\n\n„Takže o to tu ide?“ spýtal sa ho stravomat, keď skončil s výkladom. „Chcete chuť suchých listov vylúhovaných vo vrelej vode?“\n\n„Ehm... áno. S mliekom.“\n\n„Vyžmýkaným z kravy?“\n\n„Nuž, dá sa to povedať asi aj takto...“",
+      "asset": null
+    },
+    "sjl-2025-a-s4": {
+      "kind": "text",
+      "title": "Napoleon (filmová anotácia)",
+      "body": "Epická akčná dráma približuje vzostup a pád francúzskeho cisára. Jeden z najuznávanejších režisérov sveta Ridley Scott (Gladiátor, Marťan) vo filme zachytáva neúnavnú cestu Napoleona k moci, sleduje náruživý a dynamický vzťah s jeho životnou láskou Jozefínou a mapuje jeho systematické vizionárske vojenské a politické taktiky, ktoré znamenali jeho vzostup i pád, na pozadí typických Scottových záberov úchvatných veľkovýpravných bojových scén.",
+      "asset": null
+    },
+    "sjl-2025-a-s5": {
+      "kind": "text",
+      "title": "Rudyard Kipling – Keď…",
+      "body": "keď medzi davom zachováš si hrdosť,\nkeď prostý si, aj keď ťa stretne kráľ,\nkeď skúškou priateľstva je tvoja tvrdosť,\nsi svoj, aj keď si srdce na dlaň dal,\nkeď z posledných síl dobehnúť vieš k méte\na čas len v pätách dobieha ti už,\npotom ti patrí svet a všetko v svete,\na, navyše, je, syn môj, z teba muž!",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": "sjl-2025-a-s1",
+      "ids": [
+        "sjl-2025-a-01",
+        "sjl-2025-a-02",
+        "sjl-2025-a-03",
+        "sjl-2025-a-04",
+        "sjl-2025-a-05",
+        "sjl-2025-a-06",
+        "sjl-2025-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s2",
+      "ids": [
+        "sjl-2025-a-08",
+        "sjl-2025-a-09",
+        "sjl-2025-a-10",
+        "sjl-2025-a-11",
+        "sjl-2025-a-12",
+        "sjl-2025-a-13",
+        "sjl-2025-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s3",
+      "ids": [
+        "sjl-2025-a-15",
+        "sjl-2025-a-16",
+        "sjl-2025-a-17",
+        "sjl-2025-a-18",
+        "sjl-2025-a-19",
+        "sjl-2025-a-20",
+        "sjl-2025-a-21"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s4",
+      "ids": [
+        "sjl-2025-a-22",
+        "sjl-2025-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-26"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s5",
+      "ids": [
+        "sjl-2025-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-30"
+      ]
+    }
+  ],
+  "items": {
+    "sjl-2025-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Penicilín bol objavený A. Flemingom po dlhodobom skúmaní baktérií.",
+        "Na filmovom festivale v Cannes zažila Rubikova kocka svetový úspech.",
+        "Socha Malej morskej víly je inšpirovaná životom H. Ch. Andersena.",
+        "Prvé vedecké články o programovaní boli publikované už v 19. storočí."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2025-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá osobnosť podľa ukážky zažila počas svojho života uvedený míľnik?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Karl Landsteiner – objavenie Rubikovej kocky",
+        "Rafael Nadal – zavedenie spoločnej európskej meny",
+        "Hans Christian Andersen – uverejnenie teórie relativity",
+        "Alexander Fleming – patentovanie rozložiteľného bioplastu"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2025-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Z ukážky vyplýva, že v roku",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2018 športovec R. Nadal prvýkrát triumfuje na turnaji French Open.",
+        "2019 je euro, mena 340 miliónov Európanov, najdôležitejšou na svete.",
+        "1989 je spustené webové sídlo WWW, ktoré vynašiel britský vedec.",
+        "1905 napísal A. Einstein viacero významných prác nielen o matematike."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2025-a-04": {
+      "n": 4,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú správne nahradené podčiarknuté slová z nasledujúcej časti ukážky?\n\n...pre britský vedecký časopis opisuje nielen fungovanie prvého analytického stroja, ale aj možnosti jeho využitia pomocou kódov v budúcnosti...",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prevádzku – výroby",
+        "prácu – produkcie",
+        "chod – uplatnenia",
+        "cyklus – úžitku"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2025-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "Ktoré sloveso z ukážky má nesprávne uvedený neurčitok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "oslavuje → osláviť",
+        "stáva sa → stávať sa",
+        "koná sa → konať sa",
+        "opisuje → opisovať"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2025-a-06": {
+      "n": 6,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z ukážky prídavné meno cudzieho pôvodu, ktoré má podobný význam ako slová typický, symbolický, obrazný.",
+      "asset": null,
+      "type": "word",
+      "answer": "ikonický",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2025-a-07": {
+      "n": 7,
+      "topic": "pravopis",
+      "text": "Napíš číslovku z nasledujúcej vety slovom pravopisne správne.\n\nFilmy na ňom predstavuje 21 štátov.",
+      "asset": null,
+      "type": "word",
+      "answer": "dvadsaťjeden",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2025-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je na základe ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "V Suchom potoku môžu turisti vidieť už mnoho rokov bobry.",
+        "Parná lesná železnica pri Lozorne už neexistuje.",
+        "Pri Malackách sa nachádza najväčšia zvernica na Slovensku.",
+        "Obyvatelia Lozorna sú pôvodom samí cudzinci."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2025-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý presný údaj o Dračom dube je uvedený v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "O obvode jeho kmeňa.",
+        "O jeho veľkosti.",
+        "O počte hlasov v ankete.",
+        "O jeho veku."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2025-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je podľa ukážky správne tvrdenie o ankete Strom roka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Organizuje ju Peter Lipa.",
+        "Vo finále súťažilo 16 stromov.",
+        "Vyhodnocovali ju v Bruseli.",
+        "Usporadúva ju Nadácia Ekopolis."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2025-a-11": {
+      "n": 11,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú slovné spojenia napísané správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "európske štáty, bobrý chvostík",
+        "Európska Únia, Bruselské ocenenie",
+        "chorvátski prisťahovalci, hmyzích domovov",
+        "Bobor Vodný, lozorniansky les"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2025-a-12": {
+      "n": 12,
+      "topic": "tvaroslovie",
+      "text": "Ktorá z otázok do interview s fotografom Tiborom Véghom je napísaná správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pán Végh, boli by ste taký dobrý a porozprávali nám o svojej najmilšej fotografii?",
+        "Vysvetlil by ste, prosím, našim čitateľom, ako ste kedysi vyvolával fotografie?",
+        "Pán Végh kedy ste začal fotografovať a kto bol vašou inšpiráciou či podnetom?",
+        "Na záver by ste boli takí láskaví a opísali nám pocity z výhry Dračieho duba?"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2025-a-13": {
+      "n": 13,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z posledného odseku ukážky nesklonné všeobecné podstatné meno.",
+      "asset": null,
+      "type": "word",
+      "answer": "finále",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2025-a-14": {
+      "n": 14,
+      "topic": "literarna-teoria",
+      "text": "Na počesť Dračieho duba sa konala literárna súťaž v písaní bájí. Napíš meno súťažiacej, ktorá vystihla znaky tohto žánru.\n\nOlívia\nKedysi dávno, keď sa piesok lial\na voda sa sypala, býval na malom\nvŕšku drak. Vtedy bolo všetko inak.\nPo lesoch pobehovali škriatkovia,\nna zámku vládol spravodlivý kráľ.\n\nAdela\nRozpoviem vám príbeh smutný\no zakliatom Jankovi,\non sa vydal jednať s drakmi,\nno v Dračí dub sa premenil.\n\nElena\nKeď sa v deň letného slnovratu všemocný boh Perún zamyslene po krajine túlal, zbadal na blízkom kopčeku mohutného draka. Tak sa prekvapil, že mocne zahromžil a bleskom udrel do zeme.",
+      "asset": null,
+      "type": "word",
+      "answer": "Elena",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2025-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "Podľa ukážky stravomat",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vždy prispôsobí nápoj potrebám klienta.",
+        "nepatrí medzi najmodernejšiu výbavu lode.",
+        "poskytuje teplý pokrm všetkým na lodi.",
+        "nalieva nápoje automaticky do porcelánu."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2025-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je nesprávne tvrdenie o Arthurovi?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Túžil po čaji, ktorý je dostupný na Zemi.",
+        "Bol nadšený, keď rozprával o niečom, čo mal rád.",
+        "Poznal proces prípravy kvalitného čaju.",
+        "Vyjednávanie so stravomatom celkom vzdal."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2025-a-17": {
+      "n": 17,
+      "topic": "sloh-postupy",
+      "text": "Keď Arthur vykladal stravomatu o čaji, znamená to, že",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "rozprával príbeh, ktorý sa už niekedy stal.",
+        "vysvetľoval isté postupy, objasňoval fakty.",
+        "vymenoval znaky a vlastnosti osôb a vecí.",
+        "dbal na gestikuláciu a kontakt s adresátom."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2025-a-18": {
+      "n": 18,
+      "topic": "literarna-teoria",
+      "text": "Na základe ktorej časti vety z ukážky sa dá určiť spôsob rozprávania (ja-rozprávanie alebo on-rozprávanie)?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ty tvrdíš, že vieš syntetizovať akýkoľvek existujúci nápoj.",
+        "Robíš si zo mňa asi žarty.",
+        "Arthur zahodil šiesty pohár hnedej tekutiny.",
+        "Ochutnajte a podeľte sa."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2025-a-19": {
+      "n": 19,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je vyznačené slovo rovnakým slovným druhom ako v nasledujúcej vete?\n\nTakže o **to** tu ide?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Chcem od **teba** iba šálku čaju.",
+        "Vylúhovaných **vo** vrelej vode.",
+        "Mlieko sa nalieva skôr **než** čaj.",
+        "Dá sa to povedať **asi** aj takto."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2025-a-20": {
+      "n": 20,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z prvého odseku ukážky slovo s opačným významom k slovu, ktoré označuje sklon posudzovať skutočnosti z horšej stránky.",
+      "asset": null,
+      "type": "word",
+      "answer": "optimizmom",
+      "accept": [
+        "optimizmus"
+      ],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2025-a-21": {
+      "n": 21,
+      "topic": "pravopis",
+      "text": "Napíš všetky tri vyznačené slová so správne doplnenými i/í/y/ý.\n\nČaj obsahoval zaujímavé zmes__, v ktorých chuti sa snúbili tóny a vône galaktických hmlovín. B__l__n__ dodávali nápoju jedinečnú arómu, zatiaľ čo kombinácia rôznych ob__ln__n pridávala jemný zemitý podtón. Akoby každý dúšok odhaľoval tajomstvá vesmíru, zakódované v každom lístku a zrne.",
+      "asset": null,
+      "type": "word",
+      "answer": "zmesi byliny obilnín",
+      "accept": [
+        "zmesi obilnín byliny",
+        "byliny zmesi obilnín",
+        "byliny obilnín zmesi",
+        "obilnín zmesi byliny",
+        "obilnín byliny zmesi"
+      ],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2025-a-22": {
+      "n": 22,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa textu pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Film je premiérou režiséra Ridleyho Scotta vo filmovej brandži.",
+        "Jedinou témou, ktorú film zobrazuje, sú veľké vojenské úspechy.",
+        "Napoleon mal premyslené taktiky, niektoré sa dovtedy nevyužívali.",
+        "Ide o prvú časť dvojdielnej drámy, v ktorej zobrazuje vzostup cisára."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2025-a-23": {
+      "n": 23,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je privlastňovacie prídavné meno z textu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Scottových záberov",
+        "s láskou Jozefínou",
+        "francúzskeho cisára",
+        "bojových scén"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2025-a-24": {
+      "n": 24,
+      "topic": "tvaroslovie",
+      "text": "Dopíš do nasledujúcej vety slovné spojenie unikátny sob v správnom tvare množného čísla.\n\nPočas expedície po severských krajinách členovia výpravy s úžasom sledovali __ v zasneženej divokej prírode.",
+      "asset": null,
+      "type": "word",
+      "answer": "unikátne soby",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2025-a-25": {
+      "n": 25,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z nasledujúcej vety plnovýznamové slovo, ktoré patrí medzi neohybné slovné druhy.\n\nAutor bestsellerov, ktorý píše majstrovsky, potrebuje okrem výnimočných námetov disponovať ešte aj bohatou slovnou zásobou.",
+      "asset": null,
+      "type": "word",
+      "answer": "majstrovsky",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2025-a-26": {
+      "n": 26,
+      "topic": "skladba",
+      "text": "V ktorej možnosti sú vetné členy v rovnakom poradí ako v nasledujúcej vete?\n\nNa istej lekárskej fakulte dal profesor anatómie študentom test.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Na historicky prvom mikroskope nám vedec predviedol zaujímavý preparát.",
+        "V korune bútľavého stromu si veverička chystá zásoby na zimu.",
+        "Na miestnej zrekonštruovanej ceste žiaril semafor vo funkčne novom svetle.",
+        "V malej horskej dedine poskytol starosta obce obyvateľom pomoc."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2025-a-27": {
+      "n": 27,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je správne uvedený význam prvých dvoch veršov básne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Si skúsený a plný poznania.",
+        "Vždy zostávaš sám sebou.",
+        "Si vytrvalý a nevzdáš sa.",
+        "Vďaka úspechu si namyslený."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2025-a-28": {
+      "n": 28,
+      "topic": "slovna-zasoba",
+      "text": "Vytvor z príslovky a príslušného slovesa v nasledujúcom súvetí podstatné meno skladaním.\n\nKaždé ráno hľadel ďaleko za rieku, či sa nevracia Santiago s rybami.",
+      "asset": null,
+      "type": "word",
+      "answer": "ďalekohľad",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2025-a-29": {
+      "n": 29,
+      "topic": "tvaroslovie",
+      "text": "To predstavuje vysoké percento všetkých druhov žijúcich pri lesných vodných plochách a mŕtvych ramenách riek.\n\nDopíš podstatné meno mužského rodu z vyššie uvedenej vety v správnom tvare.\n\nTieto vzácne __ potrebujú vhodné podmienky na udržanie rovnováhy.",
+      "asset": null,
+      "type": "word",
+      "answer": "druhy",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2025-a-30": {
+      "n": 30,
+      "topic": "slovna-zasoba",
+      "text": "Ktorú časticu treba doplniť na vynechané miesto v nasledujúcej vete tak, aby sa obsah nasledujúceho tvrdenia spochybnil?\n\nUsmievavé oči a neoblomné hodnoty __ vo mne zanechali stopy.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "určite",
+        "samozrejme",
+        "možno",
+        "chvalabohu"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 30
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "subject": "mat",
+  "year": 2017,
+  "form": "A",
+  "code": "2112",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/830/T9_2017_Test_z_matematiky_v_slovenskom_jazyku.pdf",
+    "key": "https://www2.nucem.sk/dl/834/Klu%C4%8D_spr%C3%A1vnych_odpovedi_MAT_2017_RT.pdf"
+  },
+  "stimuli": {
+    "mat-2017-a-s1": {
+      "kind": "table",
+      "title": "Zber papiera",
+      "body": "Všetci žiaci zo štyroch tried 9. ročníka základnej školy sa zapojili do zberu papiera. V tabuľke sú uvedené informácie o počte týchto žiakov a o priemernom množstve nazbieraného papiera v kilogramoch na jedného žiaka v triede.<table><tr><th>Trieda</th><th>9. A</th><th>9. B</th><th>9. C</th><th>9. D</th></tr><tr><td>Počet žiakov</td><td>26</td><td>20</td><td>18</td><td>20</td></tr><tr><td>Priemerný počet kg papiera na 1 žiaka</td><td>11,5</td><td>12,5</td><td>13,5</td><td>10,5</td></tr></table>",
+      "asset": null
+    },
+    "mat-2017-a-s2": {
+      "kind": "table",
+      "title": "Zoologická záhrada",
+      "body": "Minulý rok v II. polroku navštívilo zoologickú záhradu 181 003 ľudí, čo bolo o 20 145 ľudí viac ako v I. polroku. Na ploche 400 000 štvorcových metrov chovajú štyri skupiny živočíchov: plazy, vtáky, cicavce a ryby. Tabuľka uvádza počty jedincov, ktoré chovali v ZOO na konci uvedených rokov podľa skupín živočíchov.<table><tr><th>Skupina</th><th>2010</th><th>2015</th></tr><tr><td>Plazy</td><td>125</td><td>250</td></tr><tr><td>Vtáky</td><td>625</td><td>800</td></tr><tr><td>Cicavce</td><td>750</td><td>450</td></tr><tr><td>Ryby</td><td>500</td><td>1000</td></tr></table>",
+      "asset": null
+    }
+  },
+  "units": [
+    { "stimulus": null, "ids": ["mat-2017-a-01"] },
+    { "stimulus": null, "ids": ["mat-2017-a-02"] },
+    { "stimulus": null, "ids": ["mat-2017-a-03"] },
+    { "stimulus": null, "ids": ["mat-2017-a-04"] },
+    { "stimulus": null, "ids": ["mat-2017-a-06"] },
+    { "stimulus": "mat-2017-a-s1", "ids": ["mat-2017-a-07"] },
+    { "stimulus": null, "ids": ["mat-2017-a-08"] },
+    { "stimulus": null, "ids": ["mat-2017-a-10"] },
+    { "stimulus": null, "ids": ["mat-2017-a-11"] },
+    { "stimulus": null, "ids": ["mat-2017-a-12"] },
+    { "stimulus": null, "ids": ["mat-2017-a-13"] },
+    { "stimulus": null, "ids": ["mat-2017-a-14"] },
+    { "stimulus": null, "ids": ["mat-2017-a-15"] },
+    { "stimulus": null, "ids": ["mat-2017-a-16"] },
+    { "stimulus": null, "ids": ["mat-2017-a-17"] },
+    { "stimulus": "mat-2017-a-s2", "ids": ["mat-2017-a-18", "mat-2017-a-19", "mat-2017-a-20"] }
+  ],
+  "items": {
+    "mat-2017-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte.\n800 – 700 : 2 + 100 ∙ 15,67 =",
+      "asset": null,
+      "type": "num",
+      "answer": "2017",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 1 }
+    },
+    "mat-2017-a-02": {
+      "n": 2,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi sú znázornené čísla M, A, V: M = –0,07, A = 0,08, V = 0,16. Vypočítajte M + A + V.",
+      "asset": null,
+      "type": "num",
+      "answer": "0,17",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 2 }
+    },
+    "mat-2017-a-03": {
+      "n": 3,
+      "topic": "vyrazy-rovnice",
+      "text": "Vyriešte rovnicu a výsledok uveďte v tvare desatinného čísla s presnosťou na stotiny.\n11 ∙ (x – 1) = 11 – (1 + x)",
+      "asset": null,
+      "type": "num",
+      "answer": "1,75",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 3 }
+    },
+    "mat-2017-a-04": {
+      "n": 4,
+      "topic": "mocniny-odmocniny",
+      "text": "Vypočítajte.\n(–0,7)² ∙ 10² + (–0,2 ∙ 10)³ =",
+      "asset": null,
+      "type": "num",
+      "answer": "41",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 4 }
+    },
+    "mat-2017-a-06": {
+      "n": 6,
+      "topic": "umernost-trojclenka",
+      "text": "10 gramov kivi obsahuje rovnaké množstvo vitamínu C ako 50 gramov pomarančov. 100 gramov šípok obsahuje rovnaké množstvo vitamínu C ako 200 gramov kivi. Koľko gramov pomarančov obsahuje rovnaké množstvo vitamínu C ako 50 gramov šípok?",
+      "asset": null,
+      "type": "num",
+      "answer": "500",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 6 }
+    },
+    "mat-2017-a-07": {
+      "n": 7,
+      "topic": "slovne-ulohy",
+      "text": "O koľko kilogramov papiera menej nazbierali žiaci 9. D ako žiaci 9. B?",
+      "asset": null,
+      "type": "num",
+      "answer": "40",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 7 }
+    },
+    "mat-2017-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Zistite, koľko rôznych štvorciferných čísel môžeme vytvoriť z číslic 3 a 8 tak, aby v každom vytvorenom štvorcifernom čísle boli použité dve číslice 3 a dve číslice 8.",
+      "asset": null,
+      "type": "num",
+      "answer": "6",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 8 }
+    },
+    "mat-2017-a-10": {
+      "n": 10,
+      "topic": "percenta-pomer",
+      "text": "V recepte na lečo sa odporúča zmiešať paradajky, papriku a cibuľu v pomere 4 : 3 : 1. Pani kuchárka už pripravila cibuľu aj papriku, pričom cibule bolo o päť kg menej ako papriky. Koľko kg paradajok bude potrebovať podľa tohto receptu?",
+      "asset": null,
+      "type": "num",
+      "answer": "10",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 10 }
+    },
+    "mat-2017-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "Karol si šetril na tablet. Keď mal ušetrených 178 € zistil, že cenu tabletu znížili o 25 %, takže si ho môže hneď kúpiť a ešte mu z ušetrených peňazí zostane 13 €. Koľko eur stál tablet pred zlacnením?",
+      "asset": null,
+      "type": "mc",
+      "options": ["206,25", "191,00", "220,00", "225,50"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 11 }
+    },
+    "mat-2017-a-12": {
+      "n": 12,
+      "topic": "vyrazy-rovnice",
+      "text": "Na školskom výlete bolo x chlapcov. Dievčat bolo o 6 menej ako chlapcov. Dvojsedačkovou lanovkou sa všetci vyviezli z dolnej na hornú stanicu. Rozhodnite, ktorý výraz vyjadruje počet dvojsedačiek obsadených žiakmi, ak každá bola obsadená dvomi žiakmi.",
+      "asset": null,
+      "type": "mc",
+      "options": ["(x – 6) : 2", "(x – 6 + x – 6) : 2", "(x + x) : 2 – 6", "(x + x – 6) : 2"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 12 }
+    },
+    "mat-2017-a-13": {
+      "n": 13,
+      "topic": "zlomky-desatinne",
+      "text": "Z čísel –1/2, 3,6, 3 4/5, –0,39 sčítajte najväčšie a najmenšie číslo.",
+      "asset": null,
+      "type": "mc",
+      "options": ["3,41", "3,30", "3,21", "3,10"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 13 }
+    },
+    "mat-2017-a-14": {
+      "n": 14,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na tácke boli marhuľové a slivkové koláče v pomere 3 : 2. Po zjedení troch marhuľových koláčov je šanca vybratia slivkového aj marhuľového koláča rovnaká. Koľko koláčov bolo na začiatku spolu na tácke?",
+      "asset": null,
+      "type": "mc",
+      "options": ["5", "8", "10", "15"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 14 }
+    },
+    "mat-2017-a-15": {
+      "n": 15,
+      "topic": "rovinne-obrazce",
+      "text": "Dokreslením bodu F a dvoch úsečiek EF, FG vznikne v pravouhlej sústave súradníc rovnoramenný lichobežník EFGH so základňami EF a GH. V sústave súradníc sú vyznačené body E[–2; 4] a H[2; 2], spojené úsečkou EH. Aké súradnice má bod F, ak bod G má súradnice [2; –1]?",
+      "asset": null,
+      "type": "mc",
+      "options": ["[–2; –3]", "[–4; –2]", "[–3; –2]", "[–2; –1]"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 15 }
+    },
+    "mat-2017-a-16": {
+      "n": 16,
+      "topic": "rovinne-obrazce",
+      "text": "Kruh K má polomer 130 mm a kruh L má priemer 50 mm. O koľko milimetrov je obvod kruhu K väčší ako obvod kruhu L? Výsledok zaokrúhlite na celé číslo.\nPri výpočtoch použite hodnotu π = 3,14.",
+      "asset": null,
+      "type": "mc",
+      "options": ["o 188", "o 251", "o 502", "o 659"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 16 }
+    },
+    "mat-2017-a-17": {
+      "n": 17,
+      "topic": "kombinatorika-logika",
+      "text": "Stela si prečítala v miestnej tlači:\n„V januári napadalo viac zrážok ako vo februári. V apríli napadalo menej zrážok ako vo februári. V máji napadalo viac zrážok ako v marci, aj ako v januári. V marci napadalo menej zrážok ako v januári, ale viac ako vo februári.“\nNa základe týchto informácií Stela uviedla dve tvrdenia:\n1. Najmenej zrážok napadalo vo februári.\n2. Najviac zrážok napadalo v máji.\nPosúďte pravdivosť oboch Steliných tvrdení a vyberte správnu možnosť.",
+      "asset": null,
+      "type": "mc",
+      "options": ["Obidve tvrdenia sú pravdivé.", "Len prvé tvrdenie je pravdivé.", "Len druhé tvrdenie je pravdivé.", "Obidve tvrdenia sú nepravdivé."],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 17 }
+    },
+    "mat-2017-a-18": {
+      "n": 18,
+      "topic": "slovne-ulohy",
+      "text": "Koľko ľudí navštívilo túto zoologickú záhradu v minulom roku?",
+      "asset": null,
+      "type": "mc",
+      "options": ["201 148", "321 716", "341 861", "382 151"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 18 }
+    },
+    "mat-2017-a-19": {
+      "n": 19,
+      "topic": "jednotky-premeny",
+      "text": "Koľko hektárov zaberá v tejto zoologickej záhrade plocha, na ktorej sú chované živočíchy?",
+      "asset": null,
+      "type": "mc",
+      "options": ["40", "400", "4 000", "40 000"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 19 }
+    },
+    "mat-2017-a-20": {
+      "n": 20,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na základe údajov uvedených v tabuľke zistite, približne koľko jedincov spolu chovali v tejto zoologickej záhrade na konci roku 2015.",
+      "asset": null,
+      "type": "mc",
+      "options": ["2 800", "2 500", "2 300", "2 000"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2017, "form": "A", "n": 20 }
+    }
+  }
+}

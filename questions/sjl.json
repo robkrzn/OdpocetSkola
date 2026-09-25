@@ -1,17 +1,185 @@
 {
   "subject": "sjl",
   "version": 1,
-  "generated": "2026-09-02",
-  "itemCount": 30,
+  "generated": "2026-09-25",
+  "itemCount": 200,
   "sources": [
+    {
+      "year": 2017,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/832/T9_2017_Test_zo_slovenskeho_jazyka_a_literatury.pdf",
+      "key": "https://www2.nucem.sk/dl/841/K%C4%BE%C3%BA%C4%8D_spr%C3%A1vnych_odpoved%C3%AD_SJL_2017_RT.pdf"
+    },
+    {
+      "year": 2018,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/827/ZAK17019_S_CTZ-RT-SJL-fA_2730.pdf",
+      "key": "https://www2.nucem.sk/dl/807/K%C4%BE%C3%BA%C4%8D_spr%C3%A1vnych_odpoved%C3%AD_SJL-2018_RT.pdf"
+    },
+    {
+      "year": 2019,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/4349/TEST_T9_2019_SJL_2331.pdf",
+      "key": "https://www2.nucem.sk/dl/4367/T9-2019_K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20zo%20SJL_AB.pdf"
+    },
+    {
+      "year": 2022,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5226/ZAK20035_S_CTZ-RT-SJL-fA_2699.pdf",
+      "key": "https://www2.nucem.sk/dl/5259/T9-2022_Kľúč%20správnych%20odpovedí%20zo%20SJL_AB.pdf"
+    },
+    {
+      "year": 2023,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5552/RT-SJL-fA_2111.pdf",
+      "key": "https://www2.nucem.sk/dl/5574/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202023%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
+    },
     {
       "year": 2024,
       "form": "A",
       "test": "https://www2.nucem.sk/dl/5875/ZAK23008_S_TZ-RT-SJL-fA_2020.pdf",
       "key": "https://www2.nucem.sk/dl/5885/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
+    },
+    {
+      "year": 2025,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/6181/ZAK24004_S_TZ-RT-SJL-fA_1005.pdf",
+      "key": "https://www2.nucem.sk/dl/6196/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202025%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
     }
   ],
   "stimuli": {
+    "sjl-2017-a-s1": {
+      "kind": "text",
+      "title": "Robinson Crusoe",
+      "body": "Prišla jesenná rovnodennosť a obdobie dažďov a tridsiaty september – výročie môjho príchodu na ostrov – som veľkolepo oslávil.\n\nNa ostrove som bol teda dva roky.\n\nDva roky, mladí priatelia, a nemal som viacej nádeje, že sa vyslobodím než prvého dňa, čo som tam prišiel. Celý ten deň som hĺbal a uvažoval, čo všetko som sa v tomto osamotenom živote priučil a <u>bez čoho by môj život bol býval nekonečne biednejší</u>.\n\nPomaly som už rozumnejšie chápal, o čo šťastnejší je popri všetkej biede môj terajší život než prázdny, jalový život, akým som žil v minulosti. A potom som už nesmútil, ale sa zaradoval. Moje túžby sa zmenili, moje bôle opadli a moje radosti sa celkom odlišovali od radostí, aké som vyznával po príchode či za uplynulé dva roky.",
+      "asset": null
+    },
+    "sjl-2017-a-s2": {
+      "kind": "text",
+      "title": "Materčina",
+      "body": "Za celý život\nsom z tvojich hlbín málo vydoloval,\nhľadajúc v trýzni mučivej\nna každú báseň vyhriebsť pravé slová,\nčo ostali by nažive\n\ni dávno po mne\nv príbytku verša ako zvestovanie\no tvojej kráse trvácej,\naby tie slová z ticha vykresané\nzaklopať mohli na srdce,\n\nčo žije všade,\nv ľuďoch i veciach, dychtí len po slove,\ntom pravom, čo ho preberie,\n<u>keď iba ním o sebe pravdu povie</u>\njak sladký šepot matere.\n\nBez teba isto\nľudia i veci ostali by nemé,\nbrat by bol cudzí bratovi –\nbez teba lásku k milovanej žene\nnajsladšie ktože vysloví?\n\nSlovník\nvyhriebsť – vypátrať, zistiť",
+      "asset": null
+    },
+    "sjl-2017-a-s3": {
+      "kind": "text",
+      "title": "Otázka pod pás: Viete používať frazeologizmy?",
+      "body": "Pred časom v jednej z politických diskusných reláciách zaznela výzva, že moderátorka sa chystá položiť hosťovi otázku pod pás. Asi mala na mysli otázku na telo alebo ranu pod pás. Oba výrazy totiž vyjadrujú slovný zásah do citlivej témy, ktorá nemusí byť adresátovi príjemná.\n\nNedávno v inej televíznej relácii sa zase moderátor vyjadril, že istý problém je pre všetkých ťažkým orieškom. Pravdepodobne chcel použiť slovné spojenie tvrdý oriešok. To zobrazuje zložitý problém, ktorý je náročné vyriešiť, tak ako si veverička nevie poradiť s rozlúsknutím tvrdého orieška.\n\nAk nám niekto veľmi prekáža, určite nepovieme, že nám leží v zuboch, ako sme sa mohli dopočuť v jednej relácii. Buď nám niekto leží v žalúdku, alebo ho máme v zuboch. Význam je pri týchto dvoch frazeologizmoch podobný, možno preto sa stala takáto chyba.\n\nA napokon, podľa redaktorky jednej z komerčných televízií sa politici v súčasnosti stávajú ostrým terčom kritiky. Terčom sa možno stávajú, ale určite nie ostrým. Ostrá totiž býva práve kritika, ktorá sa na nich valí zo všetkých strán.",
+      "asset": null
+    },
+    "sjl-2017-a-s4": {
+      "kind": "text",
+      "title": "Vyhlásenie 10. ročníka súťaže Čítam, čítaš, čítame",
+      "body": "Témou 10. ročníka veľkej čitateľskej súťaže pre deti a mládež je Čo čítali moji rodičia? Súťaž trvá od 1. 10. 2015 do 28. 2. 2016.\n\nSúťaží sa v troch kategóriách:\nI. kategória: deti MŠ a žiaci 1. ročníkov ZŠ,\nII. kategória: žiaci 2. – 4. ročníkov ZŠ,\nIII. kategória: žiaci 5. – 9. ročníkov ZŠ a 1. ročníkov stredných škôl.\n\nPodmienky:\n• vyplnenie a odovzdanie prihlášky,\n• minimálne 5 prečítaných kníh,\n• súťažiaci musí byť čitateľom Staromestskej knižnice,\n• z prečítaného počtu kníh musí byť 1 taká, ktorú radi čítali v jeho veku mama, otec, starí rodičia, pani učiteľka,\n• do bodovania sa počítajú len knihy požičané z fondu Staromestskej knižnice.\n\nBody navyše:\n• za každú ďalšiu prečítanú knihu (predĺženie výpožičky a opakované požičanie sa nepočíta) → 1 bod,\n• za získanie každého nového čitateľa (kamarát, spolužiak, člen rodiny...) → 5 bodov,\n• za nakreslený vtipný obrázok (bez ohľadu na počet) → 5 bodov,\n• za mimoriadnu aktivitu (čitateľský denník, napísaný obsah knihy) → 5 bodov.\n\nVyhodnotenie súťaže bude v Týždni slovenských knižníc.",
+      "asset": null
+    },
+    "sjl-2018-a-s1": {
+      "kind": "text",
+      "title": "Fitnes náramky",
+      "body": "Fitnes náramky, monitory aktivity, dokážu merať, sledovať fyzickú aktivitu používateľa počas celého dňa aj noci, zaznamenávať namerané hodnoty, ktoré sa dajú následne zobraziť a vyhodnocovať priamo na mobilných zariadeniach ako smartfón, tablet alebo notebook.\n\n1. Vlastnosti a funkcie\nMonitory aktivity sledujú počas dňa počet prejdených krokov, prejdenú vzdialenosť, spálené kalórie, čas aktivity, srdcový tep. Niektoré vás ráno zobudia diskrétnym budíkom. V noci počas spánku merajú kvalitu a dĺžku spánku používateľa.\n\n2. Motivácia, cieľ\nNa motiváciu slúži prehľad nameraných hodnôt, ale načo by boli hodnoty bez vášho osobného cieľa? To je prvá vec, ktorú urobíte – stanovíte si osobný cieľ. Cieľ si stanovíte definovaním hodnôt, ktoré chcete dosiahnuť pre kvalitnejší a zdravší život. Na zadanie cieľov vždy slúži prehľadná mobilná aplikácia, pomocou ktorej ovládate monitor aktivity.\nPo aktivácii cieľa vás fitnes náramok počas dňa informuje o progrese, stave plnenia cieľa, takže vždy viete, kde sa nachádzate a koľko vám chýba k jeho naplneniu. Každý náramok vás na to upozorní špecificky, napr. farebným indikátorom, počtom rozsvietených bodov na displeji alebo percentuálnym ukazovateľom hodnôt.\n\n3. Komfortné nosenie\nMonitory aktivity sú malé, šikovné a inteligentné zariadenia, ktoré sú nenápadné, ale zároveň môžu byť aj módnym doplnkom. Kde a ako ich môžete nosiť, to závisí od konkrétneho typu. Väčšinou sa nosia ako náramky na zápästí, pomocou spony upevnené na opasku alebo jednoducho vo vrecku. Niektoré fitnes náramky môžete využívať bez problémov aj pri vodných športoch.\n\nZ didaktických dôvodov bol text upravený.",
+      "asset": null
+    },
+    "sjl-2018-a-s2": {
+      "kind": "text",
+      "title": "Dobrá správa: Na Slovensko sa vrátil takmer vyhynutý druh zvieraťa",
+      "body": "08. 03. 2015 11:37\nBRATISLAVA – Na území Chráneného vtáčieho územia Lehnice sa vrátil ohrozený druh vtáka – drop fúzatý. Ako informovala manažérka organizácie Ochrana dravcov na Slovensku Martina Brinzíková Badidová, na Slovensku je tento druh v našom storočí považovaný už za takmer vyhynutý.\nPravidelne zimuje už len v Chránenom vtáčom území Sysľovské polia pri Bratislave. Ešte v 80. rokoch minulého storočia v Lehniciach prebýval kŕdeľ 20 jedincov, ktoré však postupne uhynuli v dôsledku nárazov do elektrických vodičov vybudovaných vedení. Podľa ochranárov totiž dropy vzhľadom na svoju veľkú hmotnosť nedokážu počas letu dobre manévrovať.\nOchrana dravcov na Slovensku v rámci projektu zameraného na zvýšenie populácie dropov fúzatých na Slovensku vytvorila v areáli chráneného územia Lehnice úhorovú plochu s rozlohou 40 hektárov. Na nej sa postupne obnovili pôvodné spoločenstvá rastlín a hmyzu, ktoré tvoria hlavnú zložku potravy dropov. Ochranári v spolupráci s energetikmi takisto zabezpečili montáž chráničov na konštrukcie 22-kilovoltového vedenia a inštalovali výstražné prvky na vodiče 400- a 110-kilovoltových vedení.\nOpätovné pozorovanie jedincov dropa fúzatého v chránenom území podľa ochranárov potvrdzuje dôležitosť a význam podobných opatrení.\n\nZ didaktických dôvodov bol text upravený.",
+      "asset": null
+    },
+    "sjl-2018-a-s3": {
+      "kind": "text",
+      "title": "Žltý mustang",
+      "body": "– No zakopávky, hehe, – dvihol dedo Kmeť od motyky hlavu. Bolo mu príjemné, že naňho všetci hľadia so záujmom. – Zakopávky sú opak vykopávok. Neučili ste sa?\nPoopravil si pod krkom neviditeľnú kravatu, aby vyzeral ako profesor, a začal myšlienku rozkladať, rozvíjať: – Všetky kultúrne národy tak robili. Starí Slovania zakopávali džbány. My ich teraz vykopávame a sme pyšní, akých sme mali šikovných predkov... A slávnych! Nebyť zakopávok, vedeli by sme o nich figu. No a o našu budúcu slávu sa teraz starám ja.\nHoci prítomní nebrali starcovu reč vážne – bolo im jasné, že iba odpratúva smeti –, nikto sa neodvážil utrúsiť zvyčajnú poznámku či vybuchnúť smiechom. Vari aby sa neunáhlili. Akoby všetci čakali, že to najsmiešnejšie či najzaujímavejšie len príde. Ich počínanie si dedo Kmeť vysvetľoval naďalej ako záujem, preto nenechával svoju fantáziu zaspať.\nPrišiel k plechovke, čo predtým zahodil Adam, dvihol ju a ukazoval sťa nevídaný archeologický objav: – Keď vykopú o tisíc rokov takúto vzácnosť, prečítajú si – a slabikoval text na plechovke: – Sardinen in oel... Conservas del cantabrico... Importé d’Espagne...\nVtedy starcove drobné oči ako dvojbodka delili počet jeho rôčkov desiatimi, taký bol mladý na duši, taký bystrý a výmyselný.\nVedomie, že má úspech, nútilo ho pokračovať: – No a čo povedia potomkovia o nás? „Hí, títo veru neboli prázdne tekvice, keď aj cudzie jazyky poznali!“\n\nZ didaktických dôvodov bol text upravený.",
+      "asset": null
+    },
+    "sjl-2018-a-s4": {
+      "kind": "text",
+      "title": "Milan Lasica – Dívam sa z okna svojho kupé",
+      "body": "Dívam sa z okna svojho kupé\na venujem sa svojim myšlienkam\nmožno sú trápne možno hlúpe\ndívam sa z okna svojho kupé\na vlak ma vezie ktovie kam\n\nDívam sa z okna svojho vlaku\nkrajina za sklom sa už pohýna\na náladu mám presne takú\nako keď idem sama do kina\n\nAj tam iba na kúsku plátna\nčosi sa deje čosi mihotá\na mizne hneď do nenávratna\nten trblietavý odraz života\n\nDívam sa z okna svojho vozňa\nrovina vŕšok človek dom\npodrobnosti už nerozoznám\nsom vo vlaku a svet je za oknom\n\nMožnože to tak bude večne\nmožno to bude presne tak\nže stretneme sa v nekonečne\nak pravda zastaví tam vlak\n\nDívam sa z okna svojho kupé\na venujem sa svojim myšlienkam\nmožno sú trápne možno hlúpe\ndívam sa z okna svojho kupé\na vlak ma vezie ktovie kam",
+      "asset": null
+    },
+    "sjl-2019-a-s1": {
+      "kind": "text",
+      "title": "Prvý apríl sa spája so žartovaním",
+      "body": "Korene Dňa bláznov alebo vtipkárov siahajú podľa niektorých zdrojov do starej Indie, kde sa konali slávnosti Huli v čase od 30. marca do 1. apríla.\n\nPočas veľkolepých karnevalov s maskami mali ich nositelia plniť nezmyselné rozkazy, napríklad obrátiť tok rieky. Kto nedokázal vtipne reagovať, stal sa bláznom osláv. Podobná slávnosť bláznov (festum stultorum, inak nazývaná aj Deň roztopaše a smiechu) sa konala aj v starovekom Ríme.\n\nPrvoaprílové žartovanie nabralo druhý dych v 16. storočí. V mnohých krajinách sa nový rok začínal práve 1. apríla, no francúzsky kráľ Karol IX. to zmenil, keď od roku 1564 ustanovil začiatok roka na 1. januára.\n\nĽudia si zvyčajne na začiatku nového roka posielali dary. V tom čase mali v prevažnej miere podobu potravín. Zmenou termínu Nového roka sa tradícia obdarúvania neskončila, iba dary na 1. apríla sa postupne menili na symbolické, skôr žartovné – príjemcu mali rozveseliť.\n\nKeďže v apríli sa začínal rybolov, ľudia si často posielali ryby upečené z múky. Vystrihnuté ryby z papiera pripínali náhodným chodcom na kabát.\n\nPostupne sa prvoaprílové žartovanie rozšírilo do všetkých krajín. Od Angličanov prevzali tradíciu Američania.\n\nNa Slovensku sa prvoaprílové vtipkovanie rozmohlo v 20. storočí.\n\nKaždý vie, že na 1. apríla môže kdekoho prekabátiť či „vystreliť“ si z niekoho. A tiež vie, že žart z niekoho iného si môže v ten deň urobiť beztrestne. Napríklad neraz sa učitelia stávajú obeťami vynachádzavosti žiakov, prípadne médiá vypustia s plnou vážnosťou „kačicu“.",
+      "asset": null
+    },
+    "sjl-2019-a-s2": {
+      "kind": "text",
+      "title": "Jostein Gaarder – Anna",
+      "body": "Otvorí oči a volá sa Nova. Všetko jej pripadá nové a iné. Posadí sa na posteli a v tej chvíli na ňu z nočného stolíka zažiari tlmené svetlo. Natiahne sa za aparátom a hneď začne svietiť jasnejšie. Prepne ho do používateľského modu a na obrazovke vidí: sobota 12. decembra 2082.\n\nPreletí pohľadom po miestnosti, v ktorej spala. Steny sú jasnočervené. Dážď šľahá do úzkeho okna, ktoré siaha od dlážky až po modrú lištu pod šikmou strechou.\n\nV aparáte cinkne a na obrazovke sa objaví opička s očami ako gombičky. Takže na zozname vyhynutých druhov pribudol ďalší primát. Vo voľnej prírode vyhynul už dávno, pretože celý ekosystém juhoamerického kosmáča bielofúzeho zmizol alebo vyschol. Práve teraz zahynul aj tento posledný žijúci v zajatí. Je to smutné. Žalostné.\n\nUž dávnejšie si nainštalovala aplikáciu VYHYNUTÉ DRUHY, ktorá každú hodinu aktualizuje informácie o tom, ktorý rastlinný a živočíšny druh práve vyhynul.\n\nVyskúša niekoľko vyhľadávačov... a nakoniec sa na monitore objaví akýsi text! Zdá sa, že je to list – list adresovaný jej, Nove!\n\n„Drahá Nova,“ číta. Zarazí ju to, no číta ďalej: „Neviem, ako bude svet vyzerať, keď budeš čítať tieto riadky. Ty to však vieš...“ Ako je to možné? List na monitore je s dátumom 11. decembra 2012, čiže deň pred starkinými <u>16.</u> narodeninami, posledný deň pred časovým filtrom. Ako je možné, že starká jej napísala list skôr ako päťdesiat rokov predtým, než sa narodila?",
+      "asset": null
+    },
+    "sjl-2019-a-s3": {
+      "kind": "text",
+      "title": "Šťastný život na sociálnych sieťach?",
+      "body": "Porovnávanie je prirodzenou ľudskou črtou a do určitej zdravej miery môže byť prospešné. Vďaka nemu vieme odhaliť, kto sme, kam sa chceme posunúť, aké sú naše túžby, sny, profesionálne ciele. Od ľudí, ktorí nás inšpirujú, sa vieme poučiť, dokážu nás kladne ovplyvniť, priniesť zrkadlo nášmu vlastnému životu. Porovnávanie sa s ostatnými však vo všeobecnosti považujeme skôr za negatívne svedectvo o našom sebavedomí.\n\nPodľa štatistík sa mladý človek pozrie do mobilu priemerne viac ako stokrát denne a tento údaj sa týka aj sociálnych sietí. Psychológovia vravia, že ide o alarmujúce číslo. Citlivejšie povahy môžu mať ľahko pocit, že všetci okolo sú krajší a úspešnejší.\n\nGraf „Účely využívania sociálnych sietí deťmi“ (stĺpcový graf, os 0 – 100 %) zoraďuje dôvody vzostupne takto: hľadanie kamarátov; sledovanie showbiznisu; príprava do školy; hranie online hier; prezentovanie fotiek, videa, hudby; kontakt so spolužiakmi, kamarátmi (najvyšší podiel).\n\nĎalším problémom, s ktorým sa technologická generácia stretáva, je netrpezlivosť v nadväzovaní vzťahov a tiež zvýšená potreba ukazovať sa, chváliť sa, prezentovať sa.\n\nAko sa nestať otrokom „šťastného života“ na sociálnych sieťach?\n- Nevenujte pozornosť prebytočným informáciám, ktoré nemáte možnosť spracovať.\n- Nevyužívajte sociálne siete ako metódy relaxu.\n- Začnite tráviť na sociálnych sieťach iba polovicu času.\n- Uvedomte si, že nejde o reálny obraz.\n- Odolajte potrebe prezentovať každý šťastný okamih svojho života verejne.",
+      "asset": null
+    },
+    "sjl-2022-a-s1": {
+      "kind": "text",
+      "title": "Ako správne a zodpovedne triediť odpad?",
+      "body": "ZELENÁ\n– nevratné sklenené fľaše,\n– sklenené poháre, vázy,\n– úlomky tabuľového skla,\n– poháre od kompótov,\n– sklenené obaly od kozmetiky, kávy a pochutín bez plastového vrchnáka.\nVedeli ste, že 15 sklenených fliaš sa zmení na akvárium?\nSKLO – 4000 ROKOV\n\nŽLTÁ\n– PET fľaše,\n– plastové tašky, vrecká,\n– plastové obaly od kozmetiky,\n– plastové obaly od aviváže a pracích prostriedkov,\n– plastové obaly od kečupu, jogurtov...,\n– fólie.\nVedeli ste, že 30 plastových fliaš sa pridaním textilu zmení na flaušovú bundu?\nPET FĽAŠE – 100 – 1000 ROKOV\n\nMODRÁ\n– noviny, časopisy, letáky, katalógy,\n– papierové tašky,\n– papierové a kartónové obaly,\n– kancelársky papier, obálky, listy, pohľadnice.\nVedeli ste, že 30 časopisov a novín sa zmení na škatuľu od televízora?\nNOVINY – 3 – 12 MESIACOV\n\nČERVENÁ\n– plechovky od nápojov,\n– konzervy bez zvyškov jedla,\n– kovové uzávery, uzávery z jogurtov a kompótov,\n– alobaly, kovové súdky.\nVedeli ste, že 150 plechoviek sa zmení na panvicu?\nPLECHOVKA – 20 – 100 ROKOV\n\nKam patria použité hygienické vreckovky?\nHygienické potreby (detské plienky, papierové vreckovky, tuba zo zubnej pasty a pod.) patria do zmesového odpadu, pretože sú znečistené.\n\nKam patria obaly z nebezpečných látok a prípravkov?\nObaly obsahujúce zvyšky nebezpečných látok (motorových olejov, farieb, chemikálií, riedidiel a pod.) nepatria do triedeného odpadu. Odneste ich do zberného dvora.\n\nKam patrí polystyrén a škatule z kartónu?\nAk nie je polystyrénu veľa, tak patrí do žltého kontajnera, určeného na plasty. Ak je rozmerný, odneste ho do zberného dvora. Škatule z kartónu patria do modrých nádob na papier iba po zmenšení objemu, napríklad poskladaním.\n\nKam patria tégliky z jogurtov?\nPatria do žltého kontajnera, určeného na plasty, musia však byť bez zvyškov jedla.",
+      "asset": null
+    },
+    "sjl-2022-a-s2": {
+      "kind": "text",
+      "title": "Wilbur Smith – Čarodejník (historicko-dobrodružný príbeh)",
+      "body": "„Ako si sa dostal k tejto mape?“ naliehal Naja.\n„Pred dvanástimi rokmi som si na príkaz kráľa Sargona obhliadol mesto a vlastnoručne ju namaľoval,“ odvetil Ištar. „Nikto by nedosiahol toľkú presnosť a krásu.“\n„Ak si Sargon objednal mapu, prečo si mu ju nedal?“\n„Dal,“ Ištar kývol na dôraz. „Dal som mu nedokonalý náčrtok, pričom sám som si tajne ponechal dobrý kus, ktorý vidíte pred sebou. Vedel som, že jedného dňa mi zaň niekto zaplatí viac, než sa kedy zmohol Sargon.“\nĎalšiu hodinu skúmali mapu, mlčky, pohrúžene. Ako bojujúci generáli s profesionálnym odhadom bojiska boli schopní obdivovať hĺbku a silu hradieb, veží a pevností.\nTrok nakoniec odstúpil od stola. „Nevidím žiadnu slabinu, čarodejník. Od začiatku si mal pravdu. Prelomiť tie múry zaberie tri roky ťažkej práce. Budeš musieť niečo vymyslieť, aby si si zarobil tri vrecia zlata.“\n„Voda,“ zašeptal Ištar. „Pozrite na vodu.“\n„Pozeral som na vodu,“ usmial sa naňho Naja tenkými perami. „Každú štvrť zásobujú kanály, je tam dosť vody na sto rokov pre Sargonových šesť terás.“\n„Faraón je vševidiaci, vševediaci,“ Ištar sa mu uklonil. „Lenže odkiaľ pochádza všetka tá voda?“\n„Z dvoch mohutných riek, ktoré v tomto tisícročí nevyschli,“ doplnil Naja.\n„Ale kde vteká voda do mesta? Ako ním prechádza, pod všetkými tými múrmi?“ Ištar naliehal a Naja s Trokom si vymenili pohľady, v ktorých sa zračilo rodiace sa pochopenie.",
+      "asset": null
+    },
+    "sjl-2022-a-s3": {
+      "kind": "text",
+      "title": "Hodnotová orientácia mladých ľudí vo vzťahu k dobrovoľníctvu",
+      "body": "Pozitívne hodnoty z nás robia dobrých ľudí a motivujú nás k vlastnému ideálu, ktorý sa úzko spája s našimi snami, záujmami, potrebami a postojmi. Tie nás povzbudzujú meniť svet, byť užitočnými, vzdelávať sa a prežívať krásne životné okamihy.\nVzťah hodnotovej orientácie a dobrovoľníctva je veľmi silný. Dobrovoľníctvo sa v súčasnosti vyznačuje rôznorodými možnosťami, zapája rôzne skupiny obyvateľstva, čím im umožňuje dosiahnuť sebarozvoj, získať pocit užitočnosti a zmysluplne tráviť voľný čas užitočnou prácou.\nDobrovoľníci sú prosociálne sa správajúci ľudia a podľa bežného názoru prosociálni ľudia dovoľujú, aby ich druhí využívali vo svoj prospech, ale oni zámerne používajú seba ako nástroj, aby pomohli druhým. Títo jedinci sú si vedomí toho, že ak chceme nastoliť prosociálne vzťahy medzi ľuďmi, niekto sa musí začať správať prosociálne ako prvý. Nie sú to naivní ľudia, naopak, sú asertívni, aktívni a tvoriví.\nZ prieskumu vyplýva, že záujem mladých ľudí o dobrovoľnícke aktivity klesá. Mladí ľudia uvádzajú ako najčastejší dôvod, prečo sa nezapájajú do dobrovoľníctva, argument, že ich nikto systematicky neoslovuje s ponukou, majú nedostatok informácií o možnostiach dobrovoľníckej práce. Niektorí mladí ľudia necítia potrebu zapájať sa, naopak, vyhľadávajú príležitosti, aby si mohli zarobiť a pokryť tak svoje náklady na štúdium.\nAko ukazuje graf, v prieskume sa zisťovalo aj to, čo si mladí ľudia pod pojmom dobrovoľníctvo predstavujú.\n\nAsociácie mladých ľudí k slovu dobrovoľníctvo\n<table><tr><th>Asociácia</th><th>Podiel</th></tr><tr><td>nezištná a verejnoprospešná práca</td><td>12 %</td></tr><tr><td>dobrý pocit, užitočnosť</td><td>10 %</td></tr><tr><td>pomoc osobám v núdzi</td><td>14 %</td></tr><tr><td>angažovanosť mladých ľudí</td><td>8 %</td></tr><tr><td>práca zadarmo, neplatená činnosť</td><td>24 %</td></tr><tr><td>slobodná vôľa konať dobro</td><td>13 %</td></tr><tr><td>pomáhanie druhým</td><td>19 %</td></tr></table>",
+      "asset": null
+    },
+    "sjl-2023-a-s1": {
+      "kind": "text",
+      "title": "Aké sú zdroje a vplyvy odpadu v moriach?",
+      "body": "Narastajúce množstvo odpadu končí vo svetových oceánoch a poškodzuje zdravie ekosystémov, spôsobuje úhyn zvierat a ohrozuje ľudské zdravie. Riešenie spočíva v predchádzaní vzniku odpadu a lepšom odpadovom hospodárstve na pevnine.\n\nMorské zvieratá a morské vtáky si odpad mýlia s potravou v dôsledku jeho veľkosti a prevládajúceho výskytu.\n\nŽalúdok naplnený nestráviteľnými plastmi môže zvieraťu zabrániť v prijímaní potravy, čo následne spôsobí, že zviera umiera od hladu. Chemikálie v plastoch môžu mať účinky ako jed a v závislosti od dávky môžu zviera natrvalo oslabiť alebo zahubiť.\n\nAj väčšie kúsky plastov predstavujú hrozbu pre morský život. Mnohé druhy vrátane tuleňov, delfínov a morských korytnačiek sa môžu do odpadu z plastov, rybárskych sietí a povrazov stratených v mori zamotať. Zamotané živočíchy väčšinou neprežijú, keďže sa nemôžu dostať na vodnú hladinu, aby sa nadýchli, uniknúť predátorom alebo prijímať potravu.",
+      "asset": null
+    },
+    "sjl-2023-a-s2": {
+      "kind": "text",
+      "title": "Kde bolo, tam bolo...",
+      "body": "1891 – Na farme v Dánsku sa narodil Ole Kirk Christiansen, zakladateľ hračkárskej firmy Lego. Vyučil sa za tesára.\n1916 – Christiansen kúpil drevoobrábaciu dielňu v meste Billund. Živil sa stavaním domov a vyrábaním nábytku.\n1924 – Dvaja jeho synovia sa hrali v tesárskej dielni a nešťastnou zhodou okolností sa vznietili suché drevené hobliny.\n\nDôležité míľniky spoločnosti Lego\n\n1932 – Christiansen zakladá spoločnosť na výrobu tovaru na každodenné použitie, ako sú napríklad stoličky, stoly, postele a rôzne skrine.\n1934 – V tomto roku vzniká úplne nová firma – Lego. Veľká hospodárska kríza totiž tesárskemu obchodu spôsobila takmer krach a Christiansen kvôli zníženiu nákladov vyrába už len drevené miniatúry svojich výrobkov, teda hračky.\n1947 – Christiansen kupuje prvý lisovací stroj na plasty v Dánsku. Firma spúšťa výrobu a predaj plastových hračiek.\n1949 – Lego začína vyrábať vzácny produkt – plastové stavebnice.\n1955 – Firma ide prvýkrát za hranice domáceho trhu a rozširuje svoje pôsobenie aj do Švédska.\n1959 – Podnik predáva svoje produkty už aj v Nemecku, Nórsku, vo Švajčiarsku a Veľkej Británii.\n1960 – Lego zasiahol požiar, ktorý zničil väčšinu drevených hračiek. Podnik sa orientuje už len na plastové výrobky.\n1966 – Na trh je uvedená úspešná modelová železnica.\n1968 – V dánskom Billunde bol otvorený prvý Legoland. Nasledujú parky v Anglicku, USA a Nemecku.\n1997 – Na trh uvádza svoju prvú počítačovú hru – Lego Island.\n2009 – Lego je piatym najväčším svetovým výrobcom hračiek z hľadiska tržieb.\n2012 – Záujem o hračky je taký veľký, že spoločnosť Lego nie je schopná pokryť všetok dopyt po svojich produktoch.",
+      "asset": null
+    },
+    "sjl-2023-a-s3": {
+      "kind": "text",
+      "title": "Dvadsaťtisíc míľ pod morom",
+      "body": "– Ale more, pán Aronnax, – povedal mi, – táto zázračná a nevyčerpateľná živiteľka, ma nielen živí, ale aj oblieka. Teraz všetko dostávam od mora a jedného dňa sa všetko moru vráti!\n– Máte rád more, kapitán.\n– Áno, mám ho rád! More je všetko! Pokrýva sedem desatín zemegule. Vanie nad ním čisté a zdravé povetrie. Je to nesmierna púšť, kde však človek nikdy nie je sám, lebo cíti, ako všade okolo neho kypí život. More nosí v sebe nadprirodzený a zázračný život. Je v ňom iba pohyb a láska. Je to živé nekonečno, ako povedal jeden z vašich básnikov. A naozaj, pán profesor, príroda sa v ňom prejavuje všetkými tromi ríšami: nerastnou, rastlinnou i živočíšnou. More je ohromná zásobáreň prírody! V mori má zem svoj začiatok a ktovie, či v ňom aj neskončí! Tam je zvrchovaný pokoj. More nepatrí tyranom. Na jeho hladine ešte môžu páchať neprávosti, biť sa, vzájomne sa zožierať, prenášať ta všetky pozemské hrôzy. Ale desať metrov pod hladinou ich moc prestáva, ich vplyv sa stráca, mizne ich sila! Ach, pane, žite v hlbinách morí! Iba tam je nezávislosť! Tam nepoznám nijakých pánov! Tam som slobodný!\nKapitán Nemo sa zrazu uprostred tohto prekypujúceho nadšenia odmlčal. Dal sa strhnúť za hranice svojej zvyčajnej zdržanlivosti? Povedal priveľa? Niekoľko minút vzrušene chodil hore-dolu. Potom sa upokojil, na tvár sa mu vrátil zvyčajný chladný výraz a obrátiac sa ku mne, povedal:\n– A teraz, pán profesor, ak si želáte prezrieť Nautila, som vám k službám.",
+      "asset": null
+    },
+    "sjl-2023-a-s4": {
+      "kind": "text",
+      "title": "John Steinbeck",
+      "body": "„Najviac času strácame tým, že by sme chceli získať čas.“\n\nJohn Steinbeck",
+      "asset": null
+    },
+    "sjl-2023-a-s5": {
+      "kind": "text",
+      "title": "Atlantída",
+      "body": "Miroslav Žbirka\nAtlantída\n\nLen more cez brány čias\nženie na brehy stĺpy vĺn.\nMore cez brány čias\nvon vynáša stĺpy vĺn.",
+      "asset": null
+    },
+    "sjl-2023-a-s6": {
+      "kind": "text",
+      "title": "Čarodejník z krajiny Oz",
+      "body": "Dorotkino uznanie bolo zrejmé, nuž iba prikývla a jedla sama. „Porozprávaj mi niečo o sebe a o krajine, odkiaľ si prišla.“ Keď sa najedla, rozprávala Strachopudovi o Kansase, aké je tam všetko sivé i ako ju tornádo odvlieklo do tejto divnej krajiny Oz.",
+      "asset": null
+    },
+    "sjl-2023-a-s7": {
+      "kind": "text",
+      "title": "Vodník",
+      "body": "K. J. Erben\nVodník\n\nNeveselé, trúchlivé\nsú tie vodné kúty,\nkde sa v tráve pod záružlím\nrybka s rybkou krúti.\n\nTam slniečko nezasvieti,\nvetrík nezaveje:\nchlad a ticho – ako žiaľ\nv srdci bez nádeje.\n\nNeveselé, trúchlivé\nsú tie kúty vodné,\nv polotme a polosvetle\ndni sa vlečú po dne.\n\nVodníkov dvor priestranný,\nhojnosť nad hojnosti:\nale iba zriedkavo\nvítajú tam hostí.\n\nA do jeho krištáľovej\nbrány kto raz vkročí,\ntoho ťažko ešte zazrú\njeho milých oči.\n\nV bublinách pri ukážke sú uvedené typické znaky žánru: pochmúrny dej; magickosť, nadprirodzené postavy a javy; stupňovanie napätia; obvykle sa končí tragicky.",
+      "asset": null
+    },
+    "sjl-2023-a-s8": {
+      "kind": "text",
+      "title": "Prieskum fauny a flóry",
+      "body": "Veľmi zaujímavý je aj spoločný výskyt (prelínanie) studenomilných horských a teplomilných prvkov našej fauny a flóry. „Ďalší podrobný prieskum môže priniesť ešte nejedno prekvapenie,“ pripomenula.",
+      "asset": null
+    },
     "sjl-2024-a-s1": {
       "kind": "text",
       "title": "Zimné paralympijské hry (ZPH)",
@@ -53,9 +221,494 @@
       "title": "Sporiť a šetriť",
       "body": "Popri výraze sporiť pozná slovenčina aj výraz šetriť. Obidva majú niečo spoločné, je však medzi nimi jemný rozdiel. Sporiť, to je „zbierať, zhromažďovať, odkladať“; šetriť, to je „chrániť, starať sa, aby sa vec nezničila“. Sporiť, čiže ukladať, sa môžu peniaze, materiál; šetriť sa majú oči, topánky, šetriť sa má kultúrny majetok, prírodné zdroje, zdravie, sily človeka.",
       "asset": null
+    },
+    "sjl-2025-a-s1": {
+      "kind": "text",
+      "title": "Zaujímavé míľniky Európy",
+      "body": "1838: Matematička Ada Lovelace (1815 – 1852) vo svojom článku pre britský vedecký časopis opisuje nielen fungovanie prvého analytického stroja, ale aj možnosti jeho využitia pomocou kódov v budúcnosti. Je považovaná za prvú programátorku na svete. Na zostrojenie prvého počítača sa využili práve jej poznámky.\n\n1901: Rakúsky lekár Karl Landsteiner (1868 – 1943) objavuje základné krvné skupiny, čo predstavuje kľúčový krok k veľkému medicínskemu pokroku.\n\n1905: „Zázračný rok“ nemeckého vedca Alberta Einsteina (1879 – 1955), ktorý svojou sériou prác z rôznych vedných disciplín, napr. o aspektoch svetla, hmoty, času a priestoru, spôsobuje prevrat vo vede. Jeho prevratná práca obsahuje jednu z najslávnejších matematických rovníc všetkých čias: E = mc². O jedenásť rokov neskôr publikoval svoju všeobecnú teóriu relativity.\n\n1913: Odhaľujú sochu Malej morskej víly, predstavujúcu ikonický prvok Kodane. Jej predlohou je postava z rozprávky dánskeho autora Hansa Christiana Andersena (1805 – 1875).\n\n1928: Škótsky lekár a bakteriológ Alexander Fleming (1881 – 1955) náhodou objavuje antibiotikum penicilín.\n\n1946: Vo francúzskom prímorskom letovisku sa prvýkrát koná filmový festival v Cannes. Filmy na ňom predstavuje 21 štátov.\n\n1974: Maďarský architekt Ernő Rubik (1944) konštruuje trojrozmernú skladačku, ktorá vyvoláva celosvetové šialenstvo a stáva sa jednou z najpredávanejších hračiek všetkých čias, Rubikovu kocku.\n\n1989: Britský inžinier a počítačový vedec Tim Berners-Lee (1955) vynachádza World Wide Web (WWW). Prvé webové sídlo na svete je spustené 6. augusta 1991.\n\n2011: Profesor Pavel Alexy (1961), slovenský vedec, podáva prvý patent na špeciálny bioplast, ktorý sa dá v prírode rozložiť bez akéhokoľvek odpadu.\n\n2018: Španiel Rafael Nadal (1986) opätovne vyhráva tenisový turnaj French Open a dokazuje, že je „kráľom antuky“.\n\n2019: Euro, spoločná európska mena, oslavuje 20 rokov. V roku 2019 ho využíva viac ako 340 miliónov občanov v 19 krajinách EÚ a je druhou najdôležitejšou menou na svete.",
+      "asset": null
+    },
+    "sjl-2025-a-s2": {
+      "kind": "text",
+      "title": "Dračí dub z Lozorna – finalista súťaže Európsky strom roka",
+      "body": "Ukrytý v lese na malom vŕšku Kopanička po stáročia chránil a i dnes chráni obyvateľov – od prvých osadníkov, ktorí pomáhali pri stavbe neďalekého hradu Pajštún, cez obchodníkov a prisťahovalcov z Chorvátska. Dohliadal aj na vytvorenie na tú dobu ohromnej zvernice, ktorá siahala od Stupavy po Lozorno (okres Malacky), ale aj na vybudovanie úzkokoľajnej parnej lesnej železnice, ktorú však už dávno prežil. Dnes je jeho majestátna koruna domovom množstva druhov vtákov, veveričiek a hmyzu. V jej tieni sa často pohybuje vysoká zver i veľmi zriedkavý daniel biely. V blízkom Suchom potoku sa zas po dlhých rokoch objavili bobry.\n\nZ diaľky svojou mohutnosťou a výzorom pripomína sediaceho draka. Mýtickosť cítiť ešte viac pri dotyku s jeho kôrou, ktorá je silne drsná a zjazvená ako po súbojoch drakov. Obvod jeho kmeňa je úctyhodných 677 cm, čo znamená, že na jeho obchytenie treba 4 až 5 chlapov. Má okolo 700 rokov a výšku asi 18 metrov.\n\nDračí dub bol nominovaný do ankety Strom roka, ktorú pod záštitou známeho speváka a hudobníka Petra Lipu organizuje Nadácia Ekopolis. Získal najviac hlasov aj financie na svoje odborné ošetrenie a zaradil sa do finále ankety s názvom Európsky strom roka. Do ankety sa zapojilo 16 krajín Európy. Do finále sa dostalo 12 jedinečných stromov zo zapojených európskych krajín a náš dub získal 2. miesto. Ocenenie si osobne v Bruseli prevzal fotograf Tibor Végh, ktorý „Dračí dub“ nominoval do slovenskej súťaže Strom roka.",
+      "asset": null
+    },
+    "sjl-2025-a-s3": {
+      "kind": "text",
+      "title": "Douglas Adams – Reštaurácia na konci vesmíru",
+      "body": "Krátko predtým sa Arthur Dent vybral zohnať si šálku teplého čaju. Na túto výpravu sa už vopred nepozeral s veľkým optimizmom, lebo vedel, že jediným zdrojom teplých nápojov na celej kozmickej lodi je zaostalý kus zariadenia – stravomatický syntetizátor nápojov. Tento prístroj tvrdil, že dokáže vyrobiť neuveriteľnú škálu nápojov presne podľa chuti a metabolizmu osoby, ktorá ho používa. Ale keď to s ním Arthur skúšal, zakaždým mu vydal plastový pohár plný tekutiny, ktorá sa takmer – no nie úplne – vôbec nepodobala na čaj.\n\n„Čaj!“ prikázal.\n\n„Ochutnajte a podeľte sa,“ povedal stroj firemný slogan ako vždy a vydal ďalší pohár.\n\nArthur zahodil šiesty pohár hnedej tekutiny. „Počúvaj, stroj,“ zavrčal, „ty tvrdíš, že vieš syntetizovať akýkoľvek existujúci nápoj. Tak prečo mi stále podstrkuješ túto nepitnú brečku?“\n\n„Používam nasnímané dáta o výživovej hodnote a pocitoch uspokojenia,“ odpovedal stravomat. „Ochutnajte a podeľte sa!“\n\n„Robíš si zo mňa asi žarty. Chcem od teba iba... obyčajnú šálku čaju a ty mi ho urobíš. Buď ticho a počúvaj.“\n\nPosadil sa a začal oduševnene rozprávať stravomatu o Indii, Číne, Cejlóne. Hovoril mu o širokých lístkoch sušiacich sa na slnku, strieborných kanviciach a letných popoludniach na trávniku. Hovoril o tom, ako sa mlieko nalieva skôr než čaj, aby sa nezavarilo. Dokonca mu porozprával aj o histórii Východoindickej spoločnosti.\n\n„Takže o to tu ide?“ spýtal sa ho stravomat, keď skončil s výkladom. „Chcete chuť suchých listov vylúhovaných vo vrelej vode?“\n\n„Ehm... áno. S mliekom.“\n\n„Vyžmýkaným z kravy?“\n\n„Nuž, dá sa to povedať asi aj takto...“",
+      "asset": null
+    },
+    "sjl-2025-a-s4": {
+      "kind": "text",
+      "title": "Napoleon (filmová anotácia)",
+      "body": "Epická akčná dráma približuje vzostup a pád francúzskeho cisára. Jeden z najuznávanejších režisérov sveta Ridley Scott (Gladiátor, Marťan) vo filme zachytáva neúnavnú cestu Napoleona k moci, sleduje náruživý a dynamický vzťah s jeho životnou láskou Jozefínou a mapuje jeho systematické vizionárske vojenské a politické taktiky, ktoré znamenali jeho vzostup i pád, na pozadí typických Scottových záberov úchvatných veľkovýpravných bojových scén.",
+      "asset": null
+    },
+    "sjl-2025-a-s5": {
+      "kind": "text",
+      "title": "Rudyard Kipling – Keď…",
+      "body": "keď medzi davom zachováš si hrdosť,\nkeď prostý si, aj keď ťa stretne kráľ,\nkeď skúškou priateľstva je tvoja tvrdosť,\nsi svoj, aj keď si srdce na dlaň dal,\nkeď z posledných síl dobehnúť vieš k méte\na čas len v pätách dobieha ti už,\npotom ti patrí svet a všetko v svete,\na, navyše, je, syn môj, z teba muž!",
+      "asset": null
     }
   },
   "units": [
+    {
+      "stimulus": "sjl-2017-a-s1",
+      "ids": [
+        "sjl-2017-a-01",
+        "sjl-2017-a-02",
+        "sjl-2017-a-03",
+        "sjl-2017-a-04",
+        "sjl-2017-a-05"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s2",
+      "ids": [
+        "sjl-2017-a-06",
+        "sjl-2017-a-07",
+        "sjl-2017-a-08",
+        "sjl-2017-a-09",
+        "sjl-2017-a-10"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s3",
+      "ids": [
+        "sjl-2017-a-11",
+        "sjl-2017-a-12",
+        "sjl-2017-a-13",
+        "sjl-2017-a-14",
+        "sjl-2017-a-15"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s4",
+      "ids": [
+        "sjl-2017-a-16",
+        "sjl-2017-a-17",
+        "sjl-2017-a-18",
+        "sjl-2017-a-19",
+        "sjl-2017-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-25"
+      ]
+    },
+    {
+      "stimulus": "sjl-2018-a-s1",
+      "ids": [
+        "sjl-2018-a-01",
+        "sjl-2018-a-02",
+        "sjl-2018-a-03",
+        "sjl-2018-a-04",
+        "sjl-2018-a-05"
+      ]
+    },
+    {
+      "stimulus": "sjl-2018-a-s2",
+      "ids": [
+        "sjl-2018-a-06",
+        "sjl-2018-a-07",
+        "sjl-2018-a-08",
+        "sjl-2018-a-09",
+        "sjl-2018-a-10"
+      ]
+    },
+    {
+      "stimulus": "sjl-2018-a-s3",
+      "ids": [
+        "sjl-2018-a-11",
+        "sjl-2018-a-12",
+        "sjl-2018-a-13",
+        "sjl-2018-a-14",
+        "sjl-2018-a-15"
+      ]
+    },
+    {
+      "stimulus": "sjl-2018-a-s4",
+      "ids": [
+        "sjl-2018-a-16",
+        "sjl-2018-a-17",
+        "sjl-2018-a-18",
+        "sjl-2018-a-19",
+        "sjl-2018-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2018-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2018-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2018-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2018-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2018-a-25"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s1",
+      "ids": [
+        "sjl-2019-a-01",
+        "sjl-2019-a-02",
+        "sjl-2019-a-03",
+        "sjl-2019-a-04"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s1",
+      "ids": [
+        "sjl-2019-a-05",
+        "sjl-2019-a-06",
+        "sjl-2019-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s2",
+      "ids": [
+        "sjl-2019-a-08",
+        "sjl-2019-a-09",
+        "sjl-2019-a-10",
+        "sjl-2019-a-11"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s2",
+      "ids": [
+        "sjl-2019-a-12",
+        "sjl-2019-a-13",
+        "sjl-2019-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s3",
+      "ids": [
+        "sjl-2019-a-15",
+        "sjl-2019-a-16",
+        "sjl-2019-a-17",
+        "sjl-2019-a-18"
+      ]
+    },
+    {
+      "stimulus": "sjl-2019-a-s3",
+      "ids": [
+        "sjl-2019-a-19",
+        "sjl-2019-a-20",
+        "sjl-2019-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-26"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2019-a-30"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s1",
+      "ids": [
+        "sjl-2022-a-01",
+        "sjl-2022-a-02",
+        "sjl-2022-a-03",
+        "sjl-2022-a-04"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s1",
+      "ids": [
+        "sjl-2022-a-05",
+        "sjl-2022-a-06",
+        "sjl-2022-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s2",
+      "ids": [
+        "sjl-2022-a-08",
+        "sjl-2022-a-09",
+        "sjl-2022-a-10",
+        "sjl-2022-a-11"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s2",
+      "ids": [
+        "sjl-2022-a-12",
+        "sjl-2022-a-13",
+        "sjl-2022-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s3",
+      "ids": [
+        "sjl-2022-a-15",
+        "sjl-2022-a-16",
+        "sjl-2022-a-17",
+        "sjl-2022-a-18"
+      ]
+    },
+    {
+      "stimulus": "sjl-2022-a-s3",
+      "ids": [
+        "sjl-2022-a-19",
+        "sjl-2022-a-20",
+        "sjl-2022-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-26"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2022-a-30"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s1",
+      "ids": [
+        "sjl-2023-a-01",
+        "sjl-2023-a-02",
+        "sjl-2023-a-03",
+        "sjl-2023-a-04"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s1",
+      "ids": [
+        "sjl-2023-a-05",
+        "sjl-2023-a-06",
+        "sjl-2023-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s2",
+      "ids": [
+        "sjl-2023-a-08",
+        "sjl-2023-a-09",
+        "sjl-2023-a-10",
+        "sjl-2023-a-11"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s2",
+      "ids": [
+        "sjl-2023-a-12",
+        "sjl-2023-a-13",
+        "sjl-2023-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s3",
+      "ids": [
+        "sjl-2023-a-15",
+        "sjl-2023-a-16",
+        "sjl-2023-a-17",
+        "sjl-2023-a-18"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s3",
+      "ids": [
+        "sjl-2023-a-19",
+        "sjl-2023-a-20",
+        "sjl-2023-a-21"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s4",
+      "ids": [
+        "sjl-2023-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2023-a-23"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s5",
+      "ids": [
+        "sjl-2023-a-24"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s6",
+      "ids": [
+        "sjl-2023-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2023-a-26"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2023-a-27"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s7",
+      "ids": [
+        "sjl-2023-a-28"
+      ]
+    },
+    {
+      "stimulus": "sjl-2023-a-s8",
+      "ids": [
+        "sjl-2023-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2023-a-30"
+      ]
+    },
     {
       "stimulus": "sjl-2024-a-s1",
       "ids": [
@@ -155,9 +808,2770 @@
       "ids": [
         "sjl-2024-a-30"
       ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s1",
+      "ids": [
+        "sjl-2025-a-01",
+        "sjl-2025-a-02",
+        "sjl-2025-a-03",
+        "sjl-2025-a-04"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s1",
+      "ids": [
+        "sjl-2025-a-05",
+        "sjl-2025-a-06",
+        "sjl-2025-a-07"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s2",
+      "ids": [
+        "sjl-2025-a-08",
+        "sjl-2025-a-09",
+        "sjl-2025-a-10",
+        "sjl-2025-a-11"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s2",
+      "ids": [
+        "sjl-2025-a-12",
+        "sjl-2025-a-13",
+        "sjl-2025-a-14"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s3",
+      "ids": [
+        "sjl-2025-a-15",
+        "sjl-2025-a-16",
+        "sjl-2025-a-17",
+        "sjl-2025-a-18"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s3",
+      "ids": [
+        "sjl-2025-a-19",
+        "sjl-2025-a-20",
+        "sjl-2025-a-21"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s4",
+      "ids": [
+        "sjl-2025-a-22",
+        "sjl-2025-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-26"
+      ]
+    },
+    {
+      "stimulus": "sjl-2025-a-s5",
+      "ids": [
+        "sjl-2025-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2025-a-30"
+      ]
     }
   ],
   "items": {
+    "sjl-2017-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o Robinsonovi vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Bol šťastný, že opustil svoj predošlý život hneď po stroskotaní.",
+        "V deň výročia sa túžil vrátiť domov ešte viac ako kedykoľvek predtým.",
+        "Počas dlhých dvoch rokov každý deň prehodnocoval svoj život.",
+        "Nádej na jeho záchranu sa nezvyšovala časom stráveným na ostrove."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2017-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Prečo bol Robinson podľa ukážky zmierený s pobytom na opustenom ostrove?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Bol rád, že mohol na ostrove zabudnúť na minulosť.",
+        "Bol slobodnejší a vzdelanejší ako v predošlom živote.",
+        "Zistil, že jeho predošlý život ho v skutočnosti nenapĺňal.",
+        "Zistil, že tu nemusí trpieť nedostatkom peňazí a žiť v biede."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2017-a-03": {
+      "n": 3,
+      "topic": "tvaroslovie",
+      "text": "Ktoré tvrdenie o číslovkách z ukážky je pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "V ukážke sú slová uplynulé a celý neurčité číslovky.",
+        "V ukážke sa nachádzajú dve radové číslovky.",
+        "V ukážke sa nenachádza základná číslovka.",
+        "V ukážke sa nachádzajú násobné číslovky."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2017-a-04": {
+      "n": 4,
+      "topic": "tvaroslovie",
+      "text": "Ktoré gramatické kategórie zodpovedajú slovesu v podčiarknutej časti vety ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prítomný čas, oznamovací spôsob",
+        "minulý čas, oznamovací spôsob",
+        "prítomný čas, podmieňovací spôsob",
+        "minulý čas, podmieňovací spôsob"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2017-a-05": {
+      "n": 5,
+      "topic": "skladba",
+      "text": "Na ostrove som bol teda dva roky.\n\nUvedená veta je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "dvojčlenná, úplná.",
+        "dvojčlenná, neúplná.",
+        "jednočlenná, slovesná.",
+        "jednočlenná, neslovesná."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2017-a-06": {
+      "n": 6,
+      "topic": "porozumenie-textu",
+      "text": "Autor v ukážke",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "túži po nesmrteľnej sláve a obdive.",
+        "vzdáva hold svojej rodnej reči.",
+        "v trápení premárnil svoj život.",
+        "sa vyznáva z lásky k ľuďom."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2017-a-07": {
+      "n": 7,
+      "topic": "literarna-teoria",
+      "text": "O ukážke platí, že patrí",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "k reflexívnej lyrike, je písaná viazanou rečou.",
+        "k ľúbostnej lyrike, používa obkročný rým.",
+        "k spoločenskej lyrike, je písaná neviazanou rečou.",
+        "k prírodnej lyrike, používa združený rým."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2017-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "V podčiarknutom verši ukážky zámeno ním v básni označuje",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "život.",
+        "šepot.",
+        "srdce.",
+        "slovo."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2017-a-09": {
+      "n": 9,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je správne určený umelecký jazykový prostriedok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "lásku k milovanej žene ‒ personifikácia",
+        "málo som z tvojich hlbín vydoloval ‒ metafora",
+        "brat by bol cudzí bratovi ‒ prirovnanie",
+        "aby tie slová z ticha vykresané – metonymia"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2017-a-10": {
+      "n": 10,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je nezvyčajný slovosled zvýrazňujúci umelecký dojem v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "pravdu povie jak sladký šepot matere",
+        "dychtí len po slove, tom pravom, čo ho preberie",
+        "zaklopať mohli na srdce, čo žije všade",
+        "lásku k milovanej žene najsladšie ktože vysloví"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2017-a-11": {
+      "n": 11,
+      "topic": "sloh-postupy",
+      "text": "V ktorej možnosti je správne uvedený slohový útvar ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "správa",
+        "dynamický opis",
+        "výklad",
+        "statický opis"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2017-a-12": {
+      "n": 12,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Autorka odporúča používať v mediálnom prostredí frazeologický slovník.",
+        "Ľudia z médií majú problém s používaním ustálených slovných spojení.",
+        "Autorka textu sa neslušne vyjadruje o ľuďoch, ktorí nemajú výborné jazykové znalosti.",
+        "Správne ovládanie jazyka je nevyhnutnosťou pre prácu v televízii, rozhlase a časopise."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2017-a-13": {
+      "n": 13,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti je uvedený správny význam obrazného pomenovania podľa ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ostrá kritika je nepríjemné a výrazné vyjadrenie sa k niečomu.",
+        "Tvrdým orieškom označujeme vyriešenie nejakého problému.",
+        "Ak dáme ranu pod pás, povieme niečo citlivo inej osobe.",
+        "Ak máme niekoho v zuboch, je terčom nášho výsmechu."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2017-a-14": {
+      "n": 14,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o ukážke je pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ukážka obsahuje štyri strofy.",
+        "Ukážka neobsahuje zdrobneniny.",
+        "V nadpise ukážky je nesprávne ustálené slovné spojenie.",
+        "V poslednej vete ukážky nie je žiaden umelecký prostriedok."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2017-a-15": {
+      "n": 15,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádza dvojica ohybný – neohybný slovný druh z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "týchto – dvoch",
+        "možno – ale",
+        "nich – práve",
+        "to – nám"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2017-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o pravidlách súťaže vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Počet získaných bodov v súťaži nie je limitovaný.",
+        "Za prečítanie najmenej troch kníh získa súťažiaci tri body.",
+        "Názov súťaže znie: „Čo čítali moji rodičia?“",
+        "Čítať v súťaži možno len odborné knihy určené pre deti a mládež."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2017-a-17": {
+      "n": 17,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá možnosť nevystihuje podľa ukážky cieľ súťaže?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Spropagovať mesiac knihy.",
+        "Získavať nových čitateľov knižnice.",
+        "Oboznámiť sa s knihami vydanými v minulosti.",
+        "Podporovať komunikáciu o knihách s dospelými."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2017-a-18": {
+      "n": 18,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je správne uvedený prisudzovací sklad z nasledujúcej vety?\n\nSúťažiaci sa musí prihlásiť za člena Staromestskej knižnice.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "súťažiaci sa musí",
+        "musí sa prihlásiť za člena",
+        "musí sa prihlásiť",
+        "súťažiaci sa musí prihlásiť"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2017-a-19": {
+      "n": 19,
+      "topic": "komunikacia",
+      "text": "V ktorej možnosti je veta napísaná gramaticky správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pani knihovníčka, vedela by ste mi odporučiť nejakú zaujímavú bájku?",
+        "Popros paniu knihovníčku, ona ti ten dobrodružný román vyhľadá.",
+        "Nepredbiehaj v rade tú sympatickú paniu, aj ona čaká na knihu!",
+        "Mohla by ste mi, prosím, zavolať pani knihovníčku?"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2017-a-20": {
+      "n": 20,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú obe slová s predponou?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "predĺženie, prihlášky",
+        "minimálne, čitateľskej",
+        "Staromestskej, ohľadu",
+        "stredných, spolužiak"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2017-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa slová skloňujú podľa rovnakého vzoru?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "konkurenciu, technológií, hraníc",
+        "ostatnej, voľného, najbližšie",
+        "aktivitou, knihou, reťazou",
+        "televízie, čítanie, populácie"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2017-a-22": {
+      "n": 22,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú správne uvedené chýbajúce hlásky z nasledujúcej vety?\n\nV miestnej škole sa tradujú osob__té a nezv__čajné, re__lne i ro__právkové príbehy o starob__lých __ratislavských uličkách.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "y, i, a, s, y, B",
+        "y, i, á, s, i, b",
+        "i, y, á, z, y, b",
+        "i, y, a, z, i, B"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2017-a-23": {
+      "n": 23,
+      "topic": "literarna-teoria",
+      "text": "V ktorej možnosti sú typické znaky žánru anekdota?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prekvapivé ukončenie, opisy",
+        "málo postáv, stredný rozsah",
+        "vtipný záver, krátky rozsah",
+        "mravné poučenie, lyrickosť"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2017-a-24": {
+      "n": 24,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti nie je správne uvedené synonymum slova podoba z nasledujúcej vety?\n\nDokumentárnemu filmu sme dali definitívnu podobu.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "tvar",
+        "charakter",
+        "formát",
+        "náhľad"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2017-a-25": {
+      "n": 25,
+      "topic": "hlaskoslovie",
+      "text": "Koľko mäkkých spoluhlások obsahuje slovo sobotňajší?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2018-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Aktuálne je fitnes náramok najnovším módnym trendom mládeže.",
+        "Náramok zobrazuje aktuálny čas v hodinách, minútach a sekundách.",
+        "Výsledky aktivity používateľa je možné sledovať aj na notebooku.",
+        "Náramok dokáže samostatne vyhodnocovať namerané hodnoty."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2018-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý z cieľov pomáha fitnes náramok plniť na základe ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Monitorovať všetky dôležité životné funkcie svojho používateľa.",
+        "Určovať polohu majiteľa a aj miesto, kde sa nachádza.",
+        "Sledovať reakcie mnohých priateľov na sociálnych sieťach.",
+        "Zvyšovať si osobnú úroveň zdravého životného štýlu."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2018-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Pri ktorých aktivitách je možné vždy spoľahlivo použiť ktorýkoľvek fitnes náramok podľa ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "chôdza, tenis, potápanie",
+        "bicyklovanie, posilňovanie, kanoistika",
+        "plávanie, veslovanie, beh",
+        "futbal, horolezectvo, korčuľovanie"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2018-a-04": {
+      "n": 4,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádzajú len abstraktné podstatné mená?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Informuje o stave plnenia cieľa používateľa.",
+        "Osobný cieľ si stanovíte definovaním hodnôt.",
+        "Monitory aktivity sú malé, šikovné a inteligentné zariadenia.",
+        "Senzor vás upozorní počtom rozsvietených bodov na displeji."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2018-a-05": {
+      "n": 5,
+      "topic": "hlaskoslovie",
+      "text": "V ktorej možnosti sa všetky slová začínajú mäkkou párovou neznelou spoluhláskou?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "cieľa, športoch, čas",
+        "fitnes, čas, diskrétny",
+        "chcete, cieľa, športoch",
+        "športoch, displej, fitnes"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2018-a-06": {
+      "n": 6,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o dropovi fúzatom je pravdivé na základe ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Dropy pre svoju veľkú hmotnosť nedokážu lietať.",
+        "Jedince dropa fúzatého sa vyskytujú iba na území Lehníc.",
+        "Tieto ohrozené druhy vtákov sa živia iba hmyzom.",
+        "Úhyn posledných lehnických jedincov sa začal v 20. storočí."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2018-a-07": {
+      "n": 7,
+      "topic": "porozumenie-textu",
+      "text": "Z ukážky nevyplýva, že organizácia Ochrana dravcov na Slovensku",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "informovala o nízkych počtoch dropa fúzatého.",
+        "vybudovala úplne nové a bezpečnejšie elektrické vedenia.",
+        "pri svojej práci využíva i pomoc energetikov.",
+        "sa venuje záchrane populácie dropov fúzatých na Slovensku."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2018-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Čo bolo podľa ukážky príčinou vyhynutia dropov v Lehniciach?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Montáž chráničov na konštrukcie vedenia.",
+        "Úbytok poľnohospodárskej pôdy a rastlín.",
+        "Kolízie ťažkých vtákov s elektrickým vedením.",
+        "Ovplyvnenie lietania výstražnými prvkami vedenia."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2018-a-09": {
+      "n": 9,
+      "topic": "sloh-postupy",
+      "text": "Ktorý jazykový štýl prevláda v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "náučný",
+        "umelecký",
+        "publicistický",
+        "administratívny"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2018-a-10": {
+      "n": 10,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je správne určený vetný člen z nasledujúcej vety?\n\nNa Slovensku je tento druh považovaný za takmer vyhynutý.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "tento – zhodný prívlastok",
+        "je vyhynutý – slovesný prísudok",
+        "považovaný – nezhodný prívlastok",
+        "takmer – príslovkové určenie príčiny"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2018-a-11": {
+      "n": 11,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Prítomní deda s obavou vysmiali.",
+        "Naši predkovia zakopávali nádoby.",
+        "Súčasníci sa musia učiť cudzie jazyky.",
+        "Dedo odkryl nevídaný archeologický objav."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2018-a-12": {
+      "n": 12,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o dedovi Kmeťovi je na základe ukážky správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Rád si vychutnáva obdiv.",
+        "Fantazíruje a je namyslený.",
+        "Chcel by byť archeológom.",
+        "S kravatou vyzerá ako profesor."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2018-a-13": {
+      "n": 13,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je najpresnejšie vysvetlený význam nasledujúceho obrazného pomenovania z ukážky?\n\nVtedy starcove drobné oči ako dvojbodka delili počet jeho rôčkov desiatimi, taký bol mladý na duši, taký bystrý a výmyselný.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Má zamyslený výraz v očiach.",
+        "V hlave sústredene počíta.",
+        "Na jeho tvári vidno rozpaky.",
+        "Oči mu hrajú šibalstvom."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2018-a-14": {
+      "n": 14,
+      "topic": "literarna-teoria",
+      "text": "V ktorej možnosti sú uvedené iba znaky charakterizujúce ukážku?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "odseky, priama reč, on-rozprávanie",
+        "epika, viazaná reč, román pre mládež",
+        "neviazaná reč, odseky, ja-rozprávanie",
+        "epika, ja-rozprávanie, poviedka"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2018-a-15": {
+      "n": 15,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádza príslovka aj častica?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Bolo im jasné, že iba odpratúva smeti.",
+        "No a o našu budúcu slávu sa teraz starám ja.",
+        "To najsmiešnejšie či najzaujímavejšie len príde.",
+        "Ich počínanie si dedo Kmeť vysvetľoval naďalej ako záujem."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2018-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá možnosť vyjadruje unikajúci pútavý život podľa ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "dívam sa z okna svojho kupé a vlak ma vezie ktovie kam",
+        "náladu mám presne takú ako keď idem sama do kina",
+        "mizne hneď do nenávratna ten trblietavý odraz života",
+        "stretneme sa v nekonečne ak pravda zastaví tam vlak"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2018-a-17": {
+      "n": 17,
+      "topic": "literarna-teoria",
+      "text": "V ktorej možnosti je správne doplnenie nasledujúcej vety?\n\nUvedenú ukážku zaraďujeme k _______ lyrike, v tretej strofe sa uplatňuje _______ rým.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "spoločenskej, obkročný",
+        "reflexívnej, striedavý",
+        "ľúbostnej, striedavý",
+        "prírodnej, obkročný"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2018-a-18": {
+      "n": 18,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je správna charakteristika umeleckého prostriedku nasledujúceho verša?\n\nna kúsku plátna čosi sa deje čosi mihotá",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prenášanie pomenovania na základe vonkajšej podobnosti",
+        "prisúdenie ľudských vlastností neživým predmetom",
+        "prirovnanie na základe spoločných znakov",
+        "ozvláštňujúci básnický prívlastok"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2018-a-19": {
+      "n": 19,
+      "topic": "tvaroslovie",
+      "text": "Slovo kupé z ukážky je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "podstatné meno stredného rodu, vzor srdce.",
+        "nesklonné podstatné meno, slangové.",
+        "pôvodne cudzie slovo, vzor vysvedčenie.",
+        "slovo cudzieho pôvodu, nesklonné."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2018-a-20": {
+      "n": 20,
+      "topic": "literarna-teoria",
+      "text": "Milan Lasica píše aj divadelné hry. V ktorej možnosti je nesprávne tvrdenie o divadelnej hre?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Má viac spoločných znakov s epikou ako s lyrikou.",
+        "Základnou formou prejavu postáv a rozprávača je dialóg.",
+        "Postavy na divadelnej scéne môžu hovoriť i vo veršoch.",
+        "Počet dejstiev v rôznych divadelných hrách môže byť odlišný."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2018-a-21": {
+      "n": 21,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú číslovky napísané správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "v osemdesiatych rokoch nášho storočia, dvadsiatich jedincov, štyristo ton",
+        "v osemdesiatich rokoch nášho storočia, dvadsiatich jedincov, štyri sto ton",
+        "v osemdesiatich rokoch nášho storočia, dvadsiatych jedincov, štyristo ton",
+        "v osemdesiatych rokoch nášho storočia, dvadsiatych jedincov, štyri sto ton"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2018-a-22": {
+      "n": 22,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádzajú len vzťahové prídavné mená?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "veľkú, hlavnú, pravidelne",
+        "dlhý, pôvodné, opätovné",
+        "fúzatých, vtáčom, podobne",
+        "úhorová, elektrickej, vodný"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2018-a-23": {
+      "n": 23,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sa nachádzajú len združené pomenovania?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "závažná zložka, primeraná ukážka",
+        "umelecké prostriedky, básnická otázka",
+        "prvotná štylizácia, autorské postupy",
+        "krátka veta, viacnásobné opakovanie"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2018-a-24": {
+      "n": 24,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti je správne uvedený tvar osobného zámena?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Chcem poďakovať mojím učiteľom.",
+        "Pozdravuj srdečne tvojích rodičov.",
+        "Nestretol sa s mojím bratom.",
+        "Súhlasím s tvojimi nápadmi."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2018-a-25": {
+      "n": 25,
+      "topic": "literarna-teoria",
+      "text": "Pomenuj literárny žáner nasledujúcej ukážky.\n\nVšetko, čo som s láskou zanechal, ma bude navždy pripomínať.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "anekdota",
+        "modlitba",
+        "aforizmus",
+        "epitaf"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2019-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "V ukážke sa tvrdí, že na Slovensku prvého apríla",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "si každý môže robiť celý deň, čo chce.",
+        "sú správy zverejnené v médiách nepravdivé a vymyslené.",
+        "sú učitelia pripravení na kruté žarty žiakov.",
+        "je vtipkovanie v tento deň známe všetkým v našej krajine."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2019-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Slávnosti bláznov sa konali najskôr v Ríme.",
+        "Prvýkrát bol za začiatok roka určený 1. január od roku 1564.",
+        "Slávnosť Huli bola Dňom karnevalu a smiechu.",
+        "Tradícia prvoaprílového žartovania bola zrušená Karolom IX."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2019-a-03": {
+      "n": 3,
+      "topic": "poetika",
+      "text": "V ktorej možnosti sa nachádzajú len obrazné pomenovania z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "nabrať druhý dych, stávajú sa obeťami žiakov",
+        "vystreliť si z niekoho, tradícia obdarúvania sa neskončila",
+        "médiá vypustia kačicu, korene siahajú do Indie",
+        "dary sa menia na symbolické, kdekoho môže prekabátiť"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2019-a-04": {
+      "n": 4,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je správne určený nezhodný prívlastok z nasledujúcej vety?\n\nVystrihnuté ryby z papiera pripínali náhodným chodcom na kabát.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "na kabát",
+        "vystrihnuté",
+        "náhodným",
+        "z papiera"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2019-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádza podstatné meno, ktoré sa skloňuje podľa vzoru hrdina?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Od Angličanov prevzali tradíciu Američania.",
+        "Dary mali príjemcu rozveseliť.",
+        "Učitelia sa stávajú obeťami vynachádzavosti.",
+        "Ryby pripínali chodcom na kabát."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2019-a-06": {
+      "n": 6,
+      "topic": "pravopis",
+      "text": "Napíš pravopisne správne slovné spojenie, ktorým sa podľa ukážky zaužívane pomenúva prvý deň v roku, 1. január.",
+      "asset": null,
+      "type": "word",
+      "answer": "Nového roka",
+      "accept": [
+        "Nový rok"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2019-a-07": {
+      "n": 7,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z druhého odseku ukážky synonymum slova ohurujúci.",
+      "asset": null,
+      "type": "word",
+      "answer": "veľkolepých",
+      "accept": [
+        "veľkolepý"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2019-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Z ukážky vyplýva, že keď sa Nova prebudila",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "uhynuli dva rôzne druhy zvierat.",
+        "cítila sa ako v neznámom prostredí.",
+        "dostala list o stave sveta z budúcnosti.",
+        "nainštalovala si aplikáciu vyhynuté druhy."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2019-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Kedy mala podľa ukážky starká 16. narodeniny?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "11. decembra 2012",
+        "pred päťdesiatimi rokmi",
+        "12. decembra 2012",
+        "deň pred časovým filtrom"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2019-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý ekologický problém je načrtnutý v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Prirodzené prostredie živočíchov a rastlín je narušované.",
+        "Mobilné technológie nahradia kontakt s reálnym svetom.",
+        "Všetky zvieratá žijúce v zajatí sú odsúdené na vyhynutie.",
+        "Znečisťovanie planéty kyslými dažďami je ničivé."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2019-a-11": {
+      "n": 11,
+      "topic": "literarna-teoria",
+      "text": "Ukážka patrí do",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "literatúry faktu.",
+        "detektívnej literatúry.",
+        "populárno-vedeckej literatúry.",
+        "vedecko-fantastickej literatúry."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2019-a-12": {
+      "n": 12,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je správne uvedený počet a druh čísloviek v poslednom odseku ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "3 radové, 2 základné",
+        "2 radové, 3 základné",
+        "3 radové, 1 základná",
+        "2 radové, 2 základné"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2019-a-13": {
+      "n": 13,
+      "topic": "tvaroslovie",
+      "text": "Z druhého odseku ukážky vypíš podstatné meno, ktoré je v akuzatíve.",
+      "asset": null,
+      "type": "word",
+      "answer": "lištu",
+      "accept": [
+        "lišta",
+        "po lištu"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2019-a-14": {
+      "n": 14,
+      "topic": "pravopis",
+      "text": "Prepíš pravopisne správne slovom zvýraznenú číslovku v tvare uvedenom v ukážke.",
+      "asset": null,
+      "type": "word",
+      "answer": "šestnástymi",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2019-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "Z ukážky vyplýva, že porovnávanie sa s ostatnými",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vplýva na mladých ľudí len v negatívnom zmysle.",
+        "sa rozvinulo až s nástupom virtuálneho sveta.",
+        "nám dokáže pomôcť pochopiť náš životný smer.",
+        "je dôkazom o zvýšenom sebavedomí mládeže."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2019-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "Čo nevyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Deti využívajú sociálne siete aj na školské činnosti.",
+        "Deti najviac využívajú sociálne siete na spojenie s rovesníkmi.",
+        "Sociálne siete sú zahlcované zbytočnými informáciami.",
+        "Je dôležité prezentovať svoje šťastné udalosti na sociálnych sieťach."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2019-a-17": {
+      "n": 17,
+      "topic": "slovna-zasoba",
+      "text": "Ktorým slovným spojením by sme mohli nahradiť spojenie zdravá miera z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "rozsah zdravia",
+        "únosný život",
+        "primeraný rozsah",
+        "byť v zdravej koži"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2019-a-18": {
+      "n": 18,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá možnosť najlepšie vystihuje význam nasledujúceho výroku z ukážky?\n\nNestať sa otrokom „šťastného života“ na sociálnych sieťach.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Nestať sa závislým od falošných predstáv o živote.",
+        "Nestať sa ťažko pracujúcim bez využitia sociálnych sietí.",
+        "Nebyť v reálnom živote nešťastným ako dávni otroci.",
+        "Nebyť ovládaný cudzími ľuďmi, ktorí striehnu na internete."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2019-a-19": {
+      "n": 19,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je slovo okolo rovnakým slovným druhom ako v nasledujúcej vete?\n\nZdalo sa im, že všetci okolo sú krajší a úspešnejší.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Našiel som okolo tucet on-line kníh s tematikou programovania hier.",
+        "Zasnene hľadel okolo, pričom sa mu v očiach odrážalo svetlo z monitora.",
+        "Na sociálnej sieti má okolo päťsto priateľov, no predsa sa cíti sám.",
+        "Batéria mobilu pri záťaži a používaní WiFi vydrží okolo štyri a pol hodiny."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2019-a-20": {
+      "n": 20,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z nasledujúcej vety sloveso, ktoré je v neurčitku.\n\nNevenujte pozornosť prebytočným informáciám, ktoré nemáte možnosť spracovať.",
+      "asset": null,
+      "type": "word",
+      "answer": "spracovať",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2019-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "Utvor z antonyma slova ľahko príslovku vystupňovanú v 2. stupni a napíš ju pravopisne správne.",
+      "asset": null,
+      "type": "word",
+      "answer": "ťažšie",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2019-a-22": {
+      "n": 22,
+      "topic": "komunikacia",
+      "text": "V ktorej možnosti je správne pomenovaný typ komunikácie v nasledujúcej ukážke?\n\nCestujúca sa telefonicky informovala o možnostiach kúpy cestovného lístka cez internet. Operátorka odpovedala na všetky otázky. Pani si nakoniec aj tak išla kúpiť lístok na stanicu, pretože stále nerozumela postupu kúpy lístka cez internet.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "neefektívna",
+        "neasertívna",
+        "efektívna",
+        "asertívna"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2019-a-23": {
+      "n": 23,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je veta napísaná jazykovo správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ukážeme vám, ktoré kúsky je treba mať túto jar v šatníku.",
+        "Teším sa spolu s tebou z tvojich úspechov.",
+        "Chápem tomu dobre, že dnes to už nestihneme?",
+        "Máme zľavy, využite toho pri nákupe noviniek."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2019-a-24": {
+      "n": 24,
+      "topic": "poetika",
+      "text": "Vypíš z nasledujúcej ukážky personifikáciu.\n\nodrazu zhadzujem si z pliec\nstarosti, ba i verše –\nkeď more spieva, strácam reč,",
+      "asset": null,
+      "type": "word",
+      "answer": "more spieva",
+      "accept": [
+        "keď more spieva",
+        "keď more spieva, strácam reč"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2019-a-25": {
+      "n": 25,
+      "topic": "pravopis",
+      "text": "Nahraď podčiarknuté slovo „dôvtipný“ v nasledujúcej vete synonymom, ktoré je odvodené od vybraného slova po b, a napíš ho pravopisne správne.\n\nVo väčšine príbehov vyhráva malý dôvtipný Jerry, ktorého Tom napriek svojej energickosti nedokáže prekonať.",
+      "asset": null,
+      "type": "word",
+      "answer": "bystrý",
+      "accept": [
+        "bystrejší",
+        "bystroumný",
+        "bystrohlavý"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2019-a-26": {
+      "n": 26,
+      "topic": "pravopis",
+      "text": "Doplň správne i/í/y/ý na vynechané miesta v nasledujúcej vete.\n\nV__ťaz triedy sa udeľuje na všetkých t__poch výstav osob__tne pre zúčastnené ps__ a sučky, ktoré získali ocenenie výborný.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "í, y, i, y",
+        "ý, i, y, i",
+        "í, i, i, y",
+        "í, y, i, i"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2019-a-27": {
+      "n": 27,
+      "topic": "literarna-teoria",
+      "text": "Ktoré poučenie vyplýva z nasledujúcej bájky?\n\nVyhladnutá líška zbadala na vysokom viniči strapce hrozna a chcela sa k nim dostať, ale márne. Napokon sa pobrala preč a povedala: „Sú kyslé.“",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Kto chce čeliť každodennému nebezpečenstvu, musí sa naň vopred pripraviť.",
+        "Ľuďom nehodno závidieť výhody, ktoré sú spojené s ťažkosťami a útrapami.",
+        "Niektorí ľudia pri neúspechu zastierajú svoju neschopnosť nepriaznivými okolnosťami.",
+        "Pozor na ľudí, čo majú plné ústa šľachetných skutkov, no pri činoch sa prejavia ako ničomníci."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2019-a-28": {
+      "n": 28,
+      "topic": "tvaroslovie",
+      "text": "Vypíš presne z nasledujúcej ukážky pomnožné podstatné meno.\n\nCestovný poriadok a hodiny pozdĺž trate udávajú moskovský čas, ale vlaky musia prejsť cez osem časových pásiem. Medzi východným pobrežím a Moskvou sa čas líši o sedem hodín. Trať má neobyčajne široký rozchod koľají. Spočiatku existovali osobitné vagóny pre niektoré skupiny ľudí.",
+      "asset": null,
+      "type": "word",
+      "answer": "hodiny",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2019-a-29": {
+      "n": 29,
+      "topic": "slovna-zasoba",
+      "text": "Napíš združené pomenovanie, z ktorého bolo utvorené podčiarknuté slovo „animáku“ z nasledujúcej vety.\n\nObdivuhodný a jedinečný spôsob fungovania ľudského myslenia autori načrtli v celovečernom animáku V hlave, ktorý zožal jeden z najväčších úspechov v dejinách kinematografie.",
+      "asset": null,
+      "type": "word",
+      "answer": "v animovanom filme",
+      "accept": [
+        "animovanom filme",
+        "v animovanej rozprávke",
+        "animovanej rozprávke",
+        "animovaný film",
+        "animovaná rozprávka",
+        "kreslený film"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2019-a-30": {
+      "n": 30,
+      "topic": "poetika",
+      "text": "Ktoré tvrdenie o nasledujúcej ukážke je pravdivé?\n\nNeviem byť jedna z tých – aj keď sú nádherné.\nKrása je niečo okom neviditeľné.\nAj keď je vás viac, neverím, že patrím k vám,\nsom predsa iná ako vy – odlietam...",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Je písaná neviazanou rečou, obsahuje obkročný rým.",
+        "Je písaná viazanou rečou, obsahuje obkročný rým.",
+        "Má formu prózy, vyskytuje sa v nej združený rým.",
+        "Má formu poézie, vyskytuje sa v nej združený rým."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 30
+      }
+    },
+    "sjl-2022-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý odpad môžeme na základe ukážky vyhodiť do modrého kontajnera?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Papierovú vreckovku, do ktorej sme si vyfúkali nos.",
+        "Starý školský zošit, do ktorého sme písali celý rok.",
+        "Veľkú nezloženú kartónovú škatuľu od televízora.",
+        "Reklamné letáky ofŕkané farbou pri maľovaní bytu."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2022-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie na základe ukážky nie je pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Triedený odpad sa dá opätovne využiť a recyklovať.",
+        "V prírode by sa sklenená váza rozkladala aj 4000 rokov.",
+        "Všetky obaly od kozmetických prípravkov patria do plastov.",
+        "Existuje aj odpad, ktorého časti patria do rôznych kontajnerov."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2022-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Do kontajnera určeného na plasty na základe ukážky vyhadzujeme",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "kúsky polystyrénu.",
+        "flaušovú bundu.",
+        "tuby zo zubnej pasty.",
+        "nedojedený jogurt."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2022-a-04": {
+      "n": 4,
+      "topic": "komunikacia",
+      "text": "V ktorej možnosti je správne použité vykanie?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pani Vierka, bola by ste taká láskavá a pomohla mi zložiť škatuľu?",
+        "S dovolením, potrebujem vyniesť kôš, mohol by ste mi uhnúť z cesty?",
+        "Boli by ste takí dobrí, pán Maximilián, odložíte mi vrchnáky z fliaš?",
+        "Povedali by ste mi, kde sa nachádzajú najbližšie zberné kontajnery?"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2022-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti patria obe podčiarknuté slová k neohybným slovným druhom?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Projekt prispieva k tomu, aby sme sa zaujímali o životné prostredie. (podčiarknuté: tomu, aby)",
+        "Len veľmi málo škôl systematicky separuje odpad. (podčiarknuté: Len, systematicky)",
+        "Je dôležité starať sa nielen o svoje pohodlie, ale aj o našu planétu. (podčiarknuté: dôležité, aj)",
+        "Jeho súčasťou je projekt Zbieraj a trieď. (podčiarknuté: Jeho, je)"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2022-a-06": {
+      "n": 6,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z orámovanej časti ukážky pomnožné podstatné meno.",
+      "asset": null,
+      "type": "word",
+      "answer": "noviny",
+      "accept": [
+        "novín"
+      ],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2022-a-07": {
+      "n": 7,
+      "topic": "hlaskoslovie",
+      "text": "Vypíš z nasledujúcej časti ukážky slovo cudzieho pôvodu, pri výslovnosti ktorého sa nerešpektuje pravidlo o mäkčení.\n\nZELENÝ ODPADKOVÝ KÔŠ: nevratné sklenené fľaše, sklenené poháre, vázy, úlomky tabuľového skla, poháre od kompótov, sklenené obaly od kozmetiky, kávy a pochutín bez plastového vrchnáka.",
+      "asset": null,
+      "type": "word",
+      "answer": "kozmetiky",
+      "accept": [
+        "kozmetika"
+      ],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2022-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o postavách vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ištar a Naja skúmali mapu mesta viac ako hodinu sami.",
+        "Autor mapy nie je poctivcom, ale pozerá na svoje výhody.",
+        "Ištar namaľoval mapu pôvodne pre faraóna na objednávku.",
+        "Nápad, akým spôsobom dobyť mesto, skrsol v hlave Naju."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2022-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o Ištarovi je na základe ukážky nepravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Oslovili ho čarodejník.",
+        "Bol nadaný v maľovaní.",
+        "Išlo o podnikavého muža.",
+        "Dostal za svoje rady zlato."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2022-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "V závere ukážky sa v očiach dvoch postáv zračilo rodiace sa pochopenie toho, ako",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "sa dostať do mesta prostredníctvom vody, ktorá doň vteká.",
+        "mať neobmedzenú zásobu vody z dvoch mohutných riek.",
+        "dostať cez zásobovacie kanály viac vody na suché terasy.",
+        "zmeniť svoje plány, lebo múry neprelomia ani za tri roky."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2022-a-11": {
+      "n": 11,
+      "topic": "tvaroslovie",
+      "text": "Ktoré tvrdenie o slovách z nasledujúcej vety je pravdivé?\n\nKaždú štvrť zásobujú kanály, je tam dosť vody na sto rokov pre Sargonových šesť terás.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Slovesá sú v dokonavom vide.",
+        "Obsahuje tri rôzne základné číslovky.",
+        "Prídavné meno je v ženskom rode.",
+        "Nachádza sa v nej vlastné podstatné meno."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2022-a-12": {
+      "n": 12,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádzajú zámená v rovnakom páde?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "tými múrmi, k tejto mape",
+        "sa mu uklonil, ním prechádza",
+        "toľkú presnosť, v tomto tisícročí",
+        "prelomiť tie múry, ju namaľoval"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2022-a-13": {
+      "n": 13,
+      "topic": "porozumenie-textu",
+      "text": "Vypíš meno postavy, ktorej je v ukážke preukazovaná pocta ako faraónovi.",
+      "asset": null,
+      "type": "word",
+      "answer": "Naja",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2022-a-14": {
+      "n": 14,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z nasledujúcej časti ukážky slovo s opačným významom k slovu urečnene.\n\n„Ak si Sargon objednal mapu, prečo si mu ju nedal?“\n„Dal,“ Ištar kývol na dôraz. „Dal som mu nedokonalý náčrtok, pričom sám som si tajne ponechal dobrý kus, ktorý vidíte pred sebou. Vedel som, že jedného dňa mi zaň niekto zaplatí viac, než sa kedy zmohol Sargon.“\nĎalšiu hodinu skúmali mapu, mlčky, pohrúžene. Ako bojujúci generáli s profesionálnym odhadom bojiska boli schopní obdivovať hĺbku a silu hradieb, veží a pevností.",
+      "asset": null,
+      "type": "word",
+      "answer": "mlčky",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2022-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "Dobrovoľníci podľa ukážky",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "len tak nechávajú ostatných, aby za nich rozhodovali, na čo ich využijú.",
+        "vždy pracujú nezištne v akejkoľvek oblasti ľudskej existencie.",
+        "sú schopní obetovať aj vlastné zdravie, aby zachránili život núdznemu.",
+        "vedome obetovaním vlastného času a energie pomáhajú druhým."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2022-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je nepravdivé tvrdenie? Podľa ukážky sa prosociálny človek",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "nechá ľahko na hocičo nalákať, nemá skúsenosti, slepo dôveruje.",
+        "snaží pomáhať a svojím správaním motivovať okolie k pomáhaniu.",
+        "prejavuje ako inšpirujúci človek, ktorý dáva podnety na rôzne činnosti.",
+        "rozhodne, ohľaduplne a primerane postaví za svoje postoje a názory."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2022-a-17": {
+      "n": 17,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je uvedený hlavný dôvod, prečo sa mladí ľudia zapájajú do dobrovoľníctva menej?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "strach",
+        "nevidia zmysel zapájať sa",
+        "slabá osveta",
+        "krátko trvajúce dobrovoľnícke aktivity"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2022-a-18": {
+      "n": 18,
+      "topic": "slovna-zasoba",
+      "text": "Ktorým slovom by sme na základe poslednej vety z ukážky mohli nahradiť slovo asociácia v názve grafu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "pomoc",
+        "predstava",
+        "aktivita",
+        "zapájanie sa"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2022-a-19": {
+      "n": 19,
+      "topic": "hlaskoslovie",
+      "text": "V ktorom prídavnom mene sa uplatňuje pravidlo o rytmickom krátení?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vlastnému ideálu",
+        "životné okamihy",
+        "pozitívne hodnoty",
+        "hodnotovej orientácie"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2022-a-20": {
+      "n": 20,
+      "topic": "skladba",
+      "text": "Vypíš z nasledujúcej vety prisudzovací sklad.\n\nVzťah hodnotovej orientácie a dobrovoľníctva je silný.",
+      "asset": null,
+      "type": "word",
+      "answer": "vzťah je silný",
+      "accept": [
+        "je silný vzťah"
+      ],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2022-a-21": {
+      "n": 21,
+      "topic": "porozumenie-textu",
+      "text": "Lukáš, Marek a Filip sa rozprávajú o informáciách z prieskumu. Napíš meno chlapca, ktorý svoj názor založil na argumente.\n\nMAREK: „Viac informácií by zmenilo málo, lebo u nás v škole sa o tom stále hovorí a dobrovoľníctvu sa venujú len 2 % žiakov.“\nLUKÁŠ: „Určite by som sa zapojil aj ja, keby som mal viac informácií o dobrovoľníctve.“\nFILIP: „Napríklad ja už štvrtý rok vypomáham v útulku pre zvieratá. Zdá sa mi to prirodzené.“",
+      "asset": null,
+      "type": "word",
+      "answer": "Marek",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2022-a-22": {
+      "n": 22,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti je správne určený druh frazeologizmu z prvého verša nasledujúcej ukážky?\n\nMilan Lasica\nStudnica múdrosti\n\nBez práce nie sú koláče\ntiež táto múdrosť je tu\na niekto si to odskáče\nnechceme držať diétu",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "príslovie",
+        "prirovnanie",
+        "porekadlo",
+        "pranostika"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2022-a-23": {
+      "n": 23,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú správne doplnené chýbajúce písmená z nasledujúcej vety?\n\nZápas s __echmi je lákadlom aj pre __lovenských fanúšikov a __opradčania nemajú problém zaplniť štadión aj v letných mesiacoch, keď sa tu koná najstarší __urópsky turnaj, tzv. __atranský pohár.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "č, s, p, e, t",
+        "Č, s, P, e, T",
+        "č, S, p, E, t",
+        "Č, S, P, E, T"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2022-a-24": {
+      "n": 24,
+      "topic": "pravopis",
+      "text": "Vlastné podstatné meno z nasledujúcej vety napíš pravopisne správne v tvare lokálu jednotného čísla.\n\nSpoznaj našu Zem, modrú krásku, a jej vzácnosti.",
+      "asset": null,
+      "type": "word",
+      "answer": "Zemi",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2022-a-25": {
+      "n": 25,
+      "topic": "porozumenie-textu",
+      "text": "Vypíš z ukážky dvojslovné spojenie vyjadrujúce stálosť človeka vo svojich zásadách.\n\nSima Martausová\nČaro obyčajných vecí\n\nSrdce hoc aj bez nôh vie byť bežec najlepší,\nak sa na to vedia oči inak pozerať.\nSlovo od priateľa oveľa viac poteší,\nkeď sa naša cesta chybným smerom uberá.\n\n/:To tie usmievavé oči a hodnoty neoblomné\nzanechali stopy vo mne.:/",
+      "asset": null,
+      "type": "word",
+      "answer": "hodnoty neoblomné",
+      "accept": [
+        "neoblomné hodnoty"
+      ],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2022-a-26": {
+      "n": 26,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti je veta napísaná správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Napadla ma originálna myšlienka.",
+        "Za chvíľu už budem na príjazdovej ceste.",
+        "Bol tam potôčik, tak sme cezeň prešli.",
+        "Zabudla som si dáždnik, vrátim sa po neho."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2022-a-27": {
+      "n": 27,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je správne uvedená pointa nasledujúceho citátu?\n\n„Myslel som si, že keď o tom nikto nebude hovoriť, nebude to pravda.“\nJoseph Heller",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ak zakryjeme oči a uši pred skutočnosťou, neznamená to, že zmizne.",
+        "Všetky informácie, o ktorých sa dočítame, sú pravdivé.",
+        "Zaručene pravdivé správy sú vždy tie, o ktorých sa veľa rozpráva.",
+        "Udržať tajomstvo a nehovoriť o ňom je náročná úloha."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2022-a-28": {
+      "n": 28,
+      "topic": "pravopis",
+      "text": "Napíš pravopisne správne vybrané slovo, ktoré je antonymom prídavného mena v nasledujúcej vete.\n\nV tej chvíli som bol už taký hladný, až sa mi zatmilo pred očami.",
+      "asset": null,
+      "type": "word",
+      "answer": "sýty",
+      "accept": [
+        "nasýtený"
+      ],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2022-a-29": {
+      "n": 29,
+      "topic": "pravopis",
+      "text": "Vypíš slovom pravopisne správne číslovku z nasledujúcej vety.\n\nDobrovoľníci sú si vedomí toho, že sa musia ako 1. začať správať prosociálne.",
+      "asset": null,
+      "type": "word",
+      "answer": "prví",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2022-a-30": {
+      "n": 30,
+      "topic": "literarna-teoria",
+      "text": "V ktorej možnosti je správne uvedený literárny žáner nasledujúcej ukážky?\n\nPocestní a platan\n\nV lete na poludnie dvaja pocestní, ukonaní slnečnou páľavou, nečakane zazreli platan. Ihneď zamierili k nemu, ľahli si do tieňa jeho konárov a odpočívali. Ako tak hľadeli hore na platan, vraví jeden druhému: „Tento strom nemá pre ľudí žiadnu cenu, lebo nemá plody.“ „Nevďačníci,“ ozval sa strom, „to práve teraz mi vyčítate neužitočnosť, keď užívate moje dobrodenie?“\n\nTak je to aj s ľuďmi: významné poslanie niektorých a ich osoh pre spoločnosť sú nedocenené.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "rozprávka",
+        "báj",
+        "povesť",
+        "bájka"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 30
+      }
+    },
+    "sjl-2023-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ľudia sú priamo zodpovední len za 10 % odpadu vo svetových oceánoch.",
+        "Viac ako polovica morských vtákov určite prehltla plastový odpad.",
+        "Všetok odpad sa pôsobením morských prúdov hromadí na morskom dne.",
+        "Niektoré časti plastového odpadu prenikajú do potravového reťazca."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2023-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o odpadoch je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Celkové znečistenie oceánov spôsobuje odpad z pobrežia a pláží.",
+        "Výskyt rôzneho odpadu v oceánoch súvisí aj s množstvom rybárskych lodí.",
+        "Prehltnutie plastového odpadu závisí len od veľkosti živočícha.",
+        "Konzumácia plastového odpadu je zaznamenaná pri všetkých druhoch rýb."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2023-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o vplyve odpadu v moriach a oceánoch na živočíšnu ríšu z ukážky nevyplýva?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Blokuje voľný let morských vtákov.",
+        "Komplikuje obranu zvierat pred útočníkmi.",
+        "Oslabuje organizmus zvierat morskej ríše.",
+        "Bráni živočíchom nadýchnuť sa nad hladinou."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2023-a-04": {
+      "n": 4,
+      "topic": "sloh-postupy",
+      "text": "Cieľom ukážky je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vyzvať ľudí k väčšej aktivite pri záchrane morských korytnačiek.",
+        "informovať o neutešenej situácii s množstvom odpadu.",
+        "nabádať ľudí k potrebe separovania výlučne plastového odpadu.",
+        "varovať pred možným zánikom života morských vtákov."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2023-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sú v slovných spojeniach len prídavné mená, ktoré sa nepravidelne stupňujú?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "malých častíc, ľudské zdravie",
+        "rozsiahle zhluky, svetových oceánoch",
+        "lepšom hospodárstve, menšie časti",
+        "ľudské zdravie, lepšom hospodárstve"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2023-a-06": {
+      "n": 6,
+      "topic": "tvaroslovie",
+      "text": "V nasledujúcej vete vyhľadaj zvratné sloveso a napíš ho pravopisne správne v tvare 3. osoby množného čísla v podmieňovacom spôsobe prítomného času.\n\nMorské zvieratá a morské vtáky si odpad mýlia s potravou v dôsledku jeho veľkosti a prevládajúceho výskytu.",
+      "asset": null,
+      "type": "word",
+      "answer": "mýlili by si",
+      "accept": [
+        "by si mýlili"
+      ],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2023-a-07": {
+      "n": 7,
+      "topic": "tvaroslovie",
+      "text": "Podčiarknuté slovné spojenie v nasledujúcej vete napíš pravopisne správne v tvare akuzatívu množného čísla.\n\nMorskí vedci pozorovali akrobatické kúsky troch delfínov.",
+      "asset": null,
+      "type": "word",
+      "answer": "tri delfíny",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2023-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o firme Lego je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Podľa počtu vyrobených hračiek je firma Lego piata na svete.",
+        "Firma Lego od svojho založenia dva razy vyhorela.",
+        "Najväčšiu finančnú stratu spôsobila firme hospodárska kríza.",
+        "Výrobky sa predávajú mimo Dánska od roku 1955."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2023-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Prvé hračky boli napodobeninami skutočného nábytku.",
+        "Prvé stavebnice firmy Lego boli vyrobené z dreva.",
+        "Christiansen odovzdal tradíciu stolárstva svojmu synovi.",
+        "Dôvodom na výrobu hračiek bol zvýšený dopyt."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2023-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý z dôvodov na základe ukážky neovplyvnil vznik hračkárskej firmy Lego?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "hrozba krachu",
+        "hospodárska kríza",
+        "požiar dielne",
+        "šetrenie financií"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2023-a-11": {
+      "n": 11,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú uvedené slová, ktorými je možné nahradiť podčiarknuté výrazy v nasledujúcej vete tak, aby bol zachovaný jej význam?\n\nHračky ich vyniesli medzi top hračkárske firmy na svete a v čase najväčšieho boomu zamestnávali viac ako šesťtisíc ľudí.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "najúspešnejšie, zisku",
+        "špičkové, rozmachu",
+        "najlepšie, výkonu",
+        "vysoké, výbuchu"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2023-a-12": {
+      "n": 12,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú slovné spojenia napísané pravopisne správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Švédsky kráľ, Spojené štáty americké",
+        "Dánsky výrobcovia, Christiansenove rodisko",
+        "švédsky kráľ, Spojené štáty Americké",
+        "dánski výrobcovia, Christiansenovo rodisko"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2023-a-13": {
+      "n": 13,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z ukážky synonymum slova bankrot.",
+      "asset": null,
+      "type": "word",
+      "answer": "krach",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2023-a-14": {
+      "n": 14,
+      "topic": "tvaroslovie",
+      "text": "Utvor z akostného prídavného mena v nasledujúcej vete príslovku a napíš ju pravopisne správne.\n\nLego začína vyrábať vzácny produkt – plastové stavebnice.",
+      "asset": null,
+      "type": "word",
+      "answer": "vzácne",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2023-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "More podľa ukážky",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "pokrýva tretinu zemského povrchu.",
+        "nemôžu ľudia nikdy celé ovládnuť.",
+        "je inšpiráciou všetkým umelcom.",
+        "nie je kapitánovou veľkou vášňou."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2023-a-16": {
+      "n": 16,
+      "topic": "literarna-teoria",
+      "text": "Kto je rozprávačom v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "kapitán",
+        "autor ukážky",
+        "Nautilus",
+        "profesor Aronnax"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2023-a-17": {
+      "n": 17,
+      "topic": "hlaskoslovie",
+      "text": "V ktorej možnosti dochádza k spodobovaniu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "človek nikdy nie je sám",
+        "zvyčajnej zdržanlivosti",
+        "som vám k službám",
+        "moc prestáva"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2023-a-18": {
+      "n": 18,
+      "topic": "hlaskoslovie",
+      "text": "V ktorej možnosti je slovo so slabikotvornou spoluhláskou?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "nevyčerpateľná",
+        "povetrie",
+        "zvrchovaný",
+        "pokrýva"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2023-a-19": {
+      "n": 19,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je rozkazovacia veta z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Tam som slobodný!",
+        "Žite v hlbinách morí!",
+        "More je ohromná zásobáreň prírody!",
+        "Tam nepoznám nijakých pánov!"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2023-a-20": {
+      "n": 20,
+      "topic": "skladba",
+      "text": "Vypíš prísudok z nasledujúcej vety.\n\nMore je ohromná zásobáreň prírody.",
+      "asset": null,
+      "type": "word",
+      "answer": "je zásobáreň",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2023-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "Napíš vzor podstatného mena z nasledujúcej vety.\n\nJe to nesmierna púšť.",
+      "asset": null,
+      "type": "word",
+      "answer": "dlaň",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2023-a-22": {
+      "n": 22,
+      "topic": "literarna-teoria",
+      "text": "Ktorým literárnym žánrom je nasledujúca ukážka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "anekdota",
+        "príslovie",
+        "aforizmus",
+        "porekadlo"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2023-a-23": {
+      "n": 23,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je slovo jej rovnakým druhom zámena ako v nasledujúcej vete?\n\nPripravili sme niekoľko interaktívnych úloh na tému voda a jej ochrana.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Vlhová získala zlato v lyžiarskom slalome, jej výkon bol excelentný.",
+        "Zaujímala sa o dejiny gotickej stavby, tak jej o nich porozprával.",
+        "Nová teória o organizmoch jej pomohla lepšie chápať vedu.",
+        "Autor životopisných bestsellerov jej daroval svoj rukopis."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2023-a-24": {
+      "n": 24,
+      "topic": "poetika",
+      "text": "Vypíš z ukážky dvojslovný umelecký prostriedok označujúci dejiny.",
+      "asset": null,
+      "type": "word",
+      "answer": "brány čias",
+      "accept": [
+        "cez brány čias"
+      ],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2023-a-25": {
+      "n": 25,
+      "topic": "tvaroslovie",
+      "text": "Napíš slovom alebo číslicou, koľko vlastných podstatných mien je v nasledujúcej ukážke.",
+      "asset": null,
+      "type": "word",
+      "answer": "tri",
+      "accept": [
+        "3",
+        "III"
+      ],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2023-a-26": {
+      "n": 26,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej z nasledujúcich viet sa nenachádza zložené slovo?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Mladého dobrodruha lákalo more.",
+        "Na svoju prvú plavbu sa vraj vydal ako štrnásťročný.",
+        "Svoj návrh cesty predložil kráľovi.",
+        "Vzdelával sa tiež aktívnym štúdiom cestopisných diel."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2023-a-27": {
+      "n": 27,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú správne doplnené chýbajúce písmená z nasledujúcej vety?\n\nPočas prípravných zápasov sa t__m spod hradu __horského šľachtica Matúša Čáka predstaví neobv__kle v čiernych a biel__ch dresoch, Dukla totiž oslavuje účasť už v päťdesiat__ch súťažných sezónach.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "ý, U, i, i, i",
+        "í, U, i, y, i",
+        "ý, u, y, i, y",
+        "í, u, y, y, i"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2023-a-28": {
+      "n": 28,
+      "topic": "literarna-teoria",
+      "text": "Napíš názov literárneho žánru nasledujúcej časti ukážky, ktorého typické znaky sú uvedené v bublinách.",
+      "asset": null,
+      "type": "word",
+      "answer": "balada",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2023-a-29": {
+      "n": 29,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z nasledujúcej ukážky antonymum k slovu, ktoré má význam „uspôsobený znášať chladné podnebie a prostredie“.",
+      "asset": null,
+      "type": "word",
+      "answer": "teplomilných",
+      "accept": [
+        "teplomilný",
+        "teplomilných (prvkov)"
+      ],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2023-a-30": {
+      "n": 30,
+      "topic": "skladba",
+      "text": "V ktorej možnosti sa nachádza jednočlenná slovesná veta?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Poobede sa zrazu rozpršalo ako z krhly.",
+        "Dnes sa obloha mračí väčšmi ako zvyčajne.",
+        "Na našom sídlisku od rána padá sneh.",
+        "K hmlistému ránu sa dnes pridal aj mráz."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 30
+      }
+    },
     "sjl-2024-a-01": {
       "n": 1,
       "topic": "porozumenie-textu",
@@ -704,6 +4118,554 @@
       "accept": [],
       "source": {
         "year": 2024,
+        "form": "A",
+        "n": 30
+      }
+    },
+    "sjl-2025-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Penicilín bol objavený A. Flemingom po dlhodobom skúmaní baktérií.",
+        "Na filmovom festivale v Cannes zažila Rubikova kocka svetový úspech.",
+        "Socha Malej morskej víly je inšpirovaná životom H. Ch. Andersena.",
+        "Prvé vedecké články o programovaní boli publikované už v 19. storočí."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2025-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá osobnosť podľa ukážky zažila počas svojho života uvedený míľnik?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Karl Landsteiner – objavenie Rubikovej kocky",
+        "Rafael Nadal – zavedenie spoločnej európskej meny",
+        "Hans Christian Andersen – uverejnenie teórie relativity",
+        "Alexander Fleming – patentovanie rozložiteľného bioplastu"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2025-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Z ukážky vyplýva, že v roku",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2018 športovec R. Nadal prvýkrát triumfuje na turnaji French Open.",
+        "2019 je euro, mena 340 miliónov Európanov, najdôležitejšou na svete.",
+        "1989 je spustené webové sídlo WWW, ktoré vynašiel britský vedec.",
+        "1905 napísal A. Einstein viacero významných prác nielen o matematike."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2025-a-04": {
+      "n": 4,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú správne nahradené podčiarknuté slová z nasledujúcej časti ukážky?\n\n...pre britský vedecký časopis opisuje nielen fungovanie prvého analytického stroja, ale aj možnosti jeho využitia pomocou kódov v budúcnosti...",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prevádzku – výroby",
+        "prácu – produkcie",
+        "chod – uplatnenia",
+        "cyklus – úžitku"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2025-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "Ktoré sloveso z ukážky má nesprávne uvedený neurčitok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "oslavuje → osláviť",
+        "stáva sa → stávať sa",
+        "koná sa → konať sa",
+        "opisuje → opisovať"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2025-a-06": {
+      "n": 6,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z ukážky prídavné meno cudzieho pôvodu, ktoré má podobný význam ako slová typický, symbolický, obrazný.",
+      "asset": null,
+      "type": "word",
+      "answer": "ikonický",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2025-a-07": {
+      "n": 7,
+      "topic": "pravopis",
+      "text": "Napíš číslovku z nasledujúcej vety slovom pravopisne správne.\n\nFilmy na ňom predstavuje 21 štátov.",
+      "asset": null,
+      "type": "word",
+      "answer": "dvadsaťjeden",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2025-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je na základe ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "V Suchom potoku môžu turisti vidieť už mnoho rokov bobry.",
+        "Parná lesná železnica pri Lozorne už neexistuje.",
+        "Pri Malackách sa nachádza najväčšia zvernica na Slovensku.",
+        "Obyvatelia Lozorna sú pôvodom samí cudzinci."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2025-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý presný údaj o Dračom dube je uvedený v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "O obvode jeho kmeňa.",
+        "O jeho veľkosti.",
+        "O počte hlasov v ankete.",
+        "O jeho veku."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2025-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je podľa ukážky správne tvrdenie o ankete Strom roka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Organizuje ju Peter Lipa.",
+        "Vo finále súťažilo 16 stromov.",
+        "Vyhodnocovali ju v Bruseli.",
+        "Usporadúva ju Nadácia Ekopolis."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2025-a-11": {
+      "n": 11,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú slovné spojenia napísané správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "európske štáty, bobrý chvostík",
+        "Európska Únia, Bruselské ocenenie",
+        "chorvátski prisťahovalci, hmyzích domovov",
+        "Bobor Vodný, lozorniansky les"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2025-a-12": {
+      "n": 12,
+      "topic": "tvaroslovie",
+      "text": "Ktorá z otázok do interview s fotografom Tiborom Véghom je napísaná správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pán Végh, boli by ste taký dobrý a porozprávali nám o svojej najmilšej fotografii?",
+        "Vysvetlil by ste, prosím, našim čitateľom, ako ste kedysi vyvolával fotografie?",
+        "Pán Végh kedy ste začal fotografovať a kto bol vašou inšpiráciou či podnetom?",
+        "Na záver by ste boli takí láskaví a opísali nám pocity z výhry Dračieho duba?"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2025-a-13": {
+      "n": 13,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z posledného odseku ukážky nesklonné všeobecné podstatné meno.",
+      "asset": null,
+      "type": "word",
+      "answer": "finále",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2025-a-14": {
+      "n": 14,
+      "topic": "literarna-teoria",
+      "text": "Na počesť Dračieho duba sa konala literárna súťaž v písaní bájí. Napíš meno súťažiacej, ktorá vystihla znaky tohto žánru.\n\nOlívia\nKedysi dávno, keď sa piesok lial\na voda sa sypala, býval na malom\nvŕšku drak. Vtedy bolo všetko inak.\nPo lesoch pobehovali škriatkovia,\nna zámku vládol spravodlivý kráľ.\n\nAdela\nRozpoviem vám príbeh smutný\no zakliatom Jankovi,\non sa vydal jednať s drakmi,\nno v Dračí dub sa premenil.\n\nElena\nKeď sa v deň letného slnovratu všemocný boh Perún zamyslene po krajine túlal, zbadal na blízkom kopčeku mohutného draka. Tak sa prekvapil, že mocne zahromžil a bleskom udrel do zeme.",
+      "asset": null,
+      "type": "word",
+      "answer": "Elena",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2025-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "Podľa ukážky stravomat",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vždy prispôsobí nápoj potrebám klienta.",
+        "nepatrí medzi najmodernejšiu výbavu lode.",
+        "poskytuje teplý pokrm všetkým na lodi.",
+        "nalieva nápoje automaticky do porcelánu."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2025-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je nesprávne tvrdenie o Arthurovi?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Túžil po čaji, ktorý je dostupný na Zemi.",
+        "Bol nadšený, keď rozprával o niečom, čo mal rád.",
+        "Poznal proces prípravy kvalitného čaju.",
+        "Vyjednávanie so stravomatom celkom vzdal."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2025-a-17": {
+      "n": 17,
+      "topic": "sloh-postupy",
+      "text": "Keď Arthur vykladal stravomatu o čaji, znamená to, že",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "rozprával príbeh, ktorý sa už niekedy stal.",
+        "vysvetľoval isté postupy, objasňoval fakty.",
+        "vymenoval znaky a vlastnosti osôb a vecí.",
+        "dbal na gestikuláciu a kontakt s adresátom."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2025-a-18": {
+      "n": 18,
+      "topic": "literarna-teoria",
+      "text": "Na základe ktorej časti vety z ukážky sa dá určiť spôsob rozprávania (ja-rozprávanie alebo on-rozprávanie)?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ty tvrdíš, že vieš syntetizovať akýkoľvek existujúci nápoj.",
+        "Robíš si zo mňa asi žarty.",
+        "Arthur zahodil šiesty pohár hnedej tekutiny.",
+        "Ochutnajte a podeľte sa."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2025-a-19": {
+      "n": 19,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je vyznačené slovo rovnakým slovným druhom ako v nasledujúcej vete?\n\nTakže o **to** tu ide?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Chcem od **teba** iba šálku čaju.",
+        "Vylúhovaných **vo** vrelej vode.",
+        "Mlieko sa nalieva skôr **než** čaj.",
+        "Dá sa to povedať **asi** aj takto."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2025-a-20": {
+      "n": 20,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z prvého odseku ukážky slovo s opačným významom k slovu, ktoré označuje sklon posudzovať skutočnosti z horšej stránky.",
+      "asset": null,
+      "type": "word",
+      "answer": "optimizmom",
+      "accept": [
+        "optimizmus"
+      ],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2025-a-21": {
+      "n": 21,
+      "topic": "pravopis",
+      "text": "Napíš všetky tri vyznačené slová so správne doplnenými i/í/y/ý.\n\nČaj obsahoval zaujímavé zmes__, v ktorých chuti sa snúbili tóny a vône galaktických hmlovín. B__l__n__ dodávali nápoju jedinečnú arómu, zatiaľ čo kombinácia rôznych ob__ln__n pridávala jemný zemitý podtón. Akoby každý dúšok odhaľoval tajomstvá vesmíru, zakódované v každom lístku a zrne.",
+      "asset": null,
+      "type": "word",
+      "answer": "zmesi byliny obilnín",
+      "accept": [
+        "zmesi obilnín byliny",
+        "byliny zmesi obilnín",
+        "byliny obilnín zmesi",
+        "obilnín zmesi byliny",
+        "obilnín byliny zmesi"
+      ],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2025-a-22": {
+      "n": 22,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa textu pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Film je premiérou režiséra Ridleyho Scotta vo filmovej brandži.",
+        "Jedinou témou, ktorú film zobrazuje, sú veľké vojenské úspechy.",
+        "Napoleon mal premyslené taktiky, niektoré sa dovtedy nevyužívali.",
+        "Ide o prvú časť dvojdielnej drámy, v ktorej zobrazuje vzostup cisára."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2025-a-23": {
+      "n": 23,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je privlastňovacie prídavné meno z textu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Scottových záberov",
+        "s láskou Jozefínou",
+        "francúzskeho cisára",
+        "bojových scén"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2025-a-24": {
+      "n": 24,
+      "topic": "tvaroslovie",
+      "text": "Dopíš do nasledujúcej vety slovné spojenie unikátny sob v správnom tvare množného čísla.\n\nPočas expedície po severských krajinách členovia výpravy s úžasom sledovali __ v zasneženej divokej prírode.",
+      "asset": null,
+      "type": "word",
+      "answer": "unikátne soby",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2025-a-25": {
+      "n": 25,
+      "topic": "tvaroslovie",
+      "text": "Vypíš z nasledujúcej vety plnovýznamové slovo, ktoré patrí medzi neohybné slovné druhy.\n\nAutor bestsellerov, ktorý píše majstrovsky, potrebuje okrem výnimočných námetov disponovať ešte aj bohatou slovnou zásobou.",
+      "asset": null,
+      "type": "word",
+      "answer": "majstrovsky",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "sjl-2025-a-26": {
+      "n": 26,
+      "topic": "skladba",
+      "text": "V ktorej možnosti sú vetné členy v rovnakom poradí ako v nasledujúcej vete?\n\nNa istej lekárskej fakulte dal profesor anatómie študentom test.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Na historicky prvom mikroskope nám vedec predviedol zaujímavý preparát.",
+        "V korune bútľavého stromu si veverička chystá zásoby na zimu.",
+        "Na miestnej zrekonštruovanej ceste žiaril semafor vo funkčne novom svetle.",
+        "V malej horskej dedine poskytol starosta obce obyvateľom pomoc."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "sjl-2025-a-27": {
+      "n": 27,
+      "topic": "porozumenie-textu",
+      "text": "V ktorej možnosti je správne uvedený význam prvých dvoch veršov básne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Si skúsený a plný poznania.",
+        "Vždy zostávaš sám sebou.",
+        "Si vytrvalý a nevzdáš sa.",
+        "Vďaka úspechu si namyslený."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "sjl-2025-a-28": {
+      "n": 28,
+      "topic": "slovna-zasoba",
+      "text": "Vytvor z príslovky a príslušného slovesa v nasledujúcom súvetí podstatné meno skladaním.\n\nKaždé ráno hľadel ďaleko za rieku, či sa nevracia Santiago s rybami.",
+      "asset": null,
+      "type": "word",
+      "answer": "ďalekohľad",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "sjl-2025-a-29": {
+      "n": 29,
+      "topic": "tvaroslovie",
+      "text": "To predstavuje vysoké percento všetkých druhov žijúcich pri lesných vodných plochách a mŕtvych ramenách riek.\n\nDopíš podstatné meno mužského rodu z vyššie uvedenej vety v správnom tvare.\n\nTieto vzácne __ potrebujú vhodné podmienky na udržanie rovnováhy.",
+      "asset": null,
+      "type": "word",
+      "answer": "druhy",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "sjl-2025-a-30": {
+      "n": 30,
+      "topic": "slovna-zasoba",
+      "text": "Ktorú časticu treba doplniť na vynechané miesto v nasledujúcej vete tak, aby sa obsah nasledujúceho tvrdenia spochybnil?\n\nUsmievavé oči a neoblomné hodnoty __ vo mne zanechali stopy.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "určite",
+        "samozrejme",
+        "možno",
+        "chvalabohu"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
         "form": "A",
         "n": 30
       }

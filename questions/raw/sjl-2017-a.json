@@ -1,0 +1,610 @@
+{
+  "subject": "sjl",
+  "year": 2017,
+  "form": "A",
+  "code": "1266",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/832/T9_2017_Test_zo_slovenskeho_jazyka_a_literatury.pdf",
+    "key": "https://www2.nucem.sk/dl/841/K%C4%BE%C3%BA%C4%8D_spr%C3%A1vnych_odpoved%C3%AD_SJL_2017_RT.pdf"
+  },
+  "stimuli": {
+    "sjl-2017-a-s1": {
+      "kind": "text",
+      "title": "Robinson Crusoe",
+      "body": "Prišla jesenná rovnodennosť a obdobie dažďov a tridsiaty september – výročie môjho príchodu na ostrov – som veľkolepo oslávil.\n\nNa ostrove som bol teda dva roky.\n\nDva roky, mladí priatelia, a nemal som viacej nádeje, že sa vyslobodím než prvého dňa, čo som tam prišiel. Celý ten deň som hĺbal a uvažoval, čo všetko som sa v tomto osamotenom živote priučil a <u>bez čoho by môj život bol býval nekonečne biednejší</u>.\n\nPomaly som už rozumnejšie chápal, o čo šťastnejší je popri všetkej biede môj terajší život než prázdny, jalový život, akým som žil v minulosti. A potom som už nesmútil, ale sa zaradoval. Moje túžby sa zmenili, moje bôle opadli a moje radosti sa celkom odlišovali od radostí, aké som vyznával po príchode či za uplynulé dva roky.",
+      "asset": null
+    },
+    "sjl-2017-a-s2": {
+      "kind": "text",
+      "title": "Materčina",
+      "body": "Za celý život\nsom z tvojich hlbín málo vydoloval,\nhľadajúc v trýzni mučivej\nna každú báseň vyhriebsť pravé slová,\nčo ostali by nažive\n\ni dávno po mne\nv príbytku verša ako zvestovanie\no tvojej kráse trvácej,\naby tie slová z ticha vykresané\nzaklopať mohli na srdce,\n\nčo žije všade,\nv ľuďoch i veciach, dychtí len po slove,\ntom pravom, čo ho preberie,\n<u>keď iba ním o sebe pravdu povie</u>\njak sladký šepot matere.\n\nBez teba isto\nľudia i veci ostali by nemé,\nbrat by bol cudzí bratovi –\nbez teba lásku k milovanej žene\nnajsladšie ktože vysloví?\n\nSlovník\nvyhriebsť – vypátrať, zistiť",
+      "asset": null
+    },
+    "sjl-2017-a-s3": {
+      "kind": "text",
+      "title": "Otázka pod pás: Viete používať frazeologizmy?",
+      "body": "Pred časom v jednej z politických diskusných reláciách zaznela výzva, že moderátorka sa chystá položiť hosťovi otázku pod pás. Asi mala na mysli otázku na telo alebo ranu pod pás. Oba výrazy totiž vyjadrujú slovný zásah do citlivej témy, ktorá nemusí byť adresátovi príjemná.\n\nNedávno v inej televíznej relácii sa zase moderátor vyjadril, že istý problém je pre všetkých ťažkým orieškom. Pravdepodobne chcel použiť slovné spojenie tvrdý oriešok. To zobrazuje zložitý problém, ktorý je náročné vyriešiť, tak ako si veverička nevie poradiť s rozlúsknutím tvrdého orieška.\n\nAk nám niekto veľmi prekáža, určite nepovieme, že nám leží v zuboch, ako sme sa mohli dopočuť v jednej relácii. Buď nám niekto leží v žalúdku, alebo ho máme v zuboch. Význam je pri týchto dvoch frazeologizmoch podobný, možno preto sa stala takáto chyba.\n\nA napokon, podľa redaktorky jednej z komerčných televízií sa politici v súčasnosti stávajú ostrým terčom kritiky. Terčom sa možno stávajú, ale určite nie ostrým. Ostrá totiž býva práve kritika, ktorá sa na nich valí zo všetkých strán.",
+      "asset": null
+    },
+    "sjl-2017-a-s4": {
+      "kind": "text",
+      "title": "Vyhlásenie 10. ročníka súťaže Čítam, čítaš, čítame",
+      "body": "Témou 10. ročníka veľkej čitateľskej súťaže pre deti a mládež je Čo čítali moji rodičia? Súťaž trvá od 1. 10. 2015 do 28. 2. 2016.\n\nSúťaží sa v troch kategóriách:\nI. kategória: deti MŠ a žiaci 1. ročníkov ZŠ,\nII. kategória: žiaci 2. – 4. ročníkov ZŠ,\nIII. kategória: žiaci 5. – 9. ročníkov ZŠ a 1. ročníkov stredných škôl.\n\nPodmienky:\n• vyplnenie a odovzdanie prihlášky,\n• minimálne 5 prečítaných kníh,\n• súťažiaci musí byť čitateľom Staromestskej knižnice,\n• z prečítaného počtu kníh musí byť 1 taká, ktorú radi čítali v jeho veku mama, otec, starí rodičia, pani učiteľka,\n• do bodovania sa počítajú len knihy požičané z fondu Staromestskej knižnice.\n\nBody navyše:\n• za každú ďalšiu prečítanú knihu (predĺženie výpožičky a opakované požičanie sa nepočíta) → 1 bod,\n• za získanie každého nového čitateľa (kamarát, spolužiak, člen rodiny...) → 5 bodov,\n• za nakreslený vtipný obrázok (bez ohľadu na počet) → 5 bodov,\n• za mimoriadnu aktivitu (čitateľský denník, napísaný obsah knihy) → 5 bodov.\n\nVyhodnotenie súťaže bude v Týždni slovenských knižníc.",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": "sjl-2017-a-s1",
+      "ids": [
+        "sjl-2017-a-01",
+        "sjl-2017-a-02",
+        "sjl-2017-a-03",
+        "sjl-2017-a-04",
+        "sjl-2017-a-05"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s2",
+      "ids": [
+        "sjl-2017-a-06",
+        "sjl-2017-a-07",
+        "sjl-2017-a-08",
+        "sjl-2017-a-09",
+        "sjl-2017-a-10"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s3",
+      "ids": [
+        "sjl-2017-a-11",
+        "sjl-2017-a-12",
+        "sjl-2017-a-13",
+        "sjl-2017-a-14",
+        "sjl-2017-a-15"
+      ]
+    },
+    {
+      "stimulus": "sjl-2017-a-s4",
+      "ids": [
+        "sjl-2017-a-16",
+        "sjl-2017-a-17",
+        "sjl-2017-a-18",
+        "sjl-2017-a-19",
+        "sjl-2017-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "sjl-2017-a-25"
+      ]
+    }
+  ],
+  "items": {
+    "sjl-2017-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o Robinsonovi vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Bol šťastný, že opustil svoj predošlý život hneď po stroskotaní.",
+        "V deň výročia sa túžil vrátiť domov ešte viac ako kedykoľvek predtým.",
+        "Počas dlhých dvoch rokov každý deň prehodnocoval svoj život.",
+        "Nádej na jeho záchranu sa nezvyšovala časom stráveným na ostrove."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "sjl-2017-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Prečo bol Robinson podľa ukážky zmierený s pobytom na opustenom ostrove?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Bol rád, že mohol na ostrove zabudnúť na minulosť.",
+        "Bol slobodnejší a vzdelanejší ako v predošlom živote.",
+        "Zistil, že jeho predošlý život ho v skutočnosti nenapĺňal.",
+        "Zistil, že tu nemusí trpieť nedostatkom peňazí a žiť v biede."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "sjl-2017-a-03": {
+      "n": 3,
+      "topic": "tvaroslovie",
+      "text": "Ktoré tvrdenie o číslovkách z ukážky je pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "V ukážke sú slová uplynulé a celý neurčité číslovky.",
+        "V ukážke sa nachádzajú dve radové číslovky.",
+        "V ukážke sa nenachádza základná číslovka.",
+        "V ukážke sa nachádzajú násobné číslovky."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "sjl-2017-a-04": {
+      "n": 4,
+      "topic": "tvaroslovie",
+      "text": "Ktoré gramatické kategórie zodpovedajú slovesu v podčiarknutej časti vety ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prítomný čas, oznamovací spôsob",
+        "minulý čas, oznamovací spôsob",
+        "prítomný čas, podmieňovací spôsob",
+        "minulý čas, podmieňovací spôsob"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "sjl-2017-a-05": {
+      "n": 5,
+      "topic": "skladba",
+      "text": "Na ostrove som bol teda dva roky.\n\nUvedená veta je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "dvojčlenná, úplná.",
+        "dvojčlenná, neúplná.",
+        "jednočlenná, slovesná.",
+        "jednočlenná, neslovesná."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "sjl-2017-a-06": {
+      "n": 6,
+      "topic": "porozumenie-textu",
+      "text": "Autor v ukážke",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "túži po nesmrteľnej sláve a obdive.",
+        "vzdáva hold svojej rodnej reči.",
+        "v trápení premárnil svoj život.",
+        "sa vyznáva z lásky k ľuďom."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "sjl-2017-a-07": {
+      "n": 7,
+      "topic": "literarna-teoria",
+      "text": "O ukážke platí, že patrí",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "k reflexívnej lyrike, je písaná viazanou rečou.",
+        "k ľúbostnej lyrike, používa obkročný rým.",
+        "k spoločenskej lyrike, je písaná neviazanou rečou.",
+        "k prírodnej lyrike, používa združený rým."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "sjl-2017-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "V podčiarknutom verši ukážky zámeno ním v básni označuje",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "život.",
+        "šepot.",
+        "srdce.",
+        "slovo."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "sjl-2017-a-09": {
+      "n": 9,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je správne určený umelecký jazykový prostriedok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "lásku k milovanej žene ‒ personifikácia",
+        "málo som z tvojich hlbín vydoloval ‒ metafora",
+        "brat by bol cudzí bratovi ‒ prirovnanie",
+        "aby tie slová z ticha vykresané – metonymia"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "sjl-2017-a-10": {
+      "n": 10,
+      "topic": "poetika",
+      "text": "V ktorej možnosti je nezvyčajný slovosled zvýrazňujúci umelecký dojem v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "pravdu povie jak sladký šepot matere",
+        "dychtí len po slove, tom pravom, čo ho preberie",
+        "zaklopať mohli na srdce, čo žije všade",
+        "lásku k milovanej žene najsladšie ktože vysloví"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "sjl-2017-a-11": {
+      "n": 11,
+      "topic": "sloh-postupy",
+      "text": "V ktorej možnosti je správne uvedený slohový útvar ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "správa",
+        "dynamický opis",
+        "výklad",
+        "statický opis"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "sjl-2017-a-12": {
+      "n": 12,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Autorka odporúča používať v mediálnom prostredí frazeologický slovník.",
+        "Ľudia z médií majú problém s používaním ustálených slovných spojení.",
+        "Autorka textu sa neslušne vyjadruje o ľuďoch, ktorí nemajú výborné jazykové znalosti.",
+        "Správne ovládanie jazyka je nevyhnutnosťou pre prácu v televízii, rozhlase a časopise."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "sjl-2017-a-13": {
+      "n": 13,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti je uvedený správny význam obrazného pomenovania podľa ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ostrá kritika je nepríjemné a výrazné vyjadrenie sa k niečomu.",
+        "Tvrdým orieškom označujeme vyriešenie nejakého problému.",
+        "Ak dáme ranu pod pás, povieme niečo citlivo inej osobe.",
+        "Ak máme niekoho v zuboch, je terčom nášho výsmechu."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "sjl-2017-a-14": {
+      "n": 14,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o ukážke je pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ukážka obsahuje štyri strofy.",
+        "Ukážka neobsahuje zdrobneniny.",
+        "V nadpise ukážky je nesprávne ustálené slovné spojenie.",
+        "V poslednej vete ukážky nie je žiaden umelecký prostriedok."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "sjl-2017-a-15": {
+      "n": 15,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa nachádza dvojica ohybný – neohybný slovný druh z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "týchto – dvoch",
+        "možno – ale",
+        "nich – práve",
+        "to – nám"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "sjl-2017-a-16": {
+      "n": 16,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o pravidlách súťaže vyplýva z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Počet získaných bodov v súťaži nie je limitovaný.",
+        "Za prečítanie najmenej troch kníh získa súťažiaci tri body.",
+        "Názov súťaže znie: „Čo čítali moji rodičia?“",
+        "Čítať v súťaži možno len odborné knihy určené pre deti a mládež."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "sjl-2017-a-17": {
+      "n": 17,
+      "topic": "porozumenie-textu",
+      "text": "Ktorá možnosť nevystihuje podľa ukážky cieľ súťaže?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Spropagovať mesiac knihy.",
+        "Získavať nových čitateľov knižnice.",
+        "Oboznámiť sa s knihami vydanými v minulosti.",
+        "Podporovať komunikáciu o knihách s dospelými."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "sjl-2017-a-18": {
+      "n": 18,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je správne uvedený prisudzovací sklad z nasledujúcej vety?\n\nSúťažiaci sa musí prihlásiť za člena Staromestskej knižnice.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "súťažiaci sa musí",
+        "musí sa prihlásiť za člena",
+        "musí sa prihlásiť",
+        "súťažiaci sa musí prihlásiť"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "sjl-2017-a-19": {
+      "n": 19,
+      "topic": "komunikacia",
+      "text": "V ktorej možnosti je veta napísaná gramaticky správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Pani knihovníčka, vedela by ste mi odporučiť nejakú zaujímavú bájku?",
+        "Popros paniu knihovníčku, ona ti ten dobrodružný román vyhľadá.",
+        "Nepredbiehaj v rade tú sympatickú paniu, aj ona čaká na knihu!",
+        "Mohla by ste mi, prosím, zavolať pani knihovníčku?"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "sjl-2017-a-20": {
+      "n": 20,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú obe slová s predponou?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "predĺženie, prihlášky",
+        "minimálne, čitateľskej",
+        "Staromestskej, ohľadu",
+        "stredných, spolužiak"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "sjl-2017-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sa slová skloňujú podľa rovnakého vzoru?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "konkurenciu, technológií, hraníc",
+        "ostatnej, voľného, najbližšie",
+        "aktivitou, knihou, reťazou",
+        "televízie, čítanie, populácie"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "sjl-2017-a-22": {
+      "n": 22,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú správne uvedené chýbajúce hlásky z nasledujúcej vety?\n\nV miestnej škole sa tradujú osob__té a nezv__čajné, re__lne i ro__právkové príbehy o starob__lých __ratislavských uličkách.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "y, i, a, s, y, B",
+        "y, i, á, s, i, b",
+        "i, y, á, z, y, b",
+        "i, y, a, z, i, B"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "sjl-2017-a-23": {
+      "n": 23,
+      "topic": "literarna-teoria",
+      "text": "V ktorej možnosti sú typické znaky žánru anekdota?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prekvapivé ukončenie, opisy",
+        "málo postáv, stredný rozsah",
+        "vtipný záver, krátky rozsah",
+        "mravné poučenie, lyrickosť"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "sjl-2017-a-24": {
+      "n": 24,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti nie je správne uvedené synonymum slova podoba z nasledujúcej vety?\n\nDokumentárnemu filmu sme dali definitívnu podobu.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "tvar",
+        "charakter",
+        "formát",
+        "náhľad"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "sjl-2017-a-25": {
+      "n": 25,
+      "topic": "hlaskoslovie",
+      "text": "Koľko mäkkých spoluhlások obsahuje slovo sobotňajší?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 25
+      }
+    }
+  }
+}

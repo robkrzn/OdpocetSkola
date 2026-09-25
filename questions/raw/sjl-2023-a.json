@@ -1,0 +1,396 @@
+{
+  "subject": "sjl",
+  "year": 2023,
+  "form": "A",
+  "code": "2111",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/5552/RT-SJL-fA_2111.pdf",
+    "key": "https://www2.nucem.sk/dl/5574/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202023%20%E2%80%93%20slovensk%C3%BD%20jazyk%20a%20literat%C3%BAra.pdf"
+  },
+  "stimuli": {
+    "sjl-2023-a-s1": {
+      "kind": "text",
+      "title": "Aké sú zdroje a vplyvy odpadu v moriach?",
+      "body": "Narastajúce množstvo odpadu končí vo svetových oceánoch a poškodzuje zdravie ekosystémov, spôsobuje úhyn zvierat a ohrozuje ľudské zdravie. Riešenie spočíva v predchádzaní vzniku odpadu a lepšom odpadovom hospodárstve na pevnine.\n\nMorské zvieratá a morské vtáky si odpad mýlia s potravou v dôsledku jeho veľkosti a prevládajúceho výskytu.\n\nŽalúdok naplnený nestráviteľnými plastmi môže zvieraťu zabrániť v prijímaní potravy, čo následne spôsobí, že zviera umiera od hladu. Chemikálie v plastoch môžu mať účinky ako jed a v závislosti od dávky môžu zviera natrvalo oslabiť alebo zahubiť.\n\nAj väčšie kúsky plastov predstavujú hrozbu pre morský život. Mnohé druhy vrátane tuleňov, delfínov a morských korytnačiek sa môžu do odpadu z plastov, rybárskych sietí a povrazov stratených v mori zamotať. Zamotané živočíchy väčšinou neprežijú, keďže sa nemôžu dostať na vodnú hladinu, aby sa nadýchli, uniknúť predátorom alebo prijímať potravu.",
+      "asset": null
+    },
+    "sjl-2023-a-s2": {
+      "kind": "text",
+      "title": "Kde bolo, tam bolo...",
+      "body": "1891 – Na farme v Dánsku sa narodil Ole Kirk Christiansen, zakladateľ hračkárskej firmy Lego. Vyučil sa za tesára.\n1916 – Christiansen kúpil drevoobrábaciu dielňu v meste Billund. Živil sa stavaním domov a vyrábaním nábytku.\n1924 – Dvaja jeho synovia sa hrali v tesárskej dielni a nešťastnou zhodou okolností sa vznietili suché drevené hobliny.\n\nDôležité míľniky spoločnosti Lego\n\n1932 – Christiansen zakladá spoločnosť na výrobu tovaru na každodenné použitie, ako sú napríklad stoličky, stoly, postele a rôzne skrine.\n1934 – V tomto roku vzniká úplne nová firma – Lego. Veľká hospodárska kríza totiž tesárskemu obchodu spôsobila takmer krach a Christiansen kvôli zníženiu nákladov vyrába už len drevené miniatúry svojich výrobkov, teda hračky.\n1947 – Christiansen kupuje prvý lisovací stroj na plasty v Dánsku. Firma spúšťa výrobu a predaj plastových hračiek.\n1949 – Lego začína vyrábať vzácny produkt – plastové stavebnice.\n1955 – Firma ide prvýkrát za hranice domáceho trhu a rozširuje svoje pôsobenie aj do Švédska.\n1959 – Podnik predáva svoje produkty už aj v Nemecku, Nórsku, vo Švajčiarsku a Veľkej Británii.\n1960 – Lego zasiahol požiar, ktorý zničil väčšinu drevených hračiek. Podnik sa orientuje už len na plastové výrobky.\n1966 – Na trh je uvedená úspešná modelová železnica.\n1968 – V dánskom Billunde bol otvorený prvý Legoland. Nasledujú parky v Anglicku, USA a Nemecku.\n1997 – Na trh uvádza svoju prvú počítačovú hru – Lego Island.\n2009 – Lego je piatym najväčším svetovým výrobcom hračiek z hľadiska tržieb.\n2012 – Záujem o hračky je taký veľký, že spoločnosť Lego nie je schopná pokryť všetok dopyt po svojich produktoch.",
+      "asset": null
+    },
+    "sjl-2023-a-s3": {
+      "kind": "text",
+      "title": "Dvadsaťtisíc míľ pod morom",
+      "body": "– Ale more, pán Aronnax, – povedal mi, – táto zázračná a nevyčerpateľná živiteľka, ma nielen živí, ale aj oblieka. Teraz všetko dostávam od mora a jedného dňa sa všetko moru vráti!\n– Máte rád more, kapitán.\n– Áno, mám ho rád! More je všetko! Pokrýva sedem desatín zemegule. Vanie nad ním čisté a zdravé povetrie. Je to nesmierna púšť, kde však človek nikdy nie je sám, lebo cíti, ako všade okolo neho kypí život. More nosí v sebe nadprirodzený a zázračný život. Je v ňom iba pohyb a láska. Je to živé nekonečno, ako povedal jeden z vašich básnikov. A naozaj, pán profesor, príroda sa v ňom prejavuje všetkými tromi ríšami: nerastnou, rastlinnou i živočíšnou. More je ohromná zásobáreň prírody! V mori má zem svoj začiatok a ktovie, či v ňom aj neskončí! Tam je zvrchovaný pokoj. More nepatrí tyranom. Na jeho hladine ešte môžu páchať neprávosti, biť sa, vzájomne sa zožierať, prenášať ta všetky pozemské hrôzy. Ale desať metrov pod hladinou ich moc prestáva, ich vplyv sa stráca, mizne ich sila! Ach, pane, žite v hlbinách morí! Iba tam je nezávislosť! Tam nepoznám nijakých pánov! Tam som slobodný!\nKapitán Nemo sa zrazu uprostred tohto prekypujúceho nadšenia odmlčal. Dal sa strhnúť za hranice svojej zvyčajnej zdržanlivosti? Povedal priveľa? Niekoľko minút vzrušene chodil hore-dolu. Potom sa upokojil, na tvár sa mu vrátil zvyčajný chladný výraz a obrátiac sa ku mne, povedal:\n– A teraz, pán profesor, ak si želáte prezrieť Nautila, som vám k službám.",
+      "asset": null
+    },
+    "sjl-2023-a-s4": {
+      "kind": "text",
+      "title": "John Steinbeck",
+      "body": "„Najviac času strácame tým, že by sme chceli získať čas.“\n\nJohn Steinbeck",
+      "asset": null
+    },
+    "sjl-2023-a-s5": {
+      "kind": "text",
+      "title": "Atlantída",
+      "body": "Miroslav Žbirka\nAtlantída\n\nLen more cez brány čias\nženie na brehy stĺpy vĺn.\nMore cez brány čias\nvon vynáša stĺpy vĺn.",
+      "asset": null
+    },
+    "sjl-2023-a-s6": {
+      "kind": "text",
+      "title": "Čarodejník z krajiny Oz",
+      "body": "Dorotkino uznanie bolo zrejmé, nuž iba prikývla a jedla sama. „Porozprávaj mi niečo o sebe a o krajine, odkiaľ si prišla.“ Keď sa najedla, rozprávala Strachopudovi o Kansase, aké je tam všetko sivé i ako ju tornádo odvlieklo do tejto divnej krajiny Oz.",
+      "asset": null
+    },
+    "sjl-2023-a-s7": {
+      "kind": "text",
+      "title": "Vodník",
+      "body": "K. J. Erben\nVodník\n\nNeveselé, trúchlivé\nsú tie vodné kúty,\nkde sa v tráve pod záružlím\nrybka s rybkou krúti.\n\nTam slniečko nezasvieti,\nvetrík nezaveje:\nchlad a ticho – ako žiaľ\nv srdci bez nádeje.\n\nNeveselé, trúchlivé\nsú tie kúty vodné,\nv polotme a polosvetle\ndni sa vlečú po dne.\n\nVodníkov dvor priestranný,\nhojnosť nad hojnosti:\nale iba zriedkavo\nvítajú tam hostí.\n\nA do jeho krištáľovej\nbrány kto raz vkročí,\ntoho ťažko ešte zazrú\njeho milých oči.\n\nV bublinách pri ukážke sú uvedené typické znaky žánru: pochmúrny dej; magickosť, nadprirodzené postavy a javy; stupňovanie napätia; obvykle sa končí tragicky.",
+      "asset": null
+    },
+    "sjl-2023-a-s8": {
+      "kind": "text",
+      "title": "Prieskum fauny a flóry",
+      "body": "Veľmi zaujímavý je aj spoločný výskyt (prelínanie) studenomilných horských a teplomilných prvkov našej fauny a flóry. „Ďalší podrobný prieskum môže priniesť ešte nejedno prekvapenie,“ pripomenula.",
+      "asset": null
+    }
+  },
+  "units": [
+    { "stimulus": "sjl-2023-a-s1", "ids": ["sjl-2023-a-01", "sjl-2023-a-02", "sjl-2023-a-03", "sjl-2023-a-04", "sjl-2023-a-05", "sjl-2023-a-06", "sjl-2023-a-07"] },
+    { "stimulus": "sjl-2023-a-s2", "ids": ["sjl-2023-a-08", "sjl-2023-a-09", "sjl-2023-a-10", "sjl-2023-a-11", "sjl-2023-a-12", "sjl-2023-a-13", "sjl-2023-a-14"] },
+    { "stimulus": "sjl-2023-a-s3", "ids": ["sjl-2023-a-15", "sjl-2023-a-16", "sjl-2023-a-17", "sjl-2023-a-18", "sjl-2023-a-19", "sjl-2023-a-20", "sjl-2023-a-21"] },
+    { "stimulus": "sjl-2023-a-s4", "ids": ["sjl-2023-a-22"] },
+    { "stimulus": null, "ids": ["sjl-2023-a-23"] },
+    { "stimulus": "sjl-2023-a-s5", "ids": ["sjl-2023-a-24"] },
+    { "stimulus": "sjl-2023-a-s6", "ids": ["sjl-2023-a-25"] },
+    { "stimulus": null, "ids": ["sjl-2023-a-26"] },
+    { "stimulus": null, "ids": ["sjl-2023-a-27"] },
+    { "stimulus": "sjl-2023-a-s7", "ids": ["sjl-2023-a-28"] },
+    { "stimulus": "sjl-2023-a-s8", "ids": ["sjl-2023-a-29"] },
+    { "stimulus": null, "ids": ["sjl-2023-a-30"] }
+  ],
+  "items": {
+    "sjl-2023-a-01": {
+      "n": 1,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Ľudia sú priamo zodpovední len za 10 % odpadu vo svetových oceánoch.", "Viac ako polovica morských vtákov určite prehltla plastový odpad.", "Všetok odpad sa pôsobením morských prúdov hromadí na morskom dne.", "Niektoré časti plastového odpadu prenikajú do potravového reťazca."],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 1 }
+    },
+    "sjl-2023-a-02": {
+      "n": 2,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o odpadoch je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Celkové znečistenie oceánov spôsobuje odpad z pobrežia a pláží.", "Výskyt rôzneho odpadu v oceánoch súvisí aj s množstvom rybárskych lodí.", "Prehltnutie plastového odpadu závisí len od veľkosti živočícha.", "Konzumácia plastového odpadu je zaznamenaná pri všetkých druhoch rýb."],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 2 }
+    },
+    "sjl-2023-a-03": {
+      "n": 3,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o vplyve odpadu v moriach a oceánoch na živočíšnu ríšu z ukážky nevyplýva?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Blokuje voľný let morských vtákov.", "Komplikuje obranu zvierat pred útočníkmi.", "Oslabuje organizmus zvierat morskej ríše.", "Bráni živočíchom nadýchnuť sa nad hladinou."],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 3 }
+    },
+    "sjl-2023-a-04": {
+      "n": 4,
+      "topic": "sloh-postupy",
+      "text": "Cieľom ukážky je",
+      "asset": null,
+      "type": "mc",
+      "options": ["vyzvať ľudí k väčšej aktivite pri záchrane morských korytnačiek.", "informovať o neutešenej situácii s množstvom odpadu.", "nabádať ľudí k potrebe separovania výlučne plastového odpadu.", "varovať pred možným zánikom života morských vtákov."],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 4 }
+    },
+    "sjl-2023-a-05": {
+      "n": 5,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti sú v slovných spojeniach len prídavné mená, ktoré sa nepravidelne stupňujú?",
+      "asset": null,
+      "type": "mc",
+      "options": ["malých častíc, ľudské zdravie", "rozsiahle zhluky, svetových oceánoch", "lepšom hospodárstve, menšie časti", "ľudské zdravie, lepšom hospodárstve"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 5 }
+    },
+    "sjl-2023-a-06": {
+      "n": 6,
+      "topic": "tvaroslovie",
+      "text": "V nasledujúcej vete vyhľadaj zvratné sloveso a napíš ho pravopisne správne v tvare 3. osoby množného čísla v podmieňovacom spôsobe prítomného času.\n\nMorské zvieratá a morské vtáky si odpad mýlia s potravou v dôsledku jeho veľkosti a prevládajúceho výskytu.",
+      "asset": null,
+      "type": "word",
+      "answer": "mýlili by si",
+      "accept": ["by si mýlili"],
+      "source": { "year": 2023, "form": "A", "n": 6 }
+    },
+    "sjl-2023-a-07": {
+      "n": 7,
+      "topic": "tvaroslovie",
+      "text": "Podčiarknuté slovné spojenie v nasledujúcej vete napíš pravopisne správne v tvare akuzatívu množného čísla.\n\nMorskí vedci pozorovali akrobatické kúsky troch delfínov.",
+      "asset": null,
+      "type": "word",
+      "answer": "tri delfíny",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 7 }
+    },
+    "sjl-2023-a-08": {
+      "n": 8,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie o firme Lego je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Podľa počtu vyrobených hračiek je firma Lego piata na svete.", "Firma Lego od svojho založenia dva razy vyhorela.", "Najväčšiu finančnú stratu spôsobila firme hospodárska kríza.", "Výrobky sa predávajú mimo Dánska od roku 1955."],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 8 }
+    },
+    "sjl-2023-a-09": {
+      "n": 9,
+      "topic": "porozumenie-textu",
+      "text": "Ktoré tvrdenie je podľa ukážky pravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Prvé hračky boli napodobeninami skutočného nábytku.", "Prvé stavebnice firmy Lego boli vyrobené z dreva.", "Christiansen odovzdal tradíciu stolárstva svojmu synovi.", "Dôvodom na výrobu hračiek bol zvýšený dopyt."],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 9 }
+    },
+    "sjl-2023-a-10": {
+      "n": 10,
+      "topic": "porozumenie-textu",
+      "text": "Ktorý z dôvodov na základe ukážky neovplyvnil vznik hračkárskej firmy Lego?",
+      "asset": null,
+      "type": "mc",
+      "options": ["hrozba krachu", "hospodárska kríza", "požiar dielne", "šetrenie financií"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 10 }
+    },
+    "sjl-2023-a-11": {
+      "n": 11,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej možnosti sú uvedené slová, ktorými je možné nahradiť podčiarknuté výrazy v nasledujúcej vete tak, aby bol zachovaný jej význam?\n\nHračky ich vyniesli medzi top hračkárske firmy na svete a v čase najväčšieho boomu zamestnávali viac ako šesťtisíc ľudí.",
+      "asset": null,
+      "type": "mc",
+      "options": ["najúspešnejšie, zisku", "špičkové, rozmachu", "najlepšie, výkonu", "vysoké, výbuchu"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 11 }
+    },
+    "sjl-2023-a-12": {
+      "n": 12,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú slovné spojenia napísané pravopisne správne?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Švédsky kráľ, Spojené štáty americké", "Dánsky výrobcovia, Christiansenove rodisko", "švédsky kráľ, Spojené štáty Americké", "dánski výrobcovia, Christiansenovo rodisko"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 12 }
+    },
+    "sjl-2023-a-13": {
+      "n": 13,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z ukážky synonymum slova bankrot.",
+      "asset": null,
+      "type": "word",
+      "answer": "krach",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 13 }
+    },
+    "sjl-2023-a-14": {
+      "n": 14,
+      "topic": "tvaroslovie",
+      "text": "Utvor z akostného prídavného mena v nasledujúcej vete príslovku a napíš ju pravopisne správne.\n\nLego začína vyrábať vzácny produkt – plastové stavebnice.",
+      "asset": null,
+      "type": "word",
+      "answer": "vzácne",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 14 }
+    },
+    "sjl-2023-a-15": {
+      "n": 15,
+      "topic": "porozumenie-textu",
+      "text": "More podľa ukážky",
+      "asset": null,
+      "type": "mc",
+      "options": ["pokrýva tretinu zemského povrchu.", "nemôžu ľudia nikdy celé ovládnuť.", "je inšpiráciou všetkým umelcom.", "nie je kapitánovou veľkou vášňou."],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 15 }
+    },
+    "sjl-2023-a-16": {
+      "n": 16,
+      "topic": "literarna-teoria",
+      "text": "Kto je rozprávačom v ukážke?",
+      "asset": null,
+      "type": "mc",
+      "options": ["kapitán", "autor ukážky", "Nautilus", "profesor Aronnax"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 16 }
+    },
+    "sjl-2023-a-17": {
+      "n": 17,
+      "topic": "hlaskoslovie",
+      "text": "V ktorej možnosti dochádza k spodobovaniu?",
+      "asset": null,
+      "type": "mc",
+      "options": ["človek nikdy nie je sám", "zvyčajnej zdržanlivosti", "som vám k službám", "moc prestáva"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 17 }
+    },
+    "sjl-2023-a-18": {
+      "n": 18,
+      "topic": "hlaskoslovie",
+      "text": "V ktorej možnosti je slovo so slabikotvornou spoluhláskou?",
+      "asset": null,
+      "type": "mc",
+      "options": ["nevyčerpateľná", "povetrie", "zvrchovaný", "pokrýva"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 18 }
+    },
+    "sjl-2023-a-19": {
+      "n": 19,
+      "topic": "skladba",
+      "text": "V ktorej možnosti je rozkazovacia veta z ukážky?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Tam som slobodný!", "Žite v hlbinách morí!", "More je ohromná zásobáreň prírody!", "Tam nepoznám nijakých pánov!"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 19 }
+    },
+    "sjl-2023-a-20": {
+      "n": 20,
+      "topic": "skladba",
+      "text": "Vypíš prísudok z nasledujúcej vety.\n\nMore je ohromná zásobáreň prírody.",
+      "asset": null,
+      "type": "word",
+      "answer": "je zásobáreň",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 20 }
+    },
+    "sjl-2023-a-21": {
+      "n": 21,
+      "topic": "tvaroslovie",
+      "text": "Napíš vzor podstatného mena z nasledujúcej vety.\n\nJe to nesmierna púšť.",
+      "asset": null,
+      "type": "word",
+      "answer": "dlaň",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 21 }
+    },
+    "sjl-2023-a-22": {
+      "n": 22,
+      "topic": "literarna-teoria",
+      "text": "Ktorým literárnym žánrom je nasledujúca ukážka?",
+      "asset": null,
+      "type": "mc",
+      "options": ["anekdota", "príslovie", "aforizmus", "porekadlo"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 22 }
+    },
+    "sjl-2023-a-23": {
+      "n": 23,
+      "topic": "tvaroslovie",
+      "text": "V ktorej možnosti je slovo jej rovnakým druhom zámena ako v nasledujúcej vete?\n\nPripravili sme niekoľko interaktívnych úloh na tému voda a jej ochrana.",
+      "asset": null,
+      "type": "mc",
+      "options": ["Vlhová získala zlato v lyžiarskom slalome, jej výkon bol excelentný.", "Zaujímala sa o dejiny gotickej stavby, tak jej o nich porozprával.", "Nová teória o organizmoch jej pomohla lepšie chápať vedu.", "Autor životopisných bestsellerov jej daroval svoj rukopis."],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 23 }
+    },
+    "sjl-2023-a-24": {
+      "n": 24,
+      "topic": "poetika",
+      "text": "Vypíš z ukážky dvojslovný umelecký prostriedok označujúci dejiny.",
+      "asset": null,
+      "type": "word",
+      "answer": "brány čias",
+      "accept": ["cez brány čias"],
+      "source": { "year": 2023, "form": "A", "n": 24 }
+    },
+    "sjl-2023-a-25": {
+      "n": 25,
+      "topic": "tvaroslovie",
+      "text": "Napíš slovom alebo číslicou, koľko vlastných podstatných mien je v nasledujúcej ukážke.",
+      "asset": null,
+      "type": "word",
+      "answer": "tri",
+      "accept": ["3", "III"],
+      "source": { "year": 2023, "form": "A", "n": 25 }
+    },
+    "sjl-2023-a-26": {
+      "n": 26,
+      "topic": "slovna-zasoba",
+      "text": "V ktorej z nasledujúcich viet sa nenachádza zložené slovo?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Mladého dobrodruha lákalo more.", "Na svoju prvú plavbu sa vraj vydal ako štrnásťročný.", "Svoj návrh cesty predložil kráľovi.", "Vzdelával sa tiež aktívnym štúdiom cestopisných diel."],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 26 }
+    },
+    "sjl-2023-a-27": {
+      "n": 27,
+      "topic": "pravopis",
+      "text": "V ktorej možnosti sú správne doplnené chýbajúce písmená z nasledujúcej vety?\n\nPočas prípravných zápasov sa t__m spod hradu __horského šľachtica Matúša Čáka predstaví neobv__kle v čiernych a biel__ch dresoch, Dukla totiž oslavuje účasť už v päťdesiat__ch súťažných sezónach.",
+      "asset": null,
+      "type": "mc",
+      "options": ["ý, U, i, i, i", "í, U, i, y, i", "ý, u, y, i, y", "í, u, y, y, i"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 27 }
+    },
+    "sjl-2023-a-28": {
+      "n": 28,
+      "topic": "literarna-teoria",
+      "text": "Napíš názov literárneho žánru nasledujúcej časti ukážky, ktorého typické znaky sú uvedené v bublinách.",
+      "asset": null,
+      "type": "word",
+      "answer": "balada",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 28 }
+    },
+    "sjl-2023-a-29": {
+      "n": 29,
+      "topic": "slovna-zasoba",
+      "text": "Vypíš z nasledujúcej ukážky antonymum k slovu, ktoré má význam „uspôsobený znášať chladné podnebie a prostredie“.",
+      "asset": null,
+      "type": "word",
+      "answer": "teplomilných",
+      "accept": ["teplomilný", "teplomilných (prvkov)"],
+      "source": { "year": 2023, "form": "A", "n": 29 }
+    },
+    "sjl-2023-a-30": {
+      "n": 30,
+      "topic": "skladba",
+      "text": "V ktorej možnosti sa nachádza jednočlenná slovesná veta?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Poobede sa zrazu rozpršalo ako z krhly.", "Dnes sa obloha mračí väčšmi ako zvyčajne.", "Na našom sídlisku od rána padá sneh.", "K hmlistému ránu sa dnes pridal aj mráz."],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2023, "form": "A", "n": 30 }
+    }
+  }
+}

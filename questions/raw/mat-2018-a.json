@@ -1,0 +1,286 @@
+{
+  "subject": "mat",
+  "year": 2018,
+  "form": "A",
+  "code": "1405",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/825/ZAK17019_S_CTZ-RT-Mat-SJ-fA_1405.pdf",
+    "key": "https://www2.nucem.sk/dl/804/kluc_MAT_RT_2018.pdf"
+  },
+  "stimuli": {
+    "mat-2018-a-s1": {
+      "kind": "table",
+      "title": "Umiestnenie Petra Sagana na Tour de France 2016",
+      "body": "V stĺpcovom diagrame je znázornené umiestnenie Petra Sagana v jednotlivých etapách Tour de France v roku 2016. Všetkých etáp bolo spolu 21.<table><tr><th>Etapa</th><th>Umiestnenie Petra Sagana</th></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>3</td></tr><tr><td>5</td><td>110</td></tr><tr><td>6</td><td>6</td></tr><tr><td>7</td><td>184</td></tr><tr><td>8</td><td>137</td></tr><tr><td>9</td><td>61</td></tr><tr><td>10</td><td>2</td></tr><tr><td>11</td><td>1</td></tr><tr><td>12</td><td>142</td></tr><tr><td>13</td><td>78</td></tr><tr><td>14</td><td>3</td></tr><tr><td>15</td><td>152</td></tr><tr><td>16</td><td>1</td></tr><tr><td>17</td><td>70</td></tr><tr><td>18</td><td>90</td></tr><tr><td>19</td><td>172</td></tr><tr><td>20</td><td>97</td></tr><tr><td>21</td><td>2</td></tr></table>Zdroj: www.procyclingstats.com",
+      "asset": null
+    },
+    "mat-2018-a-s2": {
+      "kind": "table",
+      "title": "Odhady objemu smetného koša",
+      "body": "Na hodine fyziky žiaci odhadovali objem smetného koša v triede. Na tabuli je záznam odpovedí 20 žiakov.<table><tr><th>Objem</th><th>Počet žiakov</th></tr><tr><td>5 l</td><td>3</td></tr><tr><td>6 l</td><td>3</td></tr><tr><td>8 l</td><td>6</td></tr><tr><td>9 l</td><td>1</td></tr><tr><td>10 l</td><td>6</td></tr><tr><td>15 l</td><td>1</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s3": {
+      "kind": "table",
+      "title": "Aquapark",
+      "body": "V aquaparku sú rôzne bazény: jeden vírivý, jeden plavecký a dva detské. Odporúčaná doba pobytu vo vírivom bazéne je 15 minút a môžu v ňom byť maximálne 4 osoby. Plavecký a detské bazény majú tvar kvádra a ich rozmery sú uvedené v tabuľke.<table><tr><th>Rozmery bazéna</th><th>Dĺžka (m)</th><th>Šírka (m)</th><th>Hĺbka (m)</th></tr><tr><td>plavecký</td><td>25</td><td>14,5</td><td>1,8</td></tr><tr><td>vnútorný detský</td><td>5</td><td>8</td><td>0,6</td></tr><tr><td>vonkajší detský</td><td>9</td><td>8,5</td><td>0,4</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s4": {
+      "kind": "table",
+      "title": "Hudobné štýly v telefóne",
+      "body": "Zuzana má v mobilnom telefóne 5 priečinkov s rôznymi hudobnými štýlmi.<table><tr><th>Hudobný štýl</th><th>Počet skladieb</th></tr><tr><td>hip hop</td><td>52</td></tr><tr><td>jazz</td><td>11</td></tr><tr><td>disco</td><td>79</td></tr><tr><td>rock</td><td>?</td></tr><tr><td>vážna hudba</td><td>16</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s5": {
+      "kind": "table",
+      "title": "Vstupný test z chémie",
+      "body": "Vstupný test z chémie vo forme A alebo B riešilo spolu 100 žiakov. Každý z nich mal v odpoveďovom hárku uviesť, ktorú formu testu riešil. Piati žiaci to neurobili. V kruhovom diagrame je znázornené rozdelenie testovaných žiakov podľa toho, ktorú formu testu uviedli.<table><tr><th>Forma testu</th><th>Počet žiakov</th></tr><tr><td>testová forma A</td><td>42</td></tr><tr><td>testová forma B</td><td>53</td></tr><tr><td>neuvedená forma testu</td><td>5</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s6": {
+      "kind": "text",
+      "title": "Formáty papiera radu A",
+      "body": "Najčastejšie formáty papiera majú označenie pozostávajúce z písmena a číslice, napr. A4. Základným formátom radu A je A0. Ďalšie formáty tohto radu (A1, A2, A3, …) vznikajú postupným strihaním listu papiera na polovicu, kolmo na dlhšiu stranu.",
+      "asset": null
+    },
+    "mat-2018-a-s7": {
+      "kind": "table",
+      "title": "Kúpa bytu",
+      "body": "Manželia Novákovci sa rozhodli pre kúpu bytu. V realitnej kancelárii im ponúkli 4 voľné byty. Údaje o jednotlivých bytoch sú uvedené v tabuľke.<table><tr><th>Označenie bytu</th><th>Rozloha</th><th>Stav bytu</th><th>Počet izieb</th><th>Cena bytu</th></tr><tr><td>byt č. 1</td><td>70 m²</td><td>novostavba</td><td>3</td><td>65 000 €</td></tr><tr><td>byt č. 2</td><td>56 m²</td><td>pôvodný stav</td><td>2</td><td>32 000 €</td></tr><tr><td>byt č. 3</td><td>42 m²</td><td>pôvodný stav</td><td>2</td><td>26 000 €</td></tr><tr><td>byt č. 4</td><td>65 m²</td><td>prerobený</td><td>2</td><td>47 000 €</td></tr></table>",
+      "asset": null
+    }
+  },
+  "units": [
+    { "stimulus": null, "ids": ["mat-2018-a-01"] },
+    { "stimulus": null, "ids": ["mat-2018-a-02"] },
+    { "stimulus": null, "ids": ["mat-2018-a-03"] },
+    { "stimulus": null, "ids": ["mat-2018-a-04"] },
+    { "stimulus": null, "ids": ["mat-2018-a-05"] },
+    { "stimulus": "mat-2018-a-s1", "ids": ["mat-2018-a-06"] },
+    { "stimulus": null, "ids": ["mat-2018-a-07"] },
+    { "stimulus": "mat-2018-a-s2", "ids": ["mat-2018-a-08"] },
+    { "stimulus": "mat-2018-a-s3", "ids": ["mat-2018-a-09", "mat-2018-a-10"] },
+    { "stimulus": null, "ids": ["mat-2018-a-11"] },
+    { "stimulus": "mat-2018-a-s4", "ids": ["mat-2018-a-12"] },
+    { "stimulus": "mat-2018-a-s5", "ids": ["mat-2018-a-13"] },
+    { "stimulus": null, "ids": ["mat-2018-a-14"] },
+    { "stimulus": null, "ids": ["mat-2018-a-15"] },
+    { "stimulus": "mat-2018-a-s6", "ids": ["mat-2018-a-16"] },
+    { "stimulus": null, "ids": ["mat-2018-a-17"] },
+    { "stimulus": null, "ids": ["mat-2018-a-18"] },
+    { "stimulus": "mat-2018-a-s7", "ids": ["mat-2018-a-19", "mat-2018-a-20"] }
+  ],
+  "items": {
+    "mat-2018-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte a výsledok napíšte v tvare desatinného čísla.\n3/4 − 1 2/5 + 0,5 =",
+      "asset": null,
+      "type": "num",
+      "answer": "-0,15",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 1 }
+    },
+    "mat-2018-a-02": {
+      "n": 2,
+      "topic": "zlomky-desatinne",
+      "text": "Máme číslo A = 753 672.\nVypočítajte rozdiel čísla A zaokrúhleného na stovky a čísla A zaokrúhleného na desaťtisíce.",
+      "asset": null,
+      "type": "num",
+      "answer": "3700",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 2 }
+    },
+    "mat-2018-a-03": {
+      "n": 3,
+      "topic": "uhly-konstrukcie",
+      "text": "Na obrázku je znázornený rovnoramenný lichobežník CDEF. Veľkosť uhla α je 73°. Vypočítajte v stupňoch veľkosť uhla β.",
+      "asset": null,
+      "type": "num",
+      "answer": "107",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 3 }
+    },
+    "mat-2018-a-04": {
+      "n": 4,
+      "topic": "rovinne-obrazce",
+      "text": "Štvorec JKLM má strany dĺžky 24 cm. Bod S je stredom strany LM. Vypočítajte obsah štvoruholníka JKSM v cm².",
+      "asset": null,
+      "type": "num",
+      "answer": "432",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 4 }
+    },
+    "mat-2018-a-05": {
+      "n": 5,
+      "topic": "pytagorova-veta",
+      "text": "Na obrázku je znázornený trojuholník NET. Bod P je päta výšky tohto trojuholníka z vrcholu T na stranu NE; bod N leží na úsečke PE.\nVieme, že:\n|PE| = 16 cm,\n|TP| = 12 cm,\n|TE| = 20 cm,\n|NE| = 7 cm.\nZistite obvod trojuholníka NET v cm.",
+      "asset": null,
+      "type": "num",
+      "answer": "42",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 5 }
+    },
+    "mat-2018-a-06": {
+      "n": 6,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Koľko percent zo všetkých etáp predstavujú tie etapy, v ktorých skončil na 1. až 3. mieste?\nVýsledok zaokrúhlite na celé číslo.",
+      "asset": null,
+      "type": "num",
+      "answer": "38",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 6 }
+    },
+    "mat-2018-a-07": {
+      "n": 7,
+      "topic": "umernost-trojclenka",
+      "text": "Reštaurácia bola v čase obeda plne obsadená. Kým v reštaurácii obsluhovali len traja čašníci, hostia čakali na obedové menu v priemere 45 minút. Koľko minút v priemere budú hostia čakať, ak sa k trom obsluhujúcim čašníkom pridajú ešte ďalší dvaja čašníci obsluhujúci rovnako rýchlo?",
+      "asset": null,
+      "type": "num",
+      "answer": "27",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 7 }
+    },
+    "mat-2018-a-08": {
+      "n": 8,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Skutočný objem tohto smetného koša bol 12 litrov. O koľko litrov sa od tejto hodnoty líši priemerný žiacky odhad?",
+      "asset": null,
+      "type": "num",
+      "answer": "3,75",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 8 }
+    },
+    "mat-2018-a-09": {
+      "n": 9,
+      "topic": "slovne-ulohy",
+      "text": "Najviac koľko osôb sa môže vystriedať vo vírivom bazéne za 2 hodiny, ak bude dodržaný aj maximálny počet osôb, aj odporúčaná doba pobytu v tomto bazéne?",
+      "asset": null,
+      "type": "num",
+      "answer": "32",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 9 }
+    },
+    "mat-2018-a-10": {
+      "n": 10,
+      "topic": "percenta-pomer",
+      "text": "Pri napúšťaní vnútorného detského bazéna bol kvôli poruche vypnutý prívod vody práve vo chvíli, keď bolo v tomto bazéne napustených 15,6 m³ vody. Koľko percent z celkového objemu tohto bazéna bolo napustených do momentu vypnutia prívodu vody?",
+      "asset": null,
+      "type": "num",
+      "answer": "65",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 10 }
+    },
+    "mat-2018-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "Brigádnici Ivan, Lea a Dana zarobili spolu 480 eur. Ivan zarobil tretinu z týchto peňazí. Zvyšné peniaze zarobili Lea a Dana v pomere 3 : 1. Koľko eur zarobila Lea?",
+      "asset": null,
+      "type": "mc",
+      "options": ["240 €", "120 €", "320 €", "80 €"],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 11 }
+    },
+    "mat-2018-a-12": {
+      "n": 12,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V tabuľke sú uvedené názvy hudobných štýlov a počty skladieb, ktoré obsahujú. Doplňte chýbajúce číslo tak, aby pri funkcii náhodného prehrávania hrala rocková skladba s pravdepodobnosťou 21 % ako prvá.",
+      "asset": null,
+      "type": "mc",
+      "options": ["21", "32", "36", "42"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 12 }
+    },
+    "mat-2018-a-13": {
+      "n": 13,
+      "topic": "kombinatorika-logika",
+      "text": "Pri analýze testovanej vzorky žiakov boli vyslovené dve tvrdenia.\n1. Je možné, že formu A riešilo o 6 žiakov menej ako formu B.\n2. Je možné, že formu B riešilo o 11 žiakov viac ako formu A.\nPosúďte pravdivosť týchto dvoch tvrdení a vyberte správnu možnosť.",
+      "asset": null,
+      "type": "mc",
+      "options": ["Len prvé tvrdenie je pravdivé.", "Len druhé tvrdenie je pravdivé.", "Obidve tvrdenia sú pravdivé.", "Obidve tvrdenia sú nepravdivé."],
+      "answer": "A",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 13 }
+    },
+    "mat-2018-a-14": {
+      "n": 14,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte.\n1/3 + 1/3 · 1/3 + 1/3 =",
+      "asset": null,
+      "type": "mc",
+      "options": ["0,8̅", "0,7̅", "0,5̅", "0,4̅"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 14 }
+    },
+    "mat-2018-a-15": {
+      "n": 15,
+      "topic": "mocniny-odmocniny",
+      "text": "Vyberte mocninu, ktorá má najväčšiu hodnotu.",
+      "asset": null,
+      "type": "mc",
+      "options": ["5²", "4³", "3⁴", "2⁵"],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 15 }
+    },
+    "mat-2018-a-16": {
+      "n": 16,
+      "topic": "mocniny-odmocniny",
+      "text": "Najviac na koľko papierov formátu A6 možno rozstrihnúť papier formátu A2?",
+      "asset": null,
+      "type": "mc",
+      "options": ["8", "16", "32", "64"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 16 }
+    },
+    "mat-2018-a-17": {
+      "n": 17,
+      "topic": "kombinatorika-logika",
+      "text": "Drevenú kocku s hranou dĺžky 4 cm sme natreli po celom povrchu zelenou farbou. Potom sme ju rozrezali na malé kocky s hranou dĺžky 1 cm. Počet kociek, ktoré majú práve dve steny zafarbené nazeleno je",
+      "asset": null,
+      "type": "mc",
+      "options": ["8.", "12.", "16.", "24."],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 17 }
+    },
+    "mat-2018-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "Na ľavej strane rovnice je výraz x − 2,4. Zistite, ktorý z výrazov patrí na pravú stranu rovnice, aby rovnica mala koreň x = 2,8.",
+      "asset": null,
+      "type": "mc",
+      "options": ["3 · (x − 1,1)", "2 · (3 − x)", "3 · (x + 1,1)", "2 · (3 + x)"],
+      "answer": "B",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 18 }
+    },
+    "mat-2018-a-19": {
+      "n": 19,
+      "topic": "percenta-pomer",
+      "text": "Pani Nováková navrhovala byt č. 2, lebo podľa nej má zo všetkých ponúkaných bytov najnižšiu cenu za 1 m². Pán Novák navrhoval byt č. 3, lebo je najlacnejší.\nKtorý z nich správne odôvodnil svoj návrh?",
+      "asset": null,
+      "type": "mc",
+      "options": ["Len pani Nováková.", "Len pán Novák.", "Obidvaja.", "Ani jeden."],
+      "answer": "C",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 19 }
+    },
+    "mat-2018-a-20": {
+      "n": 20,
+      "topic": "slovne-ulohy",
+      "text": "Nakoniec sa rozhodli pre dvojizbový byt v pôvodnom stave. Vybrali si ten s väčšou rozlohou. Majú našetrených 17 000 eur, zvyšnú časť ceny si požičajú od banky. Splácať budú 120 eur mesačne po dobu 15 rokov. O koľko eur zaplatia banke viac oproti požičanej sume?",
+      "asset": null,
+      "type": "mc",
+      "options": ["4 600 €", "5 400 €", "6 200 €", "6 600 €"],
+      "answer": "D",
+      "accept": [],
+      "source": { "year": 2018, "form": "A", "n": 20 }
+    }
+  }
+}

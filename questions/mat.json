@@ -1,17 +1,227 @@
 {
   "subject": "mat",
   "version": 1,
-  "generated": "2026-09-02",
-  "itemCount": 23,
+  "generated": "2026-09-25",
+  "itemCount": 168,
   "sources": [
+    {
+      "year": 2017,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/830/T9_2017_Test_z_matematiky_v_slovenskom_jazyku.pdf",
+      "key": "https://www2.nucem.sk/dl/834/Klu%C4%8D_spr%C3%A1vnych_odpovedi_MAT_2017_RT.pdf"
+    },
+    {
+      "year": 2018,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/825/ZAK17019_S_CTZ-RT-Mat-SJ-fA_1405.pdf",
+      "key": "https://www2.nucem.sk/dl/804/kluc_MAT_RT_2018.pdf"
+    },
+    {
+      "year": 2019,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/4348/TEST_T9_2019_MAT_sj_1100.pdf",
+      "key": "https://www2.nucem.sk/dl/4363/T9-2019_K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20z%20MAT_AB.pdf"
+    },
+    {
+      "year": 2022,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5224/ZAK20035_S_CTZ-RT-Mat-SJ-fA_1077.pdf",
+      "key": "https://www2.nucem.sk/dl/5258/T9-2022_Kľúč%20správnych%20odpovedí%20z%20MAT_AB.pdf"
+    },
+    {
+      "year": 2023,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/5554/RT-Mat-SJ-fA_1022.pdf",
+      "key": "https://www2.nucem.sk/dl/5572/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202023%20-%20matematika.pdf"
+    },
     {
       "year": 2024,
       "form": "A",
       "test": "https://www2.nucem.sk/dl/5874/ZAK23008_S_TZ-RT-Mat-SJ-fA_1000.pdf",
       "key": "https://www2.nucem.sk/dl/5887/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202024%20-%20matematika.pdf"
+    },
+    {
+      "year": 2025,
+      "form": "A",
+      "test": "https://www2.nucem.sk/dl/6179/ZAK24004_S_TZ-RT-Mat-SJ-fA_3311.pdf",
+      "key": "https://www2.nucem.sk/dl/6195/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202025%20%E2%80%93%20matematika.pdf"
     }
   ],
   "stimuli": {
+    "mat-2017-a-s1": {
+      "kind": "table",
+      "title": "Zber papiera",
+      "body": "Všetci žiaci zo štyroch tried 9. ročníka základnej školy sa zapojili do zberu papiera. V tabuľke sú uvedené informácie o počte týchto žiakov a o priemernom množstve nazbieraného papiera v kilogramoch na jedného žiaka v triede.<table><tr><th>Trieda</th><th>9. A</th><th>9. B</th><th>9. C</th><th>9. D</th></tr><tr><td>Počet žiakov</td><td>26</td><td>20</td><td>18</td><td>20</td></tr><tr><td>Priemerný počet kg papiera na 1 žiaka</td><td>11,5</td><td>12,5</td><td>13,5</td><td>10,5</td></tr></table>",
+      "asset": null
+    },
+    "mat-2017-a-s2": {
+      "kind": "table",
+      "title": "Zoologická záhrada",
+      "body": "Minulý rok v II. polroku navštívilo zoologickú záhradu 181 003 ľudí, čo bolo o 20 145 ľudí viac ako v I. polroku. Na ploche 400 000 štvorcových metrov chovajú štyri skupiny živočíchov: plazy, vtáky, cicavce a ryby. Tabuľka uvádza počty jedincov, ktoré chovali v ZOO na konci uvedených rokov podľa skupín živočíchov.<table><tr><th>Skupina</th><th>2010</th><th>2015</th></tr><tr><td>Plazy</td><td>125</td><td>250</td></tr><tr><td>Vtáky</td><td>625</td><td>800</td></tr><tr><td>Cicavce</td><td>750</td><td>450</td></tr><tr><td>Ryby</td><td>500</td><td>1000</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s1": {
+      "kind": "table",
+      "title": "Umiestnenie Petra Sagana na Tour de France 2016",
+      "body": "V stĺpcovom diagrame je znázornené umiestnenie Petra Sagana v jednotlivých etapách Tour de France v roku 2016. Všetkých etáp bolo spolu 21.<table><tr><th>Etapa</th><th>Umiestnenie Petra Sagana</th></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>3</td></tr><tr><td>5</td><td>110</td></tr><tr><td>6</td><td>6</td></tr><tr><td>7</td><td>184</td></tr><tr><td>8</td><td>137</td></tr><tr><td>9</td><td>61</td></tr><tr><td>10</td><td>2</td></tr><tr><td>11</td><td>1</td></tr><tr><td>12</td><td>142</td></tr><tr><td>13</td><td>78</td></tr><tr><td>14</td><td>3</td></tr><tr><td>15</td><td>152</td></tr><tr><td>16</td><td>1</td></tr><tr><td>17</td><td>70</td></tr><tr><td>18</td><td>90</td></tr><tr><td>19</td><td>172</td></tr><tr><td>20</td><td>97</td></tr><tr><td>21</td><td>2</td></tr></table>Zdroj: www.procyclingstats.com",
+      "asset": null
+    },
+    "mat-2018-a-s2": {
+      "kind": "table",
+      "title": "Odhady objemu smetného koša",
+      "body": "Na hodine fyziky žiaci odhadovali objem smetného koša v triede. Na tabuli je záznam odpovedí 20 žiakov.<table><tr><th>Objem</th><th>Počet žiakov</th></tr><tr><td>5 l</td><td>3</td></tr><tr><td>6 l</td><td>3</td></tr><tr><td>8 l</td><td>6</td></tr><tr><td>9 l</td><td>1</td></tr><tr><td>10 l</td><td>6</td></tr><tr><td>15 l</td><td>1</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s3": {
+      "kind": "table",
+      "title": "Aquapark",
+      "body": "V aquaparku sú rôzne bazény: jeden vírivý, jeden plavecký a dva detské. Odporúčaná doba pobytu vo vírivom bazéne je 15 minút a môžu v ňom byť maximálne 4 osoby. Plavecký a detské bazény majú tvar kvádra a ich rozmery sú uvedené v tabuľke.<table><tr><th>Rozmery bazéna</th><th>Dĺžka (m)</th><th>Šírka (m)</th><th>Hĺbka (m)</th></tr><tr><td>plavecký</td><td>25</td><td>14,5</td><td>1,8</td></tr><tr><td>vnútorný detský</td><td>5</td><td>8</td><td>0,6</td></tr><tr><td>vonkajší detský</td><td>9</td><td>8,5</td><td>0,4</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s4": {
+      "kind": "table",
+      "title": "Hudobné štýly v telefóne",
+      "body": "Zuzana má v mobilnom telefóne 5 priečinkov s rôznymi hudobnými štýlmi.<table><tr><th>Hudobný štýl</th><th>Počet skladieb</th></tr><tr><td>hip hop</td><td>52</td></tr><tr><td>jazz</td><td>11</td></tr><tr><td>disco</td><td>79</td></tr><tr><td>rock</td><td>?</td></tr><tr><td>vážna hudba</td><td>16</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s5": {
+      "kind": "table",
+      "title": "Vstupný test z chémie",
+      "body": "Vstupný test z chémie vo forme A alebo B riešilo spolu 100 žiakov. Každý z nich mal v odpoveďovom hárku uviesť, ktorú formu testu riešil. Piati žiaci to neurobili. V kruhovom diagrame je znázornené rozdelenie testovaných žiakov podľa toho, ktorú formu testu uviedli.<table><tr><th>Forma testu</th><th>Počet žiakov</th></tr><tr><td>testová forma A</td><td>42</td></tr><tr><td>testová forma B</td><td>53</td></tr><tr><td>neuvedená forma testu</td><td>5</td></tr></table>",
+      "asset": null
+    },
+    "mat-2018-a-s6": {
+      "kind": "text",
+      "title": "Formáty papiera radu A",
+      "body": "Najčastejšie formáty papiera majú označenie pozostávajúce z písmena a číslice, napr. A4. Základným formátom radu A je A0. Ďalšie formáty tohto radu (A1, A2, A3, …) vznikajú postupným strihaním listu papiera na polovicu, kolmo na dlhšiu stranu.",
+      "asset": null
+    },
+    "mat-2018-a-s7": {
+      "kind": "table",
+      "title": "Kúpa bytu",
+      "body": "Manželia Novákovci sa rozhodli pre kúpu bytu. V realitnej kancelárii im ponúkli 4 voľné byty. Údaje o jednotlivých bytoch sú uvedené v tabuľke.<table><tr><th>Označenie bytu</th><th>Rozloha</th><th>Stav bytu</th><th>Počet izieb</th><th>Cena bytu</th></tr><tr><td>byt č. 1</td><td>70 m²</td><td>novostavba</td><td>3</td><td>65 000 €</td></tr><tr><td>byt č. 2</td><td>56 m²</td><td>pôvodný stav</td><td>2</td><td>32 000 €</td></tr><tr><td>byt č. 3</td><td>42 m²</td><td>pôvodný stav</td><td>2</td><td>26 000 €</td></tr><tr><td>byt č. 4</td><td>65 m²</td><td>prerobený</td><td>2</td><td>47 000 €</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s1": {
+      "kind": "table",
+      "title": "Suroviny na raňajky",
+      "body": "<table><tr><th>Kaša</th><th>Ovocie</th><th>Na dochutenie</th></tr><tr><td>ovsená, pohánková, pšenová</td><td>jablká, hrušky, slivky</td><td>med, kakao</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s2": {
+      "kind": "table",
+      "title": "Cenník tlače fotografií",
+      "body": "<table><tr><th>Rozmery v cm</th><th>Počet fotografií</th><th>Cena za 1 ks v € do 40 ks</th><th>Cena za 1 ks v € nad 40 ks</th></tr><tr><td>09 x 13</td><td>800</td><td>0,20</td><td>0,18</td></tr><tr><td>10 x 15</td><td>225</td><td>0,28</td><td>0,24</td></tr><tr><td>15 x 21</td><td>60</td><td>1,00</td><td>0,85</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s3": {
+      "kind": "table",
+      "title": "Váženie súrodencov a psov",
+      "body": "<table><tr><th>Váženie</th><th>Kto sa vážil</th><th>Spolu</th></tr><tr><td>1</td><td>pes Asta a dievča</td><td>91 kg</td></tr><tr><td>2</td><td>dievča a pes Bim</td><td>76 kg</td></tr><tr><td>3</td><td>chlapec a druhý pes</td><td>111 kg</td></tr><tr><td>4</td><td>chlapec, pes Bim a druhý pes</td><td>127 kg</td></tr></table>",
+      "asset": null
+    },
+    "mat-2019-a-s4": {
+      "kind": "table",
+      "title": "Predaj elektromobilov",
+      "body": "<p>V tabuľke je znázornený približný vývoj predaja elektromobilov v Nórsku, vo Francúzsku, v Nemecku a vo Veľkej Británii od roku 2013 do roku 2015.</p><table><tr><th>Krajina</th><th>2013</th><th>2014</th><th>2015</th></tr><tr><td>Nórsko</td><td>5 400</td><td>15 400</td><td>22 500</td></tr><tr><td>Francúzsko</td><td>11 900</td><td>11 700</td><td>17 100</td></tr><tr><td>Nemecko</td><td>5 000</td><td>7 500</td><td>9 600</td></tr><tr><td>Veľká Británia</td><td>2 300</td><td>5 600</td><td>8 500</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s01": {
+      "kind": "text",
+      "title": "Číselná os",
+      "body": "Na číselnej osi sú vyznačené body A, B a C: A = -0,4; B = 0,4; C = 1,6.",
+      "asset": null
+    },
+    "mat-2022-a-s02": {
+      "kind": "text",
+      "title": "Uhly pri vrchole V",
+      "body": "Na obrázku je vyznačený uhol DVC s veľkosťou 20°.",
+      "asset": null
+    },
+    "mat-2022-a-s09": {
+      "kind": "text",
+      "title": "Číselná os so šiestimi úsekmi",
+      "body": "Číselná os od 0 do 1 je rozdelená na šesť rovnako dlhých úsekov. Vyznačené hodnoty na osi sú 0; 1/2 (na treťom deliacom bode) a 5/6 (na piatom deliacom bode). Bod A leží na štvrtom deliacom bode.",
+      "asset": null
+    },
+    "mat-2022-a-s11": {
+      "kind": "table",
+      "title": "Počet áut v rodine",
+      "body": "Tabuľka udáva percentuálne zastúpenie počtu rodín podľa počtu áut v rodine.<table><tr><th>Počet áut</th><th>Podiel rodín</th></tr><tr><td>0 áut</td><td>20 %</td></tr><tr><td>1 auto</td><td>65 %</td></tr><tr><td>2 autá</td><td>10 %</td></tr><tr><td>3 autá</td><td>5 %</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s14": {
+      "kind": "text",
+      "title": "Zámková dlažba",
+      "body": "Pán Jaroslav chce vydláždiť zámkovou dlažbou časť pozemku popri chate. Dlaždice sú v tvare kvádra s rozmermi podstavy 20 cm a 10 cm a výškou 10 cm. Vydláždená časť (DLAŽBA) tvorí písmeno L, je obklopená trávnikom (TRÁVNIK) a na opačnej strane susedí s chatou (CHATA). Zvislý pás dlažby vedie od bodu X po bod Y, je dlhý 4,8 m a široký 2 m. Na jeho spodný koniec nadväzuje vodorovný pás dlažby, ktorý je dlhý (široký) 3 m a vysoký 1,1 m.",
+      "asset": null
+    },
+    "mat-2022-a-s17": {
+      "kind": "table",
+      "title": "Kalendár – september",
+      "body": "Novákovci plánujú v priebehu septembra opraviť fasádu domu. S prácami sa začne 2. septembra. Počas nedieľ a sviatkov sa pracovať nebude. Tieto dni sú v kalendári podčiarknuté (vyznačené podčiarknutím v tabuľke).<table><tr><th>p</th><th>u</th><th>s</th><th>š</th><th>p</th><th>s</th><th>n</th></tr><tr><td></td><td></td><td><u>01</u></td><td>02</td><td>03</td><td>04</td><td><u>05</u></td></tr><tr><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td><u>12</u></td></tr><tr><td>13</td><td>14</td><td><u>15</u></td><td>16</td><td>17</td><td>18</td><td><u>19</u></td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td><u>26</u></td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s19": {
+      "kind": "text",
+      "title": "Hracia kocka",
+      "body": "Vrcholy P a Q majú spoločnú jednu stenu kocky, na ktorej je 6 bodiek. Zvyšné dve steny pri vrchole Q sú protiľahlé k zvyšným dvom stenám pri vrchole P.",
+      "asset": null
+    },
+    "mat-2022-a-s20": {
+      "kind": "table",
+      "title": "Súrodenci",
+      "body": "Linda robila prieskum medzi žiakmi svojej školy. Pýtala sa ich, či majú v rodine len brata alebo len sestru, alebo oboje, alebo sú bez súrodenca. Počet jednotlivých odpovedí zhrnula do tabuľky.<table><tr><th>Súrodenci</th><th>Počet žiakov</th></tr><tr><td>len brat</td><td>38</td></tr><tr><td>len sestra</td><td>43</td></tr><tr><td>brat aj sestra</td><td>25</td></tr><tr><td>bez súrodenca</td><td>19</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s21": {
+      "kind": "table",
+      "title": "Hmotnosť mamy s bábätkom",
+      "body": "Pani Šťastná sa počas týždňa vážila so svojím bábätkom. Namerané hodnoty sú uvedené v grafe v kilogramoch.<table><tr><th>Deň</th><th>Hmotnosť mamy s bábätkom (kg)</th><th>Hmotnosť mamy (kg)</th></tr><tr><td>Pondelok</td><td>65,7</td><td>60,5</td></tr><tr><td>Utorok</td><td>65,9</td><td>60,8</td></tr><tr><td>Streda</td><td>65,8</td><td>60,7</td></tr><tr><td>Štvrtok</td><td>65,8</td><td>60,6</td></tr><tr><td>Piatok</td><td>65,9</td><td>60,7</td></tr><tr><td>Sobota</td><td>66,1</td><td>60,8</td></tr><tr><td>Nedeľa</td><td>66,2</td><td>60,9</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s23": {
+      "kind": "table",
+      "title": "Tabuľka R, S, T",
+      "body": "Riadky tabuľky sú označené písmenami R, S, T a stĺpce číslami 1, 2, 3.<table><tr><th></th><th>1</th><th>2</th><th>3</th></tr><tr><td>R</td><td>-5</td><td>6</td><td>-14</td></tr><tr><td>S</td><td>10</td><td>0</td><td>-23</td></tr><tr><td>T</td><td>-3</td><td>-12</td><td>7</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s28": {
+      "kind": "table",
+      "title": "Cenník lístkov kúpaliska",
+      "body": "<table><tr><th>Druh zakúpeného lístka</th><th>Cena</th></tr><tr><td>Celodenné kúpanie dospelí</td><td>4,00 €</td></tr><tr><td>Celodenné kúpanie deti</td><td>2,50 €</td></tr><tr><td>Popoludňajšie kúpanie bez rozdielu veku</td><td>2,00 €</td></tr></table>",
+      "asset": null
+    },
+    "mat-2023-a-s1": {
+      "kind": "text",
+      "title": "Knižnica",
+      "body": "Pán Martin má v knižnici spolu 150 kníh. Roztriedil ich do piatich kategórií. Románov je 75, encyklopédií je 5-krát menej ako románov. Detských kníh má o 4 viac ako cestopisov. V kategórii „hobby“ si nechal 20 kníh.",
+      "asset": null
+    },
+    "mat-2023-a-s2": {
+      "kind": "text",
+      "title": "Pracovný stôl",
+      "body": "Pracovná doska stola má byť umiestnená v rohu kancelárie. Jej podstava má tvar štvrťkruhu, pričom polomer kruhu je 90 cm. Hrúbka dosky je 2 cm.",
+      "asset": null
+    },
+    "mat-2023-a-s3": {
+      "kind": "text",
+      "title": "Heslo",
+      "body": "Otec nechal synovi nasledujúci odkaz: „Ak chceš vedieť heslo na wifi, usporiadaj čísla od najmenšieho po najväčšie.“ 4/3 = M, 5/4 = S, 1,4 = P, 1,5 = L.",
+      "asset": null
+    },
+    "mat-2023-a-s4": {
+      "kind": "table",
+      "title": "Slovenské jaskyne",
+      "body": "Správa slovenských jaskýň má na starosti ochranu a prevádzku trinástich sprístupnených jaskýň. Päť z nich je zároveň zapísaných do Zoznamu svetového kultúrneho a prírodného dedičstva UNESCO. V grafe je znázornený prehľad návštevnosti piatich vybraných jaskýň v rokoch 2016 – 2018 (približné hodnoty odčítané z grafu): <table><tr><th>Názov jaskyne</th><th>rok 2016</th><th>rok 2017</th><th>rok 2018</th></tr><tr><td>Dobšinská ľadová jaskyňa</td><td>80 000</td><td>87 000</td><td>82 000</td></tr><tr><td>Jaskyňa Domica</td><td>38 000</td><td>30 000</td><td>29 000</td></tr><tr><td>Gombasecká jaskyňa</td><td>11 000</td><td>14 000</td><td>13 000</td></tr><tr><td>Jasovská jaskyňa</td><td>16 500</td><td>20 500</td><td>18 500</td></tr><tr><td>Ochtinská aragonitová jaskyňa</td><td>28 500</td><td>35 000</td><td>31 000</td></tr></table> V tabuľke sú uvedené základné údaje z roku 2018 týkajúce sa týchto jaskýň: <table><tr><th>Názov jaskyne</th><th>Pohorie</th><th>Dĺžka jaskyne</th><th>Dĺžka prehliadkovej trasy</th><th>Trvanie prehliadky</th><th>Vstupné dospelí</th></tr><tr><td>Dobšinská ľadová jaskyňa</td><td>Slovenský raj</td><td>1 491 m</td><td>515 m</td><td>30 minút</td><td>8 €</td></tr><tr><td>Jaskyňa Domica</td><td>Slovenský kras</td><td>5 368 m</td><td>780 m</td><td>45 minút</td><td>6 €</td></tr><tr><td>Gombasecká jaskyňa</td><td>Slovenský kras</td><td>1 525 m</td><td>530 m</td><td>30 minút</td><td>5 €</td></tr><tr><td>Jasovská jaskyňa</td><td>Slovenský kras</td><td>2 811 m</td><td>720 m</td><td>45 minút</td><td>5 €</td></tr><tr><td>Ochtinská aragonitová jaskyňa</td><td>Slovenské rudohorie</td><td>585 m</td><td>300 m</td><td>30 minút</td><td>6 €</td></tr></table>",
+      "asset": null
+    },
+    "mat-2023-a-s5": {
+      "kind": "text",
+      "title": "Vyvýšený záhon",
+      "body": "Vyvýšený záhon má tvar kvádra. Jeho dno má rozmery 1,5 m a 90 cm. Výplň záhona tvoria 4 vrstvy, zhora nadol: substrát a kompost (výška neuvedená — je predmetom úlohy 28), lístie a tráva (20 cm), štiepka (15 cm), konáre (40 cm).",
+      "asset": null
+    },
     "mat-2024-a-s1": {
       "kind": "table",
       "title": "Spoločenské tance",
@@ -41,9 +251,680 @@
       "title": "Recept na palacinky",
       "body": "Stará mama pečie palacinky podľa tohto receptu:\nSuroviny na prípravu 8 palaciniek\n· 0,5 dl oleja\n· 2 dl vody\n· 3 dl mlieka\n· 200 g hladkej múky\n· 2 vajcia\n· štipka soli\nVšetky prísady spolu premiešame. Pečieme na rozohriatej panvici, ktorú stačí natrieť olejom len prvýkrát. Palacinky sú jemné a nelepia sa.",
       "asset": null
+    },
+    "mat-2025-a-s1": {
+      "kind": "table",
+      "title": "Mapa",
+      "body": "Adam si nakreslil mapu svojich najčastejších vychádzok medzi štyrmi miestami (dom, kostol, obchod, park) a do tabuľky si poznačil vzdialenosti jednotlivých miest v krokoch. Na mape sú navyše vyznačené uhly medzi jednotlivými cestami.<table><tr><th>Počet krokov</th><th>Dom</th><th>Kostol</th><th>Obchod</th><th>Park</th></tr><tr><th>Dom</th><td>—</td><td>1 600</td><td>1 280</td><td>1 860</td></tr><tr><th>Kostol</th><td>1 600</td><td>—</td><td>?</td><td>572</td></tr><tr><th>Obchod</th><td>1 280</td><td>?</td><td>—</td><td>790</td></tr><tr><th>Park</th><td>1 860</td><td>572</td><td>790</td><td>—</td></tr></table><table><tr><th>Vrchol</th><th>Uhol medzi cestami</th><th>Veľkosť</th></tr><tr><td>Park</td><td>kostol – park – dom</td><td>55°</td></tr><tr><td>Park</td><td>dom – park – obchod</td><td>36°</td></tr><tr><td>Obchod</td><td>kostol – obchod – dom</td><td>90°</td></tr><tr><td>Dom</td><td>kostol – dom – park</td><td>17°</td></tr><tr><td>Dom</td><td>park – dom – obchod</td><td>20°</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s2": {
+      "kind": "text",
+      "title": "Balenie liekov",
+      "body": "Plastový obal s hliníkovou fóliou, ktorý slúži na balenie liekov, sa nazýva blister. Blistre sú balené do papierových škatuliek. Pôvodne bolo v jednom blistri 10 tabletiek. V jednej papierovej škatuľke sa predávalo 90 kusov tabletiek (obr. 1). Výrobca sa rozhodol šetriť životné prostredie. Iným rozmiestnením tabletiek sa mu podarilo zabaliť do jedného blistra až 15 kusov tabletiek (obr. 2). Papierová škatuľka má v oboch prípadoch tvar kvádra s hĺbkou 4,5 cm a výškou 10,5 cm; blister má rozmery 4 cm × 9,5 cm. Pri pôvodnom balení (obr. 1) je šírka škatuľky 5,7 cm, pri novom balení (obr. 2) 3,8 cm.",
+      "asset": null
+    },
+    "mat-2025-a-s3": {
+      "kind": "table",
+      "title": "Pôdorys bytu",
+      "body": "Na obrázku je znázornený pôdorys bytu. V tabuľke sú uvedené rozmery niektorých miestností v metroch. Betónový strop sa nachádza vo výške 260 cm. Steny aj okná majú tvar obdĺžnika. Byt má tri okná orientované na juh.<table><tr><th>Miestnosť</th><th>1. rozmer (m)</th><th>2. rozmer (m)</th></tr><tr><td>Predsieň</td><td>4</td><td>2</td></tr><tr><td>Spálňa</td><td>2</td><td>3</td></tr><tr><td>Obývacia izba + kuchyňa</td><td>4</td><td>5</td></tr><tr><td>Kúpeľňa</td><td>2</td><td>1</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s4": {
+      "kind": "table",
+      "title": "Inteligentné hodinky",
+      "body": "Martin a jeho sestra Laura dostali na narodeniny inteligentné hodinky. Každý deň na nich sledujú počet prejdených krokov. V diagrame sú zaznamenané počty krokov, ktoré Martin urobil počas jedného týždňa.<table><tr><th>Deň</th><th>Pondelok</th><th>Utorok</th><th>Streda</th><th>Štvrtok</th><th>Piatok</th><th>Sobota</th><th>Nedeľa</th></tr><tr><td>Počet krokov</td><td>2 400</td><td>9 603</td><td>9 692</td><td>9 712</td><td>11 373</td><td>7 920</td><td>3 823</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s5": {
+      "kind": "text",
+      "title": "Stavebnica",
+      "body": "V stavebnici sú drevené paličky rôznej dĺžky. Dĺžky paličiek sú v celých centimetroch, pričom najkratšie majú dĺžku 2 cm. Z každého druhu paličiek sa dá poskladať štvorec so stranou dĺžky 18 cm tak, že použijeme len paličky rovnakej dĺžky.",
+      "asset": null
     }
   },
   "units": [
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-06"
+      ]
+    },
+    {
+      "stimulus": "mat-2017-a-s1",
+      "ids": [
+        "mat-2017-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-10"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-13"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-14"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-15"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2017-a-17"
+      ]
+    },
+    {
+      "stimulus": "mat-2017-a-s2",
+      "ids": [
+        "mat-2017-a-18",
+        "mat-2017-a-19",
+        "mat-2017-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-05"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s1",
+      "ids": [
+        "mat-2018-a-06"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-07"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s2",
+      "ids": [
+        "mat-2018-a-08"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s3",
+      "ids": [
+        "mat-2018-a-09",
+        "mat-2018-a-10"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-11"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s4",
+      "ids": [
+        "mat-2018-a-12"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s5",
+      "ids": [
+        "mat-2018-a-13"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-14"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-15"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s6",
+      "ids": [
+        "mat-2018-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2018-a-18"
+      ]
+    },
+    {
+      "stimulus": "mat-2018-a-s7",
+      "ids": [
+        "mat-2018-a-19",
+        "mat-2018-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-05"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-06"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-10"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s1",
+      "ids": [
+        "mat-2019-a-11"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s2",
+      "ids": [
+        "mat-2019-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-13"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-14"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s3",
+      "ids": [
+        "mat-2019-a-15"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-18"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2019-a-26"
+      ]
+    },
+    {
+      "stimulus": "mat-2019-a-s4",
+      "ids": [
+        "mat-2019-a-28",
+        "mat-2019-a-29"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s01",
+      "ids": [
+        "mat-2022-a-01"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s02",
+      "ids": [
+        "mat-2022-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-08"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s09",
+      "ids": [
+        "mat-2022-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-10"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s11",
+      "ids": [
+        "mat-2022-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-13"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s14",
+      "ids": [
+        "mat-2022-a-14",
+        "mat-2022-a-15"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s17",
+      "ids": [
+        "mat-2022-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-18"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s20",
+      "ids": [
+        "mat-2022-a-20"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s21",
+      "ids": [
+        "mat-2022-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-22"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s23",
+      "ids": [
+        "mat-2022-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-25"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s28",
+      "ids": [
+        "mat-2022-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-30"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-05"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-06"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-07"
+      ]
+    },
+    {
+      "stimulus": "mat-2023-a-s1",
+      "ids": [
+        "mat-2023-a-08",
+        "mat-2023-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-10"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-13"
+      ]
+    },
+    {
+      "stimulus": "mat-2023-a-s2",
+      "ids": [
+        "mat-2023-a-14",
+        "mat-2023-a-15"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-17"
+      ]
+    },
+    {
+      "stimulus": "mat-2023-a-s3",
+      "ids": [
+        "mat-2023-a-19",
+        "mat-2023-a-20"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-25"
+      ]
+    },
+    {
+      "stimulus": "mat-2023-a-s4",
+      "ids": [
+        "mat-2023-a-26",
+        "mat-2023-a-27"
+      ]
+    },
+    {
+      "stimulus": "mat-2023-a-s5",
+      "ids": [
+        "mat-2023-a-28",
+        "mat-2023-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2023-a-30"
+      ]
+    },
     {
       "stimulus": null,
       "ids": [
@@ -166,9 +1047,2124 @@
         "mat-2024-a-29",
         "mat-2024-a-30"
       ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-05"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s1",
+      "ids": [
+        "mat-2025-a-06",
+        "mat-2025-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-09"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s2",
+      "ids": [
+        "mat-2025-a-10",
+        "mat-2025-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-12"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s3",
+      "ids": [
+        "mat-2025-a-13",
+        "mat-2025-a-14"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s4",
+      "ids": [
+        "mat-2025-a-15",
+        "mat-2025-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-18"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-19"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-20"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s5",
+      "ids": [
+        "mat-2025-a-21",
+        "mat-2025-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-26"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-30"
+      ]
     }
   ],
   "items": {
+    "mat-2017-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte.\n800 – 700 : 2 + 100 ∙ 15,67 =",
+      "asset": null,
+      "type": "num",
+      "answer": "2017",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2017-a-02": {
+      "n": 2,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi sú znázornené čísla M, A, V: M = –0,07, A = 0,08, V = 0,16. Vypočítajte M + A + V.",
+      "asset": null,
+      "type": "num",
+      "answer": "0,17",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2017-a-03": {
+      "n": 3,
+      "topic": "vyrazy-rovnice",
+      "text": "Vyriešte rovnicu a výsledok uveďte v tvare desatinného čísla s presnosťou na stotiny.\n11 ∙ (x – 1) = 11 – (1 + x)",
+      "asset": null,
+      "type": "num",
+      "answer": "1,75",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2017-a-04": {
+      "n": 4,
+      "topic": "mocniny-odmocniny",
+      "text": "Vypočítajte.\n(–0,7)² ∙ 10² + (–0,2 ∙ 10)³ =",
+      "asset": null,
+      "type": "num",
+      "answer": "41",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2017-a-06": {
+      "n": 6,
+      "topic": "umernost-trojclenka",
+      "text": "10 gramov kivi obsahuje rovnaké množstvo vitamínu C ako 50 gramov pomarančov. 100 gramov šípok obsahuje rovnaké množstvo vitamínu C ako 200 gramov kivi. Koľko gramov pomarančov obsahuje rovnaké množstvo vitamínu C ako 50 gramov šípok?",
+      "asset": null,
+      "type": "num",
+      "answer": "500",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2017-a-07": {
+      "n": 7,
+      "topic": "slovne-ulohy",
+      "text": "O koľko kilogramov papiera menej nazbierali žiaci 9. D ako žiaci 9. B?",
+      "asset": null,
+      "type": "num",
+      "answer": "40",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2017-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Zistite, koľko rôznych štvorciferných čísel môžeme vytvoriť z číslic 3 a 8 tak, aby v každom vytvorenom štvorcifernom čísle boli použité dve číslice 3 a dve číslice 8.",
+      "asset": null,
+      "type": "num",
+      "answer": "6",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2017-a-10": {
+      "n": 10,
+      "topic": "percenta-pomer",
+      "text": "V recepte na lečo sa odporúča zmiešať paradajky, papriku a cibuľu v pomere 4 : 3 : 1. Pani kuchárka už pripravila cibuľu aj papriku, pričom cibule bolo o päť kg menej ako papriky. Koľko kg paradajok bude potrebovať podľa tohto receptu?",
+      "asset": null,
+      "type": "num",
+      "answer": "10",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2017-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "Karol si šetril na tablet. Keď mal ušetrených 178 € zistil, že cenu tabletu znížili o 25 %, takže si ho môže hneď kúpiť a ešte mu z ušetrených peňazí zostane 13 €. Koľko eur stál tablet pred zlacnením?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "206,25",
+        "191,00",
+        "220,00",
+        "225,50"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2017-a-12": {
+      "n": 12,
+      "topic": "vyrazy-rovnice",
+      "text": "Na školskom výlete bolo x chlapcov. Dievčat bolo o 6 menej ako chlapcov. Dvojsedačkovou lanovkou sa všetci vyviezli z dolnej na hornú stanicu. Rozhodnite, ktorý výraz vyjadruje počet dvojsedačiek obsadených žiakmi, ak každá bola obsadená dvomi žiakmi.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "(x – 6) : 2",
+        "(x – 6 + x – 6) : 2",
+        "(x + x) : 2 – 6",
+        "(x + x – 6) : 2"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2017-a-13": {
+      "n": 13,
+      "topic": "zlomky-desatinne",
+      "text": "Z čísel –1/2, 3,6, 3 4/5, –0,39 sčítajte najväčšie a najmenšie číslo.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "3,41",
+        "3,30",
+        "3,21",
+        "3,10"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2017-a-14": {
+      "n": 14,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na tácke boli marhuľové a slivkové koláče v pomere 3 : 2. Po zjedení troch marhuľových koláčov je šanca vybratia slivkového aj marhuľového koláča rovnaká. Koľko koláčov bolo na začiatku spolu na tácke?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "5",
+        "8",
+        "10",
+        "15"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2017-a-15": {
+      "n": 15,
+      "topic": "rovinne-obrazce",
+      "text": "Dokreslením bodu F a dvoch úsečiek EF, FG vznikne v pravouhlej sústave súradníc rovnoramenný lichobežník EFGH so základňami EF a GH. V sústave súradníc sú vyznačené body E[–2; 4] a H[2; 2], spojené úsečkou EH. Aké súradnice má bod F, ak bod G má súradnice [2; –1]?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "[–2; –3]",
+        "[–4; –2]",
+        "[–3; –2]",
+        "[–2; –1]"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2017-a-16": {
+      "n": 16,
+      "topic": "rovinne-obrazce",
+      "text": "Kruh K má polomer 130 mm a kruh L má priemer 50 mm. O koľko milimetrov je obvod kruhu K väčší ako obvod kruhu L? Výsledok zaokrúhlite na celé číslo.\nPri výpočtoch použite hodnotu π = 3,14.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "o 188",
+        "o 251",
+        "o 502",
+        "o 659"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2017-a-17": {
+      "n": 17,
+      "topic": "kombinatorika-logika",
+      "text": "Stela si prečítala v miestnej tlači:\n„V januári napadalo viac zrážok ako vo februári. V apríli napadalo menej zrážok ako vo februári. V máji napadalo viac zrážok ako v marci, aj ako v januári. V marci napadalo menej zrážok ako v januári, ale viac ako vo februári.“\nNa základe týchto informácií Stela uviedla dve tvrdenia:\n1. Najmenej zrážok napadalo vo februári.\n2. Najviac zrážok napadalo v máji.\nPosúďte pravdivosť oboch Steliných tvrdení a vyberte správnu možnosť.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Obidve tvrdenia sú pravdivé.",
+        "Len prvé tvrdenie je pravdivé.",
+        "Len druhé tvrdenie je pravdivé.",
+        "Obidve tvrdenia sú nepravdivé."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2017-a-18": {
+      "n": 18,
+      "topic": "slovne-ulohy",
+      "text": "Koľko ľudí navštívilo túto zoologickú záhradu v minulom roku?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "201 148",
+        "321 716",
+        "341 861",
+        "382 151"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2017-a-19": {
+      "n": 19,
+      "topic": "jednotky-premeny",
+      "text": "Koľko hektárov zaberá v tejto zoologickej záhrade plocha, na ktorej sú chované živočíchy?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "40",
+        "400",
+        "4 000",
+        "40 000"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2017-a-20": {
+      "n": 20,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Na základe údajov uvedených v tabuľke zistite, približne koľko jedincov spolu chovali v tejto zoologickej záhrade na konci roku 2015.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2 800",
+        "2 500",
+        "2 300",
+        "2 000"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2017,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2018-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte a výsledok napíšte v tvare desatinného čísla.\n3/4 − 1 2/5 + 0,5 =",
+      "asset": null,
+      "type": "num",
+      "answer": "-0,15",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2018-a-02": {
+      "n": 2,
+      "topic": "zlomky-desatinne",
+      "text": "Máme číslo A = 753 672.\nVypočítajte rozdiel čísla A zaokrúhleného na stovky a čísla A zaokrúhleného na desaťtisíce.",
+      "asset": null,
+      "type": "num",
+      "answer": "3700",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2018-a-03": {
+      "n": 3,
+      "topic": "uhly-konstrukcie",
+      "text": "Na obrázku je znázornený rovnoramenný lichobežník CDEF. Veľkosť uhla α je 73°. Vypočítajte v stupňoch veľkosť uhla β.",
+      "asset": null,
+      "type": "num",
+      "answer": "107",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2018-a-04": {
+      "n": 4,
+      "topic": "rovinne-obrazce",
+      "text": "Štvorec JKLM má strany dĺžky 24 cm. Bod S je stredom strany LM. Vypočítajte obsah štvoruholníka JKSM v cm².",
+      "asset": null,
+      "type": "num",
+      "answer": "432",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2018-a-05": {
+      "n": 5,
+      "topic": "pytagorova-veta",
+      "text": "Na obrázku je znázornený trojuholník NET. Bod P je päta výšky tohto trojuholníka z vrcholu T na stranu NE; bod N leží na úsečke PE.\nVieme, že:\n|PE| = 16 cm,\n|TP| = 12 cm,\n|TE| = 20 cm,\n|NE| = 7 cm.\nZistite obvod trojuholníka NET v cm.",
+      "asset": null,
+      "type": "num",
+      "answer": "42",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2018-a-06": {
+      "n": 6,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Koľko percent zo všetkých etáp predstavujú tie etapy, v ktorých skončil na 1. až 3. mieste?\nVýsledok zaokrúhlite na celé číslo.",
+      "asset": null,
+      "type": "num",
+      "answer": "38",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2018-a-07": {
+      "n": 7,
+      "topic": "umernost-trojclenka",
+      "text": "Reštaurácia bola v čase obeda plne obsadená. Kým v reštaurácii obsluhovali len traja čašníci, hostia čakali na obedové menu v priemere 45 minút. Koľko minút v priemere budú hostia čakať, ak sa k trom obsluhujúcim čašníkom pridajú ešte ďalší dvaja čašníci obsluhujúci rovnako rýchlo?",
+      "asset": null,
+      "type": "num",
+      "answer": "27",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2018-a-08": {
+      "n": 8,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Skutočný objem tohto smetného koša bol 12 litrov. O koľko litrov sa od tejto hodnoty líši priemerný žiacky odhad?",
+      "asset": null,
+      "type": "num",
+      "answer": "3,75",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2018-a-09": {
+      "n": 9,
+      "topic": "slovne-ulohy",
+      "text": "Najviac koľko osôb sa môže vystriedať vo vírivom bazéne za 2 hodiny, ak bude dodržaný aj maximálny počet osôb, aj odporúčaná doba pobytu v tomto bazéne?",
+      "asset": null,
+      "type": "num",
+      "answer": "32",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2018-a-10": {
+      "n": 10,
+      "topic": "percenta-pomer",
+      "text": "Pri napúšťaní vnútorného detského bazéna bol kvôli poruche vypnutý prívod vody práve vo chvíli, keď bolo v tomto bazéne napustených 15,6 m³ vody. Koľko percent z celkového objemu tohto bazéna bolo napustených do momentu vypnutia prívodu vody?",
+      "asset": null,
+      "type": "num",
+      "answer": "65",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2018-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "Brigádnici Ivan, Lea a Dana zarobili spolu 480 eur. Ivan zarobil tretinu z týchto peňazí. Zvyšné peniaze zarobili Lea a Dana v pomere 3 : 1. Koľko eur zarobila Lea?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "240 €",
+        "120 €",
+        "320 €",
+        "80 €"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2018-a-12": {
+      "n": 12,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V tabuľke sú uvedené názvy hudobných štýlov a počty skladieb, ktoré obsahujú. Doplňte chýbajúce číslo tak, aby pri funkcii náhodného prehrávania hrala rocková skladba s pravdepodobnosťou 21 % ako prvá.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "21",
+        "32",
+        "36",
+        "42"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2018-a-13": {
+      "n": 13,
+      "topic": "kombinatorika-logika",
+      "text": "Pri analýze testovanej vzorky žiakov boli vyslovené dve tvrdenia.\n1. Je možné, že formu A riešilo o 6 žiakov menej ako formu B.\n2. Je možné, že formu B riešilo o 11 žiakov viac ako formu A.\nPosúďte pravdivosť týchto dvoch tvrdení a vyberte správnu možnosť.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Len prvé tvrdenie je pravdivé.",
+        "Len druhé tvrdenie je pravdivé.",
+        "Obidve tvrdenia sú pravdivé.",
+        "Obidve tvrdenia sú nepravdivé."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2018-a-14": {
+      "n": 14,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte.\n1/3 + 1/3 · 1/3 + 1/3 =",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "0,8̅",
+        "0,7̅",
+        "0,5̅",
+        "0,4̅"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2018-a-15": {
+      "n": 15,
+      "topic": "mocniny-odmocniny",
+      "text": "Vyberte mocninu, ktorá má najväčšiu hodnotu.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "5²",
+        "4³",
+        "3⁴",
+        "2⁵"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2018-a-16": {
+      "n": 16,
+      "topic": "mocniny-odmocniny",
+      "text": "Najviac na koľko papierov formátu A6 možno rozstrihnúť papier formátu A2?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "8",
+        "16",
+        "32",
+        "64"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2018-a-17": {
+      "n": 17,
+      "topic": "kombinatorika-logika",
+      "text": "Drevenú kocku s hranou dĺžky 4 cm sme natreli po celom povrchu zelenou farbou. Potom sme ju rozrezali na malé kocky s hranou dĺžky 1 cm. Počet kociek, ktoré majú práve dve steny zafarbené nazeleno je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "8.",
+        "12.",
+        "16.",
+        "24."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2018-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "Na ľavej strane rovnice je výraz x − 2,4. Zistite, ktorý z výrazov patrí na pravú stranu rovnice, aby rovnica mala koreň x = 2,8.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "3 · (x − 1,1)",
+        "2 · (3 − x)",
+        "3 · (x + 1,1)",
+        "2 · (3 + x)"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2018-a-19": {
+      "n": 19,
+      "topic": "percenta-pomer",
+      "text": "Pani Nováková navrhovala byt č. 2, lebo podľa nej má zo všetkých ponúkaných bytov najnižšiu cenu za 1 m². Pán Novák navrhoval byt č. 3, lebo je najlacnejší.\nKtorý z nich správne odôvodnil svoj návrh?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Len pani Nováková.",
+        "Len pán Novák.",
+        "Obidvaja.",
+        "Ani jeden."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2018-a-20": {
+      "n": 20,
+      "topic": "slovne-ulohy",
+      "text": "Nakoniec sa rozhodli pre dvojizbový byt v pôvodnom stave. Vybrali si ten s väčšou rozlohou. Majú našetrených 17 000 eur, zvyšnú časť ceny si požičajú od banky. Splácať budú 120 eur mesačne po dobu 15 rokov. O koľko eur zaplatia banke viac oproti požičanej sume?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "4 600 €",
+        "5 400 €",
+        "6 200 €",
+        "6 600 €"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2018,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2019-a-01": {
+      "n": 1,
+      "topic": "percenta-pomer",
+      "text": "Alica si kúpila zmes orechov obsahujúcu kešu orechy, lieskové orechy a arašidy zastúpené v pomere 1 : 2 : 3. Vypočítajte v gramoch hmotnosť celej zmesi, ak arašidy majú hmotnosť 90 g.",
+      "asset": null,
+      "type": "num",
+      "answer": "180",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2019-a-03": {
+      "n": 3,
+      "topic": "slovne-ulohy",
+      "text": "Na farme spolu chovajú 110 kusov hydiny (sliepky, morky, kačky a husi). Sliepky predstavujú polovicu, moriek je 10 a kačiek je o 7 viac ako husí. Koľko husí chovajú na farme?",
+      "asset": null,
+      "type": "num",
+      "answer": "19",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2019-a-04": {
+      "n": 4,
+      "topic": "mocniny-odmocniny",
+      "text": "Koľkokrát je číslo 5 · 10⁵ väčšie ako číslo 125 · 10³?",
+      "asset": null,
+      "type": "num",
+      "answer": "4",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2019-a-05": {
+      "n": 5,
+      "topic": "vyrazy-rovnice",
+      "text": "Riešte nerovnicu 2x – 77 > 93 a určte, koľko dvojciferných čísel je riešením tejto nerovnice.",
+      "asset": null,
+      "type": "num",
+      "answer": "14",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2019-a-06": {
+      "n": 6,
+      "topic": "rovinne-obrazce",
+      "text": "Zo štvorca ABCD (vrcholy D a C na hornej strane, A a B na spodnej strane) so stranou dĺžky 12,7 cm sme z jeho hornej strany DC vystrihli obdĺžnikový zárez v tvare štvorca KLMN so stranou dĺžky 5,8 cm (vrcholy N a M ležia na strane DC, K a L sú vnútorné vrcholy zárezu). Vypočítajte v cm obvod takto vzniknutého osemuholníka ABCMLKND.",
+      "asset": null,
+      "type": "num",
+      "answer": "62,4",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2019-a-07": {
+      "n": 7,
+      "topic": "percenta-pomer",
+      "text": "Jano, Alena a Karol spolu nazbierali 40 % hmotnosti papiera z celej triedy. Jano nazbieral 93 kg, Alena nazbierala 81 kg a Karol nazbieral 96 kg. Koľko kg papiera nazbierali všetci žiaci tejto triedy?",
+      "asset": null,
+      "type": "num",
+      "answer": "675",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2019-a-08": {
+      "n": 8,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Počas automatického ladenia TV prijímač vyhľadal 25 kanálov, z toho boli štyri hudobné. Kanály sa do pamäte TV prijímača ukladajú v náhodnom poradí. Vyjadrite v percentách pravdepodobnosť udalosti, že ako prvý bude uložený hudobný kanál.",
+      "asset": null,
+      "type": "num",
+      "answer": "16",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2019-a-09": {
+      "n": 9,
+      "topic": "zlomky-desatinne",
+      "text": "Vypočítajte dve tretiny z troch štvrtín. Výsledok zapíšte zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/2",
+      "accept": [
+        "½"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2019-a-10": {
+      "n": 10,
+      "topic": "zlomky-desatinne",
+      "text": "Traja súrodenci si objednali jednu pizzu veľkosti XL. Miška zjedla štvrtinu z celej pizze. Lenka zjedla tretinu zvyšku. Patrik zjedol polovicu z toho, čo nechala Lenka. Zvyšok si dali zabaliť domov. Akú časť pizze im zabalili? Výsledok zapíšte zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/4",
+      "accept": [
+        "¼"
+      ],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2019-a-11": {
+      "n": 11,
+      "topic": "kombinatorika-logika",
+      "text": "Anna si pripravuje na raňajky ovsenú, pohánkovú alebo pšenovú kašu s jedným z troch druhov ovocia, ochutenú medom alebo kakaom. Koľko rôznych druhov raňajok si môže pripraviť z uvedených surovín?",
+      "asset": null,
+      "type": "num",
+      "answer": "18",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2019-a-12": {
+      "n": 12,
+      "topic": "slovne-ulohy",
+      "text": "Paulína má stovky svojich fotografií z dovolenky uložené na pamäťových kartách. Všetky fotografie dala vytlačiť. V tabuľke sú uvedené počty fotografií a ceny za ich vytlačenie. Koľko eur zaplatila Paulína za vytlačenie všetkých fotografií s rozmermi 10 cm x 15 cm?",
+      "asset": null,
+      "type": "num",
+      "answer": "54",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2019-a-13": {
+      "n": 13,
+      "topic": "telesa",
+      "text": "Škatuľka v tvare kvádra má rozmery 12 cm, 8 cm a 5 cm. Vypočítajte jej objem v litroch. Výsledok uveďte s presnosťou na dve desatinné miesta.",
+      "asset": null,
+      "type": "num",
+      "answer": "0,48",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2019-a-14": {
+      "n": 14,
+      "topic": "jednotky-premeny",
+      "text": "Za domom stojí sud, v ktorom je 0,25 m³ dažďovej vody. Starý otec z neho postupne vyberá 12-litrovou krhlou vodu na polievanie, až kým pri dne neostane posledných 10 litrov vody. Najviac koľko plných krhieľ mohol z tohto suda starý otec naplniť?",
+      "asset": null,
+      "type": "num",
+      "answer": "20",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2019-a-15": {
+      "n": 15,
+      "topic": "slovne-ulohy",
+      "text": "Súrodenci Novákovci potrebovali odvážiť psov Bima a Astu. Psy odmietali pokojne sedieť na váhe, preto sa odvážili spolu s nimi tak, ako je uvedené v tabuľke. Koľko kilogramov vážila Asta?",
+      "asset": null,
+      "type": "num",
+      "answer": "31",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2019-a-16": {
+      "n": 16,
+      "topic": "rovinne-obrazce",
+      "text": "Pán Novák cvičil na lúke psov Bima a Astu. V istom momente bol od neho Bim vzdialený 24 metrov a Asta 17 metrov. Ktorá z nasledujúcich možností nemohla nastať? Psy boli od seba vzdialené",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6 m.",
+        "7 m.",
+        "30 m.",
+        "41 m."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2019-a-17": {
+      "n": 17,
+      "topic": "vyrazy-rovnice",
+      "text": "Vypočítajte hodnotu výrazu 2x + 3 · (2 – y) pre x = 3 a y = –1.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "9",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2019-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "V prepravke sa nachádza niekoľko melónov. Počet melónov v prepravke označme p a hmotnosť všetkých melónov v prepravke vyjadrenú v kilogramoch označme m. Pomocou ktorého výpočtu zistíme priemernú hmotnosť melónov v prepravke v kilogramoch?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "m : p",
+        "m – p",
+        "p · m",
+        "p : m"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2019-a-20": {
+      "n": 20,
+      "topic": "kombinatorika-logika",
+      "text": "V nepriehľadnom vrecúšku sú dve guľôčky biele, dve červené a dve modré. Najmenej koľko guľôčok musíme vytiahnuť z vrecúška, aby sme mali istotu, že medzi vytiahnutými guľôčkami bude aspoň jedna guľôčka biela?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2019-a-21": {
+      "n": 21,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Je daná trojica čísel: 53; 56,9 a 55,4. Určte číslo, ktoré musíme odčítať od najväčšieho z nich, aby aritmetický priemer novej trojice čísel bol 54.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2,9",
+        "1,1",
+        "4,3",
+        "3,3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2019-a-22": {
+      "n": 22,
+      "topic": "percenta-pomer",
+      "text": "V predajni mobilného operátora mali týždeň zliav. Mobilný telefón LF 34 zlacnel zo 769 € na 544 €. Približne o koľko percent klesla cena tohto mobilného telefónu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "70,7",
+        "58,6",
+        "41,3",
+        "29,3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2019-a-23": {
+      "n": 23,
+      "topic": "kombinatorika-logika",
+      "text": "Rodičia a ich dve deti Anna a Boris sa rozhodli stráviť nedeľné popoludnie pri šachu, pričom mali v pláne hrať každý s každým jednu šachovú partiu. Rozhodnite, ktorí dvaja z nich neodohrali spoločnú partiu, ak viete, že: Anna vyhrala nad Borisom. Otec trikrát remizoval. Boris má na konte aj výhru, aj remízu, aj prehru. Spoločnú partiu neodohrali",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "otec a mama.",
+        "Anna a otec.",
+        "mama a Anna.",
+        "Boris a mama."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2019-a-24": {
+      "n": 24,
+      "topic": "umernost-trojclenka",
+      "text": "Osobný automobil prešiel trasu z Trenčína do Ružomberka za 1 hodinu a 48 minút. Tieto dve mestá sú od seba vzdialené 144 km. O koľko minút by si vodič skrátil spiatočnú cestu, ak by na nej prešiel za hodinu priemerne 90 km?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "o 14 minút",
+        "o 12 minút",
+        "o 10 minút",
+        "o 8 minút"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2019-a-26": {
+      "n": 26,
+      "topic": "pytagorova-veta",
+      "text": "Pravouhlému trojuholníku ABC s odvesnami 5 cm a 12 cm je opísaná kružnica k. Vypočítajte dĺžku kružnice k v centimetroch. Pri výpočte použite π = 3,14 a výsledok zaokrúhlite na desatiny.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "81,6",
+        "75,4",
+        "40,8",
+        "37,7"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2019-a-28": {
+      "n": 28,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Približne koľko elektromobilov sa predalo podľa tabuľky vo Francúzsku v roku 2014?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "10 500",
+        "11 500",
+        "12 500",
+        "13 500"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2019-a-29": {
+      "n": 29,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V ktorej krajine sa predalo iba v jednom z rokov 2013, 2014, 2015 viac elektromobilov, ako sa predalo v tom istom roku v Nórsku?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "vo Veľkej Británii",
+        "vo Francúzsku",
+        "v Nemecku",
+        "v žiadnej krajine"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2019,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2022-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi sú body A, B a C obrazmi reálnych čísel. Vypočítaj hodnotu výrazu A + B – C a výsledok zapíš v tvare desatinného čísla.",
+      "asset": null,
+      "type": "num",
+      "answer": "-1,6",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2022-a-02": {
+      "n": 2,
+      "topic": "uhly-konstrukcie",
+      "text": "Veľkosť uhla DVC na obrázku je tretinou veľkosti uhla BVC. Polpriamka VE je os uhla AVC. Body A, V, B ležia na jednej priamke. Vypočítaj v stupňoch veľkosť uhla γ.",
+      "asset": null,
+      "type": "num",
+      "answer": "60",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2022-a-03": {
+      "n": 3,
+      "topic": "slovne-ulohy",
+      "text": "Desiati priatelia sa dohodli, že si objednajú pizze spolu, aby využili akciu, kedy dostanú každú štvrtú pizzu za polovicu. Jedna celá pizza stojí 6 €. Koľko eur ich vyšla 1 pizza, ak si objednali 10 pízz? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "5,4",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2022-a-04": {
+      "n": 4,
+      "topic": "rovinne-obrazce",
+      "text": "V materskej škole chcú zasiať trávu na pozemok okolo pieskoviska, ktoré má pôdorys v tvare štvorca s výmerou 49 m². Umiestnené je na štvorcovom pozemku so stranou dlhou 9 m. Koľko celých balení trávnikovej zmesi treba kúpiť na zatrávnenie plochy pozemku okolo pieskoviska, ak jedno balenie stačí na 5 m² plochy?",
+      "asset": null,
+      "type": "num",
+      "answer": "7",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2022-a-07": {
+      "n": 7,
+      "topic": "pytagorova-veta",
+      "text": "Pravidelný osemuholník so stranou dlhou 10 cm vznikol tak, že sme z papierového štvorca odstrihli v jeho vrcholoch rovnoramenné trojuholníky. Vypočítaj dĺžku strany pôvodného štvorca v centimetroch. Výsledok zaokrúhli na celé číslo.",
+      "asset": null,
+      "type": "num",
+      "answer": "24",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2022-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Patrik mal za úlohu vypísať všetky trojciferné čísla zložené z číslic 0, 2, 5 a 8 bez opakovania. Podarilo sa mu nájsť tieto čísla: 205, 502, 805, 802, 520, 820, 850, 250. Koľko čísel mu chýba?",
+      "asset": null,
+      "type": "num",
+      "answer": "10",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2022-a-09": {
+      "n": 9,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi je vyznačených šesť rovnako dlhých úsekov. Bod A je obrazom reálneho čísla. Zapíš toto číslo zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "2/3",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2022-a-10": {
+      "n": 10,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V triede je 20 žiakov. Každý z nich pripravil projekt z geografie. Na hodine vždy vyžrebujú jedného žiaka z tých, ktorí ešte svoj projekt neprezentovali, aby ho prezentoval na nasledujúcej hodine. Aká je pravdepodobnosť, že vyberú Petra, ak 13 jeho spolužiakov už svoj projekt prezentovalo? Výsledok zapíš zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/7",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2022-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "V bytovom dome býva 60 rodín. Tabuľka udáva percentuálne zastúpenie počtu rodín podľa počtu áut v rodine. Koľko rodín má najmenej dve autá?",
+      "asset": null,
+      "type": "num",
+      "answer": "9",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2022-a-12": {
+      "n": 12,
+      "topic": "percenta-pomer",
+      "text": "Do každého pecňa chleba pridávajú v miestnej pekárni slnečnicové, ľanové, konopné a tekvicové semienka v pomere 5 : 3 : 4 : 2. Koľko kilogramov slnečnicových semienok treba ešte pridať, ak ľanové, konopné a tekvicové semienka majú spolu hmotnosť 6,3 kg?",
+      "asset": null,
+      "type": "num",
+      "answer": "3,5",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2022-a-13": {
+      "n": 13,
+      "topic": "vyrazy-rovnice",
+      "text": "Nájdi číslo, ktoré je riešením rovnice 6x – (2 – 2x) = 3 · (x – 4).",
+      "asset": null,
+      "type": "num",
+      "answer": "-2",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2022-a-14": {
+      "n": 14,
+      "topic": "telesa",
+      "text": "Z miesta, kde má byť zámková dlažba, treba najskôr odstrániť zeminu do hĺbky 0,2 m. Koľko metrov kubických zeminy treba odstrániť? Výsledok napíš s presnosťou na dve desatinné miesta.",
+      "asset": null,
+      "type": "num",
+      "answer": "2,58",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2022-a-15": {
+      "n": 15,
+      "topic": "rovinne-obrazce",
+      "text": "Medzi dlažbu a trávnik treba umiestniť obrubníky. Jeden obrubník je dlhý 1 m. Koľko kusov obrubníkov musí pán Jaroslav kúpiť?",
+      "asset": null,
+      "type": "num",
+      "answer": "12",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2022-a-17": {
+      "n": 17,
+      "topic": "umernost-trojclenka",
+      "text": "Novákovci plánujú v priebehu septembra opraviť fasádu domu. S prácami sa začne 2. septembra. Počas nedieľ a sviatkov sa pracovať nebude. Tieto dni sú v kalendári podčiarknuté. Štyria robotníci by opravili fasádu za 10 dní. Kedy možno očakávať skončenie prác, ak budú pracovať len dvaja robotníci? Predpokladáme, že všetci pracujú rovnako výkonne.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6. septembra",
+        "7. septembra",
+        "21. septembra",
+        "25. septembra"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2022-a-18": {
+      "n": 18,
+      "topic": "mocniny-odmocniny",
+      "text": "Ktorá z nasledujúcich nerovností platí?\nNerovnosť 1: 3² > 2³\nNerovnosť 2: (-3)² < (-2)³",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Platí len nerovnosť 1.",
+        "Platí len nerovnosť 2.",
+        "Obidve nerovnosti platia.",
+        "Ani jedna nerovnosť neplatí."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2022-a-20": {
+      "n": 20,
+      "topic": "percenta-pomer",
+      "text": "Linda robila prieskum medzi žiakmi svojej školy. Pýtala sa ich, či majú v rodine len brata alebo len sestru, alebo oboje, alebo sú bez súrodenca. Počet jednotlivých odpovedí zhrnula do tabuľky. Posúď pravdivosť nasledujúcich dvoch tvrdení.\n1. Linda zistila, že bez súrodenca je viac ako 10 % opýtaných žiakov.\n2. U pätiny opýtaných žiakov sú v rodine určite najmenej tri deti.\nPravdivé",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "je len prvé tvrdenie.",
+        "je len druhé tvrdenie.",
+        "nie je žiadne z tvrdení.",
+        "sú obidve tvrdenia."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2022-a-21": {
+      "n": 21,
+      "topic": "zlomky-desatinne",
+      "text": "Pani Šťastná sa počas týždňa vážila so svojím bábätkom. Namerané hodnoty sú uvedené v nasledujúcom grafe v kilogramoch. O koľko kilogramov bola hmotnosť bábätka väčšia v nedeľu ako v pondelok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "0,1 kg",
+        "0,2 kg",
+        "0,3 kg",
+        "0,4 kg"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2022-a-22": {
+      "n": 22,
+      "topic": "kombinatorika-logika",
+      "text": "Číslo je dokonalé vtedy, ak je súčet všetkých jeho deliteľov okrem čísla samotného rovnaký ako toto číslo.\nNapríklad číslo 28 je dokonalé. Súčet jeho deliteľov 1, 2, 4, 7 a 14 je 28.\nKtoré z nasledujúcich čísel je tiež dokonalé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "14",
+        "12",
+        "8",
+        "6"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2022-a-23": {
+      "n": 23,
+      "topic": "vyrazy-rovnice",
+      "text": "Riadky tabuľky sú označené písmenami R, S, T a stĺpce číslami 1, 2, 3. Do výrazu R2 – S3 + T1 dosaď príslušné čísla a vypočítaj jeho hodnotu. V ktorej možnosti je uvedený správny výsledok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "-14",
+        "-20",
+        "26",
+        "32"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2022-a-24": {
+      "n": 24,
+      "topic": "vyrazy-rovnice",
+      "text": "Ktoré číslo nie je riešením nasledujúcej nerovnice?\n3 < 2 · (3x – 9)",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2022-a-25": {
+      "n": 25,
+      "topic": "rovinne-obrazce",
+      "text": "Menší kruh a štvrtina väčšieho kruhu majú rovnaký obsah. Vypočítaj polomer väčšieho kruhu v cm, ak priemer menšieho kruhu je 20 cm. Počítaj s hodnotou π = 3,14.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "10",
+        "20",
+        "40",
+        "80"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2022-a-28": {
+      "n": 28,
+      "topic": "vyrazy-rovnice",
+      "text": "V nasledujúcej tabuľke je uvedený cenník lístkov kúpaliska. Počas dňa si lístok na celodenné kúpanie zakúpilo x dospelých a y detí. Na popoludňajšie kúpanie sa predalo 17 lístkov. Ktorý výraz vyjadruje tržbu kúpaliska počas celého dňa?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6,5xy + 17",
+        "4x + 2,5y + 17",
+        "4x + 2,5y + 34",
+        "6,5xy + 34"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2022-a-29": {
+      "n": 29,
+      "topic": "telesa",
+      "text": "Do škatuľky v tvare kvádra so štvorcovou podstavou so stranou dĺžky 4 cm a výškou 5 cm nasypeme čaj 1 cm pod horný okraj. Do druhej škatuľky v tvare kvádra s rozmermi podstavy 5 cm a 4 cm a výškou 4 cm nasypeme ten istý druh čaju, rovnako 1 cm pod horný okraj. Vypočítaj rozdiel v objeme nasypaných čajov v centimetroch kubických.\nRozdiel je:",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2022-a-30": {
+      "n": 30,
+      "topic": "kombinatorika-logika",
+      "text": "V obci stojí vedľa seba päť kontajnerov na triedený odpad. Každý z nich má inú farbu podľa toho, čo sa v ňom zbiera. Na základe nasledujúcich tvrdení zisti, akú farbu má kontajner, ktorý sa nachádza uprostred.\n1. Žltý kontajner je hneď napravo od oranžového kontajnera.\n2. Zelený a modrý kontajner nie sú vedľa seba.\n3. Medzi oranžovým a modrým kontajnerom je iba červený kontajner.\nKontajner, ktorý sa nachádza uprostred, má farbu",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "oranžovú.",
+        "zelenú.",
+        "červenú.",
+        "modrú."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 30
+      }
+    },
+    "mat-2023-a-01": {
+      "n": 1,
+      "topic": "vyrazy-rovnice",
+      "text": "V sčítacej pyramíde sa súčet čísel v susedných políčkach nachádza v políčku nad nimi. V pyramíde je v hornom riadku číslo –30, v prostrednom riadku čísla –40 (vľavo) a 10 (vpravo). Spodný riadok má tri políčka: prvé (vľavo) je otáznik, prostredné je prázdne, tretie (vpravo) je –10. Ktoré číslo patrí na miesto otáznika?",
+      "asset": null,
+      "type": "num",
+      "answer": "-60",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2023-a-02": {
+      "n": 2,
+      "topic": "umernost-trojclenka",
+      "text": "Priemerná spotreba automobilu je 5,6 litra paliva na 100 kilometrov. Koľko litrov paliva sa pri priemernej spotrebe minulo, ak automobil prešiel 800 km? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "44,8",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2023-a-03": {
+      "n": 3,
+      "topic": "telesa",
+      "text": "Na obrázku je znázornený úložný box v tvare kvádra s rozmermi 42 cm, 24 cm a 24 cm vyplnený zhodnými kockami. Koľko kociek je spolu v úložnom boxe, ak v hornej vrstve vidíme 28 kociek?",
+      "asset": null,
+      "type": "num",
+      "answer": "112",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2023-a-04": {
+      "n": 4,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Lenka ušetrila v januári 22 eur, vo februári 16 eur a v marci 21 eur. Koľko eur ušetrila v apríli, ak za tieto štyri mesiace ušetrila priemerne 20 eur mesačne?",
+      "asset": null,
+      "type": "num",
+      "answer": "21",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2023-a-05": {
+      "n": 5,
+      "topic": "umernost-trojclenka",
+      "text": "Pozemok má pôdorys v tvare kosodĺžnika. Na pláne s mierkou 1 : 5 000 má jedna zo strán kosodĺžnika dĺžku 9 cm a priľahlá výška má 7 cm. Koľko hektárov zaberá pozemok v skutočnosti? Výsledok uveď s presnosťou na stotiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "15,75",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2023-a-06": {
+      "n": 6,
+      "topic": "kombinatorika-logika",
+      "text": "Marta sa oblieka do školy. Chce si obliecť sukňu, tričko a obuť tenisky. V skrini má 3 sukne rôznej dĺžky, 5 tričiek rôznej farby a 4 páry tenisiek z rôzneho materiálu. Koľkými rôznymi spôsobmi sa Marta môže obliecť a obuť?",
+      "asset": null,
+      "type": "num",
+      "answer": "60",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2023-a-07": {
+      "n": 7,
+      "topic": "uhly-konstrukcie",
+      "text": "Vypočítaj v stupňoch veľkosť ostrého uhla, ktorý zvierajú ručičky hodín o pol šiestej.",
+      "asset": null,
+      "type": "num",
+      "answer": "15",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2023-a-08": {
+      "n": 8,
+      "topic": "vyrazy-rovnice",
+      "text": "Koľko cestopisov má pán Martin vo svojej knižnici?",
+      "asset": null,
+      "type": "num",
+      "answer": "18",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2023-a-09": {
+      "n": 9,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Do jednej z kníh v kategórii „hobby“ si pán Martin odložil úspory. Jeho suseda zaujali práve knihy z tejto kategórie a chcel si nejakú z nich požičať. Aká je pravdepodobnosť, že si náhodou vyberie tú knihu, v ktorej mal pán Martin odložené úspory? Výsledok uveď zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/20",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2023-a-10": {
+      "n": 10,
+      "topic": "zlomky-desatinne",
+      "text": "Číselná os od 0 do 2 je rozdelená na 8 zhodných úsekov. Bod A leží na 7. deliacom bode od začiatku (medzi hodnotami 1,5 a 2, bližšie k 2). Uveď toto číslo zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "7/4",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2023-a-11": {
+      "n": 11,
+      "topic": "mocniny-odmocniny",
+      "text": "Vypočítaj 1,5² + 1,6² + 1,7² =",
+      "asset": null,
+      "type": "num",
+      "answer": "7,7",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2023-a-12": {
+      "n": 12,
+      "topic": "slovne-ulohy",
+      "text": "Mesačník o zdravej výžive bežne stojí 2,90 €. Pán Milan si objednal ročné predplatné, zaplatil zaň 29,50 €. Koľko eur ušetril kúpou predplatného?",
+      "asset": null,
+      "type": "num",
+      "answer": "5,30",
+      "accept": [
+        "5,3"
+      ],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2023-a-13": {
+      "n": 13,
+      "topic": "rovinne-obrazce",
+      "text": "Osemuholník ABCDEFGH sa skladá z ôsmich zhodných trojuholníkov so spoločným vrcholom v strede osemuholníka. Obsah tohto osemuholníka je 33,6 cm². Tmavou farbou sú vyfarbené tri susedné trojuholníky: medzi vrcholmi H a G, medzi G a F a medzi F a E. Vypočítaj obsah časti vyfarbenej tmavou farbou. Výsledok uveď v cm².",
+      "asset": null,
+      "type": "num",
+      "answer": "12,6",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2023-a-14": {
+      "n": 14,
+      "topic": "rovinne-obrazce",
+      "text": "Hrany pracovnej dosky sa upravia tak, že sa po celom obvode dosky nažehlí hranovacia páska. Koľko centimetrov hranovacej pásky sa spotrebuje na olemovanie jednej pracovnej dosky? Počítaj s hodnotou π = 3,14. Výsledok zaokrúhli na celé centimetre nahor.",
+      "asset": null,
+      "type": "num",
+      "answer": "322",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2023-a-15": {
+      "n": 15,
+      "topic": "percenta-pomer",
+      "text": "Pracovné dosky sa vyrezávajú z dosiek s podstavou v tvare štvorca so stranou dĺžky 180 cm. Koľko percent tvorí odpad pri vyrezaní štyroch takýchto pracovných dosiek? Počítaj s hodnotou π = 3,14.",
+      "asset": null,
+      "type": "num",
+      "answer": "21,5",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2023-a-16": {
+      "n": 16,
+      "topic": "vyrazy-rovnice",
+      "text": "Pani Klára má vo svojej banke povolené prečerpanie účtu. Aktuálne je na jej účte mínusový zostatok –125,80 €. Po pripísaní výplaty sa suma na jej účte zmenila na 721,50 €. Vypočítaj výšku výplaty pani Kláry v eurách.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "595,70",
+        "606,70",
+        "846,30",
+        "847,30"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2023-a-17": {
+      "n": 17,
+      "topic": "rovinne-obrazce",
+      "text": "Priamka k je rovnobežná s priamkou l. Priamka m je kolmá na priamku k. Priesečník priamok k a m označme A. Priesečník priamok l a m označme B. Priamka n je rôznobežná so všetkými predchádzajúcimi priamkami a priesečník priamok m a n neleží na úsečke AB. Priesečník priamok l a n označme C. Priesečník priamok k a n označme D. Na základe toho, čo vieme o vzájomnej polohe uvedených priamok, je štvoruholník ABCD určite",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "obdĺžnik.",
+        "lichobežník.",
+        "kosodĺžnik.",
+        "štvorec."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2023-a-19": {
+      "n": 19,
+      "topic": "zlomky-desatinne",
+      "text": "Ktoré heslo na wifi je správne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "LPMS",
+        "MSPL",
+        "PSLM",
+        "SMPL"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2023-a-20": {
+      "n": 20,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Predpokladajme, že sa synovi nechcelo zoraďovať čísla do správneho poradia. Aká je pravdepodobnosť, že náhodne zadá správne heslo na prvý pokus? Výsledok zaokrúhli na desatiny.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "4,2 %",
+        "5,6 %",
+        "8,3 %",
+        "16,7 %"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2023-a-21": {
+      "n": 21,
+      "topic": "slovne-ulohy",
+      "text": "Jolana číta detektívku. Prečítala už 270 strán. Koľko strán má celá detektívka, ak Jolane do konca ostáva prečítať ešte dve pätiny knihy?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "162",
+        "180",
+        "450",
+        "675"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2023-a-22": {
+      "n": 22,
+      "topic": "funkcie-grafy",
+      "text": "Vypočítaj hodnotu y pre x = –2 podľa nasledujúceho pravidla: ak x < –5, tak y = 5 – 2x; ak x ≥ –5, tak y = –3 + 5x.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "9",
+        "–4",
+        "–6",
+        "–13"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2023-a-23": {
+      "n": 23,
+      "topic": "slovne-ulohy",
+      "text": "Štyria súrodenci si sporia na spoločnú elektrickú kolobežku. Tomáš nasporil o 30 € viac než Eva, Roman 2-krát viac ako Eva a Soňa o 20 % viac ako Eva. Spolu už nasporili 290 €. Ktoré z nasledujúcich tvrdení je nesprávne?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Sestry nasporili menej ako ich bratia.",
+        "Bratia spolu nasporili 3-krát viac ako Soňa.",
+        "Tomáš nasporil o 20 € viac ako Roman.",
+        "Eva nasporila o 10 € menej ako Soňa."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2023-a-24": {
+      "n": 24,
+      "topic": "vyrazy-rovnice",
+      "text": "Na číselnej osi je vyznačený obraz čísla a; číslo a leží medzi hodnotami 3 a 4, bližšie k 4. Ktoré z uvedených piatich vzťahov platia pre číslo a? 1. a – 6 > 0  2. 4 – a > 0  3. 5 – a < 0  4. a – 16/3 < 0  5. –1 – a < 0",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Ani jeden vzťah neplatí.",
+        "Platí 2., 4. a 5. vzťah.",
+        "Platí iba 1. a 3. vzťah.",
+        "Platí iba 2. a 4. vzťah."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2023-a-25": {
+      "n": 25,
+      "topic": "rovinne-obrazce",
+      "text": "V štvorcovej sieti so stranou štvorca dlhou 1 cm je nakreslený pravouhlý lichobežník s dvomi rovnobežnými zvislými stranami dĺžky 5 cm a 2 cm, ktoré sú od seba vzdialené 5 cm (v sieti sú spolu s ním nakreslené aj tri ďalšie štvoruholníky, ktoré pravouhlým lichobežníkom nie sú). V ktorej možnosti je správne uvedený jeho obsah?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "18 cm²",
+        "17,5 cm²",
+        "15 cm²",
+        "13,5 cm²"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2023-a-26": {
+      "n": 26,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Rozhodni o pravdivosti nasledujúcich dvoch tvrdení: 1. Len v jednej z vybraných jaskýň bola návštevnosť v roku 2018 nižšia ako v roku 2016. 2. Ochtinskú aragonitovú jaskyňu navštívilo počas sledovaného obdobia viac ako 120-tisíc návštevníkov.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Iba prvé tvrdenie je pravdivé.",
+        "Iba druhé tvrdenie je pravdivé.",
+        "Pravdivé sú obe tvrdenia.",
+        "Pravdivé nie je ani jedno tvrdenie."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2023-a-27": {
+      "n": 27,
+      "topic": "kombinatorika-logika",
+      "text": "V ktorej z vybraných jaskýň návštevník nebol, ak počas prehliadok ostatných štyroch jaskýň nachodil spolu 2 315 m a na vstupnom zaplatil spolu 25 €?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Dobšinská ľadová jaskyňa",
+        "Jaskyňa Domica",
+        "Gombasecká jaskyňa",
+        "Jasovská jaskyňa"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "mat-2023-a-28": {
+      "n": 28,
+      "topic": "percenta-pomer",
+      "text": "Koľko centimetrov má výška vrstvy tvorenej substrátom a kompostom, ak pomer výšky tejto vrstvy a výšky vrstvy konárov je 5 : 8?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "40",
+        "25",
+        "46",
+        "29"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2023-a-29": {
+      "n": 29,
+      "topic": "jednotky-premeny",
+      "text": "V ktorej možnosti je správne uvedený objem vrstvy konárov vo vyvýšenom záhone?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "54 dm³",
+        "5,4 m³",
+        "540 l",
+        "0,54 hl"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2023-a-30": {
+      "n": 30,
+      "topic": "pytagorova-veta",
+      "text": "Vypočítaj obsah pravouhlého trojuholníka ABC, ak vieš, že vnútorný uhol pri vrchole A je pravý, obsah štvorca nad preponou BC je 225 cm² a obsah štvorca nad odvesnou AC je 81 cm².",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "54 cm²",
+        "36 cm²",
+        "108 cm²",
+        "135 cm²"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2023,
+        "form": "A",
+        "n": 30
+      }
+    },
     "mat-2024-a-01": {
       "n": 1,
       "topic": "umernost-trojclenka",
@@ -559,6 +3555,502 @@
       "accept": [],
       "source": {
         "year": 2024,
+        "form": "A",
+        "n": 30
+      }
+    },
+    "mat-2025-a-01": {
+      "n": 1,
+      "topic": "vyrazy-rovnice",
+      "text": "Vypočítaj hodnotu výrazu 3x + 2y + z, ak x = 5, y = 2 a z = 8.",
+      "asset": null,
+      "type": "num",
+      "answer": "27",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2025-a-02": {
+      "n": 2,
+      "topic": "umernost-trojclenka",
+      "text": "Vlak idúci priemernou rýchlosťou 80 km/h prejde svoju trasu za 3,5 hodiny. Po rekonštrukcii trate sa priemerná rýchlosť vlaku zvýši na 100 km/h. Koľko hodín bude trvať cesta vlakom po zrekonštruovanej trati na tej istej trase? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "2,8",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2025-a-03": {
+      "n": 3,
+      "topic": "kombinatorika-logika",
+      "text": "Otec, mama a ich tri deti Alica, Božena a Cyril išli na výlet na bicykloch v rade za sebou, pričom prvý a posledný bol vždy jeden z rodičov. Koľko existuje rôznych možností, ako mohli byť usporiadaní v rade za sebou?",
+      "asset": null,
+      "type": "num",
+      "answer": "12",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2025-a-05": {
+      "n": 5,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Starý otec má 10 vnúčat. Každému kúpil gumu na gumovanie v tvare sovy. Štyri z nich boli žlté, jedna biela, tri modré a dve zelené. Deti si svoju gumu postupne vyberali z nepriehľadného vrecúška a čo si vytiahli, to už do vrecúška nevrátili. Janko si vybral gumu ako tretí v poradí. Aká je pravdepodobnosť, že si vybral modrú sovu, ak dve sesternice pred ním si vybrali zelenú a modrú? Výsledok uveď v percentách.",
+      "asset": null,
+      "type": "num",
+      "answer": "25",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2025-a-06": {
+      "n": 6,
+      "topic": "uhly-konstrukcie",
+      "text": "Na základe údajov v tabuľke urči veľkosť ostrého uhla medzi cestou z kostola do obchodu a cestou z kostola do domu. Veľkosť uhla zapíš v stupňoch.",
+      "asset": null,
+      "type": "num",
+      "answer": "53",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2025-a-07": {
+      "n": 7,
+      "topic": "pytagorova-veta",
+      "text": "Na základe údajov o počte krokov v tabuľke vypočítaj, koľko krokov Adam urobí, ak pôjde od kostola do obchodu najkratšou cestou.",
+      "asset": null,
+      "type": "num",
+      "answer": "960",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2025-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Ak do automatu vložíme číslo x = 870, ktoré číslo z neho podľa schémy vypadne? Schéma: Ak je číslo x deliteľné tromi aj piatimi, automat vráti y = x + 1. Ak nie je, automat vráti y = x – 5.",
+      "asset": null,
+      "type": "num",
+      "answer": "871",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2025-a-09": {
+      "n": 9,
+      "topic": "percenta-pomer",
+      "text": "Model auta je oproti skutočnosti zmenšený v pomere 1 : 50. Vypočítaj skutočnú dĺžku tohto auta, ak dĺžka modelu je 8 cm. Výsledok uveď v metroch.",
+      "asset": null,
+      "type": "num",
+      "answer": "4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2025-a-10": {
+      "n": 10,
+      "topic": "umernost-trojclenka",
+      "text": "O koľko menej blistrov bude v jednej škatuľke pri novom rozmiestnení tabletiek, ak počet tabletiek v jednej škatuľke zostane nezmenený?",
+      "asset": null,
+      "type": "num",
+      "answer": "3",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2025-a-11": {
+      "n": 11,
+      "topic": "telesa",
+      "text": "O koľko cm² sa zmenší povrch novej škatuľky, ak sa jej šírka zmení z pôvodných 5,7 cm na 3,8 cm?",
+      "asset": null,
+      "type": "num",
+      "answer": "57",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2025-a-12": {
+      "n": 12,
+      "topic": "rovinne-obrazce",
+      "text": "Tatiana rada behá v parku okolo piatich rovnakých kruhových záhonov s kvetmi. Na obrázku je zvýraznená jej každodenná trasa: rovný úsek dlhý 100 m k prvému záhonu, potom sa trasa vlní striedavo hore a dole popri hornom, resp. dolnom polkruhu každého z piatich záhonov (päť polkruhových oblúkov v celkovej šírke 1 000 m) a napokon pokračuje rovným úsekom dlhým 130 m k štartu. Koľko metrov meria jej trať? Počítaj s hodnotou π = 3,14. Šírku bežeckej cestičky zanedbávame.",
+      "asset": null,
+      "type": "num",
+      "answer": "1800",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2025-a-13": {
+      "n": 13,
+      "topic": "rovinne-obrazce",
+      "text": "Majiteľ bytu chce v obývacej izbe spojenej s kuchyňou vymaľovať jednu stenu, na ktorej je okno. Rozmery okna sú 2 m a 1,5 m. Koľko metrov štvorcových je potrebné vymaľovať? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "7,4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2025-a-14": {
+      "n": 14,
+      "topic": "telesa",
+      "text": "Koľko metrov kubických vzduchu sa zmestí do prázdnej spálne, ak je jej strop pre osvetlenie znížený o 20 cm? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "14,4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2025-a-15": {
+      "n": 15,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Vypočítaj priemerný denný počet krokov Martina v tomto týždni.",
+      "asset": null,
+      "type": "num",
+      "answer": "7789",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2025-a-16": {
+      "n": 16,
+      "topic": "umernost-trojclenka",
+      "text": "Aplikácia v hodinkách dáva užívateľovi aj rôzne užitočné rady. Jednou z nich je: „Prejsť denne 8 000 krokov je prospešné pre zdravie, ale prejsť aspoň 110 krokov za 1 minútu je oveľa lepšie.“ Podľa záznamov z Martinových a Lauriných hodiniek posúď, kto z nich prešiel priemerne aspoň 110 krokov za minútu. Martin: 1 915 krokov, chôdza 8:05 – 8:20, 1,36 km, 32 kcal. Laura: 1 148 krokov, chôdza 9:15 – 9:25, 0,74 km, 16 kcal. Aspoň 110 krokov za minútu",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prešli obidvaja.",
+        "neprešiel ani jeden.",
+        "prešiel len Martin.",
+        "prešla len Laura."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2025-a-17": {
+      "n": 17,
+      "topic": "zlomky-desatinne",
+      "text": "Dopravné lietadlá lietajú vo výškach okolo 10 000 m. V týchto výškach je riedky vzduch a sú tam veľmi nízke teploty. V kabíne lietadla namerali teplotu vzduchu 21,7 °C, mimo lietadla –55,4 °C. Rozdiel teploty v kabíne lietadla a teploty mimo lietadla je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "77,1 °C.",
+        "33,7 °C.",
+        "–33,7 °C.",
+        "–77,1 °C."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2025-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "Daný je výraz T = 20a – (8a : 4) · 2 – 5. V ktorej možnosti sa výraz T rovná výrazu U ?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "U = 6a – 5",
+        "U = 16a – 5",
+        "U = 11a",
+        "U = 36a – 5"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2025-a-19": {
+      "n": 19,
+      "topic": "percenta-pomer",
+      "text": "Juraj sa rozhodol, že si bude každý mesiac odkladať na elektrický bicykel. Rodičia mu sľúbili, že k nasporenej sume mu pridajú 10 %. Juraj si po celý rok mesačne odkladal 200 € a rodičia mu prispeli tak, ako sľúbili. V obchode ponúkajú 4 rôzne bicykle. V ktorej možnosti je cena najdrahšieho bicykla, ktorý si Juraj môže kúpiť?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2 200 €",
+        "2 400 €",
+        "2 600 €",
+        "2 900 €"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2025-a-20": {
+      "n": 20,
+      "topic": "zlomky-desatinne",
+      "text": "Mama upiekla koláč a nechala ho na plechu vychladnúť. Najprv prišla Eva a zjedla z neho jednu štvrtinu. Neskôr prišiel Daniel a zjedol jednu štvrtinu zo zvyšku koláča. Aká časť koláča zostala na plechu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "1/16",
+        "3/16",
+        "9/16",
+        "13/16"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2025-a-21": {
+      "n": 21,
+      "topic": "rovinne-obrazce",
+      "text": "Koľko paličiek dlhých 3 cm je potrebných na poskladanie štvorca so stranou dĺžky 18 cm?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "36",
+        "24",
+        "12",
+        "6"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2025-a-22": {
+      "n": 22,
+      "topic": "kombinatorika-logika",
+      "text": "Koľko rôznych dĺžok môžu mať paličky v stavebnici?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "3",
+        "2"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2025-a-23": {
+      "n": 23,
+      "topic": "vyrazy-rovnice",
+      "text": "Na misky rovnoramenných váh sme položili niekoľko guliek dvoch druhov tak, že misky sú v rovnováhe. Guľky jedného druhu majú rovnakú hmotnosť. Na jednej miske je 1 biela a 4 čierne guľky, na druhej miske sú 3 biele a 3 čierne guľky. Koľko čiernych guliek má rovnakú hmotnosť ako šesť bielych?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "20",
+        "12",
+        "8",
+        "3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2025-a-24": {
+      "n": 24,
+      "topic": "percenta-pomer",
+      "text": "Alena sa opýtala 80 detí na ich obľúbené zvieratko. Údaje v percentách, ktoré zistila, zapísala do tabuľky. Jeden údaj zo svojho prieskumu zabudla doplniť. Koľko detí uviedlo, že ich najobľúbenejším zvieratkom je korytnačka? Údaje: mačka 25 %, zajac 20 %, pes 22,5 %, rybičky 17,5 %, korytnačka — chýba.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2025-a-25": {
+      "n": 25,
+      "topic": "telesa",
+      "text": "Stavba na obrázku sa skladá z troch rovnakých kociek s dĺžkou hrany 4 cm usporiadaných do tvaru písmena L: dve kocky sú nad sebou (výška stavby 8 cm) a jedna kocka je pripojená vedľa spodnej kocky (celková šírka stavby 8 cm), hĺbka stavby je 4 cm. Ema chce postaviť ďalšiu takú istú stavbu s rovnakými rozmermi z menších kociek. Použila dve kocky s dĺžkou hrany 3 cm a osem kociek s dĺžkou hrany 2 cm. Koľko kociek s dĺžkou hrany 1 cm bude potrebovať na dokončenie takejto stavby, ak novú kocku priloží vždy celou stenou k stene kocky, ktorá už v stavbe je?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "74",
+        "64",
+        "56",
+        "142"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2025-a-26": {
+      "n": 26,
+      "topic": "rovinne-obrazce",
+      "text": "Na obrázku sú znázornené tri kružnice: k1(S1, 4 cm), k2(S2, 5 cm), k3(S3, 3 cm). Jednotlivé dvojice kružníc sa vzájomne dotýkajú v bodoch A, B a C. Vypočítaj obvod trojuholníka S1S2S3.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "24 cm",
+        "21 cm",
+        "20 cm",
+        "12 cm"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2025-a-27": {
+      "n": 27,
+      "topic": "rovinne-obrazce",
+      "text": "Na obrázku je znázornená priamka AB a bod M. Dokresli do obrázka rovnoramenný lichobežník ABCD so základňou AB tak, aby bod M ležal v strede ramena AD. Ktoré z tvrdení o lichobežníku ABCD je nepravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Strany lichobežníka AB a CD sú rovnobežné.",
+        "Bod M je rovnako vzdialený od bodu B aj od bodu C.",
+        "Výška lichobežníka je menšia ako dĺžka strany BC.",
+        "Uhly BAD a ABC sú zhodné."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "mat-2025-a-28": {
+      "n": 28,
+      "topic": "vyrazy-rovnice",
+      "text": "V ktorej možnosti je riešenie nasledujúcej rovnice? (6x – 5) / 4 = 2x – 3",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "–8,5",
+        "2",
+        "3,5",
+        "4"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2025-a-29": {
+      "n": 29,
+      "topic": "percenta-pomer",
+      "text": "Cyklista prešiel v júni 500 kilometrov. Prejdenú vzdialenosť plánuje zvyšovať o 20 % mesačne. Koľko kilometrov by mal prejsť v septembri toho istého roka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "840",
+        "800",
+        "720",
+        "864"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2025-a-30": {
+      "n": 30,
+      "topic": "jednotky-premeny",
+      "text": "Teplomer na obrázku spoľahlivo meria teplotu vzduchu na vnútornej stupnici v stupňoch Celzia (°C) a na vonkajšej stupnici v stupňoch Fahrenheita (°F). Ručička na teplomeri ukazuje približne 15 °C (60 °F). Ktoré z nasledujúcich tvrdení je nepravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Teplomer ukazuje teplotu približne 15 °C.",
+        "Teplomer ukazuje teplotu približne 60 °F.",
+        "Ak teplota klesne o 40 °F, bude teplomer ukazovať približne 20 °C.",
+        "Ak teplota klesne o 40 °C, bude teplomer ukazovať približne –13 °F."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
         "form": "A",
         "n": 30
       }

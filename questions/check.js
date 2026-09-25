@@ -117,7 +117,12 @@ function validateBank(bank, label, dir) {
         }
       }
       // "Vypis z ukazky..." - answer aj kazdy tvar z accept musi byt v ukazke doslova.
-      if (/^vypíš/i.test(it.text || '')) {
+      // Vynimka: "z nasledujucej vety" cituje vlastnu vetu priamo v zadani (nie
+      // zdielanu ukazku) a odpoved je casto sklad/prisudok - gramaticka jednotka,
+      // ktora smie preskocit vnorene slovo (napr. veta "Vzťah X je silný" ->
+      // sklad "vzťah je silný", kluc sam pripusta aj obrateny poriadok). Doslovny
+      // substring tu nie je spravne kriterium, na rozdiel od "z ukazky/odseku".
+      if (/^vypíš/i.test(it.text || '') && !/nasledujúcej vety/i.test(it.text || '')) {
         const unit = bank.units.find(u => (u.ids || []).includes(id));
         const reference = unit && unit.stimulus && bank.stimuli[unit.stimulus]
           ? bank.stimuli[unit.stimulus].body
@@ -184,57 +189,41 @@ function runDailyCheck() {
     const { bank, errors: loadErrors } = loadBank(file);
     if (loadErrors) { loadErrors.forEach(e => console.error('CHYBA', e)); ok = false; continue; }
 
-    const nominal = Math.max(1, Math.floor(bank.itemCount / want));
-    const passes = Math.ceil(400 / nominal) + 1;
-
-    for (let p = 0; p < passes; p++) {
-      const order = pick.shuffle(bank.units.map((_, i) => i), pick.hash(bank.subject + ':' + p));
-      // rovnaka rekonstrukcia ako v daily() z pick.js (jednotky >= min idu sami,
-      // zvysok sa zlieva pravidlom z pseudokodu) - inak by tento self-check
-      // overoval iny algoritmus, ako naozaj bezi.
-      const min = 3, max = 7;
-      const bigDays = [];
-      const smallOrder = [];
-      for (const u of order) {
-        if (bank.units[u].ids.length >= min) bigDays.push([u]);
-        else smallOrder.push(u);
-      }
-      const smallDays = [];
-      let bucket = [], n = 0;
-      for (const u of smallOrder) {
-        bucket.push(u); n += bank.units[u].ids.length;
-        if (n >= want) { smallDays.push(bucket); bucket = []; n = 0; }
-      }
-      if (bucket.length) {
-        const last = smallDays[smallDays.length - 1];
-        const lastSize = last ? last.reduce((s, u) => s + bank.units[u].ids.length, 0) : 0;
-        if (n < min && last && lastSize + n <= max) last.push(...bucket);
-        else smallDays.push(bucket);
-      }
-      const days = pick.shuffle([...bigDays, ...smallDays], pick.hash(bank.subject + ':' + p + ':days'));
-
+    // Priechody uz nemaju pevnu dlzku - kazdy sa uzatvara na tom, kolko dni
+    // vyrobil. 400 dni teda prejdeme tak, ako ich prejde daily().
+    let passes = 0;
+    for (let di = 0; di < 400; ) {
+      const days = pick.partition(bank, passes, want);
       const seen = new Set();
-      for (const [di, day] of days.entries()) {
+      for (const [i, day] of days.entries()) {
         const count = day.reduce((s, u) => s + bank.units[u].ids.length, 0);
         if (count < 3 || count > 7) {
-          console.error(`CHYBA [${label}] priechod ${p} deň ${di}: má ${count} úloh, mimo 3-7`);
+          console.error(`CHYBA [${label}] priechod ${passes} deň ${i}: má ${count} úloh, mimo 3-7`);
           ok = false;
         }
         for (const u of day) {
           if (seen.has(u)) {
-            console.error(`CHYBA [${label}] priechod ${p}: jednotka ${u} vypadla dvakrát`);
+            console.error(`CHYBA [${label}] priechod ${passes}: jednotka ${u} vypadla dvakrát`);
             ok = false;
           }
           seen.add(u);
         }
       }
       if (seen.size !== bank.units.length) {
-        console.error(`CHYBA [${label}] priechod ${p}: pokrýva len ${seen.size}/${bank.units.length} jednotiek`);
+        console.error(`CHYBA [${label}] priechod ${passes}: pokrýva len ${seen.size}/${bank.units.length} jednotiek`);
         ok = false;
       }
+      di += days.length;
+      passes++;
     }
 
-    // priama kontrola daily(): pocet uloh v prvych 400 dnoch musí byť vždy 3-7
+    // priama kontrola daily(): pocet uloh v prvych 400 dnoch musí byť vždy 3-7,
+    // ziadne dva dni po sebe nie su ten isty den, a za 400 dni dostane kazda
+    // jednotka rovnaky pocet nasadeni +-1. Presne toto padalo, kym sa priechod
+    // uzatvaral na `nominal` namiesto vlastnej dlzky: den sa vedel zopakovat
+    // hned na druhy den a iny den z toho priechodu nepadol vobec.
+    const hits = new Map(bank.units.map((_, i) => [i, 0]));
+    let prev = null;
     for (let di = 0; di < 400; di++) {
       const day = pick.daily(bank, di, want);
       const count = day.reduce((s, u) => s + bank.units[u].ids.length, 0);
@@ -242,9 +231,22 @@ function runDailyCheck() {
         console.error(`CHYBA [${label}] daily(${di}) má ${count} úloh, mimo 3-7`);
         ok = false;
       }
+      const sig = [...day].sort((x, y) => x - y).join(',');
+      if (sig === prev) {
+        console.error(`CHYBA [${label}] daily(${di}) je ten istý deň ako daily(${di - 1}): ${sig}`);
+        ok = false;
+      }
+      prev = sig;
+      for (const u of day) hits.set(u, hits.get(u) + 1);
+    }
+    const counts = [...hits.values()];
+    const spread = Math.max(...counts) - Math.min(...counts);
+    if (spread > 1) {
+      console.error(`CHYBA [${label}] za 400 dní dostala jedna jednotka ${Math.max(...counts)}× a iná ${Math.min(...counts)}× (rozptyl ${spread}, max 1)`);
+      ok = false;
     }
 
-    console.log(`${label}: overených ${passes} priechodov (nominal=${nominal}), 400 dní cez daily()`);
+    console.log(`${label}: overených ${passes} priechodov, 400 dní cez daily() (rozptyl nasadení ${spread})`);
   }
   console.log(ok ? 'OK --daily' : 'FAIL --daily');
   process.exit(ok ? 0 : 1);

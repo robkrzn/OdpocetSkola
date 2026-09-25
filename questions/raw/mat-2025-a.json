@@ -1,0 +1,691 @@
+{
+  "subject": "mat",
+  "year": 2025,
+  "form": "A",
+  "code": "3311",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/6179/ZAK24004_S_TZ-RT-Mat-SJ-fA_3311.pdf",
+    "key": "https://www2.nucem.sk/dl/6195/K%C4%BE%C3%BA%C4%8D%20spr%C3%A1vnych%20odpoved%C3%AD%20k%20testu%20T9%202025%20%E2%80%93%20matematika.pdf"
+  },
+  "stimuli": {
+    "mat-2025-a-s1": {
+      "kind": "table",
+      "title": "Mapa",
+      "body": "Adam si nakreslil mapu svojich najčastejších vychádzok medzi štyrmi miestami (dom, kostol, obchod, park) a do tabuľky si poznačil vzdialenosti jednotlivých miest v krokoch. Na mape sú navyše vyznačené uhly medzi jednotlivými cestami.<table><tr><th>Počet krokov</th><th>Dom</th><th>Kostol</th><th>Obchod</th><th>Park</th></tr><tr><th>Dom</th><td>—</td><td>1 600</td><td>1 280</td><td>1 860</td></tr><tr><th>Kostol</th><td>1 600</td><td>—</td><td>?</td><td>572</td></tr><tr><th>Obchod</th><td>1 280</td><td>?</td><td>—</td><td>790</td></tr><tr><th>Park</th><td>1 860</td><td>572</td><td>790</td><td>—</td></tr></table><table><tr><th>Vrchol</th><th>Uhol medzi cestami</th><th>Veľkosť</th></tr><tr><td>Park</td><td>kostol – park – dom</td><td>55°</td></tr><tr><td>Park</td><td>dom – park – obchod</td><td>36°</td></tr><tr><td>Obchod</td><td>kostol – obchod – dom</td><td>90°</td></tr><tr><td>Dom</td><td>kostol – dom – park</td><td>17°</td></tr><tr><td>Dom</td><td>park – dom – obchod</td><td>20°</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s2": {
+      "kind": "text",
+      "title": "Balenie liekov",
+      "body": "Plastový obal s hliníkovou fóliou, ktorý slúži na balenie liekov, sa nazýva blister. Blistre sú balené do papierových škatuliek. Pôvodne bolo v jednom blistri 10 tabletiek. V jednej papierovej škatuľke sa predávalo 90 kusov tabletiek (obr. 1). Výrobca sa rozhodol šetriť životné prostredie. Iným rozmiestnením tabletiek sa mu podarilo zabaliť do jedného blistra až 15 kusov tabletiek (obr. 2). Papierová škatuľka má v oboch prípadoch tvar kvádra s hĺbkou 4,5 cm a výškou 10,5 cm; blister má rozmery 4 cm × 9,5 cm. Pri pôvodnom balení (obr. 1) je šírka škatuľky 5,7 cm, pri novom balení (obr. 2) 3,8 cm.",
+      "asset": null
+    },
+    "mat-2025-a-s3": {
+      "kind": "table",
+      "title": "Pôdorys bytu",
+      "body": "Na obrázku je znázornený pôdorys bytu. V tabuľke sú uvedené rozmery niektorých miestností v metroch. Betónový strop sa nachádza vo výške 260 cm. Steny aj okná majú tvar obdĺžnika. Byt má tri okná orientované na juh.<table><tr><th>Miestnosť</th><th>1. rozmer (m)</th><th>2. rozmer (m)</th></tr><tr><td>Predsieň</td><td>4</td><td>2</td></tr><tr><td>Spálňa</td><td>2</td><td>3</td></tr><tr><td>Obývacia izba + kuchyňa</td><td>4</td><td>5</td></tr><tr><td>Kúpeľňa</td><td>2</td><td>1</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s4": {
+      "kind": "table",
+      "title": "Inteligentné hodinky",
+      "body": "Martin a jeho sestra Laura dostali na narodeniny inteligentné hodinky. Každý deň na nich sledujú počet prejdených krokov. V diagrame sú zaznamenané počty krokov, ktoré Martin urobil počas jedného týždňa.<table><tr><th>Deň</th><th>Pondelok</th><th>Utorok</th><th>Streda</th><th>Štvrtok</th><th>Piatok</th><th>Sobota</th><th>Nedeľa</th></tr><tr><td>Počet krokov</td><td>2 400</td><td>9 603</td><td>9 692</td><td>9 712</td><td>11 373</td><td>7 920</td><td>3 823</td></tr></table>",
+      "asset": null
+    },
+    "mat-2025-a-s5": {
+      "kind": "text",
+      "title": "Stavebnica",
+      "body": "V stavebnici sú drevené paličky rôznej dĺžky. Dĺžky paličiek sú v celých centimetroch, pričom najkratšie majú dĺžku 2 cm. Z každého druhu paličiek sa dá poskladať štvorec so stranou dĺžky 18 cm tak, že použijeme len paličky rovnakej dĺžky.",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-01"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-05"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s1",
+      "ids": [
+        "mat-2025-a-06",
+        "mat-2025-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-08"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-09"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s2",
+      "ids": [
+        "mat-2025-a-10",
+        "mat-2025-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-12"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s3",
+      "ids": [
+        "mat-2025-a-13",
+        "mat-2025-a-14"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s4",
+      "ids": [
+        "mat-2025-a-15",
+        "mat-2025-a-16"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-18"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-19"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-20"
+      ]
+    },
+    {
+      "stimulus": "mat-2025-a-s5",
+      "ids": [
+        "mat-2025-a-21",
+        "mat-2025-a-22"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-25"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-26"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-27"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2025-a-30"
+      ]
+    }
+  ],
+  "items": {
+    "mat-2025-a-01": {
+      "n": 1,
+      "topic": "vyrazy-rovnice",
+      "text": "Vypočítaj hodnotu výrazu 3x + 2y + z, ak x = 5, y = 2 a z = 8.",
+      "asset": null,
+      "type": "num",
+      "answer": "27",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2025-a-02": {
+      "n": 2,
+      "topic": "umernost-trojclenka",
+      "text": "Vlak idúci priemernou rýchlosťou 80 km/h prejde svoju trasu za 3,5 hodiny. Po rekonštrukcii trate sa priemerná rýchlosť vlaku zvýši na 100 km/h. Koľko hodín bude trvať cesta vlakom po zrekonštruovanej trati na tej istej trase? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "2,8",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2025-a-03": {
+      "n": 3,
+      "topic": "kombinatorika-logika",
+      "text": "Otec, mama a ich tri deti Alica, Božena a Cyril išli na výlet na bicykloch v rade za sebou, pričom prvý a posledný bol vždy jeden z rodičov. Koľko existuje rôznych možností, ako mohli byť usporiadaní v rade za sebou?",
+      "asset": null,
+      "type": "num",
+      "answer": "12",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2025-a-05": {
+      "n": 5,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Starý otec má 10 vnúčat. Každému kúpil gumu na gumovanie v tvare sovy. Štyri z nich boli žlté, jedna biela, tri modré a dve zelené. Deti si svoju gumu postupne vyberali z nepriehľadného vrecúška a čo si vytiahli, to už do vrecúška nevrátili. Janko si vybral gumu ako tretí v poradí. Aká je pravdepodobnosť, že si vybral modrú sovu, ak dve sesternice pred ním si vybrali zelenú a modrú? Výsledok uveď v percentách.",
+      "asset": null,
+      "type": "num",
+      "answer": "25",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 5
+      }
+    },
+    "mat-2025-a-06": {
+      "n": 6,
+      "topic": "uhly-konstrukcie",
+      "text": "Na základe údajov v tabuľke urči veľkosť ostrého uhla medzi cestou z kostola do obchodu a cestou z kostola do domu. Veľkosť uhla zapíš v stupňoch.",
+      "asset": null,
+      "type": "num",
+      "answer": "53",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 6
+      }
+    },
+    "mat-2025-a-07": {
+      "n": 7,
+      "topic": "pytagorova-veta",
+      "text": "Na základe údajov o počte krokov v tabuľke vypočítaj, koľko krokov Adam urobí, ak pôjde od kostola do obchodu najkratšou cestou.",
+      "asset": null,
+      "type": "num",
+      "answer": "960",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2025-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Ak do automatu vložíme číslo x = 870, ktoré číslo z neho podľa schémy vypadne? Schéma: Ak je číslo x deliteľné tromi aj piatimi, automat vráti y = x + 1. Ak nie je, automat vráti y = x – 5.",
+      "asset": null,
+      "type": "num",
+      "answer": "871",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2025-a-09": {
+      "n": 9,
+      "topic": "percenta-pomer",
+      "text": "Model auta je oproti skutočnosti zmenšený v pomere 1 : 50. Vypočítaj skutočnú dĺžku tohto auta, ak dĺžka modelu je 8 cm. Výsledok uveď v metroch.",
+      "asset": null,
+      "type": "num",
+      "answer": "4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2025-a-10": {
+      "n": 10,
+      "topic": "umernost-trojclenka",
+      "text": "O koľko menej blistrov bude v jednej škatuľke pri novom rozmiestnení tabletiek, ak počet tabletiek v jednej škatuľke zostane nezmenený?",
+      "asset": null,
+      "type": "num",
+      "answer": "3",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2025-a-11": {
+      "n": 11,
+      "topic": "telesa",
+      "text": "O koľko cm² sa zmenší povrch novej škatuľky, ak sa jej šírka zmení z pôvodných 5,7 cm na 3,8 cm?",
+      "asset": null,
+      "type": "num",
+      "answer": "57",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2025-a-12": {
+      "n": 12,
+      "topic": "rovinne-obrazce",
+      "text": "Tatiana rada behá v parku okolo piatich rovnakých kruhových záhonov s kvetmi. Na obrázku je zvýraznená jej každodenná trasa: rovný úsek dlhý 100 m k prvému záhonu, potom sa trasa vlní striedavo hore a dole popri hornom, resp. dolnom polkruhu každého z piatich záhonov (päť polkruhových oblúkov v celkovej šírke 1 000 m) a napokon pokračuje rovným úsekom dlhým 130 m k štartu. Koľko metrov meria jej trať? Počítaj s hodnotou π = 3,14. Šírku bežeckej cestičky zanedbávame.",
+      "asset": null,
+      "type": "num",
+      "answer": "1800",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2025-a-13": {
+      "n": 13,
+      "topic": "rovinne-obrazce",
+      "text": "Majiteľ bytu chce v obývacej izbe spojenej s kuchyňou vymaľovať jednu stenu, na ktorej je okno. Rozmery okna sú 2 m a 1,5 m. Koľko metrov štvorcových je potrebné vymaľovať? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "7,4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2025-a-14": {
+      "n": 14,
+      "topic": "telesa",
+      "text": "Koľko metrov kubických vzduchu sa zmestí do prázdnej spálne, ak je jej strop pre osvetlenie znížený o 20 cm? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "14,4",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2025-a-15": {
+      "n": 15,
+      "topic": "statistika-pravdepodobnost",
+      "text": "Vypočítaj priemerný denný počet krokov Martina v tomto týždni.",
+      "asset": null,
+      "type": "num",
+      "answer": "7789",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2025-a-16": {
+      "n": 16,
+      "topic": "umernost-trojclenka",
+      "text": "Aplikácia v hodinkách dáva užívateľovi aj rôzne užitočné rady. Jednou z nich je: „Prejsť denne 8 000 krokov je prospešné pre zdravie, ale prejsť aspoň 110 krokov za 1 minútu je oveľa lepšie.“ Podľa záznamov z Martinových a Lauriných hodiniek posúď, kto z nich prešiel priemerne aspoň 110 krokov za minútu. Martin: 1 915 krokov, chôdza 8:05 – 8:20, 1,36 km, 32 kcal. Laura: 1 148 krokov, chôdza 9:15 – 9:25, 0,74 km, 16 kcal. Aspoň 110 krokov za minútu",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "prešli obidvaja.",
+        "neprešiel ani jeden.",
+        "prešiel len Martin.",
+        "prešla len Laura."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 16
+      }
+    },
+    "mat-2025-a-17": {
+      "n": 17,
+      "topic": "zlomky-desatinne",
+      "text": "Dopravné lietadlá lietajú vo výškach okolo 10 000 m. V týchto výškach je riedky vzduch a sú tam veľmi nízke teploty. V kabíne lietadla namerali teplotu vzduchu 21,7 °C, mimo lietadla –55,4 °C. Rozdiel teploty v kabíne lietadla a teploty mimo lietadla je",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "77,1 °C.",
+        "33,7 °C.",
+        "–33,7 °C.",
+        "–77,1 °C."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2025-a-18": {
+      "n": 18,
+      "topic": "vyrazy-rovnice",
+      "text": "Daný je výraz T = 20a – (8a : 4) · 2 – 5. V ktorej možnosti sa výraz T rovná výrazu U ?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "U = 6a – 5",
+        "U = 16a – 5",
+        "U = 11a",
+        "U = 36a – 5"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2025-a-19": {
+      "n": 19,
+      "topic": "percenta-pomer",
+      "text": "Juraj sa rozhodol, že si bude každý mesiac odkladať na elektrický bicykel. Rodičia mu sľúbili, že k nasporenej sume mu pridajú 10 %. Juraj si po celý rok mesačne odkladal 200 € a rodičia mu prispeli tak, ako sľúbili. V obchode ponúkajú 4 rôzne bicykle. V ktorej možnosti je cena najdrahšieho bicykla, ktorý si Juraj môže kúpiť?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "2 200 €",
+        "2 400 €",
+        "2 600 €",
+        "2 900 €"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 19
+      }
+    },
+    "mat-2025-a-20": {
+      "n": 20,
+      "topic": "zlomky-desatinne",
+      "text": "Mama upiekla koláč a nechala ho na plechu vychladnúť. Najprv prišla Eva a zjedla z neho jednu štvrtinu. Neskôr prišiel Daniel a zjedol jednu štvrtinu zo zvyšku koláča. Aká časť koláča zostala na plechu?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "1/16",
+        "3/16",
+        "9/16",
+        "13/16"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2025-a-21": {
+      "n": 21,
+      "topic": "rovinne-obrazce",
+      "text": "Koľko paličiek dlhých 3 cm je potrebných na poskladanie štvorca so stranou dĺžky 18 cm?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "36",
+        "24",
+        "12",
+        "6"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2025-a-22": {
+      "n": 22,
+      "topic": "kombinatorika-logika",
+      "text": "Koľko rôznych dĺžok môžu mať paličky v stavebnici?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "3",
+        "2"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2025-a-23": {
+      "n": 23,
+      "topic": "vyrazy-rovnice",
+      "text": "Na misky rovnoramenných váh sme položili niekoľko guliek dvoch druhov tak, že misky sú v rovnováhe. Guľky jedného druhu majú rovnakú hmotnosť. Na jednej miske je 1 biela a 4 čierne guľky, na druhej miske sú 3 biele a 3 čierne guľky. Koľko čiernych guliek má rovnakú hmotnosť ako šesť bielych?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "20",
+        "12",
+        "8",
+        "3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2025-a-24": {
+      "n": 24,
+      "topic": "percenta-pomer",
+      "text": "Alena sa opýtala 80 detí na ich obľúbené zvieratko. Údaje v percentách, ktoré zistila, zapísala do tabuľky. Jeden údaj zo svojho prieskumu zabudla doplniť. Koľko detí uviedlo, že ich najobľúbenejším zvieratkom je korytnačka? Údaje: mačka 25 %, zajac 20 %, pes 22,5 %, rybičky 17,5 %, korytnačka — chýba.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2025-a-25": {
+      "n": 25,
+      "topic": "telesa",
+      "text": "Stavba na obrázku sa skladá z troch rovnakých kociek s dĺžkou hrany 4 cm usporiadaných do tvaru písmena L: dve kocky sú nad sebou (výška stavby 8 cm) a jedna kocka je pripojená vedľa spodnej kocky (celková šírka stavby 8 cm), hĺbka stavby je 4 cm. Ema chce postaviť ďalšiu takú istú stavbu s rovnakými rozmermi z menších kociek. Použila dve kocky s dĺžkou hrany 3 cm a osem kociek s dĺžkou hrany 2 cm. Koľko kociek s dĺžkou hrany 1 cm bude potrebovať na dokončenie takejto stavby, ak novú kocku priloží vždy celou stenou k stene kocky, ktorá už v stavbe je?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "74",
+        "64",
+        "56",
+        "142"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2025-a-26": {
+      "n": 26,
+      "topic": "rovinne-obrazce",
+      "text": "Na obrázku sú znázornené tri kružnice: k1(S1, 4 cm), k2(S2, 5 cm), k3(S3, 3 cm). Jednotlivé dvojice kružníc sa vzájomne dotýkajú v bodoch A, B a C. Vypočítaj obvod trojuholníka S1S2S3.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "24 cm",
+        "21 cm",
+        "20 cm",
+        "12 cm"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 26
+      }
+    },
+    "mat-2025-a-27": {
+      "n": 27,
+      "topic": "rovinne-obrazce",
+      "text": "Na obrázku je znázornená priamka AB a bod M. Dokresli do obrázka rovnoramenný lichobežník ABCD so základňou AB tak, aby bod M ležal v strede ramena AD. Ktoré z tvrdení o lichobežníku ABCD je nepravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Strany lichobežníka AB a CD sú rovnobežné.",
+        "Bod M je rovnako vzdialený od bodu B aj od bodu C.",
+        "Výška lichobežníka je menšia ako dĺžka strany BC.",
+        "Uhly BAD a ABC sú zhodné."
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 27
+      }
+    },
+    "mat-2025-a-28": {
+      "n": 28,
+      "topic": "vyrazy-rovnice",
+      "text": "V ktorej možnosti je riešenie nasledujúcej rovnice? (6x – 5) / 4 = 2x – 3",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "–8,5",
+        "2",
+        "3,5",
+        "4"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2025-a-29": {
+      "n": 29,
+      "topic": "percenta-pomer",
+      "text": "Cyklista prešiel v júni 500 kilometrov. Prejdenú vzdialenosť plánuje zvyšovať o 20 % mesačne. Koľko kilometrov by mal prejsť v septembri toho istého roka?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "840",
+        "800",
+        "720",
+        "864"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2025-a-30": {
+      "n": 30,
+      "topic": "jednotky-premeny",
+      "text": "Teplomer na obrázku spoľahlivo meria teplotu vzduchu na vnútornej stupnici v stupňoch Celzia (°C) a na vonkajšej stupnici v stupňoch Fahrenheita (°F). Ručička na teplomeri ukazuje približne 15 °C (60 °F). Ktoré z nasledujúcich tvrdení je nepravdivé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Teplomer ukazuje teplotu približne 15 °C.",
+        "Teplomer ukazuje teplotu približne 60 °F.",
+        "Ak teplota klesne o 40 °F, bude teplomer ukazovať približne 20 °C.",
+        "Ak teplota klesne o 40 °C, bude teplomer ukazovať približne –13 °F."
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2025,
+        "form": "A",
+        "n": 30
+      }
+    }
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "subject": "mat",
+  "year": 2022,
+  "form": "A",
+  "code": "1077",
+  "source": {
+    "test": "https://www2.nucem.sk/dl/5224/ZAK20035_S_CTZ-RT-Mat-SJ-fA_1077.pdf",
+    "key": "https://www2.nucem.sk/dl/5258/T9-2022_Kľúč%20správnych%20odpovedí%20z%20MAT_AB.pdf"
+  },
+  "stimuli": {
+    "mat-2022-a-s01": {
+      "kind": "text",
+      "title": "Číselná os",
+      "body": "Na číselnej osi sú vyznačené body A, B a C: A = -0,4; B = 0,4; C = 1,6.",
+      "asset": null
+    },
+    "mat-2022-a-s02": {
+      "kind": "text",
+      "title": "Uhly pri vrchole V",
+      "body": "Na obrázku je vyznačený uhol DVC s veľkosťou 20°.",
+      "asset": null
+    },
+    "mat-2022-a-s09": {
+      "kind": "text",
+      "title": "Číselná os so šiestimi úsekmi",
+      "body": "Číselná os od 0 do 1 je rozdelená na šesť rovnako dlhých úsekov. Vyznačené hodnoty na osi sú 0; 1/2 (na treťom deliacom bode) a 5/6 (na piatom deliacom bode). Bod A leží na štvrtom deliacom bode.",
+      "asset": null
+    },
+    "mat-2022-a-s11": {
+      "kind": "table",
+      "title": "Počet áut v rodine",
+      "body": "Tabuľka udáva percentuálne zastúpenie počtu rodín podľa počtu áut v rodine.<table><tr><th>Počet áut</th><th>Podiel rodín</th></tr><tr><td>0 áut</td><td>20 %</td></tr><tr><td>1 auto</td><td>65 %</td></tr><tr><td>2 autá</td><td>10 %</td></tr><tr><td>3 autá</td><td>5 %</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s14": {
+      "kind": "text",
+      "title": "Zámková dlažba",
+      "body": "Pán Jaroslav chce vydláždiť zámkovou dlažbou časť pozemku popri chate. Dlaždice sú v tvare kvádra s rozmermi podstavy 20 cm a 10 cm a výškou 10 cm. Vydláždená časť (DLAŽBA) tvorí písmeno L, je obklopená trávnikom (TRÁVNIK) a na opačnej strane susedí s chatou (CHATA). Zvislý pás dlažby vedie od bodu X po bod Y, je dlhý 4,8 m a široký 2 m. Na jeho spodný koniec nadväzuje vodorovný pás dlažby, ktorý je dlhý (široký) 3 m a vysoký 1,1 m.",
+      "asset": null
+    },
+    "mat-2022-a-s17": {
+      "kind": "table",
+      "title": "Kalendár – september",
+      "body": "Novákovci plánujú v priebehu septembra opraviť fasádu domu. S prácami sa začne 2. septembra. Počas nedieľ a sviatkov sa pracovať nebude. Tieto dni sú v kalendári podčiarknuté (vyznačené podčiarknutím v tabuľke).<table><tr><th>p</th><th>u</th><th>s</th><th>š</th><th>p</th><th>s</th><th>n</th></tr><tr><td></td><td></td><td><u>01</u></td><td>02</td><td>03</td><td>04</td><td><u>05</u></td></tr><tr><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td><u>12</u></td></tr><tr><td>13</td><td>14</td><td><u>15</u></td><td>16</td><td>17</td><td>18</td><td><u>19</u></td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td><u>26</u></td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s19": {
+      "kind": "text",
+      "title": "Hracia kocka",
+      "body": "Vrcholy P a Q majú spoločnú jednu stenu kocky, na ktorej je 6 bodiek. Zvyšné dve steny pri vrchole Q sú protiľahlé k zvyšným dvom stenám pri vrchole P.",
+      "asset": null
+    },
+    "mat-2022-a-s20": {
+      "kind": "table",
+      "title": "Súrodenci",
+      "body": "Linda robila prieskum medzi žiakmi svojej školy. Pýtala sa ich, či majú v rodine len brata alebo len sestru, alebo oboje, alebo sú bez súrodenca. Počet jednotlivých odpovedí zhrnula do tabuľky.<table><tr><th>Súrodenci</th><th>Počet žiakov</th></tr><tr><td>len brat</td><td>38</td></tr><tr><td>len sestra</td><td>43</td></tr><tr><td>brat aj sestra</td><td>25</td></tr><tr><td>bez súrodenca</td><td>19</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s21": {
+      "kind": "table",
+      "title": "Hmotnosť mamy s bábätkom",
+      "body": "Pani Šťastná sa počas týždňa vážila so svojím bábätkom. Namerané hodnoty sú uvedené v grafe v kilogramoch.<table><tr><th>Deň</th><th>Hmotnosť mamy s bábätkom (kg)</th><th>Hmotnosť mamy (kg)</th></tr><tr><td>Pondelok</td><td>65,7</td><td>60,5</td></tr><tr><td>Utorok</td><td>65,9</td><td>60,8</td></tr><tr><td>Streda</td><td>65,8</td><td>60,7</td></tr><tr><td>Štvrtok</td><td>65,8</td><td>60,6</td></tr><tr><td>Piatok</td><td>65,9</td><td>60,7</td></tr><tr><td>Sobota</td><td>66,1</td><td>60,8</td></tr><tr><td>Nedeľa</td><td>66,2</td><td>60,9</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s23": {
+      "kind": "table",
+      "title": "Tabuľka R, S, T",
+      "body": "Riadky tabuľky sú označené písmenami R, S, T a stĺpce číslami 1, 2, 3.<table><tr><th></th><th>1</th><th>2</th><th>3</th></tr><tr><td>R</td><td>-5</td><td>6</td><td>-14</td></tr><tr><td>S</td><td>10</td><td>0</td><td>-23</td></tr><tr><td>T</td><td>-3</td><td>-12</td><td>7</td></tr></table>",
+      "asset": null
+    },
+    "mat-2022-a-s28": {
+      "kind": "table",
+      "title": "Cenník lístkov kúpaliska",
+      "body": "<table><tr><th>Druh zakúpeného lístka</th><th>Cena</th></tr><tr><td>Celodenné kúpanie dospelí</td><td>4,00 €</td></tr><tr><td>Celodenné kúpanie deti</td><td>2,50 €</td></tr><tr><td>Popoludňajšie kúpanie bez rozdielu veku</td><td>2,00 €</td></tr></table>",
+      "asset": null
+    }
+  },
+  "units": [
+    {
+      "stimulus": "mat-2022-a-s01",
+      "ids": [
+        "mat-2022-a-01"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s02",
+      "ids": [
+        "mat-2022-a-02"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-03"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-04"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-07"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-08"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s09",
+      "ids": [
+        "mat-2022-a-09"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-10"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s11",
+      "ids": [
+        "mat-2022-a-11"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-12"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-13"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s14",
+      "ids": [
+        "mat-2022-a-14",
+        "mat-2022-a-15"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s17",
+      "ids": [
+        "mat-2022-a-17"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-18"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s20",
+      "ids": [
+        "mat-2022-a-20"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s21",
+      "ids": [
+        "mat-2022-a-21"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-22"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s23",
+      "ids": [
+        "mat-2022-a-23"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-24"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-25"
+      ]
+    },
+    {
+      "stimulus": "mat-2022-a-s28",
+      "ids": [
+        "mat-2022-a-28"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-29"
+      ]
+    },
+    {
+      "stimulus": null,
+      "ids": [
+        "mat-2022-a-30"
+      ]
+    }
+  ],
+  "items": {
+    "mat-2022-a-01": {
+      "n": 1,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi sú body A, B a C obrazmi reálnych čísel. Vypočítaj hodnotu výrazu A + B – C a výsledok zapíš v tvare desatinného čísla.",
+      "asset": null,
+      "type": "num",
+      "answer": "-1,6",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 1
+      }
+    },
+    "mat-2022-a-02": {
+      "n": 2,
+      "topic": "uhly-konstrukcie",
+      "text": "Veľkosť uhla DVC na obrázku je tretinou veľkosti uhla BVC. Polpriamka VE je os uhla AVC. Body A, V, B ležia na jednej priamke. Vypočítaj v stupňoch veľkosť uhla γ.",
+      "asset": null,
+      "type": "num",
+      "answer": "60",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 2
+      }
+    },
+    "mat-2022-a-03": {
+      "n": 3,
+      "topic": "slovne-ulohy",
+      "text": "Desiati priatelia sa dohodli, že si objednajú pizze spolu, aby využili akciu, kedy dostanú každú štvrtú pizzu za polovicu. Jedna celá pizza stojí 6 €. Koľko eur ich vyšla 1 pizza, ak si objednali 10 pízz? Výsledok uveď s presnosťou na desatiny.",
+      "asset": null,
+      "type": "num",
+      "answer": "5,4",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 3
+      }
+    },
+    "mat-2022-a-04": {
+      "n": 4,
+      "topic": "rovinne-obrazce",
+      "text": "V materskej škole chcú zasiať trávu na pozemok okolo pieskoviska, ktoré má pôdorys v tvare štvorca s výmerou 49 m². Umiestnené je na štvorcovom pozemku so stranou dlhou 9 m. Koľko celých balení trávnikovej zmesi treba kúpiť na zatrávnenie plochy pozemku okolo pieskoviska, ak jedno balenie stačí na 5 m² plochy?",
+      "asset": null,
+      "type": "num",
+      "answer": "7",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 4
+      }
+    },
+    "mat-2022-a-07": {
+      "n": 7,
+      "topic": "pytagorova-veta",
+      "text": "Pravidelný osemuholník so stranou dlhou 10 cm vznikol tak, že sme z papierového štvorca odstrihli v jeho vrcholoch rovnoramenné trojuholníky. Vypočítaj dĺžku strany pôvodného štvorca v centimetroch. Výsledok zaokrúhli na celé číslo.",
+      "asset": null,
+      "type": "num",
+      "answer": "24",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 7
+      }
+    },
+    "mat-2022-a-08": {
+      "n": 8,
+      "topic": "kombinatorika-logika",
+      "text": "Patrik mal za úlohu vypísať všetky trojciferné čísla zložené z číslic 0, 2, 5 a 8 bez opakovania. Podarilo sa mu nájsť tieto čísla: 205, 502, 805, 802, 520, 820, 850, 250. Koľko čísel mu chýba?",
+      "asset": null,
+      "type": "num",
+      "answer": "10",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 8
+      }
+    },
+    "mat-2022-a-09": {
+      "n": 9,
+      "topic": "zlomky-desatinne",
+      "text": "Na číselnej osi je vyznačených šesť rovnako dlhých úsekov. Bod A je obrazom reálneho čísla. Zapíš toto číslo zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "2/3",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 9
+      }
+    },
+    "mat-2022-a-10": {
+      "n": 10,
+      "topic": "statistika-pravdepodobnost",
+      "text": "V triede je 20 žiakov. Každý z nich pripravil projekt z geografie. Na hodine vždy vyžrebujú jedného žiaka z tých, ktorí ešte svoj projekt neprezentovali, aby ho prezentoval na nasledujúcej hodine. Aká je pravdepodobnosť, že vyberú Petra, ak 13 jeho spolužiakov už svoj projekt prezentovalo? Výsledok zapíš zlomkom v základnom tvare.",
+      "asset": null,
+      "type": "word",
+      "answer": "1/7",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 10
+      }
+    },
+    "mat-2022-a-11": {
+      "n": 11,
+      "topic": "percenta-pomer",
+      "text": "V bytovom dome býva 60 rodín. Tabuľka udáva percentuálne zastúpenie počtu rodín podľa počtu áut v rodine. Koľko rodín má najmenej dve autá?",
+      "asset": null,
+      "type": "num",
+      "answer": "9",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 11
+      }
+    },
+    "mat-2022-a-12": {
+      "n": 12,
+      "topic": "percenta-pomer",
+      "text": "Do každého pecňa chleba pridávajú v miestnej pekárni slnečnicové, ľanové, konopné a tekvicové semienka v pomere 5 : 3 : 4 : 2. Koľko kilogramov slnečnicových semienok treba ešte pridať, ak ľanové, konopné a tekvicové semienka majú spolu hmotnosť 6,3 kg?",
+      "asset": null,
+      "type": "num",
+      "answer": "3,5",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 12
+      }
+    },
+    "mat-2022-a-13": {
+      "n": 13,
+      "topic": "vyrazy-rovnice",
+      "text": "Nájdi číslo, ktoré je riešením rovnice 6x – (2 – 2x) = 3 · (x – 4).",
+      "asset": null,
+      "type": "num",
+      "answer": "-2",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 13
+      }
+    },
+    "mat-2022-a-14": {
+      "n": 14,
+      "topic": "telesa",
+      "text": "Z miesta, kde má byť zámková dlažba, treba najskôr odstrániť zeminu do hĺbky 0,2 m. Koľko metrov kubických zeminy treba odstrániť? Výsledok napíš s presnosťou na dve desatinné miesta.",
+      "asset": null,
+      "type": "num",
+      "answer": "2,58",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 14
+      }
+    },
+    "mat-2022-a-15": {
+      "n": 15,
+      "topic": "rovinne-obrazce",
+      "text": "Medzi dlažbu a trávnik treba umiestniť obrubníky. Jeden obrubník je dlhý 1 m. Koľko kusov obrubníkov musí pán Jaroslav kúpiť?",
+      "asset": null,
+      "type": "num",
+      "answer": "12",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 15
+      }
+    },
+    "mat-2022-a-17": {
+      "n": 17,
+      "topic": "umernost-trojclenka",
+      "text": "Novákovci plánujú v priebehu septembra opraviť fasádu domu. S prácami sa začne 2. septembra. Počas nedieľ a sviatkov sa pracovať nebude. Tieto dni sú v kalendári podčiarknuté. Štyria robotníci by opravili fasádu za 10 dní. Kedy možno očakávať skončenie prác, ak budú pracovať len dvaja robotníci? Predpokladáme, že všetci pracujú rovnako výkonne.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6. septembra",
+        "7. septembra",
+        "21. septembra",
+        "25. septembra"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 17
+      }
+    },
+    "mat-2022-a-18": {
+      "n": 18,
+      "topic": "mocniny-odmocniny",
+      "text": "Ktorá z nasledujúcich nerovností platí?\nNerovnosť 1: 3² > 2³\nNerovnosť 2: (-3)² < (-2)³",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "Platí len nerovnosť 1.",
+        "Platí len nerovnosť 2.",
+        "Obidve nerovnosti platia.",
+        "Ani jedna nerovnosť neplatí."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 18
+      }
+    },
+    "mat-2022-a-20": {
+      "n": 20,
+      "topic": "percenta-pomer",
+      "text": "Linda robila prieskum medzi žiakmi svojej školy. Pýtala sa ich, či majú v rodine len brata alebo len sestru, alebo oboje, alebo sú bez súrodenca. Počet jednotlivých odpovedí zhrnula do tabuľky. Posúď pravdivosť nasledujúcich dvoch tvrdení.\n1. Linda zistila, že bez súrodenca je viac ako 10 % opýtaných žiakov.\n2. U pätiny opýtaných žiakov sú v rodine určite najmenej tri deti.\nPravdivé",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "je len prvé tvrdenie.",
+        "je len druhé tvrdenie.",
+        "nie je žiadne z tvrdení.",
+        "sú obidve tvrdenia."
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 20
+      }
+    },
+    "mat-2022-a-21": {
+      "n": 21,
+      "topic": "zlomky-desatinne",
+      "text": "Pani Šťastná sa počas týždňa vážila so svojím bábätkom. Namerané hodnoty sú uvedené v nasledujúcom grafe v kilogramoch. O koľko kilogramov bola hmotnosť bábätka väčšia v nedeľu ako v pondelok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "0,1 kg",
+        "0,2 kg",
+        "0,3 kg",
+        "0,4 kg"
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 21
+      }
+    },
+    "mat-2022-a-22": {
+      "n": 22,
+      "topic": "kombinatorika-logika",
+      "text": "Číslo je dokonalé vtedy, ak je súčet všetkých jeho deliteľov okrem čísla samotného rovnaký ako toto číslo.\nNapríklad číslo 28 je dokonalé. Súčet jeho deliteľov 1, 2, 4, 7 a 14 je 28.\nKtoré z nasledujúcich čísel je tiež dokonalé?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "14",
+        "12",
+        "8",
+        "6"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 22
+      }
+    },
+    "mat-2022-a-23": {
+      "n": 23,
+      "topic": "vyrazy-rovnice",
+      "text": "Riadky tabuľky sú označené písmenami R, S, T a stĺpce číslami 1, 2, 3. Do výrazu R2 – S3 + T1 dosaď príslušné čísla a vypočítaj jeho hodnotu. V ktorej možnosti je uvedený správny výsledok?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "-14",
+        "-20",
+        "26",
+        "32"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 23
+      }
+    },
+    "mat-2022-a-24": {
+      "n": 24,
+      "topic": "vyrazy-rovnice",
+      "text": "Ktoré číslo nie je riešením nasledujúcej nerovnice?\n3 < 2 · (3x – 9)",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": "D",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 24
+      }
+    },
+    "mat-2022-a-25": {
+      "n": 25,
+      "topic": "rovinne-obrazce",
+      "text": "Menší kruh a štvrtina väčšieho kruhu majú rovnaký obsah. Vypočítaj polomer väčšieho kruhu v cm, ak priemer menšieho kruhu je 20 cm. Počítaj s hodnotou π = 3,14.",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "10",
+        "20",
+        "40",
+        "80"
+      ],
+      "answer": "B",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 25
+      }
+    },
+    "mat-2022-a-28": {
+      "n": 28,
+      "topic": "vyrazy-rovnice",
+      "text": "V nasledujúcej tabuľke je uvedený cenník lístkov kúpaliska. Počas dňa si lístok na celodenné kúpanie zakúpilo x dospelých a y detí. Na popoludňajšie kúpanie sa predalo 17 lístkov. Ktorý výraz vyjadruje tržbu kúpaliska počas celého dňa?",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "6,5xy + 17",
+        "4x + 2,5y + 17",
+        "4x + 2,5y + 34",
+        "6,5xy + 34"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 28
+      }
+    },
+    "mat-2022-a-29": {
+      "n": 29,
+      "topic": "telesa",
+      "text": "Do škatuľky v tvare kvádra so štvorcovou podstavou so stranou dĺžky 4 cm a výškou 5 cm nasypeme čaj 1 cm pod horný okraj. Do druhej škatuľky v tvare kvádra s rozmermi podstavy 5 cm a 4 cm a výškou 4 cm nasypeme ten istý druh čaju, rovnako 1 cm pod horný okraj. Vypočítaj rozdiel v objeme nasypaných čajov v centimetroch kubických.\nRozdiel je:",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": "C",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 29
+      }
+    },
+    "mat-2022-a-30": {
+      "n": 30,
+      "topic": "kombinatorika-logika",
+      "text": "V obci stojí vedľa seba päť kontajnerov na triedený odpad. Každý z nich má inú farbu podľa toho, čo sa v ňom zbiera. Na základe nasledujúcich tvrdení zisti, akú farbu má kontajner, ktorý sa nachádza uprostred.\n1. Žltý kontajner je hneď napravo od oranžového kontajnera.\n2. Zelený a modrý kontajner nie sú vedľa seba.\n3. Medzi oranžovým a modrým kontajnerom je iba červený kontajner.\nKontajner, ktorý sa nachádza uprostred, má farbu",
+      "asset": null,
+      "type": "mc",
+      "options": [
+        "oranžovú.",
+        "zelenú.",
+        "červenú.",
+        "modrú."
+      ],
+      "answer": "A",
+      "accept": [],
+      "source": {
+        "year": 2022,
+        "form": "A",
+        "n": 30
+      }
+    }
+  }
+}

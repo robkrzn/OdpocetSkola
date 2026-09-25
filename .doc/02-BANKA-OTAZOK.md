@@ -100,17 +100,18 @@ ročníka, ale zdrojom pravdy zostáva `www2.nucem.sk`.
 **Sedem ročníkov: 2017, 2018, 2019, 2022, 2023, 2024, 2025.** T9 2020 a 2021 sa
 nekonali (COVID), zadania neexistujú — nie je to diera v zbere.
 
-Realistický výnos: 7 testov na predmet × 20–30 úloh ≈ **175 úloh**, po vyradení
-neoveriteľných **~150 použiteľných na predmet**. Pri 4 nových úlohách denne to je
-**priechod ~38 dní**, nie 120 — pôvodný odhad v tomto dokumente bol nadsadený a je
-opravený. Do marca 2027 to znamená ~5 priechodov.
+**Skutočný výnos po F3 (25.9.2026):** MAT **168** úloh zo 190 (12 % vyradených, dôvod
+vždy `obrázok`), SJL **200** úloh z 200 (0 % vyradených) — presné rozpočty na test
+sú v `questions/rejected.md`. Pri 4 nových úlohách denne to je **priechod ~40 dní
+pre MAT, ~50 dní pre SJL** (`check.js --daily`). Do marca 2027 to znamená niekoľko
+priechodov na predmet.
 
-**Opakovanie po ~5 týždňoch je zámer, nie chyba.** Presne toľko trvá, kým človek
+**Opakovanie po ~5–7 týždňoch je zámer, nie chyba.** Presne toľko trvá, kým človek
 úlohu zabudne, a algoritmus poradie pri každom priechode premieša (`01-ARCHITEKTURA.md`).
 
-Rozšírenie dozadu (2010–2016, ďalších ~7 ročníkov, priechod by narástol na ~75 dní)
-je **voliteľná fáza F3b** — rozhoduje sa až po F1, keď bude známy skutočný výnos
-z jedného testu. Staršie Monitory sedia na inom kurikule a inej formulačnej konvencii,
+Rozšírenie dozadu (2010–2016, ďalších ~7 ročníkov) bola **voliteľná fáza F3b** —
+**nepotrebovala sa**, F3 s popplerom prekonal gate ≥ 120 úloh na predmet aj bez nej.
+Staršie Monitory navyše sedia na inom kurikule a inej formulačnej konvencii,
 takže to nie je zadarmo.
 
 ## Ťaženie: agent čítajúci PDF, nie parser

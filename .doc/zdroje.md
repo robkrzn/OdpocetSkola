@@ -42,10 +42,12 @@ kľúč `<súbor>-kluc.pdf`. `source/` je v `.gitignore`, PDF v repe nie sú.
 | všetky | MAT + SJL | **forma B**, test aj kľúč | Na žiadnej z deviatich ročných stránok nie je forma B zverejnená. Overené nezávisle všetkými troma zbermi (`grep` na `href` aj na dátový blob v HTML: `-fB` ani „forma B" sa nevyskytuje). Nie je to diera v zbere — forma B na webe nie je. |
 
 Rozsah teda nie je 9 rokov, ale **7 použiteľných ročníkov** (2017, 2018, 2019, 2022,
-2023, 2024, 2025) — to je ~175 úloh na predmet, po vyradení ~150 použiteľných, teda
-**priechod ~38 dní**, nie 120. Pôvodný odhad v `02-BANKA-OTAZOK.md` bol nadsadený
-a je opravený tam aj v O2 v `00-KONTEXT.md`. Opakovanie po ~5 týždňoch je zámer;
-rozšírenie na 2010–2016 je voliteľná fáza F3b.
+2023, 2024, 2025). **Skutočný výnos po F3 (25.9.2026):** MAT 168 úloh, SJL 200 úloh
+(spolu 368; `questions/rejected.md` má presné počty a dôvody na test) — vyšlo lepšie
+než pôvodný odhad ~150/predmet, lebo poppler sa doinštaloval a väčšina obrázkových
+úloh sa dala prepísať verne (zvyšné idú do `rejected.md`, výhradne dôvod `obrázok`).
+**Priechod** (`check.js --daily`): MAT ~40 dní, SJL ~50 dní. Opakovanie po ~5–7
+týždňoch je zámer; rozšírenie na 2010–2016 (F3b) sa vďaka poppleru nepotrebovalo.
 
 ## Textová vrstva — overené na všetkých 28 PDF
 
@@ -102,8 +104,9 @@ v celej banke.
 
 `mat-2017-a-test` má **20 úloh** (10 s číselnou odpoveďou + 10 výber z A–D, 60 minút),
 `mat-2024-a-test` má **30 úloh** (15 + 15, 90 minút). Odhad „~30 úloh na test" v
-`02-BANKA-OTAZOK.md` teda pre starší ročník neplatí. Presné počty za všetkých sedem
-ročníkov sa zistia až v F1/F3 — dolná hranica rozsahu je preto ~400 úloh, nie 420.
+`02-BANKA-OTAZOK.md` teda pre starší ročník neplatí. Presné počty (F3, 25.9.2026):
+2017 a 2018 mali 20, zvyšných päť ročníkov 30 — spolu 190 MAT + 200 SJL pred
+vyradením, 368 po ňom (`.doc/04-PLAN.md`, sekcia F3b).
 
 Prečo to nemení plán ťaženia: `02-BANKA-OTAZOK.md` už rozhodol, že sa neťaží
 parserom, ale agentom čítajúcim PDF. Agent číta stránku ako obraz, takže obrysové

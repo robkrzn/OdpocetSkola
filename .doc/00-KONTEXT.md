@@ -176,10 +176,10 @@ samotnú rohovú tabuľu — je to prvý konkrétny zásah do existujúceho kód
 | # | Otázka | Ako pokračujeme, kým nie je odpoveď |
 |---|---|---|
 | O1 | Máme PDF testov po ruke, alebo ich stahujeme z NIVAM? | Archív je overený a verejný (`www2.nucem.sk`), PDF majú textovú vrstvu; `04-PLAN.md` F0a vyzbiera URL |
-| O2 | ~~Koľko rokov spätne?~~ | Zavreté F0: **sedem ročníkov** 2017–2019 a 2022–2025 (2020 a 2021 sa nekonali, COVID). ~150 použiteľných úloh na predmet = priechod ~38 dní. Rozšírenie 2010–2016 je voliteľná F3b, rozhoduje sa po F1 |
+| O2 | ~~Koľko rokov spätne?~~ | Zavreté F0: **sedem ročníkov** 2017–2019 a 2022–2025 (2020 a 2021 sa nekonali, COVID). Po F3 (25.9.2026): MAT 168, SJL 200 úloh = priechod ~40/~50 dní. Rozšírenie 2010–2016 (F3b) sa nepotrebovalo |
 | O3 | Zdieľaná denná päťka pre všetkých, alebo osobná? | Ideme zdieľanou (4 zdieľané + 1 osobná), zdôvodnenie v `01-ARCHITEKTURA.md` |
 | O4 | Prezývka nech je jedinečná? | Nie. `uid` je identita, prezývka je nálepka. Jedinečnosť si vyžaduje ďalšiu kolekciu a rieši problém, ktorý nemáme |
 | O5 | ~~Dá NIVAM súhlas?~~ | Zavreté. Rozhodnuté ísť bez žiadosti, viď „Autorské právo". Ostáva `noindex` a uvedenie zdroja |
 | O6 | ~~Angular áno alebo nie?~~ | Zavreté ako R8: nie, záchranná cesta je Vue 3 z CDN bez buildu |
-| O7 | Koľko úloh denne pri malej banke? | Zostáva **4 + 1 opakovanie** na predmet. Priechod ~38 dní znamená ~5 priechodov do marca — opakovanie po 5 týždňoch je zámer, nie dôvod znižovať dávku |
-| O8 | Doinštalovať poppler (`pdftoppm`)? | **Áno, a je to jediná otvorená vec, ktorá mení rozsah.** Bez neho skončí MAT banka na ~84 úloh proti gate ≥ 120 a musí sa robiť F3b (2010–2016). S ním nie. Tabuľka výnosov je v `04-PLAN.md`, sekcia F3b |
+| O7 | Koľko úloh denne pri malej banke? | Zostáva **4 + 1 opakovanie** na predmet. Priechod ~40 (MAT) / ~50 (SJL) dní znamená viac priechodov do marca — opakovanie po 5–7 týždňoch je zámer, nie dôvod znižovať dávku |
+| O8 | ~~Doinštalovať poppler (`pdftoppm`)?~~ | Zavreté, doinštalovaný 21.9.2026. Bez neho by MAT banka skončila na ~84 úloh proti gate ≥ 120 a musela by ísť do F3b (2010–2016). S ním vyšlo 168 — F3b sa nepotrebovalo. Výnos je v `04-PLAN.md`, sekcia F3b |

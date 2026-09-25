@@ -337,8 +337,8 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 | F0b stiahnutie PDF | **hotové** — 28 PDF v `source/`, gitignored | 1.9.2026 |
 | F1 pilot (2024) | **hotové** — MAT 23/30, SJL 30/30, 53 odpovedí bez nezhody | 1.9.2026 |
 | F2 validátor + nástroje | **hotové** — `pick.js`, `check.js`, `merge.mjs`, `crop.mjs` | 1.9.2026 |
-| F3 hromadné ťaženie | čaká | |
-| F3b rozšírenie 2010–2016 | **nepotrebné, ak bude poppler** — viď nižšie | |
+| F3 hromadné ťaženie | **hotové** — 12 testov, poppler doinštalovaný 21.9.2026 | 25.9.2026 |
+| F3b rozšírenie 2010–2016 | **nepotrebné** — F3 s popplerom prekonal gate ≥ 120 | |
 | F4 dizajn | **hotové a komp schválený** — 2. kolo, oba nálezy opravené | 1.9.2026 |
 | F5 build v2.0 | **hotové** — 5 pohľadov, 131 kB, gate zelený | 2.9.2026 |
 | F5b revízia dizajnu | **hotové** — herný obsah do vsadeného panelu, šev steny odstránený | 2.9.2026 |
@@ -348,18 +348,26 @@ a kontroluje opus** — je to hranica dôvery, tam sa nešetrí.
 ### F3b nie je rozhodnutie o rokoch, je to rozhodnutie o binárke
 
 Výnos z pilotu: MAT **77 %** použiteľných úloh (7 z 30 vyradených len pre obrázok),
-SJL **100 %**. Z toho vychádza:
+SJL **100 %**. Odhad pred F3:
 
 | stav | MAT | SJL | priechod |
 |---|---|---|---|
 | bez poppleru — 4 ročníky s textovou vrstvou | ~84 | ~120 | 21 dní |
-| **s popplerom** — 7 ročníkov | ~153 | ~210 | 38 dní |
+| s popplerom — 7 ročníkov (odhad) | ~153 | ~210 | 38 dní |
 | s popplerom + `crop.mjs` — obrázkové úlohy vrátené | ~190 | ~210 | 45 dní |
 
-Gate F3 žiada ≥ 120 úloh na predmet a **MAT bez poppleru skončí na ~84.** Poppler
-prináša tri ročníky navyše a k tomu sedem vrátiteľných úloh na každý MAT test.
-Ak sa doinštaluje, **F3b (2010–2016) netreba.** Ak nie, F3b je jediná cesta k číslu
-120 a naráža na iné kurikulum starších Monitorov.
+Gate F3 žiadal ≥ 120 úloh na predmet a **MAT bez poppleru by skončil na ~84.** Poppler
+sa doinštaloval, priniesol tri ročníky navyše (2018, 2019, 2022) aj vrátiteľné
+obrázkové úlohy pri ostatných. **F3b (2010–2016) sa nepotrebovalo.**
+
+**Skutočný výnos F3 (12 testov + pilot 2024, 25.9.2026):** MAT **168** úloh zo 190
+(12 % vyradených, všetko dôvod `obrázok`), SJL **200** úloh z 200 (0 % vyradených) —
+spolu **368 úloh**, `questions/rejected.md`. Priechod (`want=4`/deň, `check.js --daily`
+na 400 dňoch): MAT ~40 dní, SJL ~50 dní, žiadny deň sa neopakuje dva dni po sebe,
+rozptyl nasadení jednotky za 400 dní ≤ 1. Pri gate sa navyše vyradila jedna úloha,
+ktorú agent pôvodne prepísal ako riešiteľnú textom (`mat-2022-a-19`, kocka s
+vrcholmi P/Q) — všeobecné pravidlo pre protiľahlé vrcholy dávalo inú odpoveď než
+kľúč, obrázok teda niesol informáciu, ktorú veta nevedela nahradiť jednoznačne.
 
 Tabuľku aktualizuje vlákno, ktoré fázu dokončí. Ak sa niečo rozhodne inak než je
 v `.doc/`, prepíše sa **dokument, nie len kód** — inak sa ďalšie vlákno riadi
